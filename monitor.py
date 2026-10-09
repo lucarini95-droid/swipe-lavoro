@@ -281,7 +281,9 @@ def filtra(azienda, offerte):
             "descrizione": desc,
             "italiano": bool(ITALIANO.search(t) or ITALIANO.search(desc[:2000])),
             # lingue in piu' richieste insieme all'italiano: la pagina le mostra come badge
-            "altre_lingue": lingue_extra(t),
+            # se il titolo elenca lingue in alternativa ("German, Italian OR Nordic")
+            # l'italiano da solo basta: niente badge di lingue in piu'
+            "altre_lingue": [] if re.search(r"\bor\b|\boppure\b", t, re.I) else lingue_extra(t),
         })
     return tenute, scartate
 

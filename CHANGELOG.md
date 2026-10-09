@@ -1,9 +1,10 @@
 # Registro delle versioni
 
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
-e del "tag" su GitHub (vedi README → *Tornare a una versione precedente*).
+e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
 ## v1.2 — 9 ottobre 2026
+- Titoli con lingue in alternativa ("German, Italian OR Nordic") non mostrano i badge "+ lingua".
 - Sincronizzazione tra dispositivi: salvate, scartate e "Candidato" sono comuni a telefono e Mac.
   Le scelte vanno nel file `decisioni.json` sul ramo `decisioni` (non tocca la pagina).
 - Indicatore ☁︎ in alto: sincronizzato / da salvare / non sincronizzato. Senza rete le scelte

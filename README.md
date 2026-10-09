@@ -62,10 +62,12 @@ Tab **Actions** → **Cerca offerte** → **Run workflow** → **Run workflow**.
 ## Tornare a una versione precedente
 Ogni modifica è salvata nella cronologia, niente si perde.
 
-- **Vedere le versioni:** tab **Code** → link **commits** (icona orologio) sopra l'elenco dei file
-- **Annullare una modifica:** apri quel commit → copia il suo codice (es. `a1b2c3d`) e chiedi a Claude
-  "annulla il commit a1b2c3d" (fa un `git revert`, che crea una nuova versione uguale a prima, senza cancellare la storia)
-- **Versioni "fotografate":** ogni versione importante ha un tag (`v1.0`, `v1.1`…) nella sezione **Tags**:
-  da lì scarichi tutto com'era a quella versione
+- **Le versioni:** ogni modifica importante è un salvataggio (commit) il cui titolo inizia con il numero
+  di versione (`v1.0 - …`, `v1.1 - …`). Il dettaglio di cosa cambia è in `CHANGELOG.md`
+- **Vederle:** tab **Code** → link **commits** (icona orologio) sopra l'elenco dei file
+- **Tornare indietro:** apri quel commit, copia il suo codice (es. `a1b2c3d`) e chiedi a Claude
+  "annulla il commit a1b2c3d" o "torna alla v1.1". Si crea una nuova versione uguale a quella vecchia,
+  senza cancellare la storia, quindi si può sempre tornare avanti
+- **Scaricare una versione intera:** apri il commit → **Browse files** → **Code** → **Download ZIP**
 
 I commit automatici "Offerte aggiornate …" sono solo dati nuovi, non modifiche al codice.
