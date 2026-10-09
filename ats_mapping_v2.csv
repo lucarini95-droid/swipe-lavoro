@@ -1,13 +1,13 @@
 Azienda,ATS,Slug,URL,Stato,Offerte totali,Match Dublino,Note
 Google,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Meta,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Microsoft,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Amazon / AWS,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Microsoft,eightfold,microsoft.com,https://apply.careers.microsoft.com,OK,50,0,"Eightfold, rilevato 09/10/2026"
+Amazon / AWS,amazon,,https://www.amazon.jobs,OK,219,0,ricerca amazon.jobs filtrata su Irlanda
 LinkedIn,greenhouse,linkedin,https://boards-api.greenhouse.io/v1/boards/linkedin/jobs,DA CONTROLLARE,53,0,board intestato a 'LI Test Company': falso positivo
-Salesforce,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Salesforce,workday,salesforce,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,OK,147,0,rilevato 09/10/2026
 TikTok,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 ServiceNow,smartrecruiters,servicenow,https://api.smartrecruiters.com/v1/companies/servicenow/postings,OK,580,3,
-PayPal,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+PayPal,workday,paypal,https://paypal.wd1.myworkdayjobs.com/jobs,OK,7,0,rilevato 09/10/2026 (anche su Eightfold)
 Indeed,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Pinterest,greenhouse,pinterest,https://boards-api.greenhouse.io/v1/boards/pinterest/jobs,OK,202,0,
 HubSpot,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
@@ -15,11 +15,11 @@ Workday,workday,workday,https://www.workday.com/en-us/company/careers/overview.h
 Stripe,greenhouse,stripe,https://boards-api.greenhouse.io/v1/boards/stripe/jobs,OK,592,9,
 Intercom,greenhouse,intercom,https://boards-api.greenhouse.io/v1/boards/intercom/jobs,DA CONTROLLARE,124,5,board intestato a 'Fin': falso positivo
 Zendesk,workday,zendesk,https://www.zendesk.com/it/company/careers/#georedirect,NON LEGGIBILE,0,0,
-DocuSign,icims,www,https://careers.docusign.com/careers-home,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+DocuSign,jibe,,https://careers.docusign.com,OK,82,0,"Jibe sopra iCIMS, verificato nel browser"
 Qualtrics,phenom,cdn,https://www.qualtrics.com/careers/us/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
 Klaviyo,greenhouse,klaviyo,https://boards-api.greenhouse.io/v1/boards/klaviyo/jobs,OK,140,5,
 ActiveCampaign,lever,activecampaign,https://api.lever.co/v0/postings/activecampaign?mode=json,OK,13,0,
-Rippling,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Rippling,rippling,rippling,https://api.rippling.com/platform/api/ats/v1/board/rippling/jobs,OK,623,0,verificato nel browser
 Asana,greenhouse,asana,https://boards-api.greenhouse.io/v1/boards/asana/jobs,OK,118,1,
 Workhuman,ashby,Workhuman,https://www.workhuman.com/company/careers/,OK,10,0,
 Fenergo,workable,fenergocareers,https://www.fenergo.com/careers,OK,13,0,
@@ -29,37 +29,37 @@ AMCS Group,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Version 1,smartrecruiters,version1,https://api.smartrecruiters.com/v1/companies/version1/postings,OK,154,0,
 Flipdish,greenhouse,flipdish,https://www.flipdish.com/careers,OK,6,0,
 OpenAI,ashby,openai,https://api.ashbyhq.com/posting-api/job-board/openai,OK,765,0,
-X (ex Twitter),SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+X (ex Twitter),greenhouse,xai,https://boards-api.greenhouse.io/v1/boards/xai/jobs,OK,308,0,careers.x.com rimanda a x.ai: board xAI
 Oracle,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 IBM,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Dropbox,greenhouse,dropbox,https://boards-api.greenhouse.io/v1/boards/dropbox/jobs,OK,42,1,
 MongoDB,greenhouse,mongodb,https://boards-api.greenhouse.io/v1/boards/mongodb/jobs,OK,401,10,
 Atlassian,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Toast,greenhouse,toast,https://boards-api.greenhouse.io/v1/boards/toast/jobs,OK,303,2,
-Guidewire Software,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Snowflake,phenom,cdn,https://careers.snowflake.com/us/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+Guidewire Software,workday,guidewire,https://guidewire.wd5.myworkdayjobs.com/external,OK,11,0,rilevato 09/10/2026
+Snowflake,ashby,snowflake,https://api.ashbyhq.com/posting-api/job-board/snowflake,OK,360,0,rilevato 09/10/2026
 Datadog,greenhouse,datadog,https://boards-api.greenhouse.io/v1/boards/datadog/jobs,OK,440,7,
-Twilio,SCONOSCIUTO,app,https://jobs.twilio.com/careers,SCONOSCIUTO,0,0,"slug spazzatura, ridetectato"
+Twilio,greenhouse,twilio,https://boards-api.greenhouse.io/v1/boards/twilio/jobs,OK,136,0,rilevato 09/10/2026
 Gong,smartrecruiters,gong,https://api.smartrecruiters.com/v1/companies/gong/postings,OK,9,0,
 Personio,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Mastercard Tech Hub,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Mastercard Tech Hub,workday,mastercard,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,OK,65,0,rilevato 09/10/2026
 Airbnb,greenhouse,airbnb,https://boards-api.greenhouse.io/v1/boards/airbnb/jobs,OK,170,0,
-Adobe,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Adobe,phenom,,https://careers.adobe.com/us/en,OK,3,0,"Phenom, verificato nel browser"
 SAP,successfactors,performancemanager5,https://jobs.sap.com/,NON LEGGIBILE,0,0,
-Cisco,phenom,cdn,https://careers.cisco.com/global/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+Cisco,workday,cisco,https://cisco.wd5.myworkdayjobs.com/cisco_careers,OK,9,0,rilevato 09/10/2026
 CrowdStrike,workday,crowdstrike,https://www.crowdstrike.com/en-us/careers/,NON LEGGIBILE,0,0,
 Elastic,greenhouse,elastic,https://boards-api.greenhouse.io/v1/boards/elastic/jobs,OK,358,0,
 Flutter Entertainment,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Procore,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Workvivo / Zoom,SCONOSCIUTO,www,https://www.workvivo.com,SCONOSCIUTO,0,0,"slug spazzatura, ridetectato"
+Workvivo / Zoom,workday,zoom,https://zoom.wd5.myworkdayjobs.com/Zoom,OK,5,0,rilevato 09/10/2026
 Tines,greenhouse,tines,https://boards-api.greenhouse.io/v1/boards/tines/jobs,OK,18,0,
 Rapid7,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Dun & Bradstreet,lever,dnb,https://jobs.lever.co/dnb,OK,121,0,
 FreedomPay,lever,freedompay,https://api.lever.co/v0/postings/freedompay?mode=json,OK,28,0,
 U.S. Bank / Elavon,phenom,cdn,https://careers.usbank.com/global/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
-FIS,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+FIS,workday,fis,https://fis.wd5.myworkdayjobs.com/SearchJobs,OK,2,0,rilevato 09/10/2026
 Fiserv,phenom,cdn,https://careers.fiserv.com/us/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
-Veeam,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Veeam,greenhouse,veeamsoftware,https://boards-api.greenhouse.io/v1/boards/veeamsoftware/jobs,OK,242,0,rilevato 09/10/2026
 Palo Alto Networks,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Okta,greenhouse,okta,https://boards-api.greenhouse.io/v1/boards/okta/jobs,OK,333,3,
 Proofpoint,workday,proofpoint,https://www.proofpoint.com/us/company/careers,NON LEGGIBILE,0,0,
@@ -67,13 +67,13 @@ Nutanix,workable,nutanix,https://apply.workable.com/api/v1/widget/accounts/nutan
 Red Hat,workday,redhat,https://www.redhat.com/en/jobs,NON LEGGIBILE,0,0,
 VMware by Broadcom,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Dell Technologies,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Hewlett Packard Enterprise,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Hewlett Packard Enterprise,workday,hpe,https://hpe.wd5.myworkdayjobs.com/Jobsathpe,OK,1,0,rilevato 09/10/2026
 Nokia,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Ericsson,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Ericsson,eightfold,ericsson.com,https://jobs.ericsson.com,OK,10,0,"Eightfold, rilevato 09/10/2026"
 Amdocs,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Cognizant,workable,cognizant,https://apply.workable.com/api/v1/widget/accounts/cognizant,DA CONTROLLARE,0,0,solo 0 offerte: sospetto
 Accenture,workday,accenture,https://www.accenture.com/it-it/careers,NON LEGGIBILE,0,0,
-Teamwork.com,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Teamwork.com,personio,teamwork,https://teamwork.jobs.personio.de,OK,3,0,rilevato 09/10/2026
 LetsGetChecked,workday,alto,https://www.letsgetchecked.com/careers/,NON LEGGIBILE,0,0,
 Ding,workable,ding,https://apply.workable.com/api/v1/widget/accounts/ding,DA CONTROLLARE,0,0,solo 0 offerte: sospetto
 CarTrawler,lever,cartrawler,https://api.lever.co/v0/postings/cartrawler?mode=json,OK,11,0,

@@ -3,6 +3,15 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.3 — 9 ottobre 2026
+- Aziende lette passate da 31 a 49. Aggiunte: Salesforce, Microsoft, Amazon/AWS, Rippling, Docusign,
+  Mastercard, PayPal, Adobe, Cisco, Twilio, Snowflake, X/xAI, Guidewire, Zoom/Workvivo, HPE, FIS,
+  Veeam, Ericsson, Teamwork.com.
+- Nuovi lettori in monitor.py: Eightfold, Jibe, Phenom, Rippling, Amazon, Personio, iCIMS.
+- Workday: un indirizzo sbagliato ora dà errore invece di sembrare "zero offerte"; le offerte
+  con più sedi ("3 Locations") non vengono più perse.
+- Nuovo `rileva_fonti.py` + azione "Rileva fonti": trova dove pubblicano le offerte le aziende mancanti.
+
 ## v1.2 — 9 ottobre 2026
 - Corretto: dal secondo giro tutte le offerte risultavano "NUOVA"; ora la data di prima comparsa resta quella vera.
 - Titoli con lingue in alternativa ("German, Italian OR Nordic") non mostrano i badge "+ lingua".

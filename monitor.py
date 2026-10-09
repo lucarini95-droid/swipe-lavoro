@@ -256,6 +256,59 @@ def jobs_amazon(s, _, __):
     return out
 
 
+def jobs_jibe(s, _, url):
+    """Jibe (es. careers.docusign.com): API pubblica /api/jobs filtrata su Dublino.
+    URL = sito carriere (es. https://careers.docusign.com)."""
+    host = urlparse(url).netloc
+    out = []
+    for pagina in range(1, 11):
+        d = s.get(f"https://{host}/api/jobs", timeout=TIMEOUT,
+                  params={"location": "Dublin", "page": pagina, "limit": 100}).json()
+        jobs = d.get("jobs") or []
+        for x in jobs:
+            j = x.get("data") or x
+            out.append((j.get("title", ""), j.get("full_location") or j.get("city", ""),
+                        f"https://{host}/jobs/{j.get('slug', '')}", j.get("description", "")))
+        if len(out) >= (d.get("totalCount") or 0) or not jobs:
+            break
+    return out
+
+
+def jobs_phenom(s, _, url):
+    """Phenom (es. careers.adobe.com/us/en): stesso servizio interno usato dalla pagina
+    di ricerca, filtrato sulla citta' Dublin. URL = sito con lingua (…/us/en)."""
+    p = urlparse(url)
+    parti = [x for x in p.path.split("/") if x]
+    paese, lingua = (parti[-2], parti[-1]) if len(parti) >= 2 else ("us", "en")
+    base = f"https://{p.netloc}/" + "/".join(parti[:-2])
+    out = []
+    for da in range(0, 500, 100):
+        body = {"lang": f"{lingua}_{paese}", "deviceType": "desktop", "country": paese,
+                "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+                "subsearch": "", "from": da, "jobs": True, "counts": True,
+                "all_fields": ["category", "country", "city"], "size": 100,
+                "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
+                "pageId": "page20", "siteType": "external", "keywords": "", "global": True,
+                "selected_fields": {"city": ["Dublin"]}, "locationData": {}}
+        d = s.post(base.rstrip("/") + "/widgets", json=body, timeout=TIMEOUT).json()
+        rs = d.get("refineSearch") or {}
+        jobs = (rs.get("data") or {}).get("jobs") or []
+        for j in jobs:
+            out.append((j.get("title", ""), j.get("cityState") or j.get("location", ""),
+                        f"{url.rstrip('/')}/job/{j.get('jobId', '')}", j.get("descriptionTeaser", "")))
+        if len(jobs) < 100:
+            break
+    return out
+
+
+def jobs_rippling(s, slug, _):
+    """Rippling ATS: elenco pubblico del job board."""
+    d = s.get(f"https://api.rippling.com/platform/api/ats/v1/board/{slug}/jobs",
+              timeout=TIMEOUT).json()
+    return [(j.get("name", ""), (j.get("workLocation") or {}).get("label", ""),
+             j.get("url", ""), "") for j in d]
+
+
 def jobs_personio(s, slug, _):
     """Personio: feed XML pubblico."""
     r = s.get(f"https://{slug}.jobs.personio.de/xml", timeout=TIMEOUT)
@@ -272,7 +325,8 @@ LETTORI = {"greenhouse": jobs_greenhouse, "lever": jobs_lever, "ashby": jobs_ash
            "smartrecruiters": jobs_smartrecruiters, "workable": jobs_workable,
            "bamboohr": jobs_bamboohr, "workday": jobs_workday,
            "eightfold": jobs_eightfold, "icims": jobs_icims, "amazon": jobs_amazon,
-           "personio": jobs_personio}
+           "personio": jobs_personio, "jibe": jobs_jibe, "phenom": jobs_phenom,
+           "rippling": jobs_rippling}
 
 
 # ----------------------------------------------------- RIPARAZIONE WORKDAY

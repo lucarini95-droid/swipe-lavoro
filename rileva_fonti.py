@@ -84,8 +84,14 @@ EXTRA = {
     "Ericsson":     [("eightfold", "ericsson.com", "https://jobs.ericsson.com")],
     "Amdocs":       [("eightfold", "amdocs.com", "https://jobs.amdocs.com")],
     "Twilio":       [("eightfold", "twilio.com", "https://jobs.twilio.com")],
-    "DocuSign":     [("icims", "", "https://hubcareers-docusign.icims.com")],
     "Amazon / AWS": [("amazon", "", "")],
+    "DocuSign":     [("jibe", "", "https://careers.docusign.com")],
+    "Rippling":     [("rippling", "rippling", "")],
+    "Adobe":        [("phenom", "", "https://careers.adobe.com/us/en")],
+    # Phenom da verificare
+    "Qualtrics":    [("phenom", "", "https://www.qualtrics.com/careers/us/en")],
+    "U.S. Bank / Elavon": [("phenom", "", "https://careers.usbank.com/global/en")],
+    "Fiserv":       [("phenom", "", "https://careers.fiserv.com/us/en")],
 }
 
 # Impronte nel codice di una pagina carriere -> nome ATS (+ gruppo che estrae lo slug/indirizzo)
