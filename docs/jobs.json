@@ -1,0 +1,165 @@
+{
+ "aggiornato": "2026-10-09T01:31+00:00",
+ "fonti_lette": 31,
+ "fonti_totali": 31,
+ "problemi": [],
+ "scartate_lingua": [
+  {
+   "azienda": "Datadog",
+   "titolo": "Sales Development Representative (France)",
+   "lingua": "Francese"
+  },
+  {
+   "azienda": "Klaviyo",
+   "titolo": "Outbound Business Development Representative - Central (German speaking)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Klaviyo",
+   "titolo": "Outbound Business Development Representative - Southern (Spanish Speaking)",
+   "lingua": "Spagnolo"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative - Benelux/Nordics",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative, German Speaking",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Okta",
+   "titolo": "Business Development Representative - Dutch",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (German fluency)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Danish Speaker)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Dutch Speaker)",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Polish Speaker)",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Sales Development Representative | German",
+   "lingua": "Tedesco"
+  }
+ ],
+ "offerte": [
+  {
+   "id": "ServiceNow|Intern – Business Development Representative (German, Spanish, Italian, French, Dutch, Arabic OR Nordic Languages)|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "Intern – Business Development Representative (German, Spanish, Italian, French, Dutch, Arabic OR Nordic Languages)",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000153476180",
+   "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [
+    "Tedesco",
+    "Francese",
+    "Olandese",
+    "Spagnolo",
+    "Nordiche",
+    "Arabo"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Klaviyo|Outbound Business Development Representative - Italian Speaking|Dublin, IE",
+   "azienda": "Klaviyo",
+   "titolo": "Outbound Business Development Representative - Italian Speaking",
+   "luogo": "Dublin, IE",
+   "url": "https://www.klaviyo.com/careers/jobs/7991137003?gh_jid=7991137003",
+   "descrizione": "At Klaviyo, we value the unique backgrounds, experiences and perspectives each Klaviyo (we call ourselves Klaviyos) brings to our workplace each and every day. We believe everyone deserves a fair shot at success and appreciate the experiences each person brings beyond the traditional job requirements. If you’re a close but not exact match with the description, we hope you’ll still consider applying. Want to learn more about life at Klaviyo? Visit klaviyo.com/careers to see how we empower creators to own their own destiny.\nDublin, Ireland (3 days p/week in-office)\nAs the first point of contact in the sales cycle, you are on the front lines. We consider Outbound Business Development Reps essential to the success of our business as your contribution to the sales and marketing feedback loop significantly influences our go-to-market strategy. We pride ourselves on accountability, effort and…",
+   "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "MongoDB|Account Development Representative, Italian Speaking|Dublin",
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative, Italian Speaking",
+   "luogo": "Dublin",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7338090",
+   "descrizione": "MongoDB’s mission is to empower innovators to create, transform, and disrupt industries by unleashing the power of software and data. We enable organizations of all sizes to easily build, scale, and run modern applications by helping them modernize legacy workloads, embrace innovation, and unleash AI. Our industry-leading developer data platform, MongoDB Atlas, is the only globally distributed, multi-cloud database and is available in more than 115 regions across AWS, Google Cloud, and Microsoft Azure. Atlas allows customers to build and run applications anywhere—on premises, or across cloud providers. With offices worldwide and over 175,000 new developers signing up to use MongoDB every month, it’s no wonder that leading organizations, like Samsung and Toyota, trust MongoDB to build next-generation, AI-powered applications.\nAt MongoDB, our Account Development team works closely with…",
+   "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Workday|Business Development Representative UKI|Ireland, Dublin",
+   "azienda": "Workday",
+   "titolo": "Business Development Representative UKI",
+   "luogo": "Ireland, Dublin",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Stripe|Sales Development Representative|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nAs a Sales Development Representative (SDR) at Stripe, you will drive Stripe’s future growth engine by working with Demand Gen and the Account Executive team to qualify leads and collaboratively build Stripe’s sales pipeline. You get excited about engaging with prospects to better qualify needs. You are adept at identifying high value opportunities and capable…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Intercom|Business Development Representative|Dublin, Ireland",
+   "azienda": "Intercom",
+   "titolo": "Business Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7765514",
+   "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Wayflyer|Business Development Representative|Dublin",
+   "azienda": "Wayflyer",
+   "titolo": "Business Development Representative",
+   "luogo": "Dublin",
+   "url": "https://jobs.ashbyhq.com/wayflyer/ee8e3e34-ad5a-410b-a9de-ce29fe39064d",
+   "descrizione": "About Wayflyer\nToday's small businesses need a capital provider that keeps pace with their growth ambitions. Traditional financing options are slow, cumbersome and often out of reach. That's why we built Wayflyer.\nOur technology allows us to assess businesses in minutes, generate financing offers that reflect their growth potential and send funds in as little as 24 hours. To date, we've deployed over $6bn to thousands of businesses worldwide, backed by Tier 1 banks like J.P. Morgan.\nYou'll be collaborating with ambitious colleagues from around the world. We have offices in Dublin, London, New York, Charlotte, Berlin and Sydney.\nThe challenge\nWe've deployed over $6bn to small businesses that traditional banks were too slow, too rigid, or too disinterested to back. Now we're growing fast, and we need a world-class sales team to continue the momentum, finding the founders who need us…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Datadog|Sales Development Representative (Africa)|Dublin, Ireland",
+   "azienda": "Datadog",
+   "titolo": "Sales Development Representative (Africa)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.datadoghq.com/detail/8152975/?gh_jid=8152975",
+   "descrizione": "Sales Development Representative\nAs a Sales Development Representative (SDR), you will prospect, qualify, and generate customer leads to assist in Datadog’s overall business growth segment. By partnering with internal stakeholders, you will help IT and Technology innovators across markets recognize Datadog’s impact in their digital transformation and migration to the cloud. SDRs have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Collaborate cross-functionally with various Datadog teams\n• Drive initial prospect qualification and schedule discovery meetings\n• Develop, present,…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  }
+ ]
+}
