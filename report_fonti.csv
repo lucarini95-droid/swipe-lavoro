@@ -1,12 +1,13 @@
 Azienda,ATS,Slug,URL,Offerte totali,A Dublino,SDR tenute,SDR scartate lingua,Esempi,Impronte,Note
 Google,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.google.com/about/careers/applications/jobs/results?location=Dublin
 Meta,NON TROVATO,,,0,0,0,0,,,pagina 400 -> https://www.metacareers.com/jobs
-Microsoft,NON TROVATO,,,0,0,0,0,,eightfold:app; successfactors:successfactors,pagina 200 -> https://apply.careers.microsoft.com/careers; speciale errore SSLError
+Microsoft,eightfold,microsoft.com,https://apply.careers.microsoft.com,50,50,0,0,,eightfold:vs-errors; successfactors:successfactors,pagina 200 -> https://apply.careers.microsoft.com/careers
 Amazon / AWS,personio,amazon,,3,0,0,0,,,pagina 200 -> https://www.amazon.jobs/en/
-Amazon / AWS,speciale,Amazon / AWS,,100,1,0,0,,,pagina 200 -> https://www.amazon.jobs/en/
-Salesforce,workday,,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,147,143,5,17,Business Development Representative - South African Market | Sales Development Trainee - NGO PubSec | Business Development Representative UKI Market (English Speaking) | Business Development Representative - Italy | Business Development Representatives for Public Sector or .ORG (Non-Profit & Education),,pagina 200 -> https://www.salesforce.com/company/careers/jobs/?bc=OTH
+Amazon / AWS,amazon,,,219,208,0,0,,,pagina 200 -> https://www.amazon.jobs/en/
+Salesforce,workday,,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,147,145,5,17,Business Development Representative - South African Market | Sales Development Trainee - NGO PubSec | Business Development Representative UKI Market (English Speaking) | Business Development Representative - Italy | Business Development Representatives for Public Sector or .ORG (Non-Profit & Education),,pagina 200 -> https://www.salesforce.com/company/careers/jobs/?bc=OTH
 TikTok,smartrecruiters,bytedance,,2,0,0,0,,,pagina 200 -> https://lifeattiktok.com/
-PayPal,workday,,https://paypal.wd1.myworkdayjobs.com/jobs,7,4,0,0,,eightfold:paypal,pagina 200 -> https://careers.pypl.com/home/
+PayPal,workday,,https://paypal.wd1.myworkdayjobs.com/jobs,7,6,0,0,,eightfold:paypal,pagina 200 -> https://careers.pypl.com/home/
+PayPal,eightfold,paypal.com,https://paypal.eightfold.ai,6,6,0,0,,eightfold:paypal,pagina 200 -> https://careers.pypl.com/home/
 Indeed,NON TROVATO,,,0,0,0,0,,,pagina 403 -> https://www.indeed.com/careers
 HubSpot,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.hubspot.com/careers/jobs
 Rippling,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.rippling.com/careers/open-roles
@@ -15,32 +16,32 @@ X (ex Twitter),smartrecruiters,x,,2,0,0,0,,greenhouse:xai,pagina 200 -> https://
 X (ex Twitter),greenhouse,xai,,308,5,0,0,,greenhouse:xai,pagina 200 -> https://x.ai/careers
 Oracle,NON TROVATO,,,0,0,0,0,,oracle:eeho,pagina 200 -> https://careers.oracle.com/en/sites/jobsearch
 IBM,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.ibm.com/careers/search
-Atlassian,speciale,Atlassian,,353,0,0,0,,,pagina 200 -> https://www.atlassian.com/company/careers/all-jobs
-Guidewire Software,workday,,https://guidewire.wd5.myworkdayjobs.com/external,11,6,0,0,,,pagina 200 -> https://www.guidewire.com/about/careers
+Guidewire Software,workday,,https://guidewire.wd5.myworkdayjobs.com/external,11,11,0,0,,,pagina 200 -> https://www.guidewire.com/about/careers
 Twilio,greenhouse,twilio,,136,12,0,0,,eightfold:app,pagina 200 -> https://jobs.twilio.com/careers
+Twilio,eightfold,twilio.com,https://jobs.twilio.com,11,11,0,0,,eightfold:app,pagina 200 -> https://jobs.twilio.com/careers
 Personio,personio,personio,,1,0,0,0,,,pagina 429 -> https://www.personio.com/about-personio/careers/
-Mastercard Tech Hub,workday,,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,65,60,0,0,,workday:https://mastercard.wd1.myworkdayjobs.com/CorporateCareers; phenom:cdn.phenom,pagina 200 -> https://careers.mastercard.com/us/en
+Mastercard Tech Hub,workday,,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,65,65,0,0,,workday:https://mastercard.wd1.myworkdayjobs.com/CorporateCareers; phenom:cdn.phenom,pagina 200 -> https://careers.mastercard.com/us/en
 Adobe,workday,,https://adobe.wd5.myworkdayjobs.com/external_experienced,0,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.adobe.com/us/en
 Flutter Entertainment,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://flutter.com/careers/
 Procore,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://careers.procore.com/
-Workvivo / Zoom,workday,,https://zoom.wd5.myworkdayjobs.com/Zoom,5,2,0,0,,,pagina 200 -> https://www.careers.zoom.us/
+Workvivo / Zoom,workday,,https://zoom.wd5.myworkdayjobs.com/Zoom,5,5,0,0,,,pagina 200 -> https://www.careers.zoom.us/
 Rapid7,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://careers.rapid7.com/
-FIS,workday,,https://fis.wd5.myworkdayjobs.com/SearchJobs,2,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.fisglobal.com/us/en
+FIS,workday,,https://fis.wd5.myworkdayjobs.com/SearchJobs,2,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.fisglobal.com/us/en
 Veeam,greenhouse,veeamsoftware,,242,0,0,0,,,pagina 200 -> https://careers.veeam.com/
 Palo Alto Networks,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://jobs.paloaltonetworks.com/en
 VMware by Broadcom,workday,,https://broadcom.wd1.myworkdayjobs.com/External_Career,0,0,0,0,,,pagina 200 -> https://www.broadcom.com/company/careers
-Dell Technologies,workday,,https://dell.wd1.myworkdayjobs.com/External,0,0,0,0,,,pagina 403 -> https://jobs.dell.com/
+Dell Technologies,NON TROVATO,,,0,0,0,0,,,pagina 403 -> https://jobs.dell.com/; workday ipotesi KO dell.wd1.myworkdayjobs.com
 Hewlett Packard Enterprise,personio,hpe,,2,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.hpe.com/us/en
 Hewlett Packard Enterprise,workday,,https://hpe.wd5.myworkdayjobs.com/Jobsathpe,1,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.hpe.com/us/en
-Nokia,workday,,https://nokia.wd3.myworkdayjobs.com/Nokia,0,0,0,0,,,pagina 200 -> https://www.nokia.com/careers/
-Ericsson,NON TROVATO,,,0,0,0,0,,eightfold:app; successfactors:career2.successfactors,pagina 200 -> https://jobs.ericsson.com/careers
-Amdocs,workday,,https://amdocs.wd3.myworkdayjobs.com/Amdocs,0,0,0,0,,eightfold:app,pagina 200 -> https://jobs.amdocs.com/careers
+Nokia,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.nokia.com/careers/; workday ipotesi KO nokia.wd3.myworkdayjobs.com
+Ericsson,eightfold,ericsson.com,https://jobs.ericsson.com,1,1,0,0,,eightfold:app; successfactors:career2.successfactors,pagina 200 -> https://jobs.ericsson.com/careers
+Amdocs,eightfold,amdocs.com,https://jobs.amdocs.com,0,0,0,0,,eightfold:vs-errors,pagina 200 -> https://jobs.amdocs.com/careers; workday ipotesi KO amdocs.wd3.myworkdayjobs.com
 Teamwork.com,personio,teamwork,,1,1,0,0,,,pagina 200 -> https://www.teamwork.com/careers/
 Paddy Power / Betfair,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://flutter.com/careers/
-DocuSign,workday,,https://docusign.wd1.myworkdayjobs.com/DocuSign,0,0,0,0,,icims:www,pagina 200 -> https://careers.docusign.com/careers-home
+DocuSign,icims,,https://hubcareers-docusign.icims.com,232,0,0,0,,icims:www,pagina 200 -> https://careers.docusign.com/careers-home; workday ipotesi KO docusign.wd1.myworkdayjobs.com
 Qualtrics,greenhouse,qualtrics,,52,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://www.qualtrics.com/careers/us/en
 Snowflake,ashby,snowflake,,360,7,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.snowflake.com/us/en
 SAP,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://jobs.sap.com/en/
-Cisco,workday,cisco,https://cisco.wd5.myworkdayjobs.com/cisco_careers,9,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.cisco.com/global/en
+Cisco,workday,cisco,https://cisco.wd5.myworkdayjobs.com/cisco_careers,9,9,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.cisco.com/global/en
 U.S. Bank / Elavon,NON TROVATO,,,0,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.usbank.com/global/en
 Fiserv,NON TROVATO,,,0,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.fiserv.com/us/en
