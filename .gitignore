@@ -1,0 +1,3 @@
+# file temporanei di Python, non vanno salvati
+__pycache__/
+*.pyc
