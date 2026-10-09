@@ -207,7 +207,7 @@
    "descrizione": "",
    "italiano": true,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Salesforce|Business Development Representative - South African Market|Ireland - Dublin",
@@ -218,7 +218,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Salesforce|Sales Development Trainee - NGO PubSec|Ireland - Dublin",
@@ -229,7 +229,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Salesforce|Business Development Representative UKI Market (English Speaking)|Ireland - Dublin",
@@ -240,7 +240,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Salesforce|Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)|Ireland - Dublin",
@@ -251,7 +251,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "DocuSign|Sales Development Representative (UK/IE Markets)|Dublin, Ireland",
@@ -262,7 +262,7 @@
    "descrizione": "Company Overview Docusign brings agreements to life. Over 1.5 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using Docusign’s Intelligent Agreement Management platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do Are you an agile, creative, and collaborative Sales Development Representative looking for your first break within Sales, or a chance to grow your Sales career in the tech industry? We can help. You are the…",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Rippling|Business Development Representative, Switzerland & Austria (CHAT)|Dublin, Ireland",
@@ -273,7 +273,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Rippling|Enterprise, Business Development Representative, Outbound (English)|Dublin, Ireland",
@@ -284,7 +284,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "Rippling|Sales Development Representative, Outbound (English)|Dublin, Ireland",
@@ -295,7 +295,7 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-09"
+   "prima_vista": ""
   },
   {
    "id": "ServiceNow|Intern – Business Development Representative (German, Spanish, Italian, French, Dutch, Arabic OR Nordic Languages)|Dublin ie",
@@ -385,5 +385,56 @@
    "altre_lingue": [],
    "prima_vista": ""
   }
+ ],
+ "aziende_lette": [
+  "ActiveCampaign",
+  "Adobe",
+  "Airbnb",
+  "Amazon / AWS",
+  "Asana",
+  "CarTrawler",
+  "Cisco",
+  "CrowdStrike",
+  "Datadog",
+  "DocuSign",
+  "Dropbox",
+  "Dun & Bradstreet",
+  "Elastic",
+  "Ericsson",
+  "FIS",
+  "Fenergo",
+  "Flipdish",
+  "FreedomPay",
+  "Gong",
+  "Guidewire Software",
+  "Hewlett Packard Enterprise",
+  "Intercom",
+  "Klaviyo",
+  "LetsGetChecked",
+  "Mastercard Tech Hub",
+  "MongoDB",
+  "Okta",
+  "OpenAI",
+  "PayPal",
+  "Pinterest",
+  "Proofpoint",
+  "Red Hat",
+  "Rippling",
+  "Salesforce",
+  "ServiceNow",
+  "Snowflake",
+  "Stripe",
+  "Teamwork.com",
+  "Tines",
+  "Toast",
+  "Twilio",
+  "Veeam",
+  "Version 1",
+  "Wayflyer",
+  "Workday",
+  "Workhuman",
+  "Workvivo / Zoom",
+  "X (ex Twitter)",
+  "Zendesk"
  ]
 }

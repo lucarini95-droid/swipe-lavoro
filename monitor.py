@@ -48,7 +48,7 @@ ITALIANO = re.compile(r"italian|italiano|\bitaly\b|\bitalia\b", re.I)
 # Lingue che NON parlo: se il titolo le richiede, l'offerta viene scartata.
 # Italiano e inglese non sono in lista, quindi passano sempre.
 LINGUE = [
-    ("Tedesco",    r"german|deutsch|\bdach\b|germanophone"),
+    ("Tedesco",    r"german|deutsch|\bdach\b|germanophone|austria|switzerland|swiss"),
     ("Francese",   r"french|fran[cç]ais|francophone|\bfrance\b"),
     ("Olandese",   r"dutch|nederlands|netherlands|benelux|flemish"),
     ("Spagnolo",   r"spanish|espa[nñ]ol|castilian|\bspain\b|iberia|iberian|\blatam\b"),
@@ -267,7 +267,10 @@ def jobs_jibe(s, _, url):
         jobs = d.get("jobs") or []
         for x in jobs:
             j = x.get("data") or x
-            out.append((j.get("title", ""), j.get("full_location") or j.get("city", ""),
+            luogo = j.get("full_location") or j.get("city", "")
+            if not LUOGO.search(luogo or ""):      # la ricerca era gia' filtrata su Dublino
+                luogo = f"Dublin ({luogo or 'piu sedi'})"
+            out.append((j.get("title", ""), luogo,
                         f"https://{host}/jobs/{j.get('slug', '')}", j.get("description", "")))
         if len(out) >= (d.get("totalCount") or 0) or not jobs:
             break
@@ -294,7 +297,10 @@ def jobs_phenom(s, _, url):
         rs = d.get("refineSearch") or {}
         jobs = (rs.get("data") or {}).get("jobs") or []
         for j in jobs:
-            out.append((j.get("title", ""), j.get("cityState") or j.get("location", ""),
+            luogo = j.get("cityState") or j.get("location", "")
+            if not LUOGO.search(luogo or ""):      # la ricerca era gia' filtrata su Dublino
+                luogo = f"Dublin ({luogo or 'piu sedi'})"
+            out.append((j.get("title", ""), luogo,
                         f"{url.rstrip('/')}/job/{j.get('jobId', '')}", j.get("descriptionTeaser", "")))
         if len(jobs) < 100:
             break
@@ -436,7 +442,12 @@ def scarica(args):
             url = risolvi_workday(s, azienda, slug, url, cache)
             if not url:
                 return azienda, [], [], "workday non risolto"
-        offerte = LETTORI[ats](s, slug, url)
+        try:
+            offerte = LETTORI[ats](s, slug, url)
+        except Exception:
+            # alcuni siti (es. Microsoft) a volte rispondono male: si riprova una volta
+            time.sleep(5)
+            offerte = LETTORI[ats](s, slug, url)
     except Exception as e:
         return azienda, [], [], f"errore lettura ({type(e).__name__})"
     tenute, scartate = filtra(azienda, offerte)
@@ -461,6 +472,10 @@ def main():
     precedente = leggi_json(OUT, {})
     prima_vista = {j["id"]: j.get("prima_vista") for j in precedente.get("offerte", [])}
     primo_giro = not precedente
+    # aziende gia' lette nei giri precedenti: per quelle appena aggiunte al monitor
+    # le offerte trovate al primo giro sono "gia' presenti", non nuove
+    aziende_prima = set(precedente.get("aziende_lette") or
+                        [j["azienda"] for j in precedente.get("offerte", [])])
 
     fonti = carica_fonti()
     print(f"Controllo {len(fonti)} aziende...")
@@ -492,7 +507,8 @@ def main():
             j["prima_vista"] = prima_vista[j["id"]]
         else:
             # al primo giro non si sa da quando sono online: si marcano come "gia' presenti"
-            j["prima_vista"] = "" if primo_giro else oggi
+            nuova_azienda = j["azienda"] not in aziende_prima and precedente.get("aziende_lette") is not None
+            j["prima_vista"] = "" if (primo_giro or nuova_azienda) else oggi
     offerte.sort(key=lambda j: (j["prima_vista"] or "0000", j["italiano"]), reverse=True)
 
     # Se quasi tutte le fonti falliscono (es. rete giu') non si sovrascrive il file buono
@@ -504,6 +520,7 @@ def main():
             "aggiornato": adesso.isoformat(timespec="minutes"),
             "fonti_lette": ok,
             "fonti_totali": len(fonti),
+            "aziende_lette": sorted(a for a, _, _, e in risultati if not e),
             "problemi": sorted(problemi),
             "scartate_lingua": sorted(scartate, key=lambda x: (x["azienda"], x["titolo"])),
             "offerte": offerte,

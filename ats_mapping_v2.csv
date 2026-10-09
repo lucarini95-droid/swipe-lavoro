@@ -56,9 +56,9 @@ Tines,greenhouse,tines,https://boards-api.greenhouse.io/v1/boards/tines/jobs,OK,
 Rapid7,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Dun & Bradstreet,lever,dnb,https://jobs.lever.co/dnb,OK,121,0,
 FreedomPay,lever,freedompay,https://api.lever.co/v0/postings/freedompay?mode=json,OK,28,0,
-U.S. Bank / Elavon,phenom,cdn,https://careers.usbank.com/global/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+U.S. Bank / Elavon,phenom,,https://careers.usbank.com/global/en,OK,23,0,"Phenom, rilevato 09/10/2026"
 FIS,workday,fis,https://fis.wd5.myworkdayjobs.com/SearchJobs,OK,2,0,rilevato 09/10/2026
-Fiserv,phenom,cdn,https://careers.fiserv.com/us/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+Fiserv,phenom,,https://careers.fiserv.com/us/en,OK,6,0,"Phenom, rilevato 09/10/2026"
 Veeam,greenhouse,veeamsoftware,https://boards-api.greenhouse.io/v1/boards/veeamsoftware/jobs,OK,242,0,rilevato 09/10/2026
 Palo Alto Networks,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Okta,greenhouse,okta,https://boards-api.greenhouse.io/v1/boards/okta/jobs,OK,333,3,

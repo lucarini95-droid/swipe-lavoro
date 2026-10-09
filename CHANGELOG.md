@@ -10,6 +10,8 @@ e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una ve
 - Nuovi lettori in monitor.py: Eightfold, Jibe, Phenom, Rippling, Amazon, Personio, iCIMS.
 - Workday: un indirizzo sbagliato ora dà errore invece di sembrare "zero offerte"; le offerte
   con più sedi ("3 Locations") non vengono più perse.
+- Aggiunte anche U.S. Bank/Elavon e Fiserv (51 aziende). Offerte "Switzerland/Austria" scartate (tedesco).
+- Le offerte di un'azienda appena aggiunta non risultano "NUOVA" al primo giro; un secondo tentativo se un sito risponde male.
 - Nuovo `rileva_fonti.py` + azione "Rileva fonti": trova dove pubblicano le offerte le aziende mancanti.
 
 ## v1.2 — 9 ottobre 2026
