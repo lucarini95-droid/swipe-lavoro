@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-09T02:12+00:00",
+ "aggiornato": "2026-10-09T12:25+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -224,6 +224,11 @@
    "lingua": "Tedesco"
   },
   {
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (Polish Fluency)",
+   "lingua": "CEE/Est"
+  },
+  {
    "azienda": "Workday",
    "titolo": "Business Development Representative (Danish Speaker)",
    "lingua": "Nordiche"
@@ -247,14 +252,20 @@
    "azienda": "Workday",
    "titolo": "Business Development Representative | German | Dublin based",
    "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Sales Development Representative | German",
-   "lingua": "Tedesco"
   }
  ],
  "offerte": [
+  {
+   "id": "Twilio|Sales Development Representative|Remote - Ireland",
+   "azienda": "Twilio",
+   "titolo": "Sales Development Representative",
+   "luogo": "Remote - Ireland",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8261528",
+   "descrizione": "Who we are \nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.\n.\nHiring and how we work\nWe use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! \nAlso, while we are a remote-first company, you may be asked to report in person…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
   {
    "id": "Salesforce|Business Development Representative - Italy|Ireland - Dublin",
    "azienda": "Salesforce",
