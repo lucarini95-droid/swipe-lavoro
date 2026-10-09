@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-09T12:25+00:00",
+ "aggiornato": "2026-10-09T19:58+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -255,6 +255,17 @@
   }
  ],
  "offerte": [
+  {
+   "id": "DocuSign|Sales Development Representative|Dublin, Ireland",
+   "azienda": "DocuSign",
+   "titolo": "Sales Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.docusign.com/jobs/30447",
+   "descrizione": "Company Overview Docusign brings agreements to life. Over 1.5 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using Docusign’s Intelligent Agreement Management platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do Are you an agile, creative, and collaborative Sales Development Representative looking for your first break within Sales, or a chance to grow your Sales career in the tech industry? We can help. You are the…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
   {
    "id": "Twilio|Sales Development Representative|Remote - Ireland",
    "azienda": "Twilio",
