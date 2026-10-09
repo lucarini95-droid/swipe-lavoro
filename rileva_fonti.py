@@ -39,19 +39,18 @@ AZIENDE = {
     "Salesforce":          ("https://careers.salesforce.com/en/jobs/", ["salesforce"], ["https://salesforce.wd12.myworkdayjobs.com/External_Career_Site"]),
     "TikTok":              ("https://lifeattiktok.com/", ["tiktok", "bytedance"], []),
     "PayPal":              ("https://careers.pypl.com/home/", ["paypal"], ["https://paypal.wd1.myworkdayjobs.com/jobs"]),
-    "Indeed":              ("https://www.indeed.jobs/", ["indeed"], []),
-    "HubSpot":             ("https://www.hubspot.com/careers/jobs", ["hubspot", "hubspotjobs"], []),
-    "Rippling":            ("https://www.rippling.com/careers/open-roles", ["rippling"], []),
+    "Indeed":              ("https://www.indeed.jobs/", ["indeed", "indeedinc"], []),
+    "HubSpot":             ("https://www.hubspot.com/careers/jobs", ["hubspot", "hubspotjobs", "hubspotcareers", "hubspotinc"], []),
+    "Rippling":            ("https://www.rippling.com/careers/open-roles", ["rippling", "ripplingpeo", "rippling-careers"], []),
     "AMCS Group":          ("https://www.amcsgroup.com/careers/", ["amcs", "amcsgroup"], []),
     "X (ex Twitter)":      ("https://careers.x.com/", ["x", "twitter", "xcorp"], []),
     "Oracle":              ("https://careers.oracle.com/jobs/", ["oracle"], []),
     "IBM":                 ("https://www.ibm.com/careers/search", ["ibm"], []),
-    "Atlassian":           ("https://www.atlassian.com/company/careers/all-jobs", ["atlassian"], []),
     "Guidewire Software":  ("https://careers.guidewire.com/", ["guidewire"], ["https://guidewire.wd5.myworkdayjobs.com/external"]),
     "Twilio":              ("https://www.twilio.com/en-us/company/jobs", ["twilio"], []),
     "Personio":            ("https://www.personio.com/about-personio/careers/", ["personio"], []),
     "Mastercard Tech Hub": ("https://careers.mastercard.com/us/en", ["mastercard"], ["https://mastercard.wd1.myworkdayjobs.com/CorporateCareers"]),
-    "Adobe":               ("https://careers.adobe.com/us/en", ["adobe"], ["https://adobe.wd5.myworkdayjobs.com/external_experienced"]),
+    "Adobe":               ("https://careers.adobe.com/us/en", ["adobe"], ["https://adobe.wd5.myworkdayjobs.com/external_experienced", "https://adobe.wd5.myworkdayjobs.com/External"]),
     "Flutter Entertainment": ("https://www.flutter.com/careers/", ["flutter", "flutterentertainment"], []),
     "Procore":             ("https://careers.procore.com/", ["procore", "procoretechnologies"], []),
     "Workvivo / Zoom":     ("https://careers.zoom.us/", ["zoom", "workvivo"], ["https://zoom.wd5.myworkdayjobs.com/Zoom"]),
@@ -69,12 +68,24 @@ AZIENDE = {
     "Paddy Power / Betfair": ("https://www.flutter.com/careers/", ["paddypowerbetfair", "betfair"], []),
     # portali "chiusi" nel primo giro: si riprova con metodi diversi
     "DocuSign":            ("https://careers.docusign.com/careers-home", ["docusign"], ["https://docusign.wd1.myworkdayjobs.com/DocuSign"]),
-    "Qualtrics":           ("https://www.qualtrics.com/careers/us/en", ["qualtrics"], []),
+    "Qualtrics":           ("https://www.qualtrics.com/careers/us/en", ["qualtrics", "qualtricsxm"], []),
     "Snowflake":           ("https://careers.snowflake.com/us/en", ["snowflake", "snowflakecomputing"], []),
     "SAP":                 ("https://jobs.sap.com/", ["sap"], []),
     "Cisco":               ("https://careers.cisco.com/global/en", ["cisco"], []),
     "U.S. Bank / Elavon":  ("https://careers.usbank.com/global/en", ["elavon", "usbank"], []),
     "Fiserv":              ("https://careers.fiserv.com/us/en", ["fiserv"], []),
+}
+
+# Fonti specifiche trovate a mano (pagine carriere aperte nel browser o ricerche web):
+# azienda -> lista di (ATS, slug, URL) da provare con i lettori di monitor.py
+EXTRA = {
+    "Microsoft":    [("eightfold", "microsoft.com", "https://apply.careers.microsoft.com")],
+    "PayPal":       [("eightfold", "paypal.com", "https://paypal.eightfold.ai")],
+    "Ericsson":     [("eightfold", "ericsson.com", "https://jobs.ericsson.com")],
+    "Amdocs":       [("eightfold", "amdocs.com", "https://jobs.amdocs.com")],
+    "Twilio":       [("eightfold", "twilio.com", "https://jobs.twilio.com")],
+    "DocuSign":     [("icims", "", "https://hubcareers-docusign.icims.com")],
+    "Amazon / AWS": [("amazon", "", "")],
 }
 
 # Impronte nel codice di una pagina carriere -> nome ATS (+ gruppo che estrae lo slug/indirizzo)
@@ -103,53 +114,6 @@ def conta(azienda, offerte):
     return len(offerte), dublino, len(tenute), len(scartate), [t["titolo"] for t in tenute][:5]
 
 
-# ------------------------------------------------- fonti speciali (siti propri)
-
-def speciale_amazon(s):
-    url = ("https://www.amazon.jobs/en/search.json?loc_query=Dublin%2C%20Ireland"
-           "&base_query=&result_limit=100&offset=0&sort=recent")
-    d = s.get(url, timeout=T).json()
-    return [(j.get("title", ""), j.get("normalized_location", "") or j.get("location", ""),
-             "https://www.amazon.jobs" + j.get("job_path", ""), j.get("description_short", ""))
-            for j in d.get("jobs", [])]
-
-
-def speciale_microsoft(s):
-    url = ("https://gcsservices.careers.microsoft.com/search/api/v1/search"
-           "?lc=Dublin%2C%20Dublin%2C%20Ireland&l=en_us&pg=1&pgSz=100&o=Recent")
-    d = s.get(url, timeout=T).json()
-    jobs = (d.get("operationResult") or {}).get("result", {}).get("jobs", [])
-    return [(j.get("title", ""), ", ".join((j.get("properties") or {}).get("locations", [])),
-             f"https://jobs.careers.microsoft.com/global/en/job/{j.get('jobId','')}", "")
-            for j in jobs]
-
-
-def speciale_atlassian(s):
-    d = s.get("https://www.atlassian.com/endpoint/careers/listings", timeout=T).json()
-    return [(j.get("title", ""), ", ".join(j.get("locations", []) or []),
-             j.get("portalJobPost", {}).get("portalUrl", "") if isinstance(j.get("portalJobPost"), dict) else "",
-             "") for j in d]
-
-
-SPECIALI = {"Amazon / AWS": speciale_amazon, "Microsoft": speciale_microsoft,
-            "Atlassian": speciale_atlassian}
-
-
-# ----------------------------------------------------------------- Personio
-
-def jobs_personio(s, slug, _):
-    import xml.etree.ElementTree as ET
-    r = s.get(f"https://{slug}.jobs.personio.de/xml", timeout=T)
-    if r.status_code != 200 or "<position" not in r.text:
-        return None
-    root = ET.fromstring(r.content)
-    out = []
-    for p in root.findall("position"):
-        out.append((p.findtext("name", ""), p.findtext("office", ""),
-                    f"https://{slug}.jobs.personio.de/job/{p.findtext('id','')}", ""))
-    return out
-
-
 # ------------------------------------------------------------------ rileva
 
 def prova_slug(s, azienda, slug):
@@ -157,7 +121,7 @@ def prova_slug(s, azienda, slug):
     trovate = []
     prove = [("greenhouse", monitor.jobs_greenhouse), ("lever", monitor.jobs_lever),
              ("ashby", monitor.jobs_ashby), ("smartrecruiters", monitor.jobs_smartrecruiters),
-             ("workable", monitor.jobs_workable), ("personio", jobs_personio)]
+             ("workable", monitor.jobs_workable), ("personio", monitor.jobs_personio)]
     for ats, fn in prove:
         try:
             off = fn(s, slug, "")
@@ -201,13 +165,12 @@ def rileva(args):
     wd_ok = None
     for u in wd_ipotesi:
         try:
-            off = monitor.jobs_workday(s, "", u)
-            if off is not None:
-                wd_ok = u
-                righe.append(("workday", "", u, off))
-                break
+            off = monitor.jobs_workday(s, "", u)   # da' errore se l'indirizzo e' sbagliato
+            wd_ok = u
+            righe.append(("workday", "", u, off))
+            break
         except Exception:
-            pass
+            note.append(f"workday ipotesi KO {u.split('/')[2]}")
     if not wd_ok:
         for slug in slugs:
             try:
@@ -221,12 +184,12 @@ def rileva(args):
                 except Exception:
                     pass
 
-    # 4. fonti speciali
-    if azienda in SPECIALI:
+    # 4. fonti specifiche trovate a mano
+    for ats, slug, url in EXTRA.get(azienda, []):
         try:
-            righe.append(("speciale", azienda, "", SPECIALI[azienda](s)))
+            righe.append((ats, slug, url, monitor.LETTORI[ats](s, slug, url)))
         except Exception as e:
-            note.append(f"speciale errore {type(e).__name__}")
+            note.append(f"{ats} errore {type(e).__name__}: {str(e)[:60]}")
 
     risultati = []
     for ats, slug, url, off in righe:

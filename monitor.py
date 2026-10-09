@@ -175,9 +175,17 @@ def jobs_workday(s, _, url):
                          "searchText": "Dublin"},
                    headers={"Content-Type": "application/json", "Accept": "application/json"},
                    timeout=TIMEOUT)
-        posts = r.json().get("jobPostings", [])
+        d = r.json()
+        if "jobPostings" not in d:
+            # risposta senza elenco = indirizzo Workday sbagliato (non "zero offerte")
+            raise ValueError("sito Workday non valido")
+        posts = d.get("jobPostings") or []
         for j in posts:
-            out.append((j.get("title", ""), j.get("locationsText", ""),
+            luogo = j.get("locationsText", "")
+            # "3 Locations": la ricerca era per "Dublin", quindi Dublino e' tra le sedi
+            if re.fullmatch(r"\d+ Locations?", luogo or ""):
+                luogo = f"Dublin + altre sedi ({luogo})"
+            out.append((j.get("title", ""), luogo,
                         urljoin(f"https://{p.netloc}/{site}/",
                                 (j.get("externalPath") or "").lstrip("/")), ""))
         if len(posts) < 20:
@@ -185,9 +193,86 @@ def jobs_workday(s, _, url):
     return out
 
 
+def jobs_eightfold(s, dominio, url):
+    """Eightfold (Microsoft, PayPal, Ericsson, Amdocs...).
+    Slug = dominio dell'azienda (es. microsoft.com), URL = sito carriere Eightfold."""
+    host = urlparse(url).netloc
+    out, start = [], 0
+    while start < 500:
+        d = s.get(f"https://{host}/api/pcsx/search", timeout=TIMEOUT, params={
+            "domain": dominio, "query": "", "location": "Dublin, Ireland",
+            "start": start, "sort_by": "timestamp", "filter_distance": 50}).json()
+        dati = d.get("data") or {}
+        pos = dati.get("positions") or []
+        for j in pos:
+            out.append((j.get("name", ""), "; ".join(j.get("locations") or []),
+                        urljoin(f"https://{host}/", j.get("positionUrl", "")), ""))
+        start += len(pos)
+        if not pos or start >= (dati.get("count") or 0):
+            break
+    return out
+
+
+def jobs_icims(s, _, url):
+    """iCIMS (es. Docusign): legge le pagine di ricerca in formato 'iframe', HTML semplice.
+    URL = indirizzo del portale iCIMS (es. https://hubcareers-docusign.icims.com)."""
+    host = urlparse(url).netloc
+    out = []
+    for pagina in range(0, 30):
+        r = s.get(f"https://{host}/jobs/search", timeout=TIMEOUT,
+                  params={"pr": pagina, "in_iframe": 1, "searchKeyword": "", "ss": 1})
+        blocchi = re.split(r'class="[^"]*iCIMS_Anchor', r.text)[1:]
+        if not blocchi:
+            break
+        for b in blocchi:
+            m_url = re.search(r'href="([^"]*/jobs/\d+/[^"]*)"', b) or re.search(r'href="([^"]+)"', b)
+            m_tit = re.search(r"<h3[^>]*>(.*?)</h3>", b, re.S) or re.search(r'title="([^"]+)"', b)
+            m_loc = re.search(r"Locations?\s*</span>\s*<span[^>]*>(.*?)</span>", b, re.S)
+            if not (m_url and m_tit):
+                continue
+            titolo = re.sub(r"<[^>]+>|\s+", " ", m_tit.group(1)).strip()
+            luogo = re.sub(r"<[^>]+>|\s+", " ", m_loc.group(1)).strip() if m_loc else ""
+            out.append((titolo, luogo, m_url.group(1).split("?")[0], ""))
+        if len(blocchi) < 5:
+            break
+    return out
+
+
+def jobs_amazon(s, _, __):
+    """Amazon / AWS: ricerca pubblica di amazon.jobs filtrata su Irlanda."""
+    out = []
+    for offset in range(0, 500, 100):
+        d = s.get("https://www.amazon.jobs/en/search.json", timeout=TIMEOUT, params={
+            "normalized_country_code[]": "IRL", "result_limit": 100,
+            "offset": offset, "sort": "recent"}).json()
+        jobs = d.get("jobs") or []
+        for j in jobs:
+            out.append((j.get("title", ""),
+                        j.get("normalized_location") or j.get("location", ""),
+                        "https://www.amazon.jobs" + j.get("job_path", ""),
+                        j.get("description_short", "")))
+        if len(jobs) < 100:
+            break
+    return out
+
+
+def jobs_personio(s, slug, _):
+    """Personio: feed XML pubblico."""
+    r = s.get(f"https://{slug}.jobs.personio.de/xml", timeout=TIMEOUT)
+    if r.status_code != 200 or "<position" not in r.text:
+        return []
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(r.content)
+    return [(p.findtext("name", ""), p.findtext("office", ""),
+             f"https://{slug}.jobs.personio.de/job/{p.findtext('id', '')}", "")
+            for p in root.findall("position")]
+
+
 LETTORI = {"greenhouse": jobs_greenhouse, "lever": jobs_lever, "ashby": jobs_ashby,
            "smartrecruiters": jobs_smartrecruiters, "workable": jobs_workable,
-           "bamboohr": jobs_bamboohr, "workday": jobs_workday}
+           "bamboohr": jobs_bamboohr, "workday": jobs_workday,
+           "eightfold": jobs_eightfold, "icims": jobs_icims, "amazon": jobs_amazon,
+           "personio": jobs_personio}
 
 
 # ----------------------------------------------------- RIPARAZIONE WORKDAY
