@@ -347,8 +347,13 @@ def main():
     offerte = list(uniche.values())
 
     for j in offerte:
-        # al primo giro non si sa da quando sono online: si marcano come "gia' presenti"
-        j["prima_vista"] = prima_vista.get(j["id"]) or ("" if primo_giro else oggi)
+        if j["id"] in prima_vista:
+            # gia' vista in un giro precedente: si tiene la data originale
+            # (vuota = era online gia' prima dell'avvio del monitor)
+            j["prima_vista"] = prima_vista[j["id"]]
+        else:
+            # al primo giro non si sa da quando sono online: si marcano come "gia' presenti"
+            j["prima_vista"] = "" if primo_giro else oggi
     offerte.sort(key=lambda j: (j["prima_vista"] or "0000", j["italiano"]), reverse=True)
 
     # Se quasi tutte le fonti falliscono (es. rete giu') non si sovrascrive il file buono

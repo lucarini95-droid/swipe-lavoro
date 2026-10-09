@@ -4,6 +4,7 @@ Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` i
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
 ## v1.2 — 9 ottobre 2026
+- Corretto: dal secondo giro tutte le offerte risultavano "NUOVA"; ora la data di prima comparsa resta quella vera.
 - Titoli con lingue in alternativa ("German, Italian OR Nordic") non mostrano i badge "+ lingua".
 - Sincronizzazione tra dispositivi: salvate, scartate e "Candidato" sono comuni a telefono e Mac.
   Le scelte vanno nel file `decisioni.json` sul ramo `decisioni` (non tocca la pagina).
