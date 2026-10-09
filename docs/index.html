@@ -10,7 +10,7 @@
   Struttura del file:
     HEAD    impostazioni per telefono (icona, schermo intero) + stile (CSS)
     BODY    lo scheletro della pagina: intestazione, tab, mazzo, lista salvate
-    SCRIPT  la logica, divisa in blocchi numerati (1 ... 7) con un titolo ciascuno
+    SCRIPT  la logica, divisa in blocchi numerati (1 ... 8) con un titolo ciascuno
 
   Per cambiare qualcosa: cerca il blocco giusto, modifica, aggiorna VERSIONE
   (blocco 1 della logica) e annota il cambio in CHANGELOG.md.
@@ -121,6 +121,17 @@ h1{font-size:19px;margin:0;letter-spacing:-.01em}
 .x:hover{color:var(--red)}
 .closed{color:var(--red);font-weight:600}
 
+/* ===== Sincronizzazione ===== */
+.sync{border:0;background:none;color:var(--muted);font:inherit;font-size:12px;cursor:pointer;padding:0}
+.sync.ok{color:var(--green)} .sync.err{color:var(--red)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px;font-size:13.5px}
+.panel p{margin:6px 0;color:var(--muted)}
+.panel input{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.prow{display:flex;gap:8px;margin-top:8px}
+.prow button{flex:1;padding:9px;border-radius:10px;border:0;background:var(--accent);color:var(--card);font:inherit;font-weight:600;cursor:pointer}
+.prow button.ghost{background:var(--chip);color:var(--ink)}
+.pmsg{font-size:12.5px}
+
 /* ===== Piè di pagina ===== */
 footer{margin-top:18px;font-size:11.5px;color:var(--muted);text-align:center}
 footer details{margin-top:6px;text-align:left}
@@ -134,8 +145,18 @@ footer ul{padding-left:18px;margin:6px 0}
   <!-- Intestazione: titolo + quando è stata fatta l'ultima ricerca -->
   <header>
     <h1>🍀 SDR/BDR · Dublino</h1>
-    <div class="upd" id="upd">carico…</div>
+    <div class="upd"><span id="upd">carico…</span><br>
+      <button class="sync" id="b-sync" title="Sincronizzazione tra dispositivi">☁︎ <span id="sync-txt">…</span></button></div>
   </header>
+
+  <!-- Pannello sincronizzazione: si apre toccando "☁︎" nell'intestazione -->
+  <div class="panel hidden" id="panel">
+    <b>Sincronizzazione tra telefono e Mac</b>
+    <p>Incolla qui il token GitHub (vedi README → <i>Sincronizzazione</i>). Resta solo in questo browser.</p>
+    <input id="tok" type="password" placeholder="github_pat_…" autocomplete="off">
+    <div class="prow"><button id="tok-save">Salva e sincronizza</button><button id="tok-del" class="ghost">Scollega</button></div>
+    <p id="panel-msg" class="pmsg"></p>
+  </div>
 
   <!-- Le due schede: mazzo da vedere / lista salvate -->
   <nav class="tabs">
@@ -167,19 +188,30 @@ footer ul{padding-left:18px;margin:6px 0}
 /* =====================================================================
    1. IMPOSTAZIONI
    ===================================================================== */
-const VERSIONE = "1.1";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const VERSIONE = "1.2";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
 const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
 const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
 const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
+
+// Sincronizzazione (blocco 8): dove salvare le scelte comuni a tutti i dispositivi.
+// Il file sta su un ramo separato ("decisioni") così ogni swipe non ricostruisce la pagina.
+const SYNC_REPO   = "lucarini95-droid/swipe-lavoro";
+const SYNC_BRANCH = "decisioni";
+const SYNC_FILE   = "decisioni.json";
+const SYNC_ATTESA = 2500;          // ms di attesa dopo l'ultimo swipe prima di inviare (raggruppa più swipe)
+const KEY_TOKEN   = "swipe-lavoro-token";
 
 /* =====================================================================
    2. STATO E MEMORIA DEL BROWSER
    jobs    = offerte attive lette da jobs.json
    meta    = il resto di jobs.json (data aggiornamento, problemi, scartate)
    history = ordine delle decisioni prese in questa sessione (serve per "Annulla")
-   state.dec = { idOfferta: { s:"salvata"|"scartata", t:data, cand:bool, ...dati } }
+   state.dec = { idOfferta: { s:"salvata"|"scartata"|"annullata", t:data, cand:bool, ...dati } }
                Le salvate tengono anche titolo/azienda/link, così restano
                visibili anche quando l'annuncio viene chiuso.
+               "annullata" = decisione tolta con Annulla: non si cancella la riga ma
+               la si marca, così la sincronizzazione sa che è più recente della vecchia.
+               Ogni modifica aggiorna t: tra due dispositivi vince la t più recente.
    ===================================================================== */
 let jobs = [], meta = {}, history = [];
 let state = load();
@@ -188,7 +220,12 @@ function load(){
   try { return JSON.parse(localStorage.getItem(KEY)) || {dec:{}}; }
   catch(e){ return {dec:{}}; }      // browser in modalità privata: si lavora senza memoria
 }
-function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} }
+// salva nel browser e programma l'invio a GitHub (blocco 8)
+function save(){
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){}
+  if(typeof programmaInvio === "function") programmaInvio();
+}
+const adesso = () => new Date().toISOString();
 
 /* =====================================================================
    3. PICCOLI AIUTI
@@ -217,7 +254,8 @@ function fa(iso){                     // "aggiornato 3 ore fa"
 }
 
 // offerte ancora da decidere, nell'ordine di jobs.json (più nuove e italiane prima)
-const daVedere = () => jobs.filter(j => !state.dec[j.id]);
+const deciso = id => state.dec[id] && state.dec[id].s !== "annullata";
+const daVedere = () => jobs.filter(j => !deciso(j.id));
 // offerte salvate: prima quelle a cui non ti sei ancora candidato, poi le più recenti
 const salvate = () => Object.entries(state.dec)
   .filter(([,v]) => v.s === "salvata")
@@ -300,7 +338,7 @@ function decidi(stato, dir){
 function annulla(){
   const id = history.pop();
   if(!id) return;
-  delete state.dec[id]; save();
+  state.dec[id] = {s:"annullata", t:adesso()}; save();
   const i = jobs.findIndex(j => j.id === id);
   if(i > -1) jobs.unshift(jobs.splice(i,1)[0]);
   render();
@@ -357,7 +395,7 @@ function renderSaved(){
 }
 $("saved").addEventListener("change", e => {
   const id = e.target.dataset.c; if(!id) return;
-  state.dec[id].cand = e.target.checked; save(); render();
+  state.dec[id].cand = e.target.checked; state.dec[id].t = adesso(); save(); render();
 });
 $("saved").addEventListener("click", e => {
   const id = e.target.dataset.r; if(!id) return;
@@ -385,6 +423,126 @@ addEventListener("keydown", e => {            // scorciatoie da tastiera sul Mac
   else if(e.key.toLowerCase() === "z" || e.key === "Backspace") annulla();
 });
 
+/* =====================================================================
+   8. SINCRONIZZAZIONE TRA DISPOSITIVI (telefono, Mac, …)
+   Le scelte vengono salvate anche in un file su GitHub (SYNC_FILE sul ramo
+   SYNC_BRANCH), così ogni dispositivo vede le stesse salvate/scartate.
+   - Serve un token GitHub incollato una volta per dispositivo (pannello ☁︎)
+   - Se manca la rete, le scelte restano nel browser e partono appena torna
+   - Unione: per ogni offerta vince la decisione con data (t) più recente
+   ===================================================================== */
+let syncSha = null, timerInvio = null, inviando = false, daInviare = false;
+const token = () => { try { return localStorage.getItem(KEY_TOKEN) || ""; } catch(e){ return ""; } };
+const API = `https://api.github.com/repos/${SYNC_REPO}`;
+const hdr = () => ({"Authorization": `Bearer ${token()}`, "Accept": "application/vnd.github+json"});
+
+function statoSync(testo, classe){
+  $("sync-txt").textContent = testo;
+  $("b-sync").className = "sync " + (classe || "");
+}
+
+// testo <-> base64 rispettando accenti ed emoji
+const b64enc = s => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
+const b64dec = b => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\n/g,"")), c => c.charCodeAt(0)));
+
+// unisce le decisioni remote con quelle locali: vince la più recente
+function unisci(remote){
+  let cambiato = false;
+  for(const [id, v] of Object.entries(remote || {})){
+    const loc = state.dec[id];
+    if(!loc || (v.t || "") > (loc.t || "")){ state.dec[id] = v; cambiato = true; }
+  }
+  return cambiato;
+}
+
+// crea il ramo "decisioni" la prima volta (parte dall'ultima versione di main)
+async function creaRamo(){
+  const m = await fetch(`${API}/git/ref/heads/main`, {headers: hdr()}).then(r => r.json());
+  await fetch(`${API}/git/refs`, {method:"POST", headers: hdr(),
+    body: JSON.stringify({ref:`refs/heads/${SYNC_BRANCH}`, sha: m.object.sha})});
+}
+
+// scarica il file comune e lo unisce a quello locale
+async function scarica(){
+  if(!token()) return statoSync("solo questo dispositivo");
+  const r = await fetch(`${API}/contents/${SYNC_FILE}?ref=${SYNC_BRANCH}&t=${Date.now()}`, {headers: hdr(), cache:"no-store"});
+  if(r.status === 401 || r.status === 403) throw new Error("token non valido o senza permessi");
+  if(r.status === 404){ syncSha = null; return false; }      // file (o ramo) non ancora creato
+  if(!r.ok) throw new Error("GitHub ha risposto " + r.status);
+  const d = await r.json();
+  syncSha = d.sha;
+  const cambiato = unisci(JSON.parse(b64dec(d.content)).dec);
+  if(cambiato){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} }
+  return cambiato;
+}
+
+// invia lo stato completo; se qualcun altro ha scritto nel frattempo, riscarica e riprova
+async function invia(){
+  if(!token()) return;
+  if(inviando){ daInviare = true; return; }
+  inviando = true; statoSync("salvo…");
+  try {
+    for(let tentativo = 0; tentativo < 3; tentativo++){
+      await scarica();
+      const body = {message: `scelte aggiornate ${adesso()}`, branch: SYNC_BRANCH,
+                    content: b64enc(JSON.stringify({dec: state.dec}, null, 1))};
+      if(syncSha) body.sha = syncSha;
+      let r = await fetch(`${API}/contents/${SYNC_FILE}`, {method:"PUT", headers: hdr(), body: JSON.stringify(body)});
+      if(r.status === 404 && tentativo === 0){ await creaRamo(); continue; }   // ramo mancante
+      if(r.status === 409 || r.status === 422) continue;                       // conflitto: riprova
+      if(!r.ok) throw new Error("GitHub ha risposto " + r.status);
+      syncSha = (await r.json()).content.sha;
+      statoSync("sincronizzato", "ok");
+      return;
+    }
+    throw new Error("troppi conflitti, riprovo più tardi");
+  } catch(e){
+    statoSync("non sincronizzato", "err"); $("panel-msg").textContent = "Ultimo errore: " + e.message;
+  } finally {
+    inviando = false;
+    if(daInviare){ daInviare = false; programmaInvio(); }
+  }
+}
+
+function programmaInvio(){
+  if(!token()) return;
+  statoSync("da salvare…");
+  clearTimeout(timerInvio);
+  timerInvio = setTimeout(invia, SYNC_ATTESA);
+}
+
+// all'apertura e ogni volta che torni sulla pagina: scarica le scelte degli altri dispositivi
+async function aggiornaDaRemoto(){
+  if(!token()) return statoSync("solo questo dispositivo");
+  try {
+    statoSync("aggiorno…");
+    if(await scarica()) render();
+    statoSync("sincronizzato", "ok");
+  } catch(e){
+    statoSync("non sincronizzato", "err"); $("panel-msg").textContent = "Ultimo errore: " + e.message;
+  }
+}
+document.addEventListener("visibilitychange", () => {
+  if(document.visibilityState === "visible") aggiornaDaRemoto();
+  else if(timerInvio){ clearTimeout(timerInvio); invia(); }   // esci dall'app: invia subito
+});
+
+// pannello token
+$("b-sync").onclick = () => $("panel").classList.toggle("hidden");
+$("tok-save").onclick = async () => {
+  const v = $("tok").value.trim(); if(!v) return;
+  try { localStorage.setItem(KEY_TOKEN, v); } catch(e){}
+  $("tok").value = ""; $("panel-msg").textContent = "Collegato. Sincronizzo…";
+  await aggiornaDaRemoto(); await invia();
+  if($("b-sync").classList.contains("ok")){ $("panel-msg").textContent = "Fatto: questo dispositivo è sincronizzato."; render();
+    setTimeout(() => $("panel").classList.add("hidden"), 1500); }
+};
+$("tok-del").onclick = () => {
+  try { localStorage.removeItem(KEY_TOKEN); } catch(e){}
+  $("panel-msg").textContent = "Scollegato: le scelte restano solo su questo dispositivo.";
+  statoSync("solo questo dispositivo");
+};
+
 // "?"+Date.now() evita che il telefono mostri una copia vecchia del file
 fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
   meta = d; jobs = d.offerte || [];
@@ -395,6 +553,7 @@ fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
     + (sc.length ? `<details><summary>${sc.length} scartate per lingua</summary><ul>${sc.map(s=>`<li>${esc(s.azienda)}: ${esc(s.titolo)} <i>(${esc(s.lingua)})</i></li>`).join("")}</ul></details>` : "")
     + (prob.length ? `<details><summary>${prob.length} aziende non lette</summary><ul>${prob.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></details>` : "");
   render();
+  aggiornaDaRemoto();
 }).catch(() => {
   $("upd").textContent = "";
   $("foot").textContent = `v${VERSIONE}`;

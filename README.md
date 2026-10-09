@@ -28,7 +28,27 @@ Non serve nessuna app da scaricare: è una pagina web che si "installa" sulla sc
 1. Apri il link in Chrome
 2. Menu **⋮** → **Aggiungi a schermata Home** (o **Installa app**)
 
-Le scelte (salvate/scartate) restano sul dispositivo dove le fai: telefono e Mac sono separati.
+## Sincronizzazione tra telefono e Mac
+
+Le scelte (salvate, scartate, "Candidato") vengono salvate su GitHub nel file `decisioni.json`
+(ramo `decisioni`), così sono le stesse su ogni dispositivo. Serve un **token**, cioè una chiave
+che permette alla pagina di scrivere solo in questo repository.
+
+**Crearlo (una volta sola):**
+1. GitHub → foto profilo → **Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**
+2. Nome: `swipe-lavoro` · Scadenza: 1 anno (o quella che preferisci)
+3. **Repository access** → *Only select repositories* → `swipe-lavoro`
+4. **Permissions** → *Repository permissions* → **Contents: Read and write**
+5. **Generate token** e copialo (si vede una volta sola: salvalo nel portachiavi/password manager)
+
+**Usarlo (una volta per dispositivo):** apri la pagina → tocca **☁︎** in alto a destra → incolla → **Salva e sincronizza**.
+
+L'indicatore ☁︎ dice lo stato: *sincronizzato* (verde), *da salvare…* (sta per inviare), *non sincronizzato* (rosso: tocca ☁︎ per vedere l'errore).
+Senza rete le scelte restano sul dispositivo e partono appena torna la connessione.
+Se due dispositivi cambiano la stessa offerta, vince la modifica più recente.
+
+Il token resta solo nel browser del dispositivo, non nel codice. Se lo perdi o scade: ne crei uno nuovo e lo reincolli.
+Nota: il repository è pubblico, quindi anche `decisioni.json` (l'elenco delle offerte che salvi) è visibile a chi conosce il link.
 
 ## Lanciare una ricerca subito
 Tab **Actions** → **Cerca offerte** → **Run workflow** → **Run workflow**. Dopo 1–3 minuti la pagina si aggiorna.

@@ -3,6 +3,13 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e del "tag" su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.2 — 9 ottobre 2026
+- Sincronizzazione tra dispositivi: salvate, scartate e "Candidato" sono comuni a telefono e Mac.
+  Le scelte vanno nel file `decisioni.json` sul ramo `decisioni` (non tocca la pagina).
+- Indicatore ☁︎ in alto: sincronizzato / da salvare / non sincronizzato. Senza rete le scelte
+  restano nel dispositivo e partono appena torna la connessione.
+- "Annulla" ora marca la decisione come annullata invece di cancellarla (serve alla sincronizzazione).
+
 ## v1.1 — 9 ottobre 2026
 - Le offerte che chiedono l'italiano restano anche se chiedono un'altra lingua in più
   (es. "Italian & Spanish"): sulla carta compare il badge rosso "+ Spagnolo".
