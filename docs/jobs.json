@@ -1,12 +1,29 @@
 {
- "aggiornato": "2026-10-09T01:33+00:00",
- "fonti_lette": 31,
- "fonti_totali": 31,
- "problemi": [],
+ "aggiornato": "2026-10-09T02:08+00:00",
+ "fonti_lette": 49,
+ "fonti_totali": 50,
+ "problemi": [
+  "Microsoft: errore lettura (JSONDecodeError)"
+ ],
  "scartate_lingua": [
   {
    "azienda": "Datadog",
    "titolo": "Sales Development Representative (France)",
+   "lingua": "Francese"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "Market Development Representative (French Speaker) - Future Opportunities",
+   "lingua": "Francese"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "SD - Market Development Representative (MDR) - DACH (German and English Speaking)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "Sales Development Representative (French Speaker)",
    "lingua": "Francese"
   },
   {
@@ -35,6 +52,116 @@
    "lingua": "Olandese"
   },
   {
+   "azienda": "Rippling",
+   "titolo": "(Hebrew) Outbound SDR, Dublin",
+   "lingua": "Ebraico"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Outbound (Arabic speaking)",
+   "lingua": "Arabo"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Outbound (German speaking)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Polish (CEE)",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound - Benelux",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Arabic Speakers",
+   "lingua": "Arabo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Greek Market (Greek Speakers)",
+   "lingua": "Greco"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Hebrew speaker",
+   "lingua": "Ebraico"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Hungarian Speaker",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Polish Speaker",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Spanish or or Catalán speakers",
+   "lingua": "Spagnolo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Denmark Market (Danish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Finland Market (Finnish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative French Market - French Speaker",
+   "lingua": "Francese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative German Market (German Speaking)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Norway Market (Norwegian speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - Arabic Market",
+   "lingua": "Arabo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - DACH Market",
+   "lingua": "Tedesco"
+  },
+  {
    "azienda": "Stripe",
    "titolo": "Sales Development Representative (German fluency)",
    "lingua": "Tedesco"
@@ -61,11 +188,115 @@
   },
   {
    "azienda": "Workday",
+   "titolo": "Business Development Representative | German | Dublin based",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Workday",
    "titolo": "Sales Development Representative | German",
    "lingua": "Tedesco"
   }
  ],
  "offerte": [
+  {
+   "id": "Salesforce|Business Development Representative - Italy|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Italy",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Italy_JR331110",
+   "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Salesforce|Business Development Representative - South African Market|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - South African Market",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Salesforce|Sales Development Trainee - NGO PubSec|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Trainee - NGO PubSec",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Trainee---NGO-PubSec_JR360374",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Salesforce|Business Development Representative UKI Market (English Speaking)|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative UKI Market (English Speaking)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---UKI-Market_JR336399",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Salesforce|Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Rep_JR327680",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "DocuSign|Sales Development Representative (UK/IE Markets)|Dublin, Ireland",
+   "azienda": "DocuSign",
+   "titolo": "Sales Development Representative (UK/IE Markets)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.docusign.com/jobs/30438",
+   "descrizione": "Company Overview Docusign brings agreements to life. Over 1.5 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using Docusign’s Intelligent Agreement Management platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do Are you an agile, creative, and collaborative Sales Development Representative looking for your first break within Sales, or a chance to grow your Sales career in the tech industry? We can help. You are the…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Rippling|Business Development Representative, Switzerland & Austria (CHAT)|Dublin, Ireland",
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Switzerland & Austria (CHAT)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://ats.rippling.com/rippling/jobs/a60c5e96-8c69-4bf9-b909-aeb8cec98cb7",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Rippling|Enterprise, Business Development Representative, Outbound (English)|Dublin, Ireland",
+   "azienda": "Rippling",
+   "titolo": "Enterprise, Business Development Representative, Outbound (English)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://ats.rippling.com/rippling/jobs/91ec53f4-2ca5-43b0-a8d4-0ddcff4c9883",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Rippling|Sales Development Representative, Outbound (English)|Dublin, Ireland",
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound (English)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://ats.rippling.com/rippling/jobs/2f8943b6-d62b-415b-897e-933cb3ff6d8e",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-09"
+  },
   {
    "id": "ServiceNow|Intern – Business Development Representative (German, Spanish, Italian, French, Dutch, Arabic OR Nordic Languages)|Dublin ie",
    "azienda": "ServiceNow",
