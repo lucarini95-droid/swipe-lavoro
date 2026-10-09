@@ -68,13 +68,20 @@ LINGUE = [
 LINGUE = [(nome, re.compile(pat, re.I)) for nome, pat in LINGUE]
 
 
+def lingue_extra(titolo):
+    """Elenco delle lingue (oltre a italiano e inglese) citate nel titolo."""
+    return [nome for nome, rx in LINGUE if rx.search(titolo or "")]
+
+
 def lingua_richiesta(titolo):
-    """Nome della lingua che esclude l'offerta, o None.
-    Anche 'Italian & Spanish' viene scartata: serve comunque lo spagnolo."""
-    for nome, rx in LINGUE:
-        if rx.search(titolo or ""):
-            return nome
-    return None
+    """Nome della lingua che esclude l'offerta, o None se l'offerta va tenuta.
+    Regola (v1.1): se il titolo chiede l'italiano l'offerta resta SEMPRE,
+    anche se chiede un'altra lingua in piu' (es. 'Italian & Spanish').
+    Viene scartata solo se chiede un'altra lingua SENZA l'italiano."""
+    if ITALIANO.search(titolo or ""):
+        return None
+    extra = lingue_extra(titolo)
+    return extra[0] if extra else None
 
 
 # Aziende da ignorare: falsi positivi e recruiter
@@ -273,6 +280,8 @@ def filtra(azienda, offerte):
             "url": u,
             "descrizione": desc,
             "italiano": bool(ITALIANO.search(t) or ITALIANO.search(desc[:2000])),
+            # lingue in piu' richieste insieme all'italiano: la pagina le mostra come badge
+            "altre_lingue": lingue_extra(t),
         })
     return tenute, scartate
 

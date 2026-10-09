@@ -75,6 +75,7 @@ h1{font-size:19px;margin:0;letter-spacing:-.01em}
   background:var(--chip);color:var(--muted)}
 .b.new{background:var(--accent);color:var(--card)}
 .b.it{background:var(--green-bg);color:var(--green)}
+.b.extra{background:var(--red-bg);color:var(--red)}
 .az{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
 .tit{font-size:22px;line-height:1.25;font-weight:700;margin:4px 0 6px;letter-spacing:-.01em}
 .loc{font-size:13.5px;color:var(--muted)}
@@ -166,7 +167,7 @@ footer ul{padding-left:18px;margin:6px 0}
 /* =====================================================================
    1. IMPOSTAZIONI
    ===================================================================== */
-const VERSIONE = "1.0";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const VERSIONE = "1.1";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
 const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
 const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
 const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
@@ -233,6 +234,8 @@ function cardHTML(j){
   const badges = [
     g !== null && g <= GIORNI_NUOVA ? `<span class="b new">NUOVA</span>` : "",
     j.italiano ? `<span class="b it">🇮🇹 Italiano</span>` : "",
+    // lingue richieste in più insieme all'italiano (es. "Italian & Spanish")
+    ...(j.altre_lingue || []).map(l => `<span class="b extra">+ ${esc(l)}</span>`),
   ].join("");
   return `
     <div class="stamp yes">SALVA</div><div class="stamp no">SCARTA</div>
