@@ -1,0 +1,402 @@
+<!doctype html>
+<!--
+  SWIPE LAVORO - pagina che mostra le offerte una alla volta (tipo Tinder).
+
+  Come funziona, in breve:
+    1. GitHub Actions lancia monitor.py due volte al giorno e scrive docs/jobs.json
+    2. Questa pagina scarica jobs.json e mostra le offerte non ancora decise
+    3. Destra = salva, sinistra = scarta. Le scelte restano nel browser (localStorage)
+
+  Struttura del file:
+    HEAD    impostazioni per telefono (icona, schermo intero) + stile (CSS)
+    BODY    lo scheletro della pagina: intestazione, tab, mazzo, lista salvate
+    SCRIPT  la logica, divisa in blocchi numerati (1 ... 7) con un titolo ciascuno
+
+  Per cambiare qualcosa: cerca il blocco giusto, modifica, aggiorna VERSIONE
+  (blocco 1 della logica) e annota il cambio in CHANGELOG.md.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Swipe Lavoro</title>
+<meta name="robots" content="noindex">
+
+<!-- Telefono: icona sulla schermata Home e apertura a schermo intero come un'app -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Swipe Lavoro">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#16624a">
+
+<style>
+/* ===== Colori: modifica qui per cambiare tema (chiaro sopra, scuro sotto) ===== */
+:root{
+  --bg:#f4f1ea; --card:#fffdf8; --ink:#1d1b18; --muted:#6f6a61; --line:#e4ded2;
+  --green:#1f7a4d; --green-bg:#e3f2e9; --red:#b3402f; --red-bg:#f8e4df;
+  --accent:#16624a; --chip:#efe9dd; --shadow:0 18px 40px -18px rgba(40,30,10,.35);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151513; --card:#1f1f1c; --ink:#eeeae2; --muted:#a29d93; --line:#33322e;
+  --green:#58c08b; --green-bg:#1d3327; --red:#e57b69; --red-bg:#3a221d;
+  --accent:#6fcca0; --chip:#2b2a26; --shadow:0 18px 40px -18px rgba(0,0,0,.8);
+}}
+
+/* ===== Impaginazione generale ===== */
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+body{min-height:100dvh;display:flex;flex-direction:column;align-items:center;
+  padding:max(14px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom))}
+.wrap{width:100%;max-width:520px;display:flex;flex-direction:column;flex:1}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+h1{font-size:19px;margin:0;letter-spacing:-.01em}
+.upd{font-size:12px;color:var(--muted);text-align:right}
+.tabs{display:flex;gap:6px;background:var(--chip);padding:4px;border-radius:12px;margin-bottom:14px}
+.tabs button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-weight:600;
+  padding:8px;border-radius:9px;cursor:pointer}
+.tabs button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.n{font-weight:500;opacity:.7;margin-left:4px}
+
+/* ===== Mazzo di carte (vista "Da vedere") ===== */
+.deck{position:relative;flex:1;min-height:440px}
+.card{position:absolute;inset:0;background:var(--card);border:1px solid var(--line);
+  border-radius:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  overflow:hidden;touch-action:pan-y;user-select:none;will-change:transform}
+.card.back{transform:scale(.95) translateY(14px);opacity:.6;pointer-events:none}
+.card.anim{transition:transform .28s ease,opacity .28s ease}
+.card .top{padding:20px 20px 12px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;min-height:22px}
+.b{font-size:11.5px;font-weight:700;letter-spacing:.02em;padding:3px 9px;border-radius:99px;
+  background:var(--chip);color:var(--muted)}
+.b.new{background:var(--accent);color:var(--card)}
+.b.it{background:var(--green-bg);color:var(--green)}
+.az{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.tit{font-size:22px;line-height:1.25;font-weight:700;margin:4px 0 6px;letter-spacing:-.01em}
+.loc{font-size:13.5px;color:var(--muted)}
+.desc{flex:1;overflow:auto;padding:4px 20px 16px;font-size:14px;color:var(--muted);
+  white-space:pre-line;border-top:1px solid var(--line);margin-top:6px;padding-top:14px}
+.desc.empty{font-style:italic}
+.open{display:block;margin:0 20px 18px;text-align:center;padding:11px;border-radius:12px;
+  border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+.open:hover{background:var(--chip)}
+.stamp{position:absolute;top:22px;font-size:20px;font-weight:800;letter-spacing:.06em;
+  padding:4px 12px;border:3px solid;border-radius:10px;opacity:0;pointer-events:none}
+.stamp.yes{left:18px;color:var(--green);transform:rotate(-12deg)}
+.stamp.no{right:18px;color:var(--red);transform:rotate(12deg)}
+
+.actions{display:flex;justify-content:center;align-items:center;gap:22px;margin:18px 0 6px}
+.act{width:64px;height:64px;border-radius:50%;border:1px solid var(--line);background:var(--card);
+  font-size:26px;cursor:pointer;box-shadow:var(--shadow);display:grid;place-items:center;
+  transition:transform .12s}
+.act:active{transform:scale(.92)}
+.act.no{color:var(--red)} .act.yes{color:var(--green)}
+.act.undo{width:46px;height:46px;font-size:19px;color:var(--muted)}
+.act:disabled{opacity:.35;cursor:default}
+.hint{text-align:center;font-size:12px;color:var(--muted)}
+
+.empty-state{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;text-align:center;color:var(--muted);padding:30px;
+  border:2px dashed var(--line);border-radius:20px}
+.empty-state b{color:var(--ink);font-size:18px;display:block;margin-bottom:6px}
+
+/* ===== Lista offerte salvate (vista "Salvate") ===== */
+.list{display:flex;flex-direction:column;gap:10px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;
+  display:flex;gap:12px;align-items:flex-start}
+.row.done{opacity:.55}
+.row .main{flex:1;min-width:0}
+.row a{color:var(--ink);font-weight:650;text-decoration:none}
+.row a:hover{text-decoration:underline}
+.row .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.row .ctl{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.chk{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.chk input{width:17px;height:17px;accent-color:var(--green)}
+.x{border:0;background:none;color:var(--muted);cursor:pointer;font-size:12px;padding:2px}
+.x:hover{color:var(--red)}
+.closed{color:var(--red);font-weight:600}
+
+/* ===== Piè di pagina ===== */
+footer{margin-top:18px;font-size:11.5px;color:var(--muted);text-align:center}
+footer details{margin-top:6px;text-align:left}
+footer summary{cursor:pointer;text-align:center}
+footer ul{padding-left:18px;margin:6px 0}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- Intestazione: titolo + quando è stata fatta l'ultima ricerca -->
+  <header>
+    <h1>🍀 SDR/BDR · Dublino</h1>
+    <div class="upd" id="upd">carico…</div>
+  </header>
+
+  <!-- Le due schede: mazzo da vedere / lista salvate -->
+  <nav class="tabs">
+    <button id="t-deck" class="on">Da vedere<span class="n" id="n-deck"></span></button>
+    <button id="t-saved">Salvate<span class="n" id="n-saved"></span></button>
+  </nav>
+
+  <!-- Vista 1: il mazzo di carte e i pulsanti scarta / annulla / salva -->
+  <section id="v-deck" style="display:flex;flex-direction:column;flex:1">
+    <div class="deck" id="deck"></div>
+    <div class="actions">
+      <button class="act no" id="b-no" title="Scarta (←)">✕</button>
+      <button class="act undo" id="b-undo" title="Annulla (Z)">↶</button>
+      <button class="act yes" id="b-yes" title="Salva (→)">★</button>
+    </div>
+    <div class="hint">Trascina o usa ← → · Z per annullare</div>
+  </section>
+
+  <!-- Vista 2: le offerte salvate -->
+  <section id="v-saved" class="hidden">
+    <div class="list" id="saved"></div>
+  </section>
+
+  <!-- Piè di pagina: numeri, scartate per lingua, aziende non lette, versione -->
+  <footer id="foot"></footer>
+</div>
+
+<script>
+/* =====================================================================
+   1. IMPOSTAZIONI
+   ===================================================================== */
+const VERSIONE = "1.0";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
+const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
+const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
+
+/* =====================================================================
+   2. STATO E MEMORIA DEL BROWSER
+   jobs    = offerte attive lette da jobs.json
+   meta    = il resto di jobs.json (data aggiornamento, problemi, scartate)
+   history = ordine delle decisioni prese in questa sessione (serve per "Annulla")
+   state.dec = { idOfferta: { s:"salvata"|"scartata", t:data, cand:bool, ...dati } }
+               Le salvate tengono anche titolo/azienda/link, così restano
+               visibili anche quando l'annuncio viene chiuso.
+   ===================================================================== */
+let jobs = [], meta = {}, history = [];
+let state = load();
+
+function load(){
+  try { return JSON.parse(localStorage.getItem(KEY)) || {dec:{}}; }
+  catch(e){ return {dec:{}}; }      // browser in modalità privata: si lavora senza memoria
+}
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} }
+
+/* =====================================================================
+   3. PICCOLI AIUTI
+   ===================================================================== */
+const $ = id => document.getElementById(id);
+// evita che testi strani negli annunci rompano la pagina
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function giorniDa(d){                 // d = "2026-10-09" -> giorni trascorsi, null se vuota
+  if(!d) return null;
+  return Math.floor((Date.now() - new Date(d+"T00:00:00Z")) / 864e5);
+}
+function quando(d){                   // testo "comparsa oggi / ieri / N giorni fa"
+  const g = giorniDa(d);
+  if(g === null) return "online da prima dell'avvio";
+  if(g <= 0) return "comparsa oggi";
+  if(g === 1) return "comparsa ieri";
+  return `comparsa ${g} giorni fa`;
+}
+function fa(iso){                     // "aggiornato 3 ore fa"
+  const m = Math.round((Date.now() - new Date(iso)) / 6e4);
+  if(m < 60) return `${m} min fa`;
+  const h = Math.round(m/60);
+  if(h < 36) return `${h} ore fa`;
+  return `${Math.round(h/24)} giorni fa`;
+}
+
+// offerte ancora da decidere, nell'ordine di jobs.json (più nuove e italiane prima)
+const daVedere = () => jobs.filter(j => !state.dec[j.id]);
+// offerte salvate: prima quelle a cui non ti sei ancora candidato, poi le più recenti
+const salvate = () => Object.entries(state.dec)
+  .filter(([,v]) => v.s === "salvata")
+  .map(([id,v]) => ({id, ...v}))
+  .sort((a,b) => (a.cand?1:0)-(b.cand?1:0) || (b.t||"").localeCompare(a.t||""));
+
+/* =====================================================================
+   4. MAZZO DI CARTE
+   Si disegnano solo le prime 2 carte: quella in cima e quella sotto
+   (che si intravede). Dopo ogni decisione si ridisegna tutto.
+   ===================================================================== */
+function cardHTML(j){
+  const g = giorniDa(j.prima_vista);
+  const badges = [
+    g !== null && g <= GIORNI_NUOVA ? `<span class="b new">NUOVA</span>` : "",
+    j.italiano ? `<span class="b it">🇮🇹 Italiano</span>` : "",
+  ].join("");
+  return `
+    <div class="stamp yes">SALVA</div><div class="stamp no">SCARTA</div>
+    <div class="top">
+      <div class="badges">${badges}</div>
+      <div class="az">${esc(j.azienda)}</div>
+      <div class="tit">${esc(j.titolo)}</div>
+      <div class="loc">📍 ${esc(j.luogo)} · ${quando(j.prima_vista)}</div>
+    </div>
+    <div class="desc ${j.descrizione ? "" : "empty"}">${j.descrizione ? esc(j.descrizione) : "Descrizione non disponibile da questo portale: apri l'annuncio."}</div>
+    <a class="open" href="${esc(j.url)}" target="_blank" rel="noopener">Apri annuncio ↗</a>`;
+}
+
+function render(){
+  const coda = daVedere();
+  const deck = $("deck");
+  deck.innerHTML = "";
+  if(!coda.length){
+    deck.innerHTML = `<div class="empty-state"><div><b>Hai visto tutto 🎉</b>
+      Le nuove offerte arrivano da sole due volte al giorno.<br>Ultimo controllo: ${meta.aggiornato ? fa(meta.aggiornato) : "—"}.</div></div>`;
+  } else {
+    coda.slice(0,2).reverse().forEach((j,i,arr) => {
+      const el = document.createElement("article");
+      el.className = "card" + (i === 0 && arr.length > 1 ? " back" : "");
+      el.innerHTML = cardHTML(j);
+      el.dataset.id = j.id;
+      deck.appendChild(el);
+    });
+    attachDrag(deck.lastElementChild);   // solo la carta in cima si trascina
+  }
+  $("b-no").disabled = $("b-yes").disabled = !coda.length;
+  $("b-undo").disabled = !history.length;
+  $("n-deck").textContent = coda.length;
+  $("n-saved").textContent = salvate().length || "";
+  renderSaved();
+}
+
+/* =====================================================================
+   5. DECISIONI: salva, scarta, annulla, trascinamento
+   ===================================================================== */
+// stato = "salvata" | "scartata";  dir = 1 (vola a destra) | -1 (vola a sinistra)
+function decidi(stato, dir){
+  const card = $("deck").lastElementChild;
+  if(!card || !card.classList.contains("card")) return;
+  const j = jobs.find(x => x.id === card.dataset.id);
+  if(!j) return;
+  history.push(j.id);
+  state.dec[j.id] = stato === "salvata"
+    ? {s:stato, t:new Date().toISOString(), azienda:j.azienda, titolo:j.titolo, url:j.url, luogo:j.luogo}
+    : {s:stato, t:new Date().toISOString()};
+  save();
+  // animazione di uscita, poi si ridisegna il mazzo
+  card.classList.add("anim");
+  card.style.transform = `translate(${dir*innerWidth}px, 40px) rotate(${dir*24}deg)`;
+  card.style.opacity = "0";
+  const back = card.previousElementSibling;
+  if(back){ back.classList.add("anim"); back.classList.remove("back"); }
+  setTimeout(render, 260);
+}
+
+// toglie l'ultima decisione presa e rimette quella carta in cima al mazzo
+function annulla(){
+  const id = history.pop();
+  if(!id) return;
+  delete state.dec[id]; save();
+  const i = jobs.findIndex(j => j.id === id);
+  if(i > -1) jobs.unshift(jobs.splice(i,1)[0]);
+  render();
+}
+
+// trascinamento con dito o mouse; oltre SOGLIA_SWIPE la carta parte
+function attachDrag(card){
+  let x0=0, y0=0, dx=0, drag=false, id=null;
+  const yes = card.querySelector(".stamp.yes"), no = card.querySelector(".stamp.no");
+  card.addEventListener("pointerdown", e => {
+    // non trascinare se si clicca il link o si seleziona il testo col mouse
+    if(e.target.closest("a") || e.target.closest(".desc") && e.pointerType === "mouse") return;
+    drag = true; id = e.pointerId; x0 = e.clientX; y0 = e.clientY; dx = 0;
+    card.classList.remove("anim");
+  });
+  card.addEventListener("pointermove", e => {
+    if(!drag || e.pointerId !== id) return;
+    dx = e.clientX - x0; const dy = e.clientY - y0;
+    // movimento orizzontale = swipe; verticale = lascia scorrere la descrizione
+    if(Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) card.setPointerCapture(id);
+    card.style.transform = `translate(${dx}px, ${dy*0.15}px) rotate(${dx/18}deg)`;
+    yes.style.opacity = Math.max(0, Math.min(1, dx/SOGLIA_SWIPE));
+    no.style.opacity = Math.max(0, Math.min(1, -dx/SOGLIA_SWIPE));
+  });
+  const end = () => {
+    if(!drag) return; drag = false;
+    if(dx > SOGLIA_SWIPE) return decidi("salvata", 1);
+    if(dx < -SOGLIA_SWIPE) return decidi("scartata", -1);
+    card.classList.add("anim"); card.style.transform = ""; yes.style.opacity = no.style.opacity = 0;
+  };
+  card.addEventListener("pointerup", end);
+  card.addEventListener("pointercancel", end);
+}
+
+/* =====================================================================
+   6. LISTA SALVATE: spunta "Candidato", rimuovi
+   ===================================================================== */
+function renderSaved(){
+  const attivi = new Set(jobs.map(j => j.id));
+  const list = salvate();
+  $("saved").innerHTML = list.length ? list.map(v => `
+    <div class="row ${v.cand ? "done" : ""}">
+      <div class="main">
+        <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titolo)}</a>
+        <div class="meta">${esc(v.azienda)} · ${esc(v.luogo)}
+          ${attivi.size && !attivi.has(v.id) ? ` · <span class="closed">annuncio chiuso</span>` : ""}</div>
+      </div>
+      <div class="ctl">
+        <label class="chk"><input type="checkbox" data-c="${esc(v.id)}" ${v.cand ? "checked" : ""}> Candidato</label>
+        <button class="x" data-r="${esc(v.id)}">rimuovi</button>
+      </div>
+    </div>`).join("")
+    : `<div class="empty-state" style="position:static;min-height:200px">Nessuna offerta salvata.<br>Scorri a destra quelle che ti interessano.</div>`;
+}
+$("saved").addEventListener("change", e => {
+  const id = e.target.dataset.c; if(!id) return;
+  state.dec[id].cand = e.target.checked; save(); render();
+});
+$("saved").addEventListener("click", e => {
+  const id = e.target.dataset.r; if(!id) return;
+  state.dec[id] = {s:"scartata", t:new Date().toISOString()}; save(); render();
+});
+
+/* =====================================================================
+   7. AVVIO: tab, pulsanti, tastiera, caricamento di jobs.json
+   ===================================================================== */
+function tab(which){
+  $("t-deck").classList.toggle("on", which === "deck");
+  $("t-saved").classList.toggle("on", which === "saved");
+  $("v-deck").classList.toggle("hidden", which !== "deck");
+  $("v-saved").classList.toggle("hidden", which !== "saved");
+}
+$("t-deck").onclick = () => tab("deck");
+$("t-saved").onclick = () => tab("saved");
+$("b-yes").onclick = () => decidi("salvata", 1);
+$("b-no").onclick = () => decidi("scartata", -1);
+$("b-undo").onclick = annulla;
+addEventListener("keydown", e => {            // scorciatoie da tastiera sul Mac
+  if($("v-deck").classList.contains("hidden")) return;
+  if(e.key === "ArrowRight") decidi("salvata", 1);
+  else if(e.key === "ArrowLeft") decidi("scartata", -1);
+  else if(e.key.toLowerCase() === "z" || e.key === "Backspace") annulla();
+});
+
+// "?"+Date.now() evita che il telefono mostri una copia vecchia del file
+fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
+  meta = d; jobs = d.offerte || [];
+  $("upd").textContent = d.aggiornato ? `aggiornato ${fa(d.aggiornato)}` : "";
+  const prob = (d.problemi || []);
+  const sc = (d.scartate_lingua || []);
+  $("foot").innerHTML = `${jobs.length} offerte attive · ${d.fonti_lette}/${d.fonti_totali} aziende lette · v${VERSIONE}`
+    + (sc.length ? `<details><summary>${sc.length} scartate per lingua</summary><ul>${sc.map(s=>`<li>${esc(s.azienda)}: ${esc(s.titolo)} <i>(${esc(s.lingua)})</i></li>`).join("")}</ul></details>` : "")
+    + (prob.length ? `<details><summary>${prob.length} aziende non lette</summary><ul>${prob.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></details>` : "");
+  render();
+}).catch(() => {
+  $("upd").textContent = "";
+  $("foot").textContent = `v${VERSIONE}`;
+  $("deck").innerHTML = `<div class="empty-state"><div><b>Ancora nessun dato</b>Il primo giro di ricerca non è ancora finito. Riprova tra qualche minuto.</div></div>`;
+});
+</script>
+</body>
+</html>

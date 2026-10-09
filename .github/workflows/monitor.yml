@@ -1,0 +1,39 @@
+name: Cerca offerte
+
+on:
+  schedule:
+    # 06:00 e 15:00 UTC = 08:00 e 17:00 in Italia (ora legale)
+    - cron: "0 6,15 * * *"
+  workflow_dispatch: {}   # pulsante "Run workflow" per lanciarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  cerca:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: pip install requests
+
+      - name: Scarica e filtra le offerte
+        run: python monitor.py
+
+      - name: Salva i risultati
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/jobs.json docs/workday_urls.json
+          git commit -m "Offerte aggiornate $(date -u +'%Y-%m-%d %H:%M')" || echo "Niente da salvare"
+          git push
