@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-14T10:59+00:00",
+ "aggiornato": "2026-10-14T19:07+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -97,11 +97,6 @@
    "azienda": "MongoDB",
    "titolo": "Account Development Representative, German Speaking",
    "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Okta",
-   "titolo": "Business Development Representative - Dutch",
-   "lingua": "Olandese"
   },
   {
    "azienda": "Rippling",
@@ -261,15 +256,15 @@
  ],
  "offerte": [
   {
-   "id": "Workvivo / Zoom|Sales Development Representative, Workvivo|Dublin (IRL)",
-   "azienda": "Workvivo / Zoom",
-   "titolo": "Sales Development Representative, Workvivo",
-   "luogo": "Dublin (IRL)",
-   "url": "https://zoom.wd5.myworkdayjobs.com/Zoom/job/Dublin-IRL/Sales-Development-Representative--Workvivo_R19704",
-   "descrizione": "",
+   "id": "Okta|Sales Development Representative|Dublin, Ireland",
+   "azienda": "Okta",
+   "titolo": "Sales Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://www.okta.com/company/careers/opportunity/8278232?gh_jid=8278232",
+   "descrizione": "Secure Every Identity, from AI to Human\nIdentity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embrace this new era. This work requires a relentless drive to solve complex challenges with real-world stakes. We are looking for builders and owners who operate with speed and urgency and execute with excellence.\nThis is an opportunity to do career-defining work. We're all in on this mission. If you are too, let's talk.\nOkta’s Sales Development Representatives are high energy professionals that drive the demand, awareness, and interest for our market-leading cloud Security solutions. You will partner and collaborate closely with members of our Account Executive and Marketing teams to generate qualified sales leads, set meetings, and yield new deal opportunities. We're looking for professionals…",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": "2026-10-13"
+   "prima_vista": "2026-10-14"
   },
   {
    "id": "Twilio|Sales Development Representative|Remote - Ireland",
