@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-10-19T20:19+00:00",
- "fonti_lette": 51,
+ "aggiornato": "2026-10-20T10:47+00:00",
+ "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
   "ActiveCampaign",
@@ -38,6 +38,7 @@
   "Proofpoint",
   "Red Hat",
   "Rippling",
+  "Salesforce",
   "ServiceNow",
   "Snowflake",
   "Stripe",
@@ -55,9 +56,7 @@
   "X (ex Twitter)",
   "Zendesk"
  ],
- "problemi": [
-  "Salesforce: errore lettura (ValueError)"
- ],
+ "problemi": [],
  "scartate_lingua": [
   {
    "azienda": "Datadog",
@@ -140,6 +139,96 @@
    "lingua": "Nordiche"
   },
   {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Arabic Speakers",
+   "lingua": "Arabo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Greek Market (Greek Speakers)",
+   "lingua": "Greco"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Hebrew speaker",
+   "lingua": "Ebraico"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Hungarian Speaker",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Polish Speaker",
+   "lingua": "CEE/Est"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Spanish or or Catalán speakers",
+   "lingua": "Spagnolo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Denmark Market (Danish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Finland Market (Finnish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative French Market - French Speaker",
+   "lingua": "Francese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative German Market (German Speaking)",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
+   "lingua": "Olandese"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Norway Market (Norwegian speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
+   "lingua": "Nordiche"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - Arabic Market",
+   "lingua": "Arabo"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - DACH Market",
+   "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - French Market",
+   "lingua": "Francese"
+  },
+  {
    "azienda": "Stripe",
    "titolo": "Sales Development Representative (Polish Fluency)",
    "lingua": "CEE/Est"
@@ -167,6 +256,17 @@
  ],
  "offerte": [
   {
+   "id": "Datadog|Sales Development Representative - Italy|Dublin, Ireland",
+   "azienda": "Datadog",
+   "titolo": "Sales Development Representative - Italy",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.datadoghq.com/detail/7214964/?gh_jid=7214964",
+   "descrizione": "Sales Development Representative\nAs a Sales Development Representative (SDR), you will prospect, qualify, and generate customer leads to assist in Datadog’s overall business growth segment. By partnering with internal stakeholders, you will help IT and Technology innovators across markets recognize Datadog’s impact in their digital transformation and migration to the cloud. SDRs have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Collaborate cross-functionally with various Datadog teams\n• Drive initial prospect qualification and schedule discovery meetings\n• Develop, present,…",
+   "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-20"
+  },
+  {
    "id": "Okta|Sales Development Representative|Dublin, Ireland",
    "azienda": "Okta",
    "titolo": "Sales Development Representative",
@@ -187,6 +287,17 @@
    "italiano": false,
    "altre_lingue": [],
    "prima_vista": "2026-10-09"
+  },
+  {
+   "id": "Salesforce|Business Development Representative - Italy|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Italy",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Italy_JR331110",
+   "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": ""
   },
   {
    "id": "ServiceNow|Intern – Business Development Representative (German, Spanish, Italian, French, Dutch, Arabic OR Nordic Languages)|Dublin ie",
@@ -218,6 +329,39 @@
    "url": "https://www.mongodb.com/careers/job/?gh_jid=7338090",
    "descrizione": "MongoDB’s mission is to empower innovators to create, transform, and disrupt industries by unleashing the power of software and data. We enable organizations of all sizes to easily build, scale, and run modern applications by helping them modernize legacy workloads, embrace innovation, and unleash AI. Our industry-leading developer data platform, MongoDB Atlas, is the only globally distributed, multi-cloud database and is available in more than 115 regions across AWS, Google Cloud, and Microsoft Azure. Atlas allows customers to build and run applications anywhere—on premises, or across cloud providers. With offices worldwide and over 175,000 new developers signing up to use MongoDB every month, it’s no wonder that leading organizations, like Samsung and Toyota, trust MongoDB to build next-generation, AI-powered applications.\nAt MongoDB, our Account Development team works closely with…",
    "italiano": true,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Salesforce|Business Development Representative - South African Market|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - South African Market",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Salesforce|Business Development Representative UKI Market (English Speaking)|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative UKI Market (English Speaking)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---UKI-Market_JR336399",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": ""
+  },
+  {
+   "id": "Salesforce|Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Rep_JR327680",
+   "descrizione": "",
+   "italiano": false,
    "altre_lingue": [],
    "prima_vista": ""
   },
