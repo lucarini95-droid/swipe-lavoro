@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-21T19:04+00:00",
+ "aggiornato": "2026-10-22T10:58+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -150,18 +150,8 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Greek Market (Greek Speakers)",
-   "lingua": "Greco"
-  },
-  {
-   "azienda": "Salesforce",
    "titolo": "Business Development Representative - Hebrew speaker",
    "lingua": "Ebraico"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Hungarian Speaker",
-   "lingua": "CEE/Est"
   },
   {
    "azienda": "Salesforce",
@@ -271,6 +261,17 @@
  ],
  "offerte": [
   {
+   "id": "MongoDB|Account Development Representative - English Speaking (SDR/BDR)|Dublin, Ireland",
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative - English Speaking (SDR/BDR)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8305915",
+   "descrizione": "At MongoDB, our Account Development team works closely with our partners in both Sales and Marketing to build fanatical customer enthusiasm around MongoDB. ADR reps are responsible for identifying and qualifying new opportunities for our sales organization. \nWe view our Account Development program as the best way to turbocharge a long and successful career in sales and view our Account Development Representatives (ADRs) as the next wave of Account Executives at MongoDB.\nWe are looking to speak to candidates who are based in Dublin for our hybrid working model.\nDay to Day\n• Identify high-potential businesses that would be a good fit to work with MongoDB for selected strategic accounts in EMEA\n• Work with the Sales team to develop and lead outbound campaigns from idea-generation through to qualified call\n• Develop strong sales and product knowledge\n• Interact with IT and business decision…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-22"
+  },
+  {
    "id": "Salesforce|Sales Development Representative - Italian Market|Ireland - Dublin",
    "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Italian Market",
@@ -280,17 +281,6 @@
    "italiano": true,
    "altre_lingue": [],
    "prima_vista": "2026-10-21"
-  },
-  {
-   "id": "Datadog|Sales Development Representative - Italy|Dublin, Ireland",
-   "azienda": "Datadog",
-   "titolo": "Sales Development Representative - Italy",
-   "luogo": "Dublin, Ireland",
-   "url": "https://careers.datadoghq.com/detail/7214964/?gh_jid=7214964",
-   "descrizione": "Sales Development Representative\nAs a Sales Development Representative (SDR), you will prospect, qualify, and generate customer leads to assist in Datadog’s overall business growth segment. By partnering with internal stakeholders, you will help IT and Technology innovators across markets recognize Datadog’s impact in their digital transformation and migration to the cloud. SDRs have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Collaborate cross-functionally with various Datadog teams\n• Drive initial prospect qualification and schedule discovery meetings\n• Develop, present,…",
-   "italiano": true,
-   "altre_lingue": [],
-   "prima_vista": "2026-10-20"
   },
   {
    "id": "Okta|Sales Development Representative|Dublin, Ireland",
