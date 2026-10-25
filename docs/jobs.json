@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-10-25T10:31+00:00",
- "fonti_lette": 52,
+ "aggiornato": "2026-10-25T18:02+00:00",
+ "fonti_lette": 51,
  "fonti_totali": 52,
  "aziende_lette": [
   "ActiveCampaign",
@@ -50,13 +50,14 @@
   "Veeam",
   "Version 1",
   "Wayflyer",
-  "Workday",
   "Workhuman",
   "Workvivo / Zoom",
   "X (ex Twitter)",
   "Zendesk"
  ],
- "problemi": [],
+ "problemi": [
+  "Workday: errore lettura (ValueError)"
+ ],
  "scartate_lingua": [
   {
    "azienda": "Datadog",
@@ -237,26 +238,6 @@
    "azienda": "Stripe",
    "titolo": "Sales Development Representative (Polish Fluency)",
    "lingua": "CEE/Est"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Dutch Speaker)",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Swedish)",
-   "lingua": "Nordiche"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "lingua": "Nordiche"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative | German | Dublin based",
-   "lingua": "Tedesco"
   }
  ],
  "offerte": [
@@ -376,17 +357,6 @@
    "titolo": "Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)",
    "luogo": "Ireland - Dublin",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Rep_JR327680",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": ""
-  },
-  {
-   "id": "Workday|Business Development Representative UKI|Ireland, Dublin",
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "luogo": "Ireland, Dublin",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
