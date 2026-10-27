@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T11:24+00:00",
+ "aggiornato": "2026-10-27T19:46+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -65,11 +65,6 @@
   },
   {
    "azienda": "DocuSign",
-   "titolo": "Market Development Representative (French Speaker) - Future Opportunities",
-   "lingua": "Francese"
-  },
-  {
-   "azienda": "DocuSign",
    "titolo": "SD - Market Development Representative (MDR) - DACH (German and English Speaking)",
    "lingua": "Tedesco"
   },
@@ -87,6 +82,11 @@
    "azienda": "MongoDB",
    "titolo": "Account Development Representative, German Speaking",
    "lingua": "Tedesco"
+  },
+  {
+   "azienda": "Okta",
+   "titolo": "Sales Development Representative - Dutch",
+   "lingua": "Olandese"
   },
   {
    "azienda": "Okta",
@@ -265,6 +265,17 @@
   }
  ],
  "offerte": [
+  {
+   "id": "DocuSign|Market Development Representative (UK/IE Markets)|Dublin, Ireland",
+   "azienda": "DocuSign",
+   "titolo": "Market Development Representative (UK/IE Markets)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.docusign.com/jobs/30595",
+   "descrizione": "Company Overview Docusign brings agreements to life. More than 1.8 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using the Docusign AI-native IAM platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do As an Market Development Representative (MDR), you will be responsible for generating qualified opportunities that progress through the sales funnel and ultimately generate new revenue to grow our presence in EMEA. This…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-27"
+  },
   {
    "id": "MongoDB|Account Development Representative - English Speaking (SDR/BDR)|Dublin, Ireland",
    "azienda": "MongoDB",
