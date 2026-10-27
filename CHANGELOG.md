@@ -3,6 +3,10 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.3.1 — 27 ottobre 2026
+- Sicurezza/manutenzione: le azioni GitHub passano a `actions/checkout@v6` e `actions/setup-python@v6`,
+  che girano su Node 24 (Node 20 è fuori supporto). Toglie l'avviso Node.js nella tab Actions.
+
 ## v1.3 — 9 ottobre 2026
 - Aziende lette passate da 31 a 49. Aggiunte: Salesforce, Microsoft, Amazon/AWS, Rippling, Docusign,
   Mastercard, PayPal, Adobe, Cisco, Twilio, Snowflake, X/xAI, Guidewire, Zoom/Workvivo, HPE, FIS,
