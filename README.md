@@ -40,6 +40,13 @@ La pagina mostra prima le offerte con più stelle e, sotto il titolo, perché ha
 
 Regola d'oro: se il titolo cita l'italiano, l'offerta resta sempre.
 
+## Offerte salvate e raccomandazione
+
+Nella scheda **Salvate** ogni offerta ha uno stato (Da candidarmi → Candidato → Colloquio → Offerta, oppure
+Rifiutato / Non mi interessa) e i filtri in alto le raggruppano. Toccando un'offerta si apre il dettaglio con
+le note e la sezione **Trova chi ti raccomanda**: link a ricerche LinkedIn già pronte (le apri tu col tuo
+account, nessun dato viene letto da LinkedIn in automatico) e un messaggio da copiare per chiedere la referral.
+
 ## Usarlo sul telefono
 
 Non serve nessuna app da scaricare: è una pagina web che si "installa" sulla schermata Home.

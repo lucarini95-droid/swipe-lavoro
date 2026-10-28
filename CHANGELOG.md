@@ -3,6 +3,17 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.6 — 28 ottobre 2026
+- **Salvate ridisegnate**: filtri in alto (Da candidarmi / In corso / Chiuse) e, al posto della spunta
+  "Candidato", uno stato per offerta: Da candidarmi, Candidato, Colloquio, Offerta, Rifiutato, Non mi interessa.
+  Le vecchie spunte "Candidato" diventano stato "Candidato". Si vede quando hai salvato o ti sei candidato.
+- Toccando una salvata si apre il dettaglio: annuncio, note libere (sincronizzate), rimuovi.
+- "Rimuovi" ora ha 6 secondi per annullare (prima era immediato).
+- **Trova chi ti raccomanda**: ricerche LinkedIn già compilate (i tuoi contatti di 1° e 2° grado in
+  quell'azienda, italiani a Dublino, manager del team, recruiter) e un messaggio per chiedere la referral
+  in inglese o italiano, da copiare. Il testo si può modificare e salvare come modello (resta nel browser).
+- Titolo della pagina: "Swipe Dublino".
+
 ## v1.5 — 28 ottobre 2026
 - **Anche Account Executive**: titoli "Account Executive", "AE", "Sales Executive". +1 stella come gli SDR;
   −1 se Senior/Enterprise/Strategic. "Account Manager" resta escluso.

@@ -112,20 +112,52 @@ h1{font-size:19px;margin:0;letter-spacing:-.01em}
 .empty-state b{color:var(--ink);font-size:18px;display:block;margin-bottom:6px}
 
 /* ===== Lista offerte salvate (vista "Salvate") ===== */
+/* filtri in alto: Da candidarmi / In corso / Chiuse */
+.seg{display:flex;gap:6px;margin-bottom:12px;overflow-x:auto}
+.seg button{border:1px solid var(--line);background:var(--card);color:var(--muted);font:inherit;font-size:13px;
+  font-weight:600;padding:7px 12px;border-radius:99px;cursor:pointer;white-space:nowrap}
+.seg button.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
 .list{display:flex;flex-direction:column;gap:10px}
-.row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;
-  display:flex;gap:12px;align-items:flex-start}
-.row.done{opacity:.55}
+.row{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.row .head{display:flex;gap:10px;align-items:flex-start;padding:14px 14px 12px;cursor:pointer}
 .row .main{flex:1;min-width:0}
-.row a{color:var(--ink);font-weight:650;text-decoration:none}
-.row a:hover{text-decoration:underline}
-.row .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
-.row .ctl{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
-.chk{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);cursor:pointer;white-space:nowrap}
-.chk input{width:17px;height:17px;accent-color:var(--green)}
-.x{border:0;background:none;color:var(--muted);cursor:pointer;font-size:12px;padding:2px}
-.x:hover{color:var(--red)}
+.row .az2{font-size:11.5px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.row .t{font-weight:650;line-height:1.3;margin:2px 0 3px}
+.row .meta{font-size:12.5px;color:var(--muted)}
+.row .chev{color:var(--muted);font-size:14px;padding-top:2px;transition:transform .2s}
+.row.aperta .chev{transform:rotate(90deg)}
+.row .stars{font-size:13px;letter-spacing:1px;margin:0 0 3px}
 .closed{color:var(--red);font-weight:600}
+/* pillola di stato (in realtà un menu a tendina nativo: comodo sul telefono) */
+.st{appearance:none;-webkit-appearance:none;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:5px 10px;border-radius:99px;cursor:pointer;background:var(--chip);color:var(--ink);max-width:150px}
+.st.da_fare{background:var(--chip);color:var(--ink)}
+.st.candidato{background:#e2ecfb;color:#2856a3}
+.st.colloquio{background:#fbefd9;color:#9a6408}
+.st.offerta{background:var(--green-bg);color:var(--green)}
+.st.rifiutato,.st.ritirata{background:var(--red-bg);color:var(--red)}
+@media (prefers-color-scheme:dark){.st.candidato{background:#1e2c44;color:#8fb4f0}.st.colloquio{background:#3a2e17;color:#e8b65c}}
+/* dettaglio che si apre toccando la riga */
+.det{border-top:1px solid var(--line);padding:12px 14px 14px;display:flex;flex-direction:column;gap:12px}
+.det h4{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.det .d{font-size:13px;color:var(--muted);white-space:pre-line;max-height:160px;overflow:auto}
+.det textarea{width:100%;min-height:64px;padding:9px 10px;border-radius:10px;border:1px solid var(--line);
+  background:var(--bg);color:var(--ink);font:inherit;font-size:13.5px;resize:vertical}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border-radius:10px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--chip)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--card)}
+.btn.del{color:var(--red)}
+.mini{font-size:12px;color:var(--muted)}
+.lang{display:inline-flex;gap:2px;background:var(--chip);border-radius:8px;padding:2px;margin-left:6px}
+.lang button{border:0;background:none;font:inherit;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:6px;color:var(--muted);cursor:pointer}
+.lang button.on{background:var(--card);color:var(--ink)}
+/* avviso in basso con "Annulla" dopo una rimozione */
+.toast{position:fixed;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);
+  background:var(--ink);color:var(--card);padding:10px 14px;border-radius:12px;font-size:13.5px;
+  display:flex;gap:14px;align-items:center;box-shadow:var(--shadow);z-index:9}
+.toast button{border:0;background:none;color:var(--accent);font:inherit;font-weight:700;cursor:pointer;filter:brightness(1.6)}
 
 /* ===== Sincronizzazione ===== */
 .sync{border:0;background:none;color:var(--muted);font:inherit;font-size:12px;cursor:pointer;padding:0}
@@ -150,7 +182,7 @@ footer ul{padding-left:18px;margin:6px 0}
 <div class="wrap">
   <!-- Intestazione: titolo + quando è stata fatta l'ultima ricerca -->
   <header>
-    <h1>🍀 SDR · BDR · AE · Dublino</h1>
+    <h1>🍀 Swipe Dublino</h1>
     <div class="upd"><span id="upd">carico…</span><br>
       <button class="sync" id="b-sync" title="Sincronizzazione tra dispositivi">☁︎ <span id="sync-txt">…</span></button></div>
   </header>
@@ -183,6 +215,7 @@ footer ul{padding-left:18px;margin:6px 0}
 
   <!-- Vista 2: le offerte salvate -->
   <section id="v-saved" class="hidden">
+    <div class="seg" id="seg"></div>
     <div class="list" id="saved"></div>
   </section>
 
@@ -194,7 +227,7 @@ footer ul{padding-left:18px;margin:6px 0}
 /* =====================================================================
    1. IMPOSTAZIONI
    ===================================================================== */
-const VERSIONE = "1.5";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const VERSIONE = "1.6";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
 const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
 const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
 const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
@@ -268,11 +301,11 @@ function stelleHTML(n){
 // offerte ancora da decidere, nell'ordine di jobs.json (più stelle prima, poi più nuove)
 const deciso = id => state.dec[id] && state.dec[id].s !== "annullata";
 const daVedere = () => jobs.filter(j => !deciso(j.id));
-// offerte salvate: prima quelle a cui non ti sei ancora candidato, poi più stelle, poi le più recenti
+// offerte salvate: più stelle prima, poi le salvate più di recente (i gruppi li fanno i filtri, blocco 6)
 const salvate = () => Object.entries(state.dec)
   .filter(([,v]) => v.s === "salvata")
   .map(([id,v]) => ({id, ...v}))
-  .sort((a,b) => (a.cand?1:0)-(b.cand?1:0) || (b.stelle??-1)-(a.stelle??-1) || (b.t||"").localeCompare(a.t||""));
+  .sort((a,b) => (b.stelle??-1)-(a.stelle??-1) || (b.ts||b.t||"").localeCompare(a.ts||a.t||""));
 
 /* =====================================================================
    4. MAZZO DI CARTE
@@ -321,7 +354,7 @@ function render(){
   $("b-no").disabled = $("b-yes").disabled = !coda.length;
   $("b-undo").disabled = !history.length;
   $("n-deck").textContent = coda.length;
-  $("n-saved").textContent = salvate().length || "";
+  $("n-saved").textContent = salvate().filter(v => !["rifiutato","ritirata"].includes(statoDi(v))).length || "";
   renderSaved();
 }
 
@@ -336,7 +369,7 @@ function decidi(stato, dir){
   if(!j) return;
   history.push(j.id);
   state.dec[j.id] = stato === "salvata"
-    ? {s:stato, t:new Date().toISOString(), azienda:j.azienda, titolo:j.titolo, url:j.url, luogo:j.luogo, stelle:j.stelle}
+    ? {s:stato, t:adesso(), ts:adesso(), stato:"da_fare", azienda:j.azienda, titolo:j.titolo, url:j.url, luogo:j.luogo, stelle:j.stelle}
     : {s:stato, t:new Date().toISOString()};
   save();
   // animazione di uscita, poi si ridisegna il mazzo
@@ -388,33 +421,215 @@ function attachDrag(card){
 }
 
 /* =====================================================================
-   6. LISTA SALVATE: spunta "Candidato", rimuovi
+   6. LISTA SALVATE: stato candidatura, note, raccomandazione, rimuovi
+   Ogni salvata ha uno "stato" (vedi STATI). I vecchi dati con la sola spunta
+   "Candidato" (cand:true) vengono letti come stato "candidato".
+   I filtri in alto raggruppano gli stati in tre gruppi (GRUPPI).
    ===================================================================== */
-function renderSaved(){
-  const attivi = new Set(jobs.map(j => j.id));
-  const list = salvate();
-  $("saved").innerHTML = list.length ? list.map(v => `
-    <div class="row ${v.cand ? "done" : ""}">
-      <div class="main">
-        ${stelleHTML(v.stelle)}
-        <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titolo)}</a>
-        <div class="meta">${esc(v.azienda)} · ${esc(v.luogo)}
-          ${attivi.size && !attivi.has(v.id) ? ` · <span class="closed">annuncio chiuso</span>` : ""}</div>
-      </div>
-      <div class="ctl">
-        <label class="chk"><input type="checkbox" data-c="${esc(v.id)}" ${v.cand ? "checked" : ""}> Candidato</label>
-        <button class="x" data-r="${esc(v.id)}">rimuovi</button>
-      </div>
-    </div>`).join("")
-    : `<div class="empty-state" style="position:static;min-height:200px">Nessuna offerta salvata.<br>Scorri a destra quelle che ti interessano.</div>`;
+const STATI = [
+  ["da_fare",   "Da candidarmi"],
+  ["candidato", "Candidato"],
+  ["colloquio", "Colloquio"],
+  ["offerta",   "Offerta 🎉"],
+  ["rifiutato", "Rifiutato"],
+  ["ritirata",  "Non mi interessa"],
+];
+const GRUPPI = [
+  ["da_fare", "Da candidarmi", ["da_fare"]],
+  ["corso",   "In corso",      ["candidato","colloquio","offerta"]],
+  ["chiuse",  "Chiuse",        ["rifiutato","ritirata"]],
+];
+let gruppo = "da_fare";            // filtro attivo
+const aperte = new Set();          // righe con il dettaglio aperto
+const statoDi = v => v.stato || (v.cand ? "candidato" : "da_fare");
+
+function giorniFaTesto(iso){
+  if(!iso) return "";
+  const g = Math.floor((Date.now() - new Date(iso)) / 864e5);
+  return g <= 0 ? "oggi" : g === 1 ? "ieri" : `${g} giorni fa`;
 }
-$("saved").addEventListener("change", e => {
-  const id = e.target.dataset.c; if(!id) return;
-  state.dec[id].cand = e.target.checked; state.dec[id].t = adesso(); save(); render();
+
+function renderSaved(){
+  const attivi = new Map(jobs.map(j => [j.id, j]));
+  const tutte = salvate();
+  // se il filtro attivo è vuoto ma un altro no, si passa al primo non vuoto
+  const conta = g => tutte.filter(v => GRUPPI.find(x => x[0] === g)[2].includes(statoDi(v))).length;
+  $("seg").innerHTML = GRUPPI.map(([k, nome]) =>
+    `<button data-g="${k}" class="${k === gruppo ? "on" : ""}">${nome} <span class="n">${conta(k) || ""}</span></button>`).join("");
+
+  const stati = GRUPPI.find(x => x[0] === gruppo)[2];
+  const list = tutte.filter(v => stati.includes(statoDi(v)));
+  $("saved").innerHTML = list.length ? list.map(v => rigaHTML(v, attivi.get(v.id), attivi.size)).join("")
+    : `<div class="empty-state" style="position:static;min-height:180px">${
+        tutte.length ? "Niente in questo gruppo." : "Nessuna offerta salvata.<br>Scorri a destra quelle che ti interessano."}</div>`;
+}
+
+function rigaHTML(v, j, ciSonoDati){
+  const st = statoDi(v), aperta = aperte.has(v.id);
+  const chiuso = ciSonoDati && !j;
+  const quandoTesto = st === "da_fare" ? `salvata ${giorniFaTesto(v.ts || v.t)}`
+                    : v.tc ? `candidato ${giorniFaTesto(v.tc)}` : "";
+  return `
+  <div class="row ${aperta ? "aperta" : ""}" data-id="${esc(v.id)}">
+    <div class="head" data-toggle="${esc(v.id)}">
+      <div class="main">
+        ${stelleHTML(v.stelle ?? j?.stelle)}
+        <div class="az2">${esc(v.azienda)}</div>
+        <div class="t">${esc(v.titolo)}</div>
+        <div class="meta">${esc(v.luogo || "")}${quandoTesto ? " · " + quandoTesto : ""}
+          ${chiuso ? ` · <span class="closed">annuncio chiuso</span>` : ""}${v.note ? " · 📝" : ""}</div>
+      </div>
+      <select class="st ${st}" data-s="${esc(v.id)}" aria-label="Stato candidatura">
+        ${STATI.map(([k, n]) => `<option value="${k}" ${k === st ? "selected" : ""}>${n}</option>`).join("")}
+      </select>
+      <span class="chev">›</span>
+    </div>
+    ${aperta ? dettaglioHTML(v, j) : ""}
+  </div>`;
+}
+
+function dettaglioHTML(v, j){
+  return `
+    <div class="det">
+      <div class="btns">
+        <a class="btn pri" href="${esc(v.url)}" target="_blank" rel="noopener">Apri annuncio ↗</a>
+        <button class="btn del" data-r="${esc(v.id)}">Rimuovi</button>
+      </div>
+      ${j && j.descrizione ? `<div><h4>Annuncio</h4><div class="d">${esc(j.descrizione)}</div></div>` : ""}
+      ${(typeof raccomandazioneHTML === "function") ? raccomandazioneHTML(v) : ""}
+      <div><h4>Note</h4>
+        <textarea data-n="${esc(v.id)}" placeholder="Es. referral chiesta a Marco il 2/11, colloquio con il recruiter…">${esc(v.note || "")}</textarea></div>
+    </div>`;
+}
+
+// --- eventi della lista (un solo ascoltatore per tipo, "delegato" dalla lista intera)
+$("seg").addEventListener("click", e => {
+  const b = e.target.closest("button[data-g]"); if(!b) return;
+  gruppo = b.dataset.g; renderSaved();
 });
 $("saved").addEventListener("click", e => {
-  const id = e.target.dataset.r; if(!id) return;
-  state.dec[id] = {s:"scartata", t:new Date().toISOString()}; save(); render();
+  // non aprire/chiudere toccando i controlli o la parte di dettaglio
+  if(e.target.closest("select, a, textarea, input, button:not([data-r]), .det") && !e.target.closest("[data-r]")) return;
+  const r = e.target.closest("[data-r]");
+  if(r) return rimuovi(r.dataset.r);
+  const t = e.target.closest("[data-toggle]");
+  if(t){ const id = t.dataset.toggle; aperte.has(id) ? aperte.delete(id) : aperte.add(id); renderSaved(); }
+});
+$("saved").addEventListener("change", e => {
+  const id = e.target.dataset.s; if(!id) return;
+  const v = state.dec[id], nuovo = e.target.value;
+  if(nuovo !== "da_fare" && !v.tc) v.tc = adesso();     // data della candidatura, la prima volta
+  v.stato = nuovo; v.cand = nuovo !== "da_fare"; v.t = adesso();
+  save(); render();
+});
+// le note si salvano mentre scrivi (senza ridisegnare, così non perdi il cursore)
+$("saved").addEventListener("input", e => {
+  const id = e.target.dataset.n; if(!id) return;
+  state.dec[id].note = e.target.value; state.dec[id].t = adesso(); save();
+});
+
+// rimozione con possibilità di annullare per qualche secondo
+let toastTimer = null;
+function rimuovi(id){
+  const prima = state.dec[id];
+  state.dec[id] = {s:"scartata", t:adesso()}; aperte.delete(id); save(); render();
+  mostraToast("Offerta rimossa", () => { state.dec[id] = {...prima, t:adesso()}; save(); render(); });
+}
+function mostraToast(testo, annulla){
+  document.querySelector(".toast")?.remove(); clearTimeout(toastTimer);
+  const el = document.createElement("div");
+  el.className = "toast"; el.innerHTML = `<span>${esc(testo)}</span><button>Annulla</button>`;
+  el.querySelector("button").onclick = () => { annulla(); el.remove(); };
+  document.body.appendChild(el);
+  toastTimer = setTimeout(() => el.remove(), 6000);
+}
+
+/* =====================================================================
+   6b. TROVA LA RACCOMANDAZIONE (referral)
+   Niente API né lettura di LinkedIn: solo link a ricerche LinkedIn già
+   compilate, che apri tu con il tuo account, più un messaggio pronto
+   da copiare. Il messaggio si può modificare e la tua versione resta
+   salvata in questo browser (KEY_MSG), separata per inglese e italiano.
+   ===================================================================== */
+const KEY_MSG = "swipe-lavoro-messaggi";
+const MSG_BASE = {
+  en: `Hi {nome}, hope you're doing well! I saw the {ruolo} role at {azienda} in Dublin and I'm genuinely interested. I'm an Italian B2B SaaS sales rep (SDR/BDR) planning my move to Dublin. Would you be open to a quick chat about your experience at {azienda}, or to referring me if you think I could be a good fit? Here's the role: {link}. Thanks a lot!`,
+  it: `Ciao {nome}, come stai? Ho visto la posizione {ruolo} in {azienda} a Dublino e mi interessa molto. Lavoro nelle vendite B2B SaaS (SDR/BDR) e sto pianificando il trasferimento a Dublino. Ti andrebbe una breve chiacchierata sulla tua esperienza in {azienda}, o di referenziarmi se pensi che possa essere in linea? Ecco l'annuncio: {link}. Grazie mille!`,
+};
+let linguaMsg = "en";
+const messaggi = () => { try { return JSON.parse(localStorage.getItem(KEY_MSG)) || {}; } catch(e){ return {}; } };
+
+// nome da cercare su LinkedIn: "Workvivo / Zoom" -> "Workvivo", "X (ex Twitter)" -> "X"
+const nomeLinkedIn = a => (a || "").split("/")[0].replace(/\(.*?\)/g, "").replace(/tech hub/i, "").trim();
+
+// ricerca persone su LinkedIn; reteMia = solo collegamenti di 1° e 2° grado
+function linkPersone(parole, reteMia){
+  const u = new URL("https://www.linkedin.com/search/results/people/");
+  u.searchParams.set("keywords", parole);
+  if(reteMia) u.searchParams.set("network", '["F","S"]');
+  u.searchParams.set("origin", "FACETED_SEARCH");
+  return u.toString();
+}
+
+function raccomandazioneHTML(v){
+  const az = nomeLinkedIn(v.azienda);
+  const ae = /account executive|\bae\b|sales executive/i.test(v.titolo || "");
+  const capo = ae ? `${az} sales manager` : `${az} sales development manager`;
+  const testo = (messaggi()[linguaMsg] || MSG_BASE[linguaMsg])
+    .replaceAll("{ruolo}", v.titolo || "").replaceAll("{azienda}", az).replaceAll("{link}", v.url || "");
+  return `
+    <div><h4>Trova chi ti raccomanda</h4>
+      <div class="btns">
+        <a class="btn" target="_blank" rel="noopener" href="${esc(linkPersone(az, true))}">👥 I tuoi contatti (1° e 2°)</a>
+        <a class="btn" target="_blank" rel="noopener" href="${esc(linkPersone(`${az} Italian Dublin`, false))}">🇮🇹 Italiani a Dublino</a>
+        <a class="btn" target="_blank" rel="noopener" href="${esc(linkPersone(capo, false))}">🎯 ${ae ? "Sales manager" : "Manager SDR"}</a>
+        <a class="btn" target="_blank" rel="noopener" href="${esc(linkPersone(`${az} recruiter EMEA`, false))}">🧑‍💼 Recruiter</a>
+      </div>
+      <p class="mini">Prima i contatti di 1° e 2° grado: chi ti conosce (o conosce chi ti conosce) risponde molto più spesso.</p>
+    </div>
+    <div><h4>Messaggio <span class="lang">
+        <button data-l="en" class="${linguaMsg === "en" ? "on" : ""}">EN</button>
+        <button data-l="it" class="${linguaMsg === "it" ? "on" : ""}">IT</button></span></h4>
+      <textarea data-m="${esc(v.id)}" rows="6">${esc(testo)}</textarea>
+      <div class="btns" style="margin-top:8px">
+        <button class="btn pri" data-copia="${esc(v.id)}">Copia messaggio</button>
+        <button class="btn" data-salvamsg="${esc(v.id)}" title="Usa questo testo come modello per tutte le offerte">Salva come modello</button>
+        <button class="btn" data-resetmsg="1">Modello iniziale</button>
+      </div>
+      <p class="mini">Sostituisci {nome} prima di inviare. Nel modello puoi usare {nome}, {ruolo}, {azienda}, {link}.</p>
+    </div>`;
+}
+
+$("saved").addEventListener("click", async e => {
+  const l = e.target.closest("[data-l]");
+  if(l){ linguaMsg = l.dataset.l; return renderSaved(); }
+  const c = e.target.closest("[data-copia]");
+  if(c){
+    const ta = document.querySelector(`textarea[data-m="${CSS.escape(c.dataset.copia)}"]`);
+    try { await navigator.clipboard.writeText(ta.value); c.textContent = "Copiato ✓"; }
+    catch(err){ ta.select(); document.execCommand("copy"); c.textContent = "Copiato ✓"; }
+    setTimeout(() => c.textContent = "Copia messaggio", 1800);
+    return;
+  }
+  const m = e.target.closest("[data-salvamsg]");
+  if(m){
+    // il testo diventa modello: si rimettono i segnaposto al posto dei dati di questa offerta
+    const v = state.dec[m.dataset.salvamsg];
+    const ta = document.querySelector(`textarea[data-m="${CSS.escape(m.dataset.salvamsg)}"]`);
+    let t = ta.value;
+    if(v.url) t = t.replaceAll(v.url, "{link}");
+    if(v.titolo) t = t.replaceAll(v.titolo, "{ruolo}");
+    t = t.replaceAll(nomeLinkedIn(v.azienda), "{azienda}");
+    const tutti = messaggi(); tutti[linguaMsg] = t;
+    try { localStorage.setItem(KEY_MSG, JSON.stringify(tutti)); } catch(err){}
+    m.textContent = "Salvato ✓"; setTimeout(() => m.textContent = "Salva come modello", 1800);
+    return;
+  }
+  if(e.target.closest("[data-resetmsg]")){
+    const tutti = messaggi(); delete tutti[linguaMsg];
+    try { localStorage.setItem(KEY_MSG, JSON.stringify(tutti)); } catch(err){}
+    renderSaved();
+  }
 });
 
 /* =====================================================================
