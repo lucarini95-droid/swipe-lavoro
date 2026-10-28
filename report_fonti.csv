@@ -1,49 +1,139 @@
 Azienda,ATS,Slug,URL,Offerte totali,A Dublino,SDR tenute,SDR scartate lingua,Esempi,Impronte,Note
-Google,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.google.com/about/careers/applications/jobs/results?location=Dublin
-Meta,NON TROVATO,,,0,0,0,0,,,pagina 400 -> https://www.metacareers.com/jobs
-Microsoft,eightfold,microsoft.com,https://apply.careers.microsoft.com,50,50,0,0,,eightfold:app; successfactors:successfactors,pagina 200 -> https://apply.careers.microsoft.com/careers
-Amazon / AWS,personio,amazon,,3,0,0,0,,,pagina 200 -> https://www.amazon.jobs/en/
-Amazon / AWS,amazon,,,219,208,0,0,,,pagina 200 -> https://www.amazon.jobs/en/
-Salesforce,workday,,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,147,145,5,17,Business Development Representative - South African Market | Sales Development Trainee - NGO PubSec | Business Development Representative UKI Market (English Speaking) | Business Development Representative - Italy | Business Development Representatives for Public Sector or .ORG (Non-Profit & Education),,pagina 200 -> https://www.salesforce.com/company/careers/jobs/?bc=OTH
-TikTok,smartrecruiters,bytedance,,2,0,0,0,,,pagina 200 -> https://lifeattiktok.com/
-PayPal,workday,,https://paypal.wd1.myworkdayjobs.com/jobs,7,6,0,0,,eightfold:paypal,pagina 200 -> https://careers.pypl.com/home/
-PayPal,eightfold,paypal.com,https://paypal.eightfold.ai,6,6,0,0,,eightfold:paypal,pagina 200 -> https://careers.pypl.com/home/
-Indeed,NON TROVATO,,,0,0,0,0,,,pagina 403 -> https://www.indeed.com/careers
-HubSpot,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.hubspot.com/careers/jobs
-Rippling,rippling,rippling,,623,22,3,5,"Business Development Representative, Switzerland & Austria (CHAT) | Enterprise, Business Development Representative, Outbound (English) | Sales Development Representative, Outbound (English)",,pagina 200 -> https://www.rippling.com/careers/open-roles
-AMCS Group,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.amcsgroup.com/careers/
-X (ex Twitter),smartrecruiters,x,,2,0,0,0,,greenhouse:xai,pagina 200 -> https://x.ai/careers
-X (ex Twitter),greenhouse,xai,,308,5,0,0,,greenhouse:xai,pagina 200 -> https://x.ai/careers
-Oracle,NON TROVATO,,,0,0,0,0,,oracle:eeho,pagina 200 -> https://careers.oracle.com/en/sites/jobsearch
-IBM,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.ibm.com/careers/search
-Guidewire Software,workday,,https://guidewire.wd5.myworkdayjobs.com/external,11,11,0,0,,,pagina 200 -> https://www.guidewire.com/about/careers
-Twilio,greenhouse,twilio,,136,12,0,0,,eightfold:app,pagina 200 -> https://jobs.twilio.com/careers
-Twilio,eightfold,twilio.com,https://jobs.twilio.com,11,11,0,0,,eightfold:app,pagina 200 -> https://jobs.twilio.com/careers
-Personio,personio,personio,,1,0,0,0,,,pagina 429 -> https://www.personio.com/about-personio/careers/
-Mastercard Tech Hub,workday,,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,65,65,0,0,,workday:https://mastercard.wd1.myworkdayjobs.com/CorporateCareers; phenom:cdn.phenom,pagina 200 -> https://careers.mastercard.com/us/en
-Adobe,workday,,https://adobe.wd5.myworkdayjobs.com/external_experienced,0,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.adobe.com/us/en
-Adobe,phenom,,https://careers.adobe.com/us/en,1,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.adobe.com/us/en
-Flutter Entertainment,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://flutter.com/careers/
-Procore,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://careers.procore.com/
-Workvivo / Zoom,workday,,https://zoom.wd5.myworkdayjobs.com/Zoom,5,5,0,0,,,pagina 200 -> https://www.careers.zoom.us/
-Rapid7,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://careers.rapid7.com/
-FIS,workday,,https://fis.wd5.myworkdayjobs.com/SearchJobs,2,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.fisglobal.com/us/en
-Veeam,greenhouse,veeamsoftware,,242,0,0,0,,,pagina 200 -> https://careers.veeam.com/
-Palo Alto Networks,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://jobs.paloaltonetworks.com/en
-VMware by Broadcom,workday,,https://broadcom.wd1.myworkdayjobs.com/External_Career,0,0,0,0,,,pagina 200 -> https://www.broadcom.com/company/careers
-Dell Technologies,NON TROVATO,,,0,0,0,0,,,pagina 403 -> https://jobs.dell.com/; workday ipotesi KO dell.wd1.myworkdayjobs.com
-Hewlett Packard Enterprise,personio,hpe,,2,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.hpe.com/us/en
-Hewlett Packard Enterprise,workday,,https://hpe.wd5.myworkdayjobs.com/Jobsathpe,1,1,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.hpe.com/us/en
-Nokia,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://www.nokia.com/careers/; workday ipotesi KO nokia.wd3.myworkdayjobs.com
-Ericsson,eightfold,ericsson.com,https://jobs.ericsson.com,1,1,0,0,,eightfold:app; successfactors:career2.successfactors,pagina 200 -> https://jobs.ericsson.com/careers
-Amdocs,eightfold,amdocs.com,https://jobs.amdocs.com,0,0,0,0,,eightfold:vs-errors,pagina 200 -> https://jobs.amdocs.com/careers; workday ipotesi KO amdocs.wd3.myworkdayjobs.com
-Teamwork.com,personio,teamwork,,1,1,0,0,,,pagina 200 -> https://www.teamwork.com/careers/
-Paddy Power / Betfair,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://flutter.com/careers/
-DocuSign,jibe,,https://careers.docusign.com,82,24,1,3,Sales Development Representative (UK/IE Markets),icims:www,pagina 200 -> https://careers.docusign.com/careers-home; workday ipotesi KO docusign.wd1.myworkdayjobs.com
-Qualtrics,greenhouse,qualtrics,,52,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://www.qualtrics.com/careers/us/en
-Qualtrics,phenom,,https://www.qualtrics.com/careers/us/en,0,0,0,0,,phenom:cdn.phenom,pagina 200 -> https://www.qualtrics.com/careers/us/en
-Snowflake,ashby,snowflake,,360,7,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.snowflake.com/us/en
-SAP,NON TROVATO,,,0,0,0,0,,,pagina 200 -> https://jobs.sap.com/en/
-Cisco,workday,cisco,https://cisco.wd5.myworkdayjobs.com/cisco_careers,9,9,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.cisco.com/global/en
-U.S. Bank / Elavon,phenom,,https://careers.usbank.com/global/en,23,22,1,0,Portfolio Business Development Representative,phenom:cdn.phenom,pagina 200 -> https://careers.usbank.com/global/en
-Fiserv,phenom,,https://careers.fiserv.com/us/en,6,6,0,0,,phenom:cdn.phenom,pagina 200 -> https://careers.fiserv.com/us/en
+Squarespace,greenhouse,squarespace,,27,4,0,0,,,pagina errore MissingSchema
+Coinbase,greenhouse,coinbase,,227,1,0,0,,,pagina errore MissingSchema
+New Relic,greenhouse,newrelic,,50,2,1,0,Business Development Representative,,pagina errore MissingSchema
+New Relic,smartrecruiters,newrelic,,3,0,0,0,,,pagina errore MissingSchema
+Udemy,greenhouse,udemy,,3,0,0,0,,,pagina errore MissingSchema
+Etsy,workday,etsy,https://etsy.wd5.myworkdayjobs.com/etsy_careers,9,7,0,0,,,pagina errore MissingSchema
+GitLab,greenhouse,gitlab,,234,12,2,1,"Business Development Representative | Business Development Representative, Italian Speaking",,pagina errore MissingSchema
+Cloudflare,greenhouse,cloudflare,,461,0,0,0,,,pagina errore MissingSchema
+ZoomInfo,greenhouse,zoominfo,,102,1,0,0,,,pagina errore MissingSchema
+Vanta,ashby,vanta,,79,9,0,1,,,pagina errore MissingSchema
+Anthropic,greenhouse,anthropic,,680,9,0,0,,,pagina errore MissingSchema
+Notion,ashby,notion,,142,23,1,4,"Business Development Representative, UKI",,pagina errore MissingSchema
+Clio,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Seismic,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Salesloft,greenhouse,salesloft,,33,0,0,0,,,pagina errore MissingSchema
+Outreach,lever,outreach,,21,0,0,0,,,pagina errore MissingSchema
+Outreach,smartrecruiters,outreachio,,1,0,0,0,,,pagina errore MissingSchema
+Groupon,greenhouse,groupon,,28,0,0,0,,,pagina errore MissingSchema
+Groupon,workday,groupon,https://groupon.wd5.myworkdayjobs.com/Jobs,0,0,0,0,,,pagina errore MissingSchema
+Wix,smartrecruiters,wix2,,87,2,0,0,,,pagina errore MissingSchema
+Yahoo,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Zalando,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Deel,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Remote.com,greenhouse,remote,,2,0,0,0,,,pagina errore MissingSchema
+Airtable,greenhouse,airtable,,5,0,0,0,,,pagina errore MissingSchema
+Smartsheet,greenhouse,smartsheet,,86,0,0,0,,,pagina errore MissingSchema
+Sprinklr,workday,sprinklr,https://sprinklr.wd1.myworkdayjobs.com/Careers,4,4,0,0,,,pagina errore MissingSchema
+Contentsquare,lever,contentsquare,,18,0,0,0,,,pagina errore MissingSchema
+Figma,greenhouse,figma,,139,0,0,0,,,pagina errore MissingSchema
+Canva,smartrecruiters,canva,,73,0,0,0,,,pagina errore MissingSchema
+Miro,ashby,miro,,12,0,0,0,,,pagina errore MissingSchema
+monday.com,personio,monday,,7,0,0,0,,,pagina errore MissingSchema
+Pipedrive,lever,pipedrive,,8,1,0,0,,,pagina errore MissingSchema
+Hootsuite,greenhouse,hootsuite,,3,0,0,0,,,pagina errore MissingSchema
+Hootsuite,smartrecruiters,hootsuite,,8,0,0,0,,,pagina errore MissingSchema
+SurveyMonkey,ashby,surveymonkey,,20,1,0,0,,,pagina errore MissingSchema
+Zapier,ashby,zapier,,12,0,0,0,,,pagina errore MissingSchema
+Wiz,greenhouse,wizinc,,123,1,0,0,,,pagina errore MissingSchema
+Glean,smartrecruiters,glean,,1,0,0,0,,,pagina errore MissingSchema
+Glean,greenhouse,gleanwork,,133,0,0,0,,,pagina errore MissingSchema
+Perplexity,ashby,perplexity,,133,0,0,0,,,pagina errore MissingSchema
+Cohere,ashby,cohere,,119,0,0,0,,,pagina errore MissingSchema
+Mistral AI,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+ElevenLabs,ashby,elevenlabs,,155,0,0,0,,,pagina errore MissingSchema
+Revolut,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Kraken,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Bumble,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Zuora,greenhouse,zuora,,33,0,0,0,,,pagina errore MissingSchema
+Coupa,lever,coupa,,39,0,0,0,,,pagina errore MissingSchema
+Medallia,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Genesys,workday,genesys,https://genesys.wd1.myworkdayjobs.com/genesys,0,0,0,0,,,pagina errore MissingSchema
+Shopify,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+SumUp,greenhouse,sumup,,356,17,0,0,,,pagina errore MissingSchema
+Payhawk,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Pleo,ashby,pleo,,35,0,0,0,,,pagina errore MissingSchema
+MoonPay,lever,moonpay,,21,0,0,0,,,pagina errore MissingSchema
+Circle,ashby,circle,,11,0,0,0,,,pagina errore MissingSchema
+Circle,workday,circle,https://circle.wd1.myworkdayjobs.com/circle,2,2,0,0,,,pagina errore MissingSchema
+Algolia,greenhouse,algolia,,26,0,0,0,,,pagina errore MissingSchema
+Contentful,greenhouse,contentful,,29,0,0,0,,,pagina errore MissingSchema
+Typeform,greenhouse,typeform,,11,5,0,0,,,pagina errore MissingSchema
+Brex,greenhouse,brex,,262,0,0,0,,,pagina errore MissingSchema
+Ramp,greenhouse,ramp,,1,1,0,0,,,pagina errore MissingSchema
+Ramp,ashby,ramp,,168,0,0,0,,,pagina errore MissingSchema
+Gorgias,ashby,gorgias,,19,0,0,0,,,pagina errore MissingSchema
+Attentive,greenhouse,attentive,,30,0,0,0,,,pagina errore MissingSchema
+Yotpo,greenhouse,yotpo,,18,0,0,0,,,pagina errore MissingSchema
+Similarweb,greenhouse,similarweb,,70,0,0,0,,,pagina errore MissingSchema
+Celonis,greenhouse,celonis,,225,0,0,0,,,pagina errore MissingSchema
+Databricks,greenhouse,databricks,,900,2,0,0,,,pagina errore MissingSchema
+Confluent,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Samsara,greenhouse,samsara,,316,0,0,0,,,pagina errore MissingSchema
+Docebo,ashby,docebo,,44,0,0,0,,,pagina errore MissingSchema
+Highspot,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Amplitude,ashby,amplitude,,44,0,0,0,,,pagina errore MissingSchema
+Braze,greenhouse,braze,,341,0,0,0,,,pagina errore MissingSchema
+Iterable,ashby,iterable,,12,0,0,0,,,pagina errore MissingSchema
+Calendly,greenhouse,calendly,,8,0,0,0,,,pagina errore MissingSchema
+Dialpad,greenhouse,dialpad,,15,0,0,0,,,pagina errore MissingSchema
+Aircall,lever,aircall,,77,0,0,0,,,pagina errore MissingSchema
+Talkdesk,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Five9,greenhouse,five9,,84,0,0,0,,,pagina errore MissingSchema
+Xero,ashby,xero,,116,0,0,0,,,pagina errore MissingSchema
+Phorest,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Kitman Labs,smartrecruiters,kitmanlabs,,1,1,0,0,,,pagina errore MissingSchema
+LearnUpon,greenhouse,learnupon,,17,6,0,0,,,pagina errore MissingSchema
+Mimecast,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Tenable,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Abnormal Security,greenhouse,abnormalsecurity,,89,4,0,2,,,pagina errore MissingSchema
+Arctic Wolf,workday,arcticwolf,https://arcticwolf.wd1.myworkdayjobs.com/External,0,0,0,0,,,pagina errore MissingSchema
+SentinelOne,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Netskope,greenhouse,netskope,,130,0,0,0,,,pagina errore MissingSchema
+Netskope,smartrecruiters,netskope,,8,0,0,0,,,pagina errore MissingSchema
+1Password,ashby,1password,,88,0,0,0,,,pagina errore MissingSchema
+1Password,workable,1password,,2,0,0,0,,,pagina errore MissingSchema
+Huntress,greenhouse,huntress,,31,1,0,0,,,pagina errore MissingSchema
+Vercel,greenhouse,vercel,,93,0,0,0,,,pagina errore MissingSchema
+Postman,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Harness,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+JumpCloud,lever,jumpcloud,,41,0,0,0,,,pagina errore MissingSchema
+Drata,ashby,drata,,29,0,0,0,,,pagina errore MissingSchema
+Cyera,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+HiBob,smartrecruiters,hibob,,1,0,0,0,,,pagina errore MissingSchema
+HiBob,ashby,bob,,3,0,0,0,,,pagina errore MissingSchema
+Factorial,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Lightspeed,ashby,lightspeedhq,,117,1,1,0,Outbound SDR,,pagina errore MissingSchema
+Lightspeed,ashby,lightspeed,,5,0,0,0,,,pagina errore MissingSchema
+Trustpilot,greenhouse,trustpilot,,45,0,0,0,,,pagina errore MissingSchema
+Payoneer,greenhouse,payoneer,,105,1,0,0,,,pagina errore MissingSchema
+Checkout.com,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Adyen,greenhouse,adyen,,242,0,0,0,,,pagina errore MissingSchema
+Airwallex,ashby,airwallex,,506,0,0,0,,,pagina errore MissingSchema
+Wise,greenhouse,wise,,21,0,0,0,,,pagina errore MissingSchema
+Wise,smartrecruiters,wise,,418,0,0,0,,,pagina errore MissingSchema
+Plaid,ashby,plaid,,129,0,0,0,,,pagina errore MissingSchema
+Zendesk,workday,zendesk,https://zendesk.wd1.myworkdayjobs.com/zendesk,10,10,0,0,,,pagina errore MissingSchema
+HubSpot,greenhouse,hubspotjobs,,77,16,0,0,,,pagina errore MissingSchema
+Indeed,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Workday,workday,workday,https://workday.wd5.myworkdayjobs.com/workday,24,20,1,4,Business Development Representative UKI,,pagina errore MissingSchema
+Qualtrics,greenhouse,qualtrics,,92,1,0,0,,,pagina errore MissingSchema
+Qualtrics,phenom,,https://www.qualtrics.com/careers/us/en,1,1,0,0,,,pagina errore MissingSchema
+Gong,smartrecruiters,gong,,7,0,0,0,,,pagina errore MissingSchema
+Gong,greenhouse,gongio,,86,15,0,0,,,pagina errore MissingSchema
+Hubstaff,ashby,hubstaff,,1,0,0,0,,,pagina errore MissingSchema
+Personio,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Unit4,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Cvent,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Bazaarvoice,lever,bazaarvoice,,9,0,0,0,,,pagina errore MissingSchema
+Sitecore,ashby,sitecore,,31,3,0,0,,,pagina errore MissingSchema
+OneTrust,greenhouse,onetrust,,78,0,0,0,,,pagina errore MissingSchema
+Pigment,lever,pigment,,126,0,0,0,,,pagina errore MissingSchema
+Agicap,lever,agicap,,23,0,0,0,,,pagina errore MissingSchema
+Spendesk,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
+Mews,greenhouse,mewssystems,,25,9,0,0,,,pagina errore MissingSchema
+SiteMinder,ashby,siteminder,,24,0,0,0,,,pagina errore MissingSchema
+SiteMinder,smartrecruiters,siteminder,,4,0,0,0,,,pagina errore MissingSchema
+Toast,greenhouse,toast,,340,20,0,0,,,pagina errore MissingSchema
+Dext,NON TROVATO,,,0,0,0,0,,,pagina errore MissingSchema
