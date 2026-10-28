@@ -22,6 +22,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Swipe Lavoro</title>
 <meta name="robots" content="noindex">
+<!-- chiede al browser di non usare copie vecchie della pagina (non sempre rispettato: vedi blocco 9) -->
+<meta http-equiv="Cache-Control" content="no-cache">
 
 <!-- Telefono: icona sulla schermata Home e apertura a schermo intero come un'app -->
 <link rel="manifest" href="manifest.json">
@@ -176,6 +178,12 @@ footer details{margin-top:6px;text-align:left}
 footer summary{cursor:pointer;text-align:center}
 footer ul{padding-left:18px;margin:6px 0}
 .hidden{display:none!important}
+/* avviso "nuova versione" in cima e tasto Aggiorna in fondo */
+.upd-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent);color:var(--card);
+  padding:10px 14px;border-radius:12px;margin-bottom:12px;font-size:13.5px;font-weight:600}
+.upd-bar button,.agg{border:0;font:inherit;font-weight:700;cursor:pointer;border-radius:9px}
+.upd-bar button{background:var(--card);color:var(--accent);padding:6px 12px}
+.agg{background:none;color:var(--accent);padding:2px 4px;font-size:11.5px;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -186,6 +194,9 @@ footer ul{padding-left:18px;margin:6px 0}
     <div class="upd"><span id="upd">carico…</span><br>
       <button class="sync" id="b-sync" title="Sincronizzazione tra dispositivi">☁︎ <span id="sync-txt">…</span></button></div>
   </header>
+
+  <!-- Avviso nuova versione: compare da solo quando su GitHub c'è una versione più recente (blocco 9) -->
+  <div class="upd-bar hidden" id="upd-bar"><span id="upd-txt">Nuova versione disponibile</span><button id="b-agg">Aggiorna</button></div>
 
   <!-- Pannello sincronizzazione: si apre toccando "☁︎" nell'intestazione -->
   <div class="panel hidden" id="panel">
@@ -227,7 +238,7 @@ footer ul{padding-left:18px;margin:6px 0}
 /* =====================================================================
    1. IMPOSTAZIONI
    ===================================================================== */
-const VERSIONE = "1.6";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const VERSIONE = "1.7";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
 const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
 const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
 const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
@@ -780,9 +791,10 @@ fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
   const prob = (d.problemi || []);
   // escluse = altra lingua o mercato non mio (UK, Americhe...); i dati vecchi usavano scartate_lingua
   const sc = d.escluse || (d.scartate_lingua || []).map(x => ({...x, motivo: x.lingua}));
-  $("foot").innerHTML = `${jobs.length} offerte attive · ${d.fonti_lette}/${d.fonti_totali} aziende lette · v${VERSIONE}`
+  $("foot").innerHTML = `${jobs.length} offerte attive · ${d.fonti_lette}/${d.fonti_totali} aziende lette · v${VERSIONE} <button class="agg" id="b-agg2">Aggiorna</button>`
     + (sc.length ? `<details><summary>${sc.length} escluse (altra lingua o mercato)</summary><ul>${sc.map(s=>`<li>${esc(s.azienda)}: ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titolo)}</a>` : esc(s.titolo)} <i>(${esc(s.motivo)})</i></li>`).join("")}</ul></details>` : "")
     + (prob.length ? `<details><summary>${prob.length} aziende non lette</summary><ul>${prob.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></details>` : "");
+  $("b-agg2").onclick = aggiornaPagina;
   render();
   aggiornaDaRemoto();
 }).catch(() => {
@@ -790,6 +802,34 @@ fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
   $("foot").textContent = `v${VERSIONE}`;
   $("deck").innerHTML = `<div class="empty-state"><div><b>Ancora nessun dato</b>Il primo giro di ricerca non è ancora finito. Riprova tra qualche minuto.</div></div>`;
 });
+/* =====================================================================
+   9. AGGIORNAMENTO DELLA PAGINA
+   Il telefono (soprattutto l'app sulla schermata Home) tiene a lungo una
+   copia vecchia della pagina. Qui si scarica la pagina "fresca" da GitHub,
+   si legge la sua VERSIONE e, se è diversa da quella in uso, compare
+   l'avviso in alto. "Aggiorna" (anche quello in fondo) ricarica saltando
+   la copia salvata, aggiungendo all'indirizzo un numero sempre diverso.
+   ===================================================================== */
+function aggiornaPagina(){
+  // invia prima le scelte non ancora salvate su GitHub, poi ricarica
+  if(timerInvio){ clearTimeout(timerInvio); invia(); }
+  setTimeout(() => location.replace(location.pathname + "?v=" + Date.now()), timerInvio ? 1200 : 0);
+}
+async function controllaVersione(){
+  try {
+    const t = await fetch("index.html?t=" + Date.now(), {cache: "no-store"}).then(r => r.text());
+    const m = t.match(/const VERSIONE = "([^"]+)"/);
+    if(m && m[1] !== VERSIONE){
+      $("upd-txt").textContent = `Nuova versione v${m[1]} (hai la v${VERSIONE})`;
+      $("upd-bar").classList.remove("hidden");
+    }
+  } catch(e){}                       // senza rete: nessun avviso
+}
+$("b-agg").onclick = aggiornaPagina;
+// toglie "?v=…" dall'indirizzo dopo l'aggiornamento, così resta pulito
+if(location.search.includes("v=")) window.history.replaceState(null, "", location.pathname);   // window.: "history" qui è la lista degli Annulla
+controllaVersione();
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible") controllaVersione(); });
 </script>
 </body>
 </html>

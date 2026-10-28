@@ -3,6 +3,12 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.7 — 28 ottobre 2026
+- **Avviso "Nuova versione"**: la pagina controlla da sola (all'apertura e ogni volta che ci torni) se su GitHub
+  c'è una versione più recente di quella che stai usando; se sì compare una barra in alto con **Aggiorna**.
+- Tasto **Aggiorna** sempre presente in fondo, accanto al numero di versione: ricarica saltando la copia
+  salvata dal telefono. Prima di ricaricare invia a GitHub le scelte non ancora sincronizzate.
+
 ## v1.6 — 28 ottobre 2026
 - **Salvate ridisegnate**: filtri in alto (Da candidarmi / In corso / Chiuse) e, al posto della spunta
   "Candidato", uno stato per offerta: Da candidarmi, Candidato, Colloquio, Offerta, Rifiutato, Non mi interessa.
