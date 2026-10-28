@@ -177,25 +177,55 @@ PROVE = [
 ]
 
 
-def esegui(prova):
-    nome, fn = prova
-    s = monitor.sess()
-    try:
-        info, titoli = fn(s)
-    except Exception as e:
-        return nome, f"ERRORE {type(e).__name__}: {str(e)[:100]}", []
-    return nome, info, [t for t in titoli if t]
+
+def campioni(s):
+    """Secondo giro: salva pezzi di risposta grezza per capire la struttura dei dati."""
+    out = []
+    r = s.get("https://www.google.com/about/careers/applications/jobs/results",
+              params={"location": "Dublin, Ireland", "q": "", "page": 1}, timeout=T)
+    h = r.text
+    i = h.find("<h3")
+    out.append(("GOOGLE html attorno al primo h3", h[max(0, i-3000):i+2500]))
+    out.append(("GOOGLE link jobs/results", "\n".join(sorted(set(re.findall(r'href="([^"]*jobs/results/\d+[^"]*)"', h)))[:10])))
+    out.append(("GOOGLE AF_initDataCallback (inizio)", "\n".join(m[:1500] for m in re.findall(r"AF_initDataCallback\((\{key: 'ds:[^']+'.{0,2000})", h)[:3])))
+
+    body = {"recruitment_id_list": [], "job_category_id_list": [], "subject_id_list": [],
+            "location_code_list": [], "keyword": "Dublin", "limit": 2, "offset": 0}
+    r = s.post("https://api.lifeattiktok.com/api/v1/public/supplier/search/job/posts", json=body, timeout=T,
+               headers={**JSON_H, "website-path": "tiktok", "Origin": "https://lifeattiktok.com",
+                        "Referer": "https://lifeattiktok.com/"})
+    out.append(("TIKTOK primo risultato", json.dumps((r.json().get("data") or {}).get("job_post_list", [])[:1], ensure_ascii=False)[:3000]))
+
+    for kw in ("Dublin", "Ireland"):
+        finder = f'findReqs;siteNumber=CX_45001,limit=50,offset=0,keyword="{kw}"'
+        r = s.get("https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+                  params={"onlyData": "true", "expand": "requisitionList", "finder": finder}, timeout=T)
+        items = r.json().get("items") or []
+        reqs = items[0].get("requisitionList", []) if items else []
+        tot = items[0].get("TotalJobsCount") if items else None
+        out.append((f"ORACLE keyword={kw} tot={tot}", "\n".join(f"{x.get('Title')} @ {x.get('PrimaryLocation')} id={x.get('Id')}" for x in reqs[:25])))
+    out.append(("ORACLE chiavi primo", json.dumps(reqs[:1])[:1500] if reqs else ""))
+
+    body = {"appId": "careers", "scopes": ["careers2"], "size": 50, "lang": "zz",
+            "query": {"bool": {"must": [{"simple_query_string": {"query": "Dublin",
+                      "fields": ["field_keyword_19^3", "title", "body"]}}]}}}
+    r = s.post("https://www-api.ibm.com/search/api/v2", json=body, timeout=T, headers=JSON_H)
+    hits = (r.json().get("hits") or {}).get("hits") or []
+    out.append(("IBM query Dublin", "\n".join(f"{(h.get('_source') or {}).get('title')} @ {(h.get('_source') or {}).get('field_keyword_19')} {(h.get('_source') or {}).get('url')}" for h in hits[:25])))
+    out.append(("IBM chiavi primo", json.dumps(hits[:1])[:2000]))
+
+    r = s.get("https://jobs.sap.com/search/", params={"q": "", "locationsearch": "Dublin"}, timeout=T)
+    i = r.text.find("jobTitle")
+    out.append((f"SAP HTML (len {len(r.text)})", r.text[max(0, i-500):i+1500] if i > 0 else r.text[:1500]))
+    r = s.get("https://personio.jobs.personio.com/xml", timeout=T)
+    out.append(("PERSONIO .com xml", r.text[:1200]))
+    return out
 
 
 def main():
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        risultati = list(ex.map(esegui, PROVE))
-    for nome, info, titoli in risultati:
-        sales = [t for t in titoli if monitor.TITOLO.search(t) or re.search(
-            r"account (executive|manager|strategist)|sales|italian", t, re.I)]
-        print(f"\n=== {nome}: {info} | {len(titoli)} titoli, {len(sales)} sales")
-        for t in (sales or titoli)[:12]:
-            print("   ", t[:110])
+    s = monitor.sess()
+    for titolo, testo in campioni(s):
+        print(f"\n##### {titolo}\n{testo}")
 
 
 if __name__ == "__main__":
