@@ -1,93 +1,52 @@
 
-=== Google (pagina): HTTP 200, 1280518 byte | 27 titoli, 20 sales
-    New Business Sales BS/MS Intern, 2027 (Multiple Languages)
-    Sales Manager, SMB Sales, Google Customer Solutions, Netherlands Market (Dutch)
-    Head of Sales, Google Customer Solutions, Israel (English, Hebrew)
-    Sales Manager, MENA Region, Google Customer Solutions (Arabic, English)
-    Sales Manager, Engage, Google Customer Solutions, Germany Market (English, German)
-    Account Executive, Mid-Market Sales, Google Customer Solutions, Belgian Market (English, Dutch/French)
-    Sales Specialist, Google Workspace
-    Account Executive, Affiliates and Publishers, New Business Sales, UKI (English)
-    Account Executive, New Business Sales, UKI (English)
-    Account Strategist, SMB Sales, Google Customer Solutions, Belgian Market (Dutch, English)
-    Account Executive, New Business Sales, Northern Europe (Multiple Languages)
-    Senior Account Executive, New Business Sales, GCS (Italian, English)
+##### GOOGLE html attorno al primo h3
+iv class="VfPpkd-Jh9lGc"></div><div class="VfPpkd-J1Ukfc-LhBDec"></div><div class="VfPpkd-RLmnJb"></div><span jsname="V67aGc" class="VfPpkd-vQzf8d">Clear filters</span></button></div></div><div jsaction="AOyNJd:PxhMS;"><div jscontroller="LJn48e" jsaction="aPyGgf:X6BBU;yAaqO:hb90bd;P7Z0yf:G5O9wc;" jsname="Qqpt6d" aria-label="tags chipset" role="grid" class="VfPpkd-rOvkhd-XPtOyb-FCjw3e UMrnmb-XPtOyb-FCjw3e"><div class="VfPpkd-rOvkhd-XPtOyb-hhpA7" role="presentation" jsname="IspIQc"></div></div></div><div class="RHN41d" jscontroller=N5QGs jsaction="y3TINb:Z6Pr4;mMW8Af:XSq2Y;O22p3e:fpfTEe;"><form jsaction="submit:dNnI6(preventDefault=true);"><div jscontroller="a7JMNb" jsaction="input:YPqjbf(rYJt4b); keydown:I481le(rYJt4b); focusout:yhTeqf(rYJt4b);AHmuwe:AHmuwe(rYJt4b); click:OLxUje(H04tue),h5M12e(rYJt4b);JIbuQc:jC8ACc(H04tue);SM8mFd:NO3hKe;xDliB:nEYGue;" class=" pxGRyb NGdKgb dBW37b" data-disable-open-dropdown-on-focus="true" jsname="h0T7hb" data-unique-stable-listbox-id="ucj-3"><div jscontroller="EF8pe" jsshadow class="Ufn6O UMrnmb-lP5Lpb-yrriRe" jsname="rYJt4b" data-disable-idom='true'><label class="VfPpkd-fmcmS-yrriRe VfPpkd-fmcmS-yrriRe-OWXEXe-mWPk3d VfPpkd-ksKsZd-mWPk3d VfPpkd-fmcmS-yrriRe-OWXEXe-INsAgc cfWmIb orScbe" jsaction="click:cOuCgd; keydown:I481le;" jsname="vhZMvf" for="i18"><span jscontroller="bTi8wc" class="VfPpkd-NSFCdd-i5vt6e" jsname="B9mpmd"><span class="VfPpkd-NSFCdd-Brv4Fb"></span><span class="VfPpkd-NSFCdd-Ra9xwd" jsname="FMODoe"><span id="i17" class="VfPpkd-NLUYnc-V67aGc" jscontroller="Tpj7Pb" jsname="V67aGc">What do you want to do?</span></span><span class="VfPpkd-NSFCdd-MpmGFe"></span></span><input type="text" value="" id="i18" jsname="YPqjbf" class="VfPpkd-fmcmS-wGMbrd " jsaction="focus:AHmuwe;input:YPqjbf; mousedown:UX7yZ; mouseup:lbsD7e; pointerdown:QJflP; pointerup:HxTfMe; touchstart:p6p2H; touchend:yfqBxc;" aria-labelledby="i17" placeholder="Software engineering, Design, Sales, etc." role="combobox" aria-controls="ucj-3" aria-autocomplete="list" aria-expanded="false" data-axe="mdc-autocomplete" autocomplete="off"></label></div><div class="VfPpkd-xl07Ob-XxIAqe VfPpkd-xl07Ob-XxIAqe-OWXEXe-tsQazb UQ5E0 f8F5Dd UMrnmb-fdMfRe" jsname="H04tue" jscontroller="BIn9Gc" jsaction="keydown:I481le;" data-is-hoisted="false" data-should-flip-corner-horizontally="false" data-stay-in-viewport="false" data-skip-fixed-positioned-viewport-fix="false" tabindex="-1"><ul class="VfPpkd-StrnGf-rymPhb DMZ54e bwNLcf P2Hi5d" jsname="hsfjDf" jscontroller="PHUIyb" jsaction="mouseleave:JywGue; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; keydown:I481le;" role="listbox" tabindex="-1" aria-label="dropdown" id="ucj-3"></ul></div></div></form></div><div class="dg42" aria-label="Job filters" jscontroller="gpq2Rc" jsname="F79BRe" jsaction="qnU0ib:vZLIxf" jsshadow><div class="np8WLc pIeyUb sWtRQd" jscontroller="QCtWCf" jsname="hjrMvf" jsaction="rcuQ6b:npT2md;JIbuQc:scWJ0d(kr6ruf)"><div class="UX494c B7wO7e" jsaction="click:scWJ0d"><div class="Hqhcfd" jsslot><h3 class="mUzaXb">Locations</h3></div><div class="azIEuf"><button class="VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ mN1ivc" jscontroller="soHxf" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;" data-idom-class="yHy1rc eT1oJ mN1ivc" jsname="kr6ruf" aria-label="Locations filter options" id="ach-i21" aria-expanded="true" aria-controls="acc-i22"><div jsname="s3Eaab" class="VfPpkd-Bz112c-Jh9lGc"></div><div class="VfPpkd-Bz112c-J1Ukfc-LhBDec"></div><i class="google-material-icons notranslate VfPpkd-kBDsod" aria-hidden='true'>expand_less</i></button></div></div><div id="acc-i22" jsname="cSG1p" class="fX1Mle oX3Rkb" aria-labelledby="ach-i21" role="region" jsslot><div jscontroller="qHYYwb" jsaction="rcuQ6b:npT2md;rMBU3b:YOIzsb;JIbuQc:ENB8Ne(BKhv6d);"><div jscontroller="yA2xwc" jsaction="yUPaBb:c7WSId;lxKOjc:qbkmHb" jsname="SC9ZBd"><div jscontroller="U2r3Tc" jsaction="y3TINb:Z6Pr4;mMW8Af:dMpQNd;AOyNJd:g56i4e;HQBcFf:WDVbKf;O22p3e:RgfbEb(h0T7hb)" jsname="cEOROc" class=""><div jscontroller="LJn48e" jsaction="aPyGgf:X6BBU;yAaqO:hb90bd;P7Z0yf:G5O9wc;" jsname="Qqpt6d" role="grid" class="VfPpkd-rOvkhd-XPtOyb-FCjw3e UMrnmb-XPtOyb-FCjw3e"><div class="VfPpkd-rOvkhd-XPtOyb-hhpA7" role="presentation" jsname="IspIQc"><span jscontroller="cAoXve" jsaction="ZQT3xf:abzYvb;CdX1Re:xlbhsd; animationend:L9dL9d; transitionend:e204de;" jsname="XPtOyb" id="Dublin, Ireland" role="row" data-mdc-removed-announcement="Removed chip Dublin, Ireland" class="VfPpkd-rOvkhd-XPtOyb VfPpkd-rOvkhd-XPtOyb-OWXEXe-SfQLQb-UbuQg-JIbuQc VfPpkd-rOvkhd-XPtOyb-OWXEXe-dgl2Hf UMrnmb-XPtOyb UMrnmb-XPtOyb-OWXEXe-to915-Ia7Qfc UMrnmb-XPtOyb-OWXEXe-YPqjbf UMrnmb-XPtOyb-OWXEXe-YPqjbf-to915-Ia7Qfc UMrnmb-XPtOyb-OWXEXe-aSvl1d UMrnmb-XPtOyb-OWXEXe-aSvl1d-to915-Ia7Qfc"><span class="VfPpkd-rOvkhd-AnTmuf VfPpkd-rOvkhd-AnTmuf-OWXEXe-ssJRIf" role="gridcell"><span id="ucj-4" role="presentation" class="VfPpkd-rOvkhd-jPmIDe VfPpkd-rOvkhd-jPmIDe-OWXEXe-SdanKc VfPpkd-rOvkhd-jPmIDe-OWXEXe-ssJRIf"><span class="VfPpkd-rOvkhd-TfeOUb-V67aGc" jsname="ODzDMd">Dublin, Ireland</span></span></span><span class="VfPpkd-rOvkhd-AnTmuf VfPpkd-rOvkhd-AnTmuf-OWXEXe-UbuQg" role="gridcell"><span class="VfPpkd-rOvkhd-jPmIDe-OWXEXe-UbuQg-sM5MNb" data-is-tooltip-wrapper="true"><button jscontroller="oIpQqb" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mo
 
-=== Google (API v3): HTTP 404, count=None | 0 titoli, 0 sales
+##### GOOGLE link jobs/results
+jobs/results/101980768145679046-gsn-subsea-capacity-delivery-technical-program-manager?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/108224755093381830-account-strategist-smb-sales-google-customer-solutions-norwegian-market?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/109120215777714886-hate-and-harassment-team-lead-vertical-trust-and-safety-operations-youtube-trust-and-safety?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/109738097557545670-business-data-scientist-gup?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/116489133311828678-senior-security-analyst-incident-response?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/117416914967241414-lead-energy-strategic-negotiator?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/120464177083884230-ai-and-content-program-manager-compliance-readiness-trust-and-safety?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/123750114828133062-account-strategist-small-business-services-english-czechslovak?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/134296291864650438-head-of-sales-google-customer-solutions-israel-english-hebrew?location=Dublin,+Ireland&amp;q&amp;page=1
+jobs/results/134705713917108934-senior-account-executive-midmarket-sales-google-customer-solutions-english?location=Dublin,+Ireland&amp;q&amp;page=1
 
-=== TikTok (API pubblica): HTTP 200, code=0, count=106 | 100 titoli, 6 sales
-    Account Manager, SMB Performance Solutions - Italy - GBS @ Dublin
-    Account Manager - SMB - DACH Market @ Dublin
-    SMB Account Manager, BeNeLux @ Dublin
-    Account Manager Graduate (GBS) - 2027 Start - Graduate (GBS) - 2027 Start @ Dublin
-    Sales Lead, SMB Commerce Shop - UKI @ Dublin
-    Sales Lead, SMB Commerce Shop - DACH @ Dublin
+##### GOOGLE AF_initDataCallback (inizio)
+{key: 'ds:0', hash: '1', data:[[["projects/gweb-careers-proto/tenants/60107626-8e00-0000-0000-0071646e0806/companies/5364d68d-d016-48b0-a6ec-0c6fe5032c6c","DeepMind","deepmind"],["projects/gweb-careers-proto/tenants/60107626-8e00-0000-0000-0071646e0806/companies/ebbbf0d1-8121-483c-8f99-ee92597591fc","Google","google"],["projects/gweb-careers-proto/tenants/60107626-8e00-0000-0000-0071646e0806/companies/21a93a7a-e8bd-44d4-a7ad-480c22177007","Waymo","waymo"],["projects/gweb-careers-proto/tenants/60107626-8e00-0000-0000-0071646e0806/companies/c774ff7a-ba6a-430b-9f1d-a53eb197d842","Wing","wing","https://x.company/projects/wing/","https://x.company/careers-at-x/","https://lh3.googleusercontent.com/-xf27YBaq1Lk/AAAAAAAAAAI/AAAAAAAAFb0/U1uzM1c-GDI/photo.jpg\u003ds60?sz\u003d60"],["projects/gweb-careers-proto/tenants/60107626-8e00-0000-0000-0071646e0806/companies/ad872500-709d-4a93-97e3-76be227f77a1","YouTube","youtube"]]], sideChannel: {}});</script><script class="ds:1" nonce="h8hpTELJJOq_3sbl96O4rA">AF_initDataCallback({key: 'ds:1', hash: '2', data:[[["120464177083884230","AI and Content Program Manager, Compliance Readiness, Trust and Safety","https://www.google.com/about/careers/applications/signin?jobId\u003dCiUAL2FckYRA5kz_BKfuecz9lYbpa-N3kM_8Gnam56vULRC7WwapEjsA9yzvgt1E985Wq0bxFwrkTMzFHdmA87nkF9BogZ6BWOwIVKpeRV-ZvuWo4jimGjU5G6rAOrbuYmy6Ww%3D%3D_V2\u0026loc\u003dIE\u0026title\u003dAI+and+Content+Program+Manager",[null,"\u003cul\u003e\n\u003cli\u003eInfluence and shape emerging r
 
-=== Meta (pagina): HTTP 400, 1543 byte | 0 titoli, 0 sales
+##### TIKTOK primo risultato
+[{"id": "7637565331448187189", "code": "A81920A", "title": "EDiscovery Case Manager, Dublin", "description": "We are seeking detail-oriented and highly organised eDiscovery Case Managers to join our Global eDiscovery team in Dublin, Ireland. This role plays a crucial role in managing Electronically Stored Information (ESI), assisting in the eDiscovery process, and supporting our legal team in all aspects of litigation and regulatory investigations. The ideal candidates will have a strong understanding of eDiscovery processes and technologies, possess excellent communication skills, and be able to collaborate effectively with legal professionals and various internal teams across different time zones.\n\nThe Global Legal - Litigation & eDiscovery team operates globally with team members contributing to the entire eDiscovery lifecycle of cases across multiple jurisdictions.\nAn eDiscovery Case Manager contributes to the entire eDiscovery lifecycle of a case. Case Managers work closely with, and often liaise between, in-house Litigation Counsels, Outside Counsels, paralegals, Data Team, Engineering, and external vendors to manage and assist with data preservation, collection, processing, review, and production.\nThe role requires a strong understanding of the eDiscovery process and custom data types, as well as the ability to navigate a complex, global data environment while adhering to various national and international regulations. Case managers are vital in preparing data for litigation, which involves instructing stakeholders, overseeing data exports, as well as leveraging technologies and machine-assisted analytics to efficiently identify relevant information.\n\nKey Responsibilities\neDiscovery Process Management\n- Manage eDiscovery process in collaboration with litigation attorneys and paralegals.\n- Manage ESI through its lifecycle, including preservation, collection, processing and culling, review, and production.\n- Assist in preservation of various data sources, including but not limited to structured data, internal tools and systems.\n- Collaborate with various internal teams and outside counsel to develop preservation understanding and strategies for information governance.\n\nStakeholder Coordination\n- Liaise between in-house legal teams, forensics teams, and outside counsel on eDiscovery process and best practice.\n- Collaborate with legal professionals, forensics, IT, and external vendors to ensure seamless information exchange.\n- Coordinate with engineering and data scientist teams for complex, proprietary systems to run queries and export data.\n\nData Analysis & Process Development\n- Assist in data analyses, including Early Case Assessment (ECA) and search terms analyses, to identify patterns, trends, and relevant information for litigation purposes.\n- Develop knowledge libraries from data analyses.\n- Develop standardised processes and document in detail regarding ESI specifications, workflow and case development for litigati
 
-=== IBM (API ricerca): HTTP 200, 50 risultati | 50 titoli, 45 sales
-    Sales Operations Intern 2027 @ Yorktown Heights, US
-    Technical Sales Engineer Intern - Entry-Level Sales Program 2027 @ Multiple Cities
-    Global Sales Incentives – Sales Plan Design, Segmentation & Analytics Intern 2027 @ Armonk, US
-    IBM Quantum Sales Intern 2027 @ Yorktown Heights, US
-    Technical Sales Engineer - Entry Level Sales Program 2027 @ Multiple Cities
-    Brand Sales Specialist - Entry Level Sales Program 2027 @ Markham, CA
-    Technical Sales Engineer - Spring Co-op Sales Program 2027 @ Multiple Cities
-    Enterprise Sales - DnB AE @ Singapore, SG
-    Brand Sales Specialist Intern – Entry Level Sales Program 2027 @ Multiple Cities
-    2027 Technical Sales Engineer Co-Op - Entry Level Sales Program @ Multiple Cities
-    Technology Lifecycle Services Renewals Sales Specialist - Entry Level Sales Program 2027 @ Multiple Cities
-    Technology Lifecycle Services Renewals Sales Specialist Intern – Entry Level Sales Program 2027 @ Multiple Cit
+##### ORACLE keyword=Dublin tot=2
+French Sales Development Representative @ DUBLIN, Ireland id=344749
+Spanish/Italian Sales Development Representative @ DUBLIN, Ireland id=345841
 
-=== Oracle (HCM REST): HTTP 200, 100 offerte | 100 titoli, 100 sales
-    Cloud Sales Manager @ BENGALURU, KARNATAKA, India
-    Applications Sales Representative IV @ MUMBAI, MAHARASHTRA, India
-    Data Platform Sales Representative IV @ PUNE, MAHARASHTRA, India
-    Data Platform Sales Representative - SLED @ Denver, CO, United States
-    Sr. Sales Manager, Data Platform SLED - California @ Sacramento, CA, United States
-    NA Sales Representative, Data Platform - Healthcare @ San Francisco, CA, United States
-    Consulting Sales Director - Communications Consulting @ United States
-    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
-    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
-    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
-    NA Sales Representative, Data Platform Healthcare @ Chicago, IL, United States
-    NA Sales Representative, Data Platform SLED @ Sacramento, CA, United States
+##### ORACLE keyword=Ireland tot=5
+French Sales Development Representative @ DUBLIN, Ireland id=344749
+Principal Pre-Sales Engineer, Pharmacovigilance & Drug Safety @ United Kingdom id=345354
+Spanish/Italian Sales Development Representative @ DUBLIN, Ireland id=345841
+Senior Technical Operations Engineer @ BELFAST, United Kingdom id=340987
+Senior Technical Operations Engineer @ BELFAST, United Kingdom id=340985
 
-=== SAP (SuccessFactors): HTTP 200 | 0 titoli, 0 sales
+##### ORACLE chiavi primo
+[{"Id": "344749", "Title": "French Sales Development Representative", "PostedDate": "2026-09-10", "PostingEndDate": null, "Language": "US", "PrimaryLocationCountry": "IE", "GeographyId": 300000252496567, "HotJobFlag": false, "WorkplaceTypeCode": null, "JobFamily": null, "JobFunction": null, "WorkerType": null, "ContractType": null, "ManagerLevel": null, "JobSchedule": null, "JobShift": null, "JobType": null, "StudyLevel": null, "DomesticTravelRequired": null, "InternationalTravelRequired": null, "WorkDurationYears": null, "WorkDurationMonths": null, "WorkHours": null, "WorkDays": null, "LegalEmployer": null, "BusinessUnit": null, "Department": null, "Organization": null, "BusinessUnitId": 300001096514444, "LegalEmployerId": 300000000864412, "OrganizationId": 300001902541887, "MediaThumbURL": "https://img.youtube.com/vi/BV0GMCITXg4/hqdefault.jpg", "ShortDescriptionStr": "French Sales Development Representative \nLocation: Dublin/Ireland\nWorking pattern: Hybrid: Tue/Wed/Thu in office\nFocus: New business opportunities in the French market\n\n", "PrimaryLocation": "DUBLIN, Ireland", "Distance": 9.544824, "TrendingFlag": true, "BeFirstToApplyFlag": false, "Relevancy": 9.54482364654541, "WorkplaceType": "", "ExternalQualificationsStr": null, "ExternalResponsibilitiesStr": null}]
 
-=== Atlassian (listings): HTTP 200, 375 offerte totali | 0 titoli, 0 sales
+##### IBM query Dublin
+None @ None None
 
-=== Dell (Radancy): HTTP 403, non JSON | 0 titoli, 0 sales
+##### IBM chiavi primo
+[{"_index": "genesis-prod-1788036777996", "_id": "002c33c41c8da79147c488398c443c86750b663af5c6161f6647b3950d19feff", "_score": 14.726932}]
 
-=== Palo Alto (Radancy): HTTP 200 | 100 titoli, 18 sales
-    Regional Sales Manager - FBI
-    Named Account Manager, Public Sector
-    Japan SMB Sales Representative
-    Major Account Manager - Higher Education
-    Major Account Manager (DQC)
-    Senior MDR Analyst (Unit 42) - REMOTE
-    Director, Public Sector Capture &amp; Business Development
-    MDR Shift Analyst (Unit 42) - WEST COAST - REMOTE
-    Business Development Capture Manager - SLED
-    District Sales Manager
-    Regional Sales Manager - Federal Civilian
-    Cortex Cloud Sales Specialist
+##### SAP HTML (len 727488)
+":\"Your file is still being scanned. We will continue checking automatically.\",\"fileStillScanningRetry\":\"Your file is still being scanned for security. Select Check again to continue, or remove the file and upload a different one.\",\"firstName\":\"First Name\",\"fluentInLanguage\":\"I am fluent in this language\",\"formerEmployee\":\"Are you a former employee?\",\"fromDate\":\"From Date\",\"gender\":\"Gender\",\"genderFemale\":\"Female\",\"genderMale\":\"Male\",\"genderOther\":\"Other\",\"jobTitle\":\"Job Title\",\"labelLocation\":\"Location\",\"labelReference\":\"Reference\",\"languageProficiency\":\"Language Proficiency\",\"languageSpoken\":\"Language Spoken\",\"lastAppDifferentLanguage\":\"Your last application was saved in a different language and cannot be reused here.\",\"lastAppDifferentProvider\":\"Your last application was for a different application provider and cannot be reused here.\",\"lastAppFormDiffers\":\"This application form differs from your last application, so only compatible fields will be reused.\",\"lastAppOlderSchema\":\"Your last application uses an older application schema and cannot be reused here.\",\"lastName\":\"Last Name\",\"leaveButton\":\"Leave\",\"link1\":\"Link URL 1\",\"link2\":\"Link URL 2\",\"link3\":\"Link URL 3\",\"loading\":\"Loading\",\"loadingOptions\":\"Loading options…\",\"malwareScanNoJobId\":\"The file scan is still running, but no scan job id was returned.\",\"nextStep\":\"Save \u0026 Continue\",\"noFileChosen\":\"No file chosen\",\"noOptionsFound\":\"No {label} found.\",\"periodMonth\":\"Month\",\"periodYear\":\"Year\",\"phoneCountryCode\":\"Phone Country Code\",\"phoneNumber\":\"Phone Number\",\"phoneType\":\"Phone Type\",\"pleaseSelect\":\"Please Select\",\"postalZipCode\":\"Postal / Zip Code\",\"previousStep\":\"Back\",\"previousStepLabel\":\"the previous step\",\"processingCv\":\"Processing your CV. Please wait...\",\"redirectingToConfirmation\":\"Redirecting to your application confirmation page…\",\"remov
 
-=== Indeed (Jibe): ERRORE JSONDecodeError: Expecting value: line 1 column 1 (char 0) | 0 titoli, 0 sales
+##### PERSONIO .com xml
+<?xml version="1.0" encoding="UTF-8"?>
 
-=== Yahoo (Workday): workday | 1 titoli, 0 sales
-    Principal Software Engineer - Backend or Data @ Ireland
+<workzag-jobs>
 
-=== Flutter (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
 
-=== Medallia (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
-
-=== Tenable (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
-
-=== Cvent (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
-
-=== Personio (.com): HTTP 200 | 0 titoli, 0 sales
-
-=== Nokia (Eightfold): ERRORE AttributeError: 'str' object has no attribute 'get' | 0 titoli, 0 sales
-
-=== Dell (Eightfold): ERRORE ConnectionError: HTTPSConnectionPool(host='dell.eightfold.ai', port=443): Max retries exceeded with url: /api/pcsx/se | 0 titoli, 0 sales
+</workzag-jobs>
