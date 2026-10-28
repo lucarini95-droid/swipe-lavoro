@@ -1,303 +1,449 @@
 {
- "aggiornato": "2026-10-28T20:01+00:00",
- "fonti_lette": 52,
- "fonti_totali": 52,
+ "aggiornato": "2026-10-28T21:56+00:00",
+ "fonti_lette": 79,
+ "fonti_totali": 79,
  "aziende_lette": [
+  "Abnormal Security",
   "ActiveCampaign",
   "Adobe",
   "Airbnb",
   "Amazon / AWS",
+  "Anthropic",
   "Asana",
   "CarTrawler",
+  "Circle",
   "Cisco",
+  "Coinbase",
   "CrowdStrike",
+  "Databricks",
   "Datadog",
   "DocuSign",
   "Dropbox",
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "Etsy",
   "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
   "FreedomPay",
+  "GitLab",
   "Gong",
   "Guidewire Software",
   "Hewlett Packard Enterprise",
+  "HubSpot",
+  "Huntress",
   "Intercom",
   "Klaviyo",
+  "LearnUpon",
   "LetsGetChecked",
+  "Lightspeed",
   "Mastercard Tech Hub",
+  "Mews",
   "Microsoft",
   "MongoDB",
+  "New Relic",
+  "Notion",
   "Okta",
   "OpenAI",
   "PayPal",
+  "Payoneer",
   "Pinterest",
+  "Pipedrive",
   "Proofpoint",
+  "Qualtrics",
   "Red Hat",
   "Rippling",
   "Salesforce",
   "ServiceNow",
+  "Sitecore",
   "Snowflake",
+  "Sprinklr",
+  "Squarespace",
   "Stripe",
+  "SumUp",
+  "SurveyMonkey",
   "Teamwork.com",
   "Tines",
   "Toast",
   "Twilio",
+  "Typeform",
   "U.S. Bank / Elavon",
+  "Vanta",
   "Veeam",
   "Version 1",
   "Wayflyer",
+  "Wix",
+  "Wiz",
   "Workday",
   "Workhuman",
   "Workvivo / Zoom",
   "X (ex Twitter)",
-  "Zendesk"
+  "Zendesk",
+  "ZoomInfo"
  ],
  "problemi": [],
- "scartate_lingua": [
-  {
-   "azienda": "Datadog",
-   "titolo": "Sales Development Representative (France)",
-   "lingua": "Francese"
-  },
-  {
-   "azienda": "DocuSign",
-   "titolo": "SD - Market Development Representative (MDR) - DACH (German and English Speaking)",
-   "lingua": "Tedesco"
-  },
+ "pesi": {
+  "base": 1,
+  "italiano_titolo": 3,
+  "italiano_testo": 2,
+  "ruolo_sdr": 1,
+  "mercato_vicino": 1,
+  "altra_lingua": -1,
+  "stage": -2
+ },
+ "escluse": [
   {
    "azienda": "MongoDB",
    "titolo": "Account Development Representative - Arabic Speaking",
-   "lingua": "Arabo"
-  },
-  {
-   "azienda": "MongoDB",
-   "titolo": "Account Development Representative - Benelux/Nordics",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "MongoDB",
-   "titolo": "Account Development Representative, German Speaking",
-   "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Okta",
-   "titolo": "Sales Development Representative - Dutch",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "Okta",
-   "titolo": "Sales Development Representative, French",
-   "lingua": "Francese"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "(French) Outbound SDR, Dublin",
-   "lingua": "Francese"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "(Hebrew) Outbound SDR, Dublin",
-   "lingua": "Ebraico"
+   "motivo": "Arabo",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8273899"
   },
   {
    "azienda": "Rippling",
    "titolo": "Business Development Representative, Outbound (Arabic speaking)",
-   "lingua": "Arabo"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Business Development Representative, Outbound (German speaking)",
-   "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Business Development Representative, Polish (CEE)",
-   "lingua": "CEE/Est"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Business Development Representative, Switzerland & Austria (CHAT)",
-   "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Sales Development Representative, Outbound (Spanish)",
-   "lingua": "Spagnolo"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Sales Development Representative, Outbound - Benelux",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Sales Development Representative, Outbound - Nordic",
-   "lingua": "Nordiche"
+   "motivo": "Arabo",
+   "url": "https://ats.rippling.com/rippling/jobs/76ddc3a2-7af4-4b44-beeb-27c8df0945c2"
   },
   {
    "azienda": "Salesforce",
    "titolo": "Business Development Representative - Arabic Speakers",
-   "lingua": "Arabo"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
-   "lingua": "CEE/Est"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Hebrew speaker",
-   "lingua": "Ebraico"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Polish Speaker",
-   "lingua": "CEE/Est"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Spanish or or Catalán speakers",
-   "lingua": "Spagnolo"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Denmark Market (Danish speaking)",
-   "lingua": "Nordiche"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Finland Market (Finnish speaking)",
-   "lingua": "Nordiche"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative French Market - French Speaker",
-   "lingua": "Francese"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative German Market (German Speaking)",
-   "lingua": "Tedesco"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
-   "lingua": "Olandese"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Norway Market (Norwegian speaking)",
-   "lingua": "Nordiche"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
-   "lingua": "Nordiche"
+   "motivo": "Arabo",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Arabic-Speakers_JR331114"
   },
   {
    "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Arabic Market",
-   "lingua": "Arabo"
+   "motivo": "Arabo",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Arabic-Market_JR363368-1"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Polish (CEE)",
+   "motivo": "CEE/Est",
+   "url": "https://ats.rippling.com/rippling/jobs/00be08c2-dc4a-4054-8d40-8aea2b24465e"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - DACH Market",
-   "lingua": "Tedesco"
+   "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
+   "motivo": "CEE/Est",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Czech-Market--Czech-or-Slovak-Speakers-_JR345316"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - French Market",
-   "lingua": "Francese"
+   "titolo": "Business Development Representative - Polish Speaker",
+   "motivo": "CEE/Est",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Eastern-Europe---Romanian-OR-Polish-Speaker_JR331117-1"
   },
   {
    "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Lithuanian, Hungarian, Czech or Slovak speaking Market",
-   "lingua": "CEE/Est"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Portuguese Market",
-   "lingua": "Portoghese"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Spanish Market",
-   "lingua": "Spagnolo"
+   "motivo": "CEE/Est",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Lithuanian--Hungarian--Czech-or-Slovak-speaking-Market_JR364044-2"
   },
   {
    "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Ukrainian or Russian Market",
-   "lingua": "CEE/Est"
+   "motivo": "CEE/Est",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Ukrainian-or-Russian-Market_JR364043-2"
   },
   {
    "azienda": "Stripe",
    "titolo": "Sales Development Representative (Polish Fluency)",
-   "lingua": "CEE/Est"
+   "motivo": "CEE/Est",
+   "url": "https://stripe.com/jobs/search?gh_jid=8265128"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Dutch Speaker)",
-   "lingua": "Olandese"
+   "azienda": "Rippling",
+   "titolo": "(Hebrew) Outbound SDR, Dublin",
+   "motivo": "Ebraico",
+   "url": "https://ats.rippling.com/rippling/jobs/15f46354-8c45-49f6-9bfe-0de78691b426"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Hebrew speaker",
+   "motivo": "Ebraico",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Hebrew-speaker_JR331115"
+  },
+  {
+   "azienda": "Abnormal Security",
+   "titolo": "Sales Development Representative, French Speaking",
+   "motivo": "Francese",
+   "url": "https://abnormal.ai/careers/jobs/7999020003?gh_jid=7999020003"
+  },
+  {
+   "azienda": "Datadog",
+   "titolo": "Sales Development Representative (France)",
+   "motivo": "Francese",
+   "url": "https://careers.datadoghq.com/detail/7034798/?gh_jid=7034798"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, France",
+   "motivo": "Francese",
+   "url": "https://jobs.ashbyhq.com/notion/0737c717-1882-421e-88dc-100c74a1a54a"
+  },
+  {
+   "azienda": "Okta",
+   "titolo": "Sales Development Representative, French",
+   "motivo": "Francese",
+   "url": "https://www.okta.com/company/careers/opportunity/6841832?gh_jid=6841832"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "(French) Outbound SDR, Dublin",
+   "motivo": "Francese",
+   "url": "https://ats.rippling.com/rippling/jobs/5722f5b2-f3af-4b1a-8de9-59e40c105467"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative French Market - French Speaker",
+   "motivo": "Francese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Rep---French-Market_JR335962"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - French Market",
+   "motivo": "Francese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR364295-1"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, Nordics",
+   "motivo": "Nordiche",
+   "url": "https://jobs.ashbyhq.com/notion/bf2e9a54-4f46-423f-ad08-5317c1d1c9b4"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound - Nordic",
+   "motivo": "Nordiche",
+   "url": "https://ats.rippling.com/rippling/jobs/7531be73-bcb3-42b8-bcf7-28364718da07"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Denmark Market (Danish speaking)",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Danish-Business-Development-Representative--BDR---Denmark--Market----Dublin--Ireland_JR335153"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Finland Market (Finnish speaking)",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Finnish-Business-Development-Representative--BDR---Finland--Market----Dublin--Ireland_JR335148"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Norway Market (Norwegian speaking)",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Norwegian-Business-Development-Representative--BDR----Dublin--Ireland_JR335130"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Swedish-Business-Development-Representative--BDR---Sweden-Market----Dublin--Ireland_JR335146-1"
   },
   {
    "azienda": "Workday",
    "titolo": "Business Development Representative (Swedish)",
-   "lingua": "Nordiche"
+   "motivo": "Nordiche",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
   },
   {
    "azienda": "Workday",
    "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "lingua": "Nordiche"
+   "motivo": "Nordiche",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
+  },
+  {
+   "azienda": "Abnormal Security",
+   "titolo": "Sales Development Representative, Dutch Speaking",
+   "motivo": "Olandese",
+   "url": "https://abnormal.ai/careers/jobs/8036661003?gh_jid=8036661003"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative - Benelux/Nordics",
+   "motivo": "Olandese",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8240010"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, Benelux",
+   "motivo": "Olandese",
+   "url": "https://jobs.ashbyhq.com/notion/c65b26b9-df54-481a-817b-c6551be2373b"
+  },
+  {
+   "azienda": "Okta",
+   "titolo": "Sales Development Representative - Dutch",
+   "motivo": "Olandese",
+   "url": "https://www.okta.com/company/careers/opportunity/6629089?gh_jid=6629089"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound - Benelux",
+   "motivo": "Olandese",
+   "url": "https://ats.rippling.com/rippling/jobs/91392952-b7df-4157-96e9-89ad82874a8a"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
+   "motivo": "Olandese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Belgium-Market----Dublin--Ireland_JR335145"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
+   "motivo": "Olandese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Netherlands-Market----Dublin--Ireland_JR335143"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Dutch Speaker)",
+   "motivo": "Olandese",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Dutch-Speaking-_JR-0098604"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - Portuguese Market",
+   "motivo": "Portoghese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Portuguese-Market_JR364206-1"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound (Spanish)",
+   "motivo": "Spagnolo",
+   "url": "https://ats.rippling.com/rippling/jobs/a39ca92f-a909-4868-9d13-1524d6c8b626"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - Spanish or or Catalán speakers",
+   "motivo": "Spagnolo",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Spanish-Market_JR331111"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - Spanish Market",
+   "motivo": "Spagnolo",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Spanish-Market_JR364207-1"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "SD - Market Development Representative (MDR) - DACH (German and English Speaking)",
+   "motivo": "Tedesco",
+   "url": "https://careers.docusign.com/jobs/30217"
+  },
+  {
+   "azienda": "GitLab",
+   "titolo": "Business Development Representative, German Speaking - UK/I",
+   "motivo": "Tedesco",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8872457002"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative, German Speaking",
+   "motivo": "Tedesco",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=7337287"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, DACH",
+   "motivo": "Tedesco",
+   "url": "https://jobs.ashbyhq.com/notion/d0b9e586-bdf9-4df2-a512-371a6492b2d9"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Outbound (German speaking)",
+   "motivo": "Tedesco",
+   "url": "https://ats.rippling.com/rippling/jobs/40e0065b-8612-40f6-8ae4-3c54ff9dfd2a"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Business Development Representative, Switzerland & Austria (CHAT)",
+   "motivo": "Tedesco",
+   "url": "https://ats.rippling.com/rippling/jobs/a60c5e96-8c69-4bf9-b909-aeb8cec98cb7"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative German Market (German Speaking)",
+   "motivo": "Tedesco",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-German-Market--German-Speaking-_JR342805"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - DACH Market",
+   "motivo": "Tedesco",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR358319-1"
+  },
+  {
+   "azienda": "Vanta",
+   "titolo": "Business Development Representative [German Fluency]",
+   "motivo": "Tedesco",
+   "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
   },
   {
    "azienda": "Workday",
    "titolo": "Business Development Representative | German | Dublin based",
-   "lingua": "Tedesco"
+   "motivo": "Tedesco",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
+  },
+  {
+   "azienda": "Datadog",
+   "titolo": "Sales Development Representative (Africa)",
+   "motivo": "mercato Africa",
+   "url": "https://careers.datadoghq.com/detail/8152975/?gh_jid=8152975"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative - South African Market",
+   "motivo": "mercato Africa",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "Market Development Representative (UK/IE Markets)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://careers.docusign.com/jobs/30595"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, UKI",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://jobs.ashbyhq.com/notion/f14ce537-e859-4f1d-bcd5-d12cdfe9c05d"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Business Development Representative UKI Market (English Speaking)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---UKI-Market_JR336399"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative UKI",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Development Representative - English Speaking (SDR/BDR)",
+   "motivo": "mercato solo inglese",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8305915"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Enterprise, Business Development Representative, Outbound (English)",
+   "motivo": "mercato solo inglese",
+   "url": "https://ats.rippling.com/rippling/jobs/91ec53f4-2ca5-43b0-a8d4-0ddcff4c9883"
+  },
+  {
+   "azienda": "Rippling",
+   "titolo": "Sales Development Representative, Outbound (English)",
+   "motivo": "mercato solo inglese",
+   "url": "https://ats.rippling.com/rippling/jobs/2f8943b6-d62b-415b-897e-933cb3ff6d8e"
   }
  ],
  "offerte": [
-  {
-   "id": "Stripe|Sales Development Associate|Dublin",
-   "azienda": "Stripe",
-   "titolo": "Sales Development Associate",
-   "luogo": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8048266",
-   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nAs a Sales Development Representative (SDR) at Stripe, you will drive Stripe’s future growth engine by working with Demand Gen and the Account Executive team to qualify leads and collaboratively build Stripe’s sales pipeline. You get excited about engaging with prospects to better qualify needs. You are adept at identifying high value opportunities and capable…",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "DocuSign|Market Development Representative (UK/IE Markets)|Dublin, Ireland",
-   "azienda": "DocuSign",
-   "titolo": "Market Development Representative (UK/IE Markets)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://careers.docusign.com/jobs/30595",
-   "descrizione": "Company Overview Docusign brings agreements to life. More than 1.8 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using the Docusign AI-native IAM platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do As an Market Development Representative (MDR), you will be responsible for generating qualified opportunities that progress through the sales funnel and ultimately generate new revenue to grow our presence in EMEA. This…",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": "2026-10-27"
-  },
-  {
-   "id": "MongoDB|Account Development Representative - English Speaking (SDR/BDR)|Dublin, Ireland",
-   "azienda": "MongoDB",
-   "titolo": "Account Development Representative - English Speaking (SDR/BDR)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8305915",
-   "descrizione": "At MongoDB, our Account Development team works closely with our partners in both Sales and Marketing to build fanatical customer enthusiasm around MongoDB. ADR reps are responsible for identifying and qualifying new opportunities for our sales organization. \nWe view our Account Development program as the best way to turbocharge a long and successful career in sales and view our Account Development Representatives (ADRs) as the next wave of Account Executives at MongoDB.\nWe are looking to speak to candidates who are based in Dublin for our hybrid working model.\nDay to Day\n• Identify high-potential businesses that would be a good fit to work with MongoDB for selected strategic accounts in EMEA\n• Work with the Sales team to develop and lead outbound campaigns from idea-generation through to qualified call\n• Develop strong sales and product knowledge\n• Interact with IT and business decision…",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": "2026-10-22"
-  },
   {
    "id": "Salesforce|Sales Development Representative - Italian Market|Ireland - Dublin",
    "azienda": "Salesforce",
@@ -307,18 +453,12 @@
    "descrizione": "",
    "italiano": true,
    "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": "2026-10-21"
-  },
-  {
-   "id": "Twilio|Sales Development Representative|Remote - Ireland",
-   "azienda": "Twilio",
-   "titolo": "Sales Development Representative",
-   "luogo": "Remote - Ireland",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8261528",
-   "descrizione": "Who we are \nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.\n.\nHiring and how we work\nWe use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! \nAlso, while we are a remote-first company, you may be asked to report in person…",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": "2026-10-09"
   },
   {
    "id": "Salesforce|Business Development Representative - Italy|Ireland - Dublin",
@@ -329,6 +469,11 @@
    "descrizione": "",
    "italiano": true,
    "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
@@ -340,29 +485,59 @@
    "descrizione": "MongoDB’s mission is to empower innovators to create, transform, and disrupt industries by unleashing the power of software and data. We enable organizations of all sizes to easily build, scale, and run modern applications by helping them modernize legacy workloads, embrace innovation, and unleash AI. Our industry-leading developer data platform, MongoDB Atlas, is the only globally distributed, multi-cloud database and is available in more than 115 regions across AWS, Google Cloud, and Microsoft Azure. Atlas allows customers to build and run applications anywhere—on premises, or across cloud providers. With offices worldwide and over 175,000 new developers signing up to use MongoDB every month, it’s no wonder that leading organizations, like Samsung and Toyota, trust MongoDB to build next-generation, AI-powered applications.\nAt MongoDB, our Account Development team works closely with…",
    "italiano": true,
    "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
-   "id": "Salesforce|Business Development Representative - South African Market|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - South African Market",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317",
-   "descrizione": "",
-   "italiano": false,
+   "id": "GitLab|Business Development Representative, Italian Speaking|Remote Ireland; Remote, France; Remote, Spain; Remote, United Kingdom",
+   "azienda": "GitLab",
+   "titolo": "Business Development Representative, Italian Speaking",
+   "luogo": "Remote Ireland; Remote, France; Remote, Spain; Remote, United Kingdom",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8882365002",
+   "descrizione": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.\nThe same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to…",
+   "italiano": true,
    "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
-   "id": "Salesforce|Business Development Representative UKI Market (English Speaking)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative UKI Market (English Speaking)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---UKI-Market_JR336399",
-   "descrizione": "",
+   "id": "New Relic|Business Development Representative|Dublin, Ireland",
+   "azienda": "New Relic",
+   "titolo": "Business Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/newrelic/jobs/5451142008",
+   "descrizione": "We are a global team of innovators and pioneers dedicated to shaping the future of observability. At New Relic, we build an intelligent platform that empowers companies to thrive in an AI-first world by giving them unparalleled insight into their complex systems. As we continue to expand our global footprint, we're looking for passionate people to join our mission. If you're ready to help the world's best companies optimize their digital applications, we invite you to explore a career with us!\nYour Opportunity\nAre you looking to take the next step in your sales career? Join New Relic, a leader in observability and application performance monitoring, where you can transition from an inbound-focused role to a key player on our outbound-driven Business Development team. You'll be a key part of our go-to-market strategy, joining a high-energy team that's at the forefront of building our…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 4,
+   "motivi": [
+    "italiano nel testo (+2)",
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Twilio|Sales Development Representative|Remote - Ireland",
+   "azienda": "Twilio",
+   "titolo": "Sales Development Representative",
+   "luogo": "Remote - Ireland",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8261528",
+   "descrizione": "Who we are \nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.\n.\nHiring and how we work\nWe use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! \nAlso, while we are a remote-first company, you may be asked to report in person…",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": ""
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-10-09"
   },
   {
    "id": "Salesforce|Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)|Ireland - Dublin",
@@ -373,17 +548,10 @@
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": ""
-  },
-  {
-   "id": "Workday|Business Development Representative UKI|Ireland, Dublin",
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "luogo": "Ireland, Dublin",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
@@ -395,28 +563,10 @@
    "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
    "italiano": false,
    "altre_lingue": [],
-   "prima_vista": ""
-  },
-  {
-   "id": "Rippling|Enterprise, Business Development Representative, Outbound (English)|Dublin, Ireland",
-   "azienda": "Rippling",
-   "titolo": "Enterprise, Business Development Representative, Outbound (English)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://ats.rippling.com/rippling/jobs/91ec53f4-2ca5-43b0-a8d4-0ddcff4c9883",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "prima_vista": ""
-  },
-  {
-   "id": "Rippling|Sales Development Representative, Outbound (English)|Dublin, Ireland",
-   "azienda": "Rippling",
-   "titolo": "Sales Development Representative, Outbound (English)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://ats.rippling.com/rippling/jobs/2f8943b6-d62b-415b-897e-933cb3ff6d8e",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
@@ -428,17 +578,40 @@
    "descrizione": "About Wayflyer\nToday's small businesses need a capital provider that keeps pace with their growth ambitions. Traditional financing options are slow, cumbersome and often out of reach. That's why we built Wayflyer.\nOur technology allows us to assess businesses in minutes, generate financing offers that reflect their growth potential and send funds in as little as 24 hours. To date, we've deployed over $6bn to thousands of businesses worldwide, backed by Tier 1 banks like J.P. Morgan.\nYou'll be collaborating with ambitious colleagues from around the world. We have offices in Dublin, London, New York, Charlotte, Berlin and Sydney.\nThe challenge\nWe've deployed over $6bn to small businesses that traditional banks were too slow, too rigid, or too disinterested to back. Now we're growing fast, and we need a world-class sales team to continue the momentum, finding the founders who need us…",
    "italiano": false,
    "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   },
   {
-   "id": "Datadog|Sales Development Representative (Africa)|Dublin, Ireland",
-   "azienda": "Datadog",
-   "titolo": "Sales Development Representative (Africa)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://careers.datadoghq.com/detail/8152975/?gh_jid=8152975",
-   "descrizione": "Sales Development Representative\nAs a Sales Development Representative (SDR), you will prospect, qualify, and generate customer leads to assist in Datadog’s overall business growth segment. By partnering with internal stakeholders, you will help IT and Technology innovators across markets recognize Datadog’s impact in their digital transformation and migration to the cloud. SDRs have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Collaborate cross-functionally with various Datadog teams\n• Drive initial prospect qualification and schedule discovery meetings\n• Develop, present,…",
+   "id": "GitLab|Business Development Representative|Remote, France; Remote, Ireland; Remote, Spain; Remote, United Kingdom",
+   "azienda": "GitLab",
+   "titolo": "Business Development Representative",
+   "luogo": "Remote, France; Remote, Ireland; Remote, Spain; Remote, United Kingdom",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8532274002",
+   "descrizione": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.\nThe same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to…",
    "italiano": false,
    "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Lightspeed|Outbound SDR|Dublin",
+   "azienda": "Lightspeed",
+   "titolo": "Outbound SDR",
+   "luogo": "Dublin",
+   "url": "https://jobs.ashbyhq.com/lightspeedhq/00873068-21a8-4644-9655-4ade60c248a9",
+   "descrizione": "Hi there! Thanks for stopping by 👋\nAre you actively looking for a new opportunity? Or just checking the market? Well… you might just be in the right place!\nLightspeed is seeking a highly motivated Outbound Sales Development Representative to join our founding Irish sales team. In this role, you’ll drive revenue growth by prospecting and generating leads, serving as the first point of contact between potential customers and the Lightspeed brand. Your efforts will directly support Lightspeed’s mission to empower retailers and restaurateurs with smart technology.\nAfter years of refining and optimising our strategy in a focused market, we are now focusing on the Irish market and ready to scale. We’re looking for a determined and energetic professional passionate about helping entrepreneurs ignite their businesses. If you’re outcome-driven and excited to join a fast-growing company where…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
    "prima_vista": ""
   }
  ]
