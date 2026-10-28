@@ -1,9 +1,12 @@
 name: Prova portali
 
 # Si lancia solo a mano. Prova metodi nuovi sui portali che monitor.py non legge
-# e stampa nel log cosa trova (non salva niente).
+# e salva cosa trova in prova_portali.txt (non tocca le offerte).
 on:
   workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   prova:
@@ -15,4 +18,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - run: python prova_portali.py
+      - run: python prova_portali.py | tee prova_portali.txt
+      - name: Salva il risultato
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prova_portali.txt
+          git commit -m "Prova portali $(date -u +'%Y-%m-%d %H:%M')" || echo "Niente da salvare"
+          git pull --rebase origin main
+          git push
