@@ -1,6 +1,6 @@
-# Swipe Lavoro · SDR/BDR Dublino
+# Swipe Lavoro · SDR/BDR/AE Dublino
 
-Due volte al giorno GitHub cerca da solo le offerte SDR/BDR a Dublino e le mette in una pagina
+Due volte al giorno GitHub cerca da solo le offerte SDR/BDR e Account Executive a Dublino e le mette in una pagina
 dove le vedi **una alla volta**: destra = salva, sinistra = scarta.
 
 ## Come è fatto
@@ -12,6 +12,7 @@ dove le vedi **una alla volta**: destra = salva, sinistra = scarta.
 | `.github/workflows/monitor.yml` | Dice a GitHub *quando* lanciare `monitor.py` (orari in cima) |
 | `docs/index.html` | La pagina swipe. Logica divisa in blocchi numerati e commentati |
 | `docs/jobs.json` | Le offerte trovate. Lo scrive `monitor.py`, non va toccato a mano |
+| `prova_portali.py` | Sonda per siti non leggibili: Actions → "Prova portali", esito in `prova_portali.txt` |
 | `CHANGELOG.md` | Cosa è cambiato in ogni versione |
 
 ## Le stelle (0–5)
@@ -23,6 +24,8 @@ Ogni offerta parte da 1 stella e somma questi pesi (tabella `PESI` in `monitor.p
 | "Italian" / "Italy" nel titolo | +3 |
 | titolo generico ma "Italian" nel testo dell'annuncio | +2 |
 | ruolo esplicito SDR/BDR/ADR/MDR | +1 |
+| Account Executive | +1 |
+| AE Senior / Enterprise / Strategic | −1 |
 | mercato europeo/internazionale (EMEA, Southern Europe…) | +1 |
 | italiano + un'altra lingua che non parli | −1 |
 | stage / internship | −2 |

@@ -3,6 +3,15 @@
 Ogni modifica importante ha qui una riga. Il numero è lo stesso di `VERSIONE` in `docs/index.html`
 e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una versione precedente*).
 
+## v1.5 — 28 ottobre 2026
+- **Anche Account Executive**: titoli "Account Executive", "AE", "Sales Executive". +1 stella come gli SDR;
+  −1 se Senior/Enterprise/Strategic. "Account Manager" resta escluso.
+- **Portali proprietari ora leggibili**: Google, TikTok, Oracle e IBM, con quattro lettori nuovi in monitor.py
+  (trovati con il nuovo `prova_portali.py` + azione "Prova portali", che prova metodi nuovi e salva l'esito
+  in `prova_portali.txt`). Aziende lette: 83.
+- Ancora non leggibili: Meta (la pagina rifiuta richieste automatiche), SAP (pagina tutta in JavaScript),
+  Dell (blocca), Indeed, Personio (feed vuoto). Atlassian e Palo Alto leggibili ma senza sede a Dublino.
+
 ## v1.4 — 28 ottobre 2026
 - **Stelle da 0 a 5** su ogni offerta, con i motivi sotto il titolo. Pesi modificabili in `PESI` (monitor.py).
   Il mazzo e le salvate sono ordinati per stelle, poi per data.

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Monitoraggio offerte SDR/BDR a Dublino.
+Monitoraggio offerte SDR/BDR e Account Executive a Dublino.
 
 Gira da solo su GitHub Actions (vedi .github/workflows/monitor.yml):
 scarica le offerte dagli ATS in ats_mapping_v2.csv, tiene solo i ruoli
-SDR/BDR a Dublino, esclude quelli per altre lingue o altri mercati (UK, Americhe...),
+SDR/BDR/AE a Dublino, esclude quelli per altre lingue o altri mercati (UK, Americhe...),
 da' a ogni offerta da 0 a 5 stelle (vedi PESI) e scrive docs/jobs.json, che la pagina swipe (docs/index.html) legge.
 
 Per ogni offerta ricorda la data in cui e' comparsa la prima volta, cosi' la
@@ -38,7 +38,8 @@ TITOLO = re.compile(
     r"sales development|business development|account development|market development|"
     r"lead development|pipeline development|customer development|growth development|"
     r"\bsdr\b|\bbdr\b|\badr\b|\bmdr\b|inside sales|outbound sales|sales representative|"
-    r"graduate sales|early careers? sales|sales graduate|new business representative", re.I)
+    r"graduate sales|early careers? sales|sales graduate|new business representative|"
+    r"account executive|\bae\b|sales executive|new business executive", re.I)
 # Titoli da escludere anche se passano il filtro sopra (ruoli senior o non commerciali).
 # "Team Lead" NON e' escluso: un SDR Team Lead e' un passo avanti possibile.
 ESCLUDI = re.compile(r"\bmanager\b|\bdirector\b|\bhead of\b|\bvp\b|principal|"
@@ -122,6 +123,9 @@ MERCATO_TESTO = re.compile(
 # Mercati "vicini" che spesso includono l'Italia: valgono una stella in piu'.
 MERCATO_VICINO = re.compile(r"southern europe|south(ern)? eur|\bseur\b|mediterranean|"
                             r"\bemea\b|\beurope\b|european|international|multilingual", re.I)
+RUOLO_AE = re.compile(r"account executive|\bae\b|sales executive|new business executive", re.I)
+# AE con molta esperienza richiesta: un gradino sopra il mio livello attuale
+AE_SENIOR = re.compile(r"\bsenior\b|\bsr\.?\b|enterprise|strategic|major accounts?|global accounts?", re.I)
 RUOLO_SDR = re.compile(r"sales development|business development|account development|"
                        r"market development|\bsdr\b|\bbdr\b|\badr\b|\bmdr\b", re.I)
 
@@ -133,6 +137,8 @@ PESI = {
     "italiano_titolo": 3,   # "Italian" / "Italy" nel titolo: e' la cosa che conta di piu'
     "italiano_testo":  2,   # titolo generico, ma l'annuncio chiede/cita l'italiano
     "ruolo_sdr":       1,   # titolo esplicito SDR/BDR/ADR/MDR (non solo "inside sales")
+    "ruolo_ae":        1,   # Account Executive
+    "ae_senior":      -1,   # AE Senior / Enterprise / Strategic: richiede piu' esperienza
     "mercato_vicino":  1,   # Southern Europe / EMEA / International senza lingua precisa
     "altra_lingua":   -1,   # italiano + un'altra lingua che non parlo (es. Italian & Spanish)
     "stage":          -2,   # stage / internship / graduate program: sotto il mio livello
@@ -181,7 +187,11 @@ def stelle(titolo, testo_pieno, altre):
         add("italiano_titolo", "italiano nel titolo")
     elif ITALIANO_TESTO.search(testo_pieno or ""):
         add("italiano_testo", "italiano nel testo")
-    if RUOLO_SDR.search(titolo):
+    if RUOLO_AE.search(titolo):
+        add("ruolo_ae", "Account Executive")
+        if AE_SENIOR.search(titolo):
+            add("ae_senior", "AE senior/enterprise")
+    elif RUOLO_SDR.search(titolo):
         add("ruolo_sdr", "ruolo SDR/BDR")
     if MERCATO_VICINO.search(titolo):
         add("mercato_vicino", "mercato europeo/internazionale")
@@ -437,12 +447,109 @@ def jobs_personio(s, slug, _):
             for p in root.findall("position")]
 
 
+# ------------------------------------------------ PORTALI PROPRIETARI (v1.5)
+# Trovati con prova_portali.py: siti senza ATS standard ma con dati leggibili.
+
+def jobs_google(s, _, __):
+    """Google: la pagina di ricerca carriere contiene le offerte nei dati iniziali (ds:1).
+    Si leggono le pagine filtrate su Dublino finche' non compaiono offerte nuove."""
+    out, visti = [], set()
+    for pagina in range(1, 40):
+        r = s.get("https://www.google.com/about/careers/applications/jobs/results",
+                  params={"location": "Dublin, Ireland", "q": "", "page": pagina}, timeout=TIMEOUT)
+        nuovi = 0
+        for jid, titolo in re.findall(
+                r'\["(\d{15,20})","((?:[^"\\]|\\.){3,200})","https://www\.google\.com/about/careers/applications/signin',
+                r.text):
+            if jid in visti:
+                continue
+            visti.add(jid)
+            nuovi += 1
+            titolo = json.loads(f'"{titolo}"')          # toglie gli escape (& ecc.)
+            out.append((titolo, "Dublin, Ireland",
+                        f"https://www.google.com/about/careers/applications/jobs/results/{jid}", ""))
+        if not nuovi:
+            break
+    return out
+
+
+def jobs_tiktok(s, _, __):
+    """TikTok: API pubblica del sito lifeattiktok.com, ricerca 'Dublin' filtrata sulla citta'."""
+    out = []
+    for offset in range(0, 1000, 100):
+        body = {"recruitment_id_list": [], "job_category_id_list": [], "subject_id_list": [],
+                "location_code_list": [], "keyword": "Dublin", "limit": 100, "offset": offset}
+        d = s.post("https://api.lifeattiktok.com/api/v1/public/supplier/search/job/posts",
+                   json=body, timeout=TIMEOUT,
+                   headers={"Content-Type": "application/json", "website-path": "tiktok",
+                            "Origin": "https://lifeattiktok.com",
+                            "Referer": "https://lifeattiktok.com/"}).json()
+        dati = d.get("data") or {}
+        posts = dati.get("job_post_list") or []
+        for p in posts:
+            citta = (p.get("city_info") or {}).get("en_name") or ""
+            out.append((p.get("title", ""), citta,
+                        f"https://lifeattiktok.com/search/{p.get('id', '')}",
+                        (p.get("description") or "") + "\n" + (p.get("requirement") or "")))
+        if len(posts) < 100 or offset + 100 >= (dati.get("count") or 0):
+            break
+    return out
+
+
+def jobs_oraclehcm(s, sito, url):
+    """Oracle Recruiting Cloud (es. Oracle stessa). Slug = codice sito (es. CX_45001),
+    URL = indirizzo del servizio (es. https://eeho.fa.us2.oraclecloud.com).
+    La ricerca per citta' non e' affidabile: si cerca per parole chiave e si filtra dopo."""
+    host = urlparse(url).netloc
+    out, visti = [], set()
+    for kw in ("Dublin", "Ireland", "Italian", "Sales Development", "Account Executive"):
+        for offset in range(0, 500, 100):
+            finder = f'findReqs;siteNumber={sito},limit=100,offset={offset},keyword="{kw}"'
+            d = s.get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions",
+                      params={"onlyData": "true", "expand": "requisitionList", "finder": finder},
+                      timeout=TIMEOUT).json()
+            items = d.get("items") or []
+            reqs = items[0].get("requisitionList", []) if items else []
+            for x in reqs:
+                if x.get("Id") in visti:
+                    continue
+                visti.add(x.get("Id"))
+                out.append((x.get("Title", ""), x.get("PrimaryLocation", ""),
+                            f"https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{x.get('Id')}",
+                            x.get("ShortDescriptionStr") or ""))
+            if len(reqs) < 100:
+                break
+    return out
+
+
+def jobs_ibm(s, _, __):
+    """IBM: motore di ricerca pubblico del sito carriere, cercando 'Dublin'."""
+    out = []
+    for da in range(0, 500, 100):
+        body = {"appId": "careers", "scopes": ["careers2"], "size": 100, "from": da, "lang": "zz",
+                "query": {"bool": {"must": [{"simple_query_string": {
+                    "query": "Dublin", "fields": ["field_keyword_19^3", "title", "body"]}}]}},
+                "_source": ["title", "url", "description", "field_keyword_19"]}
+        d = s.post("https://www-api.ibm.com/search/api/v2", json=body, timeout=TIMEOUT,
+                   headers={"Content-Type": "application/json"}).json()
+        hits = (d.get("hits") or {}).get("hits") or []
+        for h in hits:
+            x = h.get("_source") or {}
+            out.append((x.get("title") or "", x.get("field_keyword_19") or "",
+                        x.get("url") or "https://www.ibm.com/careers/search?q=Dublin",
+                        x.get("description") or ""))
+        if len(hits) < 100:
+            break
+    return out
+
+
 LETTORI = {"greenhouse": jobs_greenhouse, "lever": jobs_lever, "ashby": jobs_ashby,
            "smartrecruiters": jobs_smartrecruiters, "workable": jobs_workable,
            "bamboohr": jobs_bamboohr, "workday": jobs_workday,
            "eightfold": jobs_eightfold, "icims": jobs_icims, "amazon": jobs_amazon,
            "personio": jobs_personio, "jibe": jobs_jibe, "phenom": jobs_phenom,
-           "rippling": jobs_rippling}
+           "rippling": jobs_rippling, "google": jobs_google, "tiktok": jobs_tiktok,
+           "oraclehcm": jobs_oraclehcm, "ibm": jobs_ibm}
 
 
 # ----------------------------------------------------- RIPARAZIONE WORKDAY

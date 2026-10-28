@@ -1,11 +1,11 @@
 Azienda,ATS,Slug,URL,Stato,Offerte totali,Match Dublino,Note
-Google,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Google,google,,,OK,100,0,ott 2026: lettore dedicato (prova_portali.py)
 Meta,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Microsoft,eightfold,microsoft.com,https://apply.careers.microsoft.com,OK,50,0,"Eightfold, rilevato 09/10/2026"
 Amazon / AWS,amazon,,https://www.amazon.jobs,OK,219,0,ricerca amazon.jobs filtrata su Irlanda
 LinkedIn,greenhouse,linkedin,https://boards-api.greenhouse.io/v1/boards/linkedin/jobs,DA CONTROLLARE,53,0,board intestato a 'LI Test Company': falso positivo
 Salesforce,workday,salesforce,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,OK,147,0,rilevato 09/10/2026
-TikTok,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+TikTok,tiktok,,,OK,100,0,ott 2026: lettore dedicato (prova_portali.py)
 ServiceNow,smartrecruiters,servicenow,https://api.smartrecruiters.com/v1/companies/servicenow/postings,OK,580,3,
 PayPal,workday,paypal,https://paypal.wd1.myworkdayjobs.com/jobs,OK,7,0,rilevato 09/10/2026 (anche su Eightfold)
 Indeed,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
@@ -30,8 +30,8 @@ Version 1,smartrecruiters,version1,https://api.smartrecruiters.com/v1/companies/
 Flipdish,greenhouse,flipdish,https://www.flipdish.com/careers,OK,6,0,
 OpenAI,ashby,openai,https://api.ashbyhq.com/posting-api/job-board/openai,OK,765,0,
 X (ex Twitter),greenhouse,xai,https://boards-api.greenhouse.io/v1/boards/xai/jobs,OK,308,0,careers.x.com rimanda a x.ai: board xAI
-Oracle,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-IBM,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
+Oracle,oraclehcm,CX_45001,https://eeho.fa.us2.oraclecloud.com,OK,100,0,ott 2026: lettore dedicato (prova_portali.py)
+IBM,ibm,,,OK,100,0,ott 2026: lettore dedicato (prova_portali.py)
 Dropbox,greenhouse,dropbox,https://boards-api.greenhouse.io/v1/boards/dropbox/jobs,OK,42,1,
 MongoDB,greenhouse,mongodb,https://boards-api.greenhouse.io/v1/boards/mongodb/jobs,OK,401,10,
 Atlassian,SCONOSCIUTO,,,SCONOSCIUTO,0,0,

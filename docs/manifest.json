@@ -1,7 +1,7 @@
 {
   "name": "Swipe Lavoro",
   "short_name": "Swipe Lavoro",
-  "description": "Offerte SDR/BDR a Dublino, una alla volta",
+  "description": "Offerte SDR/BDR/AE a Dublino, una alla volta",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
