@@ -1,0 +1,93 @@
+
+=== Google (pagina): HTTP 200, 1280518 byte | 27 titoli, 20 sales
+    New Business Sales BS/MS Intern, 2027 (Multiple Languages)
+    Sales Manager, SMB Sales, Google Customer Solutions, Netherlands Market (Dutch)
+    Head of Sales, Google Customer Solutions, Israel (English, Hebrew)
+    Sales Manager, MENA Region, Google Customer Solutions (Arabic, English)
+    Sales Manager, Engage, Google Customer Solutions, Germany Market (English, German)
+    Account Executive, Mid-Market Sales, Google Customer Solutions, Belgian Market (English, Dutch/French)
+    Sales Specialist, Google Workspace
+    Account Executive, Affiliates and Publishers, New Business Sales, UKI (English)
+    Account Executive, New Business Sales, UKI (English)
+    Account Strategist, SMB Sales, Google Customer Solutions, Belgian Market (Dutch, English)
+    Account Executive, New Business Sales, Northern Europe (Multiple Languages)
+    Senior Account Executive, New Business Sales, GCS (Italian, English)
+
+=== Google (API v3): HTTP 404, count=None | 0 titoli, 0 sales
+
+=== TikTok (API pubblica): HTTP 200, code=0, count=106 | 100 titoli, 6 sales
+    Account Manager, SMB Performance Solutions - Italy - GBS @ Dublin
+    Account Manager - SMB - DACH Market @ Dublin
+    SMB Account Manager, BeNeLux @ Dublin
+    Account Manager Graduate (GBS) - 2027 Start - Graduate (GBS) - 2027 Start @ Dublin
+    Sales Lead, SMB Commerce Shop - UKI @ Dublin
+    Sales Lead, SMB Commerce Shop - DACH @ Dublin
+
+=== Meta (pagina): HTTP 400, 1543 byte | 0 titoli, 0 sales
+
+=== IBM (API ricerca): HTTP 200, 50 risultati | 50 titoli, 45 sales
+    Sales Operations Intern 2027 @ Yorktown Heights, US
+    Technical Sales Engineer Intern - Entry-Level Sales Program 2027 @ Multiple Cities
+    Global Sales Incentives – Sales Plan Design, Segmentation & Analytics Intern 2027 @ Armonk, US
+    IBM Quantum Sales Intern 2027 @ Yorktown Heights, US
+    Technical Sales Engineer - Entry Level Sales Program 2027 @ Multiple Cities
+    Brand Sales Specialist - Entry Level Sales Program 2027 @ Markham, CA
+    Technical Sales Engineer - Spring Co-op Sales Program 2027 @ Multiple Cities
+    Enterprise Sales - DnB AE @ Singapore, SG
+    Brand Sales Specialist Intern – Entry Level Sales Program 2027 @ Multiple Cities
+    2027 Technical Sales Engineer Co-Op - Entry Level Sales Program @ Multiple Cities
+    Technology Lifecycle Services Renewals Sales Specialist - Entry Level Sales Program 2027 @ Multiple Cities
+    Technology Lifecycle Services Renewals Sales Specialist Intern – Entry Level Sales Program 2027 @ Multiple Cit
+
+=== Oracle (HCM REST): HTTP 200, 100 offerte | 100 titoli, 100 sales
+    Cloud Sales Manager @ BENGALURU, KARNATAKA, India
+    Applications Sales Representative IV @ MUMBAI, MAHARASHTRA, India
+    Data Platform Sales Representative IV @ PUNE, MAHARASHTRA, India
+    Data Platform Sales Representative - SLED @ Denver, CO, United States
+    Sr. Sales Manager, Data Platform SLED - California @ Sacramento, CA, United States
+    NA Sales Representative, Data Platform - Healthcare @ San Francisco, CA, United States
+    Consulting Sales Director - Communications Consulting @ United States
+    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
+    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
+    NetSuite Account Manager - Sales Representative OD Prime II @ MAKATI, METRO MANILA, Philippines
+    NA Sales Representative, Data Platform Healthcare @ Chicago, IL, United States
+    NA Sales Representative, Data Platform SLED @ Sacramento, CA, United States
+
+=== SAP (SuccessFactors): HTTP 200 | 0 titoli, 0 sales
+
+=== Atlassian (listings): HTTP 200, 375 offerte totali | 0 titoli, 0 sales
+
+=== Dell (Radancy): HTTP 403, non JSON | 0 titoli, 0 sales
+
+=== Palo Alto (Radancy): HTTP 200 | 100 titoli, 18 sales
+    Regional Sales Manager - FBI
+    Named Account Manager, Public Sector
+    Japan SMB Sales Representative
+    Major Account Manager - Higher Education
+    Major Account Manager (DQC)
+    Senior MDR Analyst (Unit 42) - REMOTE
+    Director, Public Sector Capture &amp; Business Development
+    MDR Shift Analyst (Unit 42) - WEST COAST - REMOTE
+    Business Development Capture Manager - SLED
+    District Sales Manager
+    Regional Sales Manager - Federal Civilian
+    Cortex Cloud Sales Specialist
+
+=== Indeed (Jibe): ERRORE JSONDecodeError: Expecting value: line 1 column 1 (char 0) | 0 titoli, 0 sales
+
+=== Yahoo (Workday): workday | 1 titoli, 0 sales
+    Principal Software Engineer - Backend or Data @ Ireland
+
+=== Flutter (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
+
+=== Medallia (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
+
+=== Tenable (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
+
+=== Cvent (Workday): ERRORE ValueError: sito Workday non valido | 0 titoli, 0 sales
+
+=== Personio (.com): HTTP 200 | 0 titoli, 0 sales
+
+=== Nokia (Eightfold): ERRORE AttributeError: 'str' object has no attribute 'get' | 0 titoli, 0 sales
+
+=== Dell (Eightfold): ERRORE ConnectionError: HTTPSConnectionPool(host='dell.eightfold.ai', port=443): Max retries exceeded with url: /api/pcsx/se | 0 titoli, 0 sales
