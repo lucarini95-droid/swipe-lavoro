@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:56+00:00",
+ "aggiornato": "2026-10-28T20:01+00:00",
  "fonti_lette": 52,
  "fonti_totali": 52,
  "aziende_lette": [
@@ -265,6 +265,17 @@
   }
  ],
  "offerte": [
+  {
+   "id": "Stripe|Sales Development Associate|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Sales Development Associate",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nAs a Sales Development Representative (SDR) at Stripe, you will drive Stripe’s future growth engine by working with Demand Gen and the Account Executive team to qualify leads and collaboratively build Stripe’s sales pipeline. You get excited about engaging with prospects to better qualify needs. You are adept at identifying high value opportunities and capable…",
+   "italiano": false,
+   "altre_lingue": [],
+   "prima_vista": "2026-10-28"
+  },
   {
    "id": "DocuSign|Market Development Representative (UK/IE Markets)|Dublin, Ireland",
    "azienda": "DocuSign",
