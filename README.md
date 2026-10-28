@@ -7,12 +7,35 @@ dove le vedi **una alla volta**: destra = salva, sinistra = scarta.
 
 | File | Cosa fa |
 |---|---|
-| `monitor.py` | Cerca le offerte. **Filtri in cima al file** (TITOLO, ESCLUDI, LINGUE, BLACKLIST) |
+| `monitor.py` | Cerca le offerte. **Filtri in cima al file** (TITOLO, ESCLUDI, LINGUE, MERCATI_NO, PESI, BLACKLIST) |
 | `ats_mapping_v2.csv` | Elenco aziende e dove leggere le loro offerte. Una riga = un'azienda |
 | `.github/workflows/monitor.yml` | Dice a GitHub *quando* lanciare `monitor.py` (orari in cima) |
 | `docs/index.html` | La pagina swipe. Logica divisa in blocchi numerati e commentati |
 | `docs/jobs.json` | Le offerte trovate. Lo scrive `monitor.py`, non va toccato a mano |
 | `CHANGELOG.md` | Cosa è cambiato in ogni versione |
+
+## Le stelle (0–5)
+
+Ogni offerta parte da 1 stella e somma questi pesi (tabella `PESI` in `monitor.py`, si cambiano lì):
+
+| Cosa | Stelle |
+|---|---|
+| "Italian" / "Italy" nel titolo | +3 |
+| titolo generico ma "Italian" nel testo dell'annuncio | +2 |
+| ruolo esplicito SDR/BDR/ADR/MDR | +1 |
+| mercato europeo/internazionale (EMEA, Southern Europe…) | +1 |
+| italiano + un'altra lingua che non parli | −1 |
+| stage / internship | −2 |
+
+La pagina mostra prima le offerte con più stelle e, sotto il titolo, perché hanno quel punteggio.
+
+**Non vengono proposte affatto** (le trovi in fondo alla pagina, "escluse", con il motivo):
+- altra lingua nel titolo senza l'italiano (es. German speaking)
+- altro mercato nel titolo senza l'italiano: UK/Irlanda, "English speaking", Africa, Americhe, APAC
+- titolo generico ma testo che chiede un'altra lingua ("fluent in German") o copre un altro mercato ("covering the UK&I")
+- sedi fuori Dublino (Cork, Galway, Belfast…)
+
+Regola d'oro: se il titolo cita l'italiano, l'offerta resta sempre.
 
 ## Usarlo sul telefono
 

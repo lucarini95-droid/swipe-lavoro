@@ -6,6 +6,7 @@
     1. GitHub Actions lancia monitor.py due volte al giorno e scrive docs/jobs.json
     2. Questa pagina scarica jobs.json e mostra le offerte non ancora decise
     3. Destra = salva, sinistra = scarta. Le scelte restano nel browser (localStorage)
+    4. Ogni offerta ha da 0 a 5 stelle, calcolate da monitor.py (vedi PESI lì)
 
   Struttura del file:
     HEAD    impostazioni per telefono (icona, schermo intero) + stile (CSS)
@@ -76,6 +77,11 @@ h1{font-size:19px;margin:0;letter-spacing:-.01em}
 .b.new{background:var(--accent);color:var(--card)}
 .b.it{background:var(--green-bg);color:var(--green)}
 .b.extra{background:var(--red-bg);color:var(--red)}
+/* stelle 0-5 e motivi del punteggio */
+.stars{font-size:19px;letter-spacing:2px;color:#d39a1c;line-height:1;margin-bottom:8px}
+.stars .off{color:var(--line)}
+.why{font-size:12px;color:var(--muted);margin-top:6px}
+.row .stars{font-size:13px;letter-spacing:1px;margin:0 0 2px}
 .az{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
 .tit{font-size:22px;line-height:1.25;font-weight:700;margin:4px 0 6px;letter-spacing:-.01em}
 .loc{font-size:13.5px;color:var(--muted)}
@@ -188,7 +194,7 @@ footer ul{padding-left:18px;margin:6px 0}
 /* =====================================================================
    1. IMPOSTAZIONI
    ===================================================================== */
-const VERSIONE = "1.3.1";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
+const VERSIONE = "1.4";            // mostrata in fondo alla pagina; aggiornala a ogni modifica
 const KEY = "swipe-lavoro-v1";     // nome della memoria nel browser (cambiarlo = ripartire da zero)
 const SOGLIA_SWIPE = 110;          // pixel di trascinamento oltre i quali la carta parte
 const GIORNI_NUOVA = 2;            // un'offerta è "NUOVA" se comparsa da al massimo N giorni
@@ -253,14 +259,20 @@ function fa(iso){                     // "aggiornato 3 ore fa"
   return `${Math.round(h/24)} giorni fa`;
 }
 
-// offerte ancora da decidere, nell'ordine di jobs.json (più nuove e italiane prima)
+// "★★★★☆": stelle piene + vuote (le offerte vecchie senza stelle non ne mostrano)
+function stelleHTML(n){
+  if(n === undefined || n === null) return "";
+  return `<div class="stars" title="${n} stelle su 5">${"★".repeat(n)}<span class="off">${"★".repeat(5-n)}</span></div>`;
+}
+
+// offerte ancora da decidere, nell'ordine di jobs.json (più stelle prima, poi più nuove)
 const deciso = id => state.dec[id] && state.dec[id].s !== "annullata";
 const daVedere = () => jobs.filter(j => !deciso(j.id));
-// offerte salvate: prima quelle a cui non ti sei ancora candidato, poi le più recenti
+// offerte salvate: prima quelle a cui non ti sei ancora candidato, poi più stelle, poi le più recenti
 const salvate = () => Object.entries(state.dec)
   .filter(([,v]) => v.s === "salvata")
   .map(([id,v]) => ({id, ...v}))
-  .sort((a,b) => (a.cand?1:0)-(b.cand?1:0) || (b.t||"").localeCompare(a.t||""));
+  .sort((a,b) => (a.cand?1:0)-(b.cand?1:0) || (b.stelle??-1)-(a.stelle??-1) || (b.t||"").localeCompare(a.t||""));
 
 /* =====================================================================
    4. MAZZO DI CARTE
@@ -278,10 +290,12 @@ function cardHTML(j){
   return `
     <div class="stamp yes">SALVA</div><div class="stamp no">SCARTA</div>
     <div class="top">
+      ${stelleHTML(j.stelle)}
       <div class="badges">${badges}</div>
       <div class="az">${esc(j.azienda)}</div>
       <div class="tit">${esc(j.titolo)}</div>
       <div class="loc">📍 ${esc(j.luogo)} · ${quando(j.prima_vista)}</div>
+      ${(j.motivi || []).length ? `<div class="why">${j.motivi.map(esc).join(" · ")}</div>` : ""}
     </div>
     <div class="desc ${j.descrizione ? "" : "empty"}">${j.descrizione ? esc(j.descrizione) : "Descrizione non disponibile da questo portale: apri l'annuncio."}</div>
     <a class="open" href="${esc(j.url)}" target="_blank" rel="noopener">Apri annuncio ↗</a>`;
@@ -322,7 +336,7 @@ function decidi(stato, dir){
   if(!j) return;
   history.push(j.id);
   state.dec[j.id] = stato === "salvata"
-    ? {s:stato, t:new Date().toISOString(), azienda:j.azienda, titolo:j.titolo, url:j.url, luogo:j.luogo}
+    ? {s:stato, t:new Date().toISOString(), azienda:j.azienda, titolo:j.titolo, url:j.url, luogo:j.luogo, stelle:j.stelle}
     : {s:stato, t:new Date().toISOString()};
   save();
   // animazione di uscita, poi si ridisegna il mazzo
@@ -382,6 +396,7 @@ function renderSaved(){
   $("saved").innerHTML = list.length ? list.map(v => `
     <div class="row ${v.cand ? "done" : ""}">
       <div class="main">
+        ${stelleHTML(v.stelle)}
         <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.titolo)}</a>
         <div class="meta">${esc(v.azienda)} · ${esc(v.luogo)}
           ${attivi.size && !attivi.has(v.id) ? ` · <span class="closed">annuncio chiuso</span>` : ""}</div>
@@ -548,9 +563,10 @@ fetch("jobs.json?" + Date.now()).then(r => r.json()).then(d => {
   meta = d; jobs = d.offerte || [];
   $("upd").textContent = d.aggiornato ? `aggiornato ${fa(d.aggiornato)}` : "";
   const prob = (d.problemi || []);
-  const sc = (d.scartate_lingua || []);
+  // escluse = altra lingua o mercato non mio (UK, Americhe...); i dati vecchi usavano scartate_lingua
+  const sc = d.escluse || (d.scartate_lingua || []).map(x => ({...x, motivo: x.lingua}));
   $("foot").innerHTML = `${jobs.length} offerte attive · ${d.fonti_lette}/${d.fonti_totali} aziende lette · v${VERSIONE}`
-    + (sc.length ? `<details><summary>${sc.length} scartate per lingua</summary><ul>${sc.map(s=>`<li>${esc(s.azienda)}: ${esc(s.titolo)} <i>(${esc(s.lingua)})</i></li>`).join("")}</ul></details>` : "")
+    + (sc.length ? `<details><summary>${sc.length} escluse (altra lingua o mercato)</summary><ul>${sc.map(s=>`<li>${esc(s.azienda)}: ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titolo)}</a>` : esc(s.titolo)} <i>(${esc(s.motivo)})</i></li>`).join("")}</ul></details>` : "")
     + (prob.length ? `<details><summary>${prob.length} aziende non lette</summary><ul>${prob.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></details>` : "");
   render();
   aggiornaDaRemoto();

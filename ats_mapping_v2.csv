@@ -10,13 +10,13 @@ ServiceNow,smartrecruiters,servicenow,https://api.smartrecruiters.com/v1/compani
 PayPal,workday,paypal,https://paypal.wd1.myworkdayjobs.com/jobs,OK,7,0,rilevato 09/10/2026 (anche su Eightfold)
 Indeed,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Pinterest,greenhouse,pinterest,https://boards-api.greenhouse.io/v1/boards/pinterest/jobs,OK,202,0,
-HubSpot,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
-Workday,workday,workday,https://www.workday.com/en-us/company/careers/overview.html,NON LEGGIBILE,0,0,
+HubSpot,greenhouse,hubspotjobs,,OK,77,16,ott 2026: fonte aggiornata (giro 3)
+Workday,workday,workday,https://workday.wd5.myworkdayjobs.com/workday,OK,24,20,ott 2026: fonte aggiornata (giro 3)
 Stripe,greenhouse,stripe,https://boards-api.greenhouse.io/v1/boards/stripe/jobs,OK,592,9,
 Intercom,greenhouse,intercom,https://boards-api.greenhouse.io/v1/boards/intercom/jobs,DA CONTROLLARE,124,5,board intestato a 'Fin': falso positivo
-Zendesk,workday,zendesk,https://www.zendesk.com/it/company/careers/#georedirect,NON LEGGIBILE,0,0,
+Zendesk,workday,zendesk,https://zendesk.wd1.myworkdayjobs.com/zendesk,OK,10,10,ott 2026: fonte aggiornata (giro 3)
 DocuSign,jibe,,https://careers.docusign.com,OK,82,0,"Jibe sopra iCIMS, verificato nel browser"
-Qualtrics,phenom,cdn,https://www.qualtrics.com/careers/us/en,NON LEGGIBILE,0,0,"slug spazzatura, ridetectato; trovato scavando"
+Qualtrics,greenhouse,qualtrics,,OK,92,1,"slug spazzatura, ridetectato; trovato scavando; ott 2026: fonte aggiornata (giro 3)"
 Klaviyo,greenhouse,klaviyo,https://boards-api.greenhouse.io/v1/boards/klaviyo/jobs,OK,140,5,
 ActiveCampaign,lever,activecampaign,https://api.lever.co/v0/postings/activecampaign?mode=json,OK,13,0,
 Rippling,rippling,rippling,https://api.rippling.com/platform/api/ats/v1/board/rippling/jobs,OK,623,0,verificato nel browser
@@ -40,7 +40,7 @@ Guidewire Software,workday,guidewire,https://guidewire.wd5.myworkdayjobs.com/ext
 Snowflake,ashby,snowflake,https://api.ashbyhq.com/posting-api/job-board/snowflake,OK,360,0,rilevato 09/10/2026
 Datadog,greenhouse,datadog,https://boards-api.greenhouse.io/v1/boards/datadog/jobs,OK,440,7,
 Twilio,greenhouse,twilio,https://boards-api.greenhouse.io/v1/boards/twilio/jobs,OK,136,0,rilevato 09/10/2026
-Gong,smartrecruiters,gong,https://api.smartrecruiters.com/v1/companies/gong/postings,OK,9,0,
+Gong,greenhouse,gongio,,OK,86,15,ott 2026: fonte aggiornata (giro 3)
 Personio,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Mastercard Tech Hub,workday,mastercard,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,OK,65,0,rilevato 09/10/2026
 Airbnb,greenhouse,airbnb,https://boards-api.greenhouse.io/v1/boards/airbnb/jobs,OK,170,0,
@@ -80,3 +80,28 @@ CarTrawler,lever,cartrawler,https://api.lever.co/v0/postings/cartrawler?mode=jso
 Paddy Power / Betfair,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Cpl Resources,SCONOSCIUTO,,,SCONOSCIUTO,0,0,
 Gempool,smartrecruiters,gempool,https://api.smartrecruiters.com/v1/companies/gempool/postings,DA CONTROLLARE,1,0,solo 1 offerte: sospetto
+Notion,ashby,notion,,OK,142,23,aggiunta ott 2026 (giro 3)
+GitLab,greenhouse,gitlab,,OK,234,12,aggiunta ott 2026 (giro 3)
+Vanta,ashby,vanta,,OK,79,9,aggiunta ott 2026 (giro 3)
+Anthropic,greenhouse,anthropic,,OK,680,9,aggiunta ott 2026 (giro 3)
+Mews,greenhouse,mewssystems,,OK,25,9,aggiunta ott 2026 (giro 3)
+LearnUpon,greenhouse,learnupon,,OK,17,6,aggiunta ott 2026 (giro 3)
+Typeform,greenhouse,typeform,,OK,11,5,aggiunta ott 2026 (giro 3)
+Squarespace,greenhouse,squarespace,,OK,27,4,aggiunta ott 2026 (giro 3)
+Abnormal Security,greenhouse,abnormalsecurity,,OK,89,4,aggiunta ott 2026 (giro 3)
+Sitecore,ashby,sitecore,,OK,31,3,aggiunta ott 2026 (giro 3)
+New Relic,greenhouse,newrelic,,OK,50,2,aggiunta ott 2026 (giro 3)
+Wix,smartrecruiters,wix2,,OK,87,2,aggiunta ott 2026 (giro 3)
+Databricks,greenhouse,databricks,,OK,900,2,aggiunta ott 2026 (giro 3)
+Coinbase,greenhouse,coinbase,,OK,227,1,aggiunta ott 2026 (giro 3)
+ZoomInfo,greenhouse,zoominfo,,OK,102,1,aggiunta ott 2026 (giro 3)
+Pipedrive,lever,pipedrive,,OK,8,1,aggiunta ott 2026 (giro 3)
+SurveyMonkey,ashby,surveymonkey,,OK,20,1,aggiunta ott 2026 (giro 3)
+Wiz,greenhouse,wizinc,,OK,123,1,aggiunta ott 2026 (giro 3)
+Huntress,greenhouse,huntress,,OK,31,1,aggiunta ott 2026 (giro 3)
+Lightspeed,ashby,lightspeedhq,,OK,117,1,aggiunta ott 2026 (giro 3)
+Payoneer,greenhouse,payoneer,,OK,105,1,aggiunta ott 2026 (giro 3)
+SumUp,greenhouse,sumup,,OK,356,17,aggiunta ott 2026 (giro 3)
+Etsy,workday,etsy,https://etsy.wd5.myworkdayjobs.com/etsy_careers,OK,9,7,aggiunta ott 2026 (giro 3)
+Sprinklr,workday,sprinklr,https://sprinklr.wd1.myworkdayjobs.com/Careers,OK,4,4,aggiunta ott 2026 (giro 3)
+Circle,workday,circle,https://circle.wd1.myworkdayjobs.com/circle,OK,2,2,aggiunta ott 2026 (giro 3)

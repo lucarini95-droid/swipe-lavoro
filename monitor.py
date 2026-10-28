@@ -4,8 +4,8 @@ Monitoraggio offerte SDR/BDR a Dublino.
 
 Gira da solo su GitHub Actions (vedi .github/workflows/monitor.yml):
 scarica le offerte dagli ATS in ats_mapping_v2.csv, tiene solo i ruoli
-SDR/BDR a Dublino, scarta quelli che chiedono lingue diverse da italiano e
-inglese e scrive docs/jobs.json, che la pagina swipe (docs/index.html) legge.
+SDR/BDR a Dublino, esclude quelli per altre lingue o altri mercati (UK, Americhe...),
+da' a ogni offerta da 0 a 5 stelle (vedi PESI) e scrive docs/jobs.json, che la pagina swipe (docs/index.html) legge.
 
 Per ogni offerta ricorda la data in cui e' comparsa la prima volta, cosi' la
 pagina mostra prima le piu' fresche. Le offerte chiuse spariscono dal file.
@@ -36,36 +36,108 @@ CACHE_WD = "docs/workday_urls.json"
 # Modifica qui se vuoi allargare o stringere la ricerca.
 TITOLO = re.compile(
     r"sales development|business development|account development|market development|"
-    r"lead development|pipeline development|\bsdr\b|\bbdr\b|\badr\b|\bmdr\b|"
-    r"inside sales|graduate sales|early careers? sales|sales graduate", re.I)
-LUOGO = re.compile(r"dublin|ireland|irlanda", re.I)
-# Titoli da escludere anche se passano il filtro sopra
+    r"lead development|pipeline development|customer development|growth development|"
+    r"\bsdr\b|\bbdr\b|\badr\b|\bmdr\b|inside sales|outbound sales|sales representative|"
+    r"graduate sales|early careers? sales|sales graduate|new business representative", re.I)
+# Titoli da escludere anche se passano il filtro sopra (ruoli senior o non commerciali).
+# "Team Lead" NON e' escluso: un SDR Team Lead e' un passo avanti possibile.
 ESCLUDI = re.compile(r"\bmanager\b|\bdirector\b|\bhead of\b|\bvp\b|principal|"
                      r"software|engineer|\bpartner\b", re.I)
-# Segnala in evidenza i ruoli per italofoni
-ITALIANO = re.compile(r"italian|italiano|\bitaly\b|\bitalia\b", re.I)
 
-# Lingue che NON parlo: se il titolo le richiede, l'offerta viene scartata.
-# Italiano e inglese non sono in lista, quindi passano sempre.
+
+# Filtro "largo" usato dai lettori che cercano gia' per Dublino (e da rileva_fonti.py)
+LUOGO = re.compile(r"dublin|ireland|irlanda", re.I)
+
+
+def a_dublino(luogo):
+    """True se l'offerta e' a Dublino (o 'Remote - Ireland' / solo 'Ireland').
+    Le altre citta' irlandesi e l'Irlanda del Nord non interessano."""
+    l = luogo or ""
+    if re.search(r"dublin", l, re.I):
+        return True
+    return bool(re.search(r"ireland|irlanda", l, re.I)) and not re.search(
+        r"northern ireland|belfast|derry|\bcork\b|galway|limerick|waterford|athlone|"
+        r"shannon|kilkenny|sligo|letterkenny|dundalk|drogheda", l, re.I)
+
+
+# Italiano: nel titolo basta la parola; nel testo dell'annuncio si cerca "Italian"
+# (non "Italy", che spesso e' solo l'elenco delle sedi dell'azienda).
+ITALIANO = re.compile(r"italian|italiano|\bitaly\b|\bitalia\b", re.I)
+ITALIANO_TESTO = re.compile(r"\bitalian\b|\bitaliano\b|\bitaly (market|territory|region)", re.I)
+
+# Lingue che NON parlo: se il titolo le richiede (senza l'italiano) l'offerta viene esclusa.
 LINGUE = [
     ("Tedesco",    r"german|deutsch|\bdach\b|germanophone|austria|switzerland|swiss"),
     ("Francese",   r"french|fran[cç]ais|francophone|\bfrance\b"),
-    ("Olandese",   r"dutch|nederlands|netherlands|benelux|flemish"),
-    ("Spagnolo",   r"spanish|espa[nñ]ol|castilian|\bspain\b|iberia|iberian|\blatam\b"),
-    ("Portoghese", r"portuguese|portugu[eê]s|brazil|brasil"),
-    ("Nordiche",   r"nordic|scandinavian|swedish|norwegian|danish|finnish|"
+    ("Olandese",   r"dutch|nederlands|netherlands|benelux|flemish|belgium|belgian"),
+    ("Spagnolo",   r"spanish|espa[nñ]ol|castilian|catal[aá]n|\bspain\b|iberia|iberian|\blatam\b"),
+    ("Portoghese", r"portuguese|portugu[eê]s|brazil|brasil|\bportugal\b"),
+    ("Nordiche",   r"nordic|nordics|scandinavian|swedish|norwegian|danish|finnish|"
                    r"\bsweden\b|\bnorway\b|\bdenmark\b|\bfinland\b"),
-    ("CEE/Est",    r"polish|\bpoland\b|czech|slovak|hungarian|romanian|bulgarian|"
+    ("CEE/Est",    r"polish|\bpoland\b|czech|slovak|hungarian|romanian|bulgarian|lithuanian|"
                    r"croatian|serbian|slovenian|ukrainian|russian|\bcee\b|"
                    r"central and eastern europe|central eastern europe"),
     ("Greco",      r"\bgreek\b|\bgreece\b"),
     ("Turco",      r"turkish|\bt[uü]rkiye\b"),
     ("Ebraico",    r"hebrew|\bisrael\b"),
-    ("Arabo",      r"arabic|\bmena\b"),
+    ("Arabo",      r"arabic|\bmena\b|middle east|\bgcc\b|\buae\b|saudi"),
     ("Asiatiche",  r"japanese|korean|mandarin|cantonese|chinese|thai|vietnamese|"
                    r"indonesian|hindi|\bjapan\b|\bkorea\b"),
 ]
 LINGUE = [(nome, re.compile(pat, re.I)) for nome, pat in LINGUE]
+
+# Mercati che NON sono il mio target: se il titolo li cita (senza l'italiano) l'offerta
+# non viene proposta. Es. "BDR UKI", "MDR (UK/IE Markets)", "English Speaking", "Africa".
+MERCATI_NO = [
+    ("UK/Irlanda",   r"\bu\.?k\.?\b|\bukie?\b|\buk ?& ?i(reland)?\b|\buk/i(e|reland)?\b|"
+                     r"united kingdom|\bbritish\b|\bireland market|\birish market"),
+    ("solo inglese", r"english[- ]speak|\(english\)|english only|english market|native english"),
+    ("Africa",       r"\bafrica|south african|\bssa\b"),
+    ("Americhe",     r"north america|\bnamer\b|\bamer\b|\bamericas\b|\bus market|\bu\.s\.|"
+                     r"\bcanada\b|\busa\b"),
+    ("APAC",         r"\bapac\b|\banz\b|australia|new zealand|\bindia\b|singapore|\basia\b"),
+]
+MERCATI_NO = [(nome, re.compile(pat, re.I)) for nome, pat in MERCATI_NO]
+
+# Nel TESTO dell'annuncio (solo per titoli generici, senza mercato): una lingua chiesta
+# come requisito o un mercato di competenza diverso escludono l'offerta.
+# Sono frasi precise ("fluent in German", "German-speaking", "covering the UK&I") per
+# evitare di scartare annunci che citano solo le sedi dell'azienda.
+_LINGUE_NO_TESTO = (r"german|french|dutch|spanish|portuguese|swedish|norwegian|danish|finnish|"
+                    r"polish|czech|hebrew|arabic|turkish|greek|japanese|korean|mandarin")
+LINGUA_TESTO = re.compile(
+    rf"(?:fluen(?:t|cy)|native|proficien\w*|business[- ]level|professional[- ]level|"
+    rf"c1|c2|speak|written and (?:spoken|verbal))\W+(?:\w+\W+){{0,3}}?({_LINGUE_NO_TESTO})\b"
+    rf"|\b({_LINGUE_NO_TESTO})[- ]speak(?:ing|er)", re.I)
+NOMI_IT = {"german": "Tedesco", "french": "Francese", "dutch": "Olandese", "spanish": "Spagnolo",
+           "portuguese": "Portoghese", "swedish": "Svedese", "norwegian": "Norvegese",
+           "danish": "Danese", "finnish": "Finlandese", "polish": "Polacco", "czech": "Ceco",
+           "hebrew": "Ebraico", "arabic": "Arabo", "turkish": "Turco", "greek": "Greco",
+           "japanese": "Giapponese", "korean": "Coreano", "mandarin": "Cinese"}
+MERCATO_TESTO = re.compile(
+    r"(?:cover(?:ing)?|focus(?:ed|ing)? on|responsible for|territory|region|market)\W+"
+    r"(?:\w+\W+){0,3}?(uk ?& ?i(?:reland)?|uki\b|uk and ireland|united kingdom|"
+    r"north america|\bdach\b|nordics|benelux|\bfrance\b|\bspain\b|\bgermany\b)", re.I)
+
+# Mercati "vicini" che spesso includono l'Italia: valgono una stella in piu'.
+MERCATO_VICINO = re.compile(r"southern europe|south(ern)? eur|\bseur\b|mediterranean|"
+                            r"\bemea\b|\beurope\b|european|international|multilingual", re.I)
+RUOLO_SDR = re.compile(r"sales development|business development|account development|"
+                       r"market development|\bsdr\b|\bbdr\b|\badr\b|\bmdr\b", re.I)
+
+# ------------------------------------------------------------ STELLE (0-5)
+# Ogni offerta parte da STELLE_BASE e somma i PESI che si applicano, poi si resta tra 0 e 5.
+# Per cambiare quanto conta una cosa, cambia il numero qui: il resto si adatta da solo.
+STELLE_BASE = 1
+PESI = {
+    "italiano_titolo": 3,   # "Italian" / "Italy" nel titolo: e' la cosa che conta di piu'
+    "italiano_testo":  2,   # titolo generico, ma l'annuncio chiede/cita l'italiano
+    "ruolo_sdr":       1,   # titolo esplicito SDR/BDR/ADR/MDR (non solo "inside sales")
+    "mercato_vicino":  1,   # Southern Europe / EMEA / International senza lingua precisa
+    "altra_lingua":   -1,   # italiano + un'altra lingua che non parlo (es. Italian & Spanish)
+    "stage":          -2,   # stage / internship / graduate program: sotto il mio livello
+}
+STAGE = re.compile(r"\bintern\b|internship|\bstage\b|placement|graduate program", re.I)
 
 
 def lingue_extra(titolo):
@@ -73,15 +145,51 @@ def lingue_extra(titolo):
     return [nome for nome, rx in LINGUE if rx.search(titolo or "")]
 
 
-def lingua_richiesta(titolo):
-    """Nome della lingua che esclude l'offerta, o None se l'offerta va tenuta.
-    Regola (v1.1): se il titolo chiede l'italiano l'offerta resta SEMPRE,
-    anche se chiede un'altra lingua in piu' (es. 'Italian & Spanish').
-    Viene scartata solo se chiede un'altra lingua SENZA l'italiano."""
+def motivo_esclusione(titolo, testo_pieno):
+    """Perche' l'offerta NON va proposta, o None se va tenuta.
+    Regola base: se il titolo chiede l'italiano l'offerta resta SEMPRE."""
     if ITALIANO.search(titolo or ""):
         return None
     extra = lingue_extra(titolo)
-    return extra[0] if extra else None
+    if extra:
+        return extra[0]
+    for nome, rx in MERCATI_NO:
+        if rx.search(titolo or ""):
+            return f"mercato {nome}"
+    # titolo generico: si guarda il testo, a meno che citi l'italiano
+    if testo_pieno and not ITALIANO_TESTO.search(testo_pieno):
+        m = LINGUA_TESTO.search(testo_pieno)
+        if m:
+            nome = (m.group(1) or m.group(2)).lower()
+            return f"{NOMI_IT.get(nome, nome.capitalize())} (nel testo)"
+        m = MERCATO_TESTO.search(testo_pieno)
+        if m:
+            return f"mercato {m.group(1)} (nel testo)"
+    return None
+
+
+def stelle(titolo, testo_pieno, altre):
+    """(numero di stelle 0-5, elenco dei motivi) per un'offerta tenuta."""
+    punti, motivi = STELLE_BASE, []
+
+    def add(chiave, testo):
+        nonlocal punti
+        punti += PESI[chiave]
+        motivi.append(f"{testo} ({PESI[chiave]:+d})")
+
+    if ITALIANO.search(titolo):
+        add("italiano_titolo", "italiano nel titolo")
+    elif ITALIANO_TESTO.search(testo_pieno or ""):
+        add("italiano_testo", "italiano nel testo")
+    if RUOLO_SDR.search(titolo):
+        add("ruolo_sdr", "ruolo SDR/BDR")
+    if MERCATO_VICINO.search(titolo):
+        add("mercato_vicino", "mercato europeo/internazionale")
+    if STAGE.search(titolo):
+        add("stage", "stage/internship")
+    if altre:
+        add("altra_lingua", "chiede anche " + ", ".join(altre).lower())
+    return max(0, min(5, punti)), motivi
 
 
 # Aziende da ignorare: falsi positivi e recruiter
@@ -96,7 +204,7 @@ def sess():
 
 
 def testo(x, n=900):
-    """HTML -> testo semplice, accorciato."""
+    """HTML -> testo semplice, accorciato a n caratteri (n=None: testo intero)."""
     if not x:
         return ""
     x = html.unescape(html.unescape(str(x)))
@@ -105,6 +213,8 @@ def testo(x, n=900):
     x = re.sub(r"<[^>]+>", "", x)
     x = re.sub(r"[ \t\r\f\v]+", " ", x)
     x = re.sub(r"\n\s*\n+", "\n", x).strip()
+    if n is None:
+        return x
     return x[:n].rsplit(" ", 1)[0] + "…" if len(x) > n else x
 
 
@@ -406,31 +516,35 @@ def carica_fonti():
 
 
 def filtra(azienda, offerte):
-    """Ritorna (tenute, scartate) a partire dalle offerte grezze di un'azienda."""
-    tenute, scartate = [], []
+    """Ritorna (tenute, escluse) a partire dalle offerte grezze di un'azienda."""
+    tenute, escluse = [], []
     for t, l, u, d in offerte:
         t, l = (t or "").strip(), (l or "").strip()
-        if not (TITOLO.search(t) and LUOGO.search(l)) or ESCLUDI.search(t):
+        if not (TITOLO.search(t) and a_dublino(l)) or ESCLUDI.search(t):
             continue
-        lingua = lingua_richiesta(t)
-        if lingua:
-            scartate.append({"azienda": azienda, "titolo": t, "lingua": lingua})
+        pieno = testo(d, None)            # testo intero: serve a lingue e stelle
+        motivo = motivo_esclusione(t, pieno)
+        if motivo:
+            escluse.append({"azienda": azienda, "titolo": t, "motivo": motivo, "url": u})
             continue
-        desc = testo(d)
+        # lingue in piu' richieste insieme all'italiano: la pagina le mostra come badge.
+        # Se il titolo elenca lingue in alternativa ("German, Italian OR Nordic")
+        # l'italiano da solo basta: niente badge di lingue in piu'.
+        altre = [] if re.search(r"\bor\b|\boppure\b", t, re.I) else lingue_extra(t)
+        n, motivi = stelle(t, pieno, altre)
         tenute.append({
             "id": f"{azienda}|{t}|{l}",
             "azienda": azienda,
             "titolo": t,
             "luogo": l,
             "url": u,
-            "descrizione": desc,
-            "italiano": bool(ITALIANO.search(t) or ITALIANO.search(desc[:2000])),
-            # lingue in piu' richieste insieme all'italiano: la pagina le mostra come badge
-            # se il titolo elenca lingue in alternativa ("German, Italian OR Nordic")
-            # l'italiano da solo basta: niente badge di lingue in piu'
-            "altre_lingue": [] if re.search(r"\bor\b|\boppure\b", t, re.I) else lingue_extra(t),
+            "descrizione": testo(d),
+            "italiano": bool(ITALIANO.search(t) or ITALIANO_TESTO.search(pieno)),
+            "altre_lingue": altre,
+            "stelle": n,
+            "motivi": motivi,
         })
-    return tenute, scartate
+    return tenute, escluse
 
 
 def scarica(args):
@@ -509,7 +623,8 @@ def main():
             # al primo giro non si sa da quando sono online: si marcano come "gia' presenti"
             nuova_azienda = j["azienda"] not in aziende_prima and precedente.get("aziende_lette") is not None
             j["prima_vista"] = "" if (primo_giro or nuova_azienda) else oggi
-    offerte.sort(key=lambda j: (j["prima_vista"] or "0000", j["italiano"]), reverse=True)
+    # prima le offerte con piu' stelle, a parita' di stelle le piu' fresche
+    offerte.sort(key=lambda j: (j["stelle"], j["prima_vista"] or "0000"), reverse=True)
 
     # Se quasi tutte le fonti falliscono (es. rete giu') non si sovrascrive il file buono
     if fonti and ok < len(fonti) * 0.3 and precedente:
@@ -522,7 +637,8 @@ def main():
             "fonti_totali": len(fonti),
             "aziende_lette": sorted(a for a, _, _, e in risultati if not e),
             "problemi": sorted(problemi),
-            "scartate_lingua": sorted(scartate, key=lambda x: (x["azienda"], x["titolo"])),
+            "pesi": {"base": STELLE_BASE, **PESI},
+            "escluse": sorted(scartate, key=lambda x: (x["motivo"], x["azienda"], x["titolo"])),
             "offerte": offerte,
         }, f, ensure_ascii=False, indent=1)
     with open(CACHE_WD, "w", encoding="utf-8") as f:
@@ -531,7 +647,7 @@ def main():
     nuove = [j for j in offerte if j["prima_vista"] == oggi]
     print(f"Fatto in {int(time.time()-t0)}s: {ok}/{len(fonti)} fonti lette, "
           f"{len(offerte)} offerte attive, {len(nuove)} nuove oggi, "
-          f"{len(scartate)} scartate per lingua.")
+          f"{len(scartate)} escluse (lingua/mercato).")
     for j in nuove:
         print(f"  NUOVA  {j['azienda']:<20} {j['titolo']}")
     for p in problemi:
