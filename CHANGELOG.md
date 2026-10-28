@@ -9,6 +9,7 @@ e dell'inizio del titolo del commit su GitHub (vedi README → *Tornare a una ve
 - **Portali proprietari ora leggibili**: Google, TikTok, Oracle e IBM, con quattro lettori nuovi in monitor.py
   (trovati con il nuovo `prova_portali.py` + azione "Prova portali", che prova metodi nuovi e salva l'esito
   in `prova_portali.txt`). Aziende lette: 83.
+- Corretto: offerte di Dublin in California/Ohio (es. DocuSign "Dublin (United States)") non passano più.
 - Ancora non leggibili: Meta (la pagina rifiuta richieste automatiche), SAP (pagina tutta in JavaScript),
   Dell (blocca), Indeed, Personio (feed vuoto). Atlassian e Palo Alto leggibili ma senza sede a Dublino.
 

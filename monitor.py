@@ -54,6 +54,10 @@ def a_dublino(luogo):
     """True se l'offerta e' a Dublino (o 'Remote - Ireland' / solo 'Ireland').
     Le altre citta' irlandesi e l'Irlanda del Nord non interessano."""
     l = luogo or ""
+    # Dublin (California/Ohio): se l'indirizzo parla di Stati Uniti e non di Irlanda, non e' Dublino
+    if re.search(r"united states|\busa\b|california|ohio|\b(ca|oh)\b", l, re.I) and \
+            not re.search(r"ireland|irlanda|\bie\b", l, re.I):
+        return False
     if re.search(r"dublin", l, re.I):
         return True
     return bool(re.search(r"ireland|irlanda", l, re.I)) and not re.search(
