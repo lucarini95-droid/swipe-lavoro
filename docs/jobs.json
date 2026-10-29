@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T22:08+00:00",
+ "aggiornato": "2026-10-29T12:06+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -438,12 +438,6 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Finland (Finnish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive--Finland--Dublin-Based---Finnish-Fluency-Required-_JR338718"
-  },
-  {
-   "azienda": "Salesforce",
    "titolo": "Account Executive - SMB Norway (Norwegian Speaking)",
    "motivo": "Nordiche",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Norway--Norwegian-Speaking-_JR364585"
@@ -477,6 +471,12 @@
    "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
    "motivo": "Nordiche",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Swedish-Business-Development-Representative--BDR---Sweden-Market----Dublin--Ireland_JR335146-1"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "SMB Account Executive - Core Platform - Finland Market (Finnish Fluent)",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Finland-Market--Finnish-Fluent-_JR366295"
   },
   {
    "azienda": "Salesforce",
@@ -582,12 +582,6 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Netherlands (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive--Netherlands--Dublin-Based---Dutch-Fluency-Required-_JR338721"
-  },
-  {
-   "azienda": "Salesforce",
    "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
    "motivo": "Olandese",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Belgium-Market----Dublin--Ireland_JR335145"
@@ -597,6 +591,18 @@
    "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
    "motivo": "Olandese",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Netherlands-Market----Dublin--Ireland_JR335143"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "SMB Account Executive - Core Platform - Netherlands Market (Dutch Fluent)",
+   "motivo": "Olandese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Netherlands-Market--Dutch-Fluent-_JR366293-1"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Small Business Account Executive - Core Platform - Netherlands Market (Dutch Fluent)",
+   "motivo": "Olandese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Small-Business-Account-Executive---Core-Platform---Netherlands-Market--Dutch-Fluent-_JR366291"
   },
   {
    "azienda": "ServiceNow",
@@ -651,6 +657,12 @@
    "titolo": "Account Executive, Existing Business, Iberia",
    "motivo": "Spagnolo",
    "url": "https://stripe.com/jobs/search?gh_jid=8241322"
+  },
+  {
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SMB, Velocity Hunter, Spanish speaking",
+   "motivo": "Spagnolo",
+   "url": "https://stripe.com/jobs/search?gh_jid=8318707"
   },
   {
    "azienda": "DocuSign",
@@ -722,13 +734,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -795,6 +807,12 @@
    "titolo": "Sales Development Representative - DACH Market",
    "motivo": "Tedesco",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR358319-1"
+  },
+  {
+   "azienda": "ServiceNow",
+   "titolo": "Intern – Business Development Representative (German, Dutch, Arabic OR Nordic Languages)",
+   "motivo": "Tedesco",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000158475569"
   },
   {
    "azienda": "Stripe",
@@ -1225,6 +1243,22 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "HubSpot|Mid-Market Account Executive - Central & East Europe|Remote - Ireland",
+   "azienda": "HubSpot",
+   "titolo": "Mid-Market Account Executive - Central & East Europe",
+   "luogo": "Remote - Ireland",
+   "url": "https://www.hubspot.com/careers/jobs/5986419?gh_jid=5986419",
+   "descrizione": "What will you get to do in this Mid-Market Central & East Europe Account Executive role?\nAs an Account Executive at HubSpot, you use inbound selling strategies to find new business and help them grow using HubSpot software. You benefit from inbound leads and partner with Business Development Reps to research prospects and create outreach strategies. You run online demos of the HubSpot software and successfully sell the HubSpot value proposition. Your target clients will largely consist of mid-sized businesses. This position would be based out of your home office working in an inside sales model, and it is a full closing role.\nCandidates are eligible to be office, flex or remotely located in Republic of Ireland or Germany based on individual preference! Please check out this article for more context: The Future of Work at HubSpot: How We're Building a Hybrid Company.\nWhat are the…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 3,
+   "motivi": [
+    "Account Executive (+1)",
+    "mercato europeo/internazionale (+1)"
+   ],
+   "prima_vista": "2026-10-29"
   },
   {
    "id": "Salesforce|Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market|Dublin + altre sedi (8 Locations)",
