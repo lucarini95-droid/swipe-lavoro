@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T11:58+00:00",
+ "aggiornato": "2026-10-30T19:49+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -161,6 +161,12 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/142822990847845062"
   },
   {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, CEE",
+   "motivo": "CEE/Est",
+   "url": "https://jobs.ashbyhq.com/notion/8d2532a9-a1a8-48ec-8de3-b3646bd70423"
+  },
+  {
    "azienda": "Rippling",
    "titolo": "Account Executive - Global Payroll - Central and Eastern Europe",
    "motivo": "CEE/Est",
@@ -174,15 +180,15 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB - Polish Market",
+   "titolo": "Account Executive - SMB - Hungarian Market",
    "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB---Polish-Market_JR365584"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Eastern-Europe---Hungarian-speaker_JR360478"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Eastern Europe - Hungarian speaker",
+   "titolo": "Account Executive - SMB - Polish Market",
    "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Eastern-Europe---Hungarian-speaker_JR360478"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB---Polish-Market_JR365584"
   },
   {
    "azienda": "Salesforce",
@@ -195,12 +201,6 @@
    "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
    "motivo": "CEE/Est",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Czech-Market--Czech-or-Slovak-Speakers-_JR345316"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Polish Speaker",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Eastern-Europe---Romanian-OR-Polish-Speaker_JR331117-1"
   },
   {
    "azienda": "Salesforce",
@@ -354,6 +354,12 @@
   },
   {
    "azienda": "Salesforce",
+   "titolo": "SMB Account Executive - South African Market (English or French)",
+   "motivo": "Francese",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive----SMB-Africa--English-Speaking-_JR342800"
+  },
+  {
+   "azienda": "Salesforce",
    "titolo": "Sales Development Representative - French Market",
    "motivo": "Francese",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR364295-1"
@@ -450,27 +456,27 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative Denmark Market (Danish speaking)",
+   "titolo": "Business Development Representative Denmark Market (Danish Speaking)",
    "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Danish-Business-Development-Representative--BDR---Denmark--Market----Dublin--Ireland_JR335153"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Denmark-Market--Danish-Speaking-_JR366556"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative Finland Market (Finnish speaking)",
+   "titolo": "Business Development Representative Finland Market (Finnish Speaking)",
    "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Finnish-Business-Development-Representative--BDR---Finland--Market----Dublin--Ireland_JR335148"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Finland-Market--Finnish-Speaking-_JR366619"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative Norway Market (Norwegian speaking)",
+   "titolo": "Business Development Representative Norway Market (Norwegian Speaking)",
    "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Norwegian-Business-Development-Representative--BDR----Dublin--Ireland_JR335130"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Norway-Market--Norwegian-Speaking-_JR366616-1"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative Sweden Market (Swedish speaking)",
+   "titolo": "Business Development Representative Sweden Market (Swedish Speaking)",
    "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Swedish-Business-Development-Representative--BDR---Sweden-Market----Dublin--Ireland_JR335146-1"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Sweden-Market--Swedish-Speaking-_JR366625"
   },
   {
    "azienda": "Salesforce",
@@ -590,13 +596,13 @@
    "azienda": "Salesforce",
    "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
    "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Belgium-Market----Dublin--Ireland_JR335145"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Belgium-Market--Dutch-Speaking-_JR366510"
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative Netherlands Market (Dutch speaking)",
+   "titolo": "Business Development Representative Netherlands Market (Dutch Speaking)",
    "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Dutch-Business-Development-Representative--BDR---Netherlands-Market----Dublin--Ireland_JR335143"
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Netherlands-Market--Dutch-Speaking-_JR366482"
   },
   {
    "azienda": "Salesforce",
@@ -702,6 +708,12 @@
   },
   {
    "azienda": "DocuSign",
+   "titolo": "Account Executive, SMB - DACH Market (German Speaking)",
+   "motivo": "Tedesco",
+   "url": "https://careers.docusign.com/jobs/28679"
+  },
+  {
+   "azienda": "DocuSign",
    "titolo": "Market Development Representative (German Speaker)",
    "motivo": "Tedesco",
    "url": "https://careers.docusign.com/jobs/30450"
@@ -758,13 +770,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -891,6 +903,12 @@
    "titolo": "Business Development Representative - South African Market",
    "motivo": "mercato Africa",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317"
+  },
+  {
+   "azienda": "Datadog",
+   "titolo": "Senior Commercial Account Executive (UKI)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://careers.datadoghq.com/detail/8336757/?gh_jid=8336757"
   },
   {
    "azienda": "DocuSign",
@@ -1041,30 +1059,24 @@
    "titolo": "Sales Development Representative, Outbound (English)",
    "motivo": "mercato solo inglese",
    "url": "https://ats.rippling.com/rippling/jobs/2f8943b6-d62b-415b-897e-933cb3ff6d8e"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive -  SMB Africa (English Speaking)",
-   "motivo": "mercato solo inglese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive----SMB-Africa--English-Speaking-_JR342800"
   }
  ],
  "offerte": [
   {
-   "id": "GitLab|Business Development Representative, Italian Speaking|Remote Ireland; Remote, Spain; Remote, United Kingdom",
-   "azienda": "GitLab",
-   "titolo": "Business Development Representative, Italian Speaking",
-   "luogo": "Remote Ireland; Remote, Spain; Remote, United Kingdom",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8882365002",
-   "descrizione": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.\nThe same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to…",
+   "id": "Salesforce|Account Executive - SMB Italy (Italian Speaking)|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Account Executive - SMB Italy (Italian Speaking)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Italy--Italian-Speaking-_JR342882",
+   "descrizione": "",
    "italiano": true,
    "altre_lingue": [],
    "stelle": 5,
    "motivi": [
     "italiano nel titolo (+3)",
-    "ruolo SDR/BDR (+1)"
+    "Account Executive (+1)"
    ],
-   "prima_vista": "2026-10-29"
+   "prima_vista": "2026-10-30"
   },
   {
    "id": "Stripe|Account Executive, Velocity Scaled Grower (Italian or Spanish fluency)|Dublin",
@@ -1195,6 +1207,22 @@
    "prima_vista": ""
   },
   {
+   "id": "New Relic|Associate Sales Development Representative|Dublin, Ireland",
+   "azienda": "New Relic",
+   "titolo": "Associate Sales Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/newrelic/jobs/5467122008",
+   "descrizione": "We are a global team of innovators and pioneers dedicated to shaping the future of observability. At New Relic, we build an intelligent platform that empowers companies to thrive in an AI-first world by giving them unparalleled insight into their complex systems. As we continue to expand our global footprint, we're looking for passionate people to join our mission. If you're ready to help the world's best companies optimize their digital applications, we invite you to explore a career with us!\nYour opportunity\nAre you a recent graduate with a passion for sales and technology, eager to kickstart your career in a dynamic SaaS environment? At New Relic, we're seeking an Associate Sales Development Representative to join our team and be at the forefront of our go-to-market strategy. This role is perfect for ambitious individuals looking to develop their sales skills while working in an…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 4,
+   "motivi": [
+    "italiano nel testo (+2)",
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-10-30"
+  },
+  {
    "id": "Google|Senior Account Executive, New Business Sales, GCS (Italian, English)|Dublin, Ireland",
    "azienda": "Google",
    "titolo": "Senior Account Executive, New Business Sales, GCS (Italian, English)",
@@ -1290,6 +1318,36 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Stripe|Account Executive, SMB Commercial - Existing Business|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SMB Commercial - Existing Business",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8286655",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nBased in Dublin, this role is a central piece of our dedicated Irish team focused exclusively on accelerating domestic commerce across Ireland. You will act as a critical growth partner to an incredible portfolio of Irish brands across diverse sectors—helping them navigate scaling challenges, unlock product value, and expand both domestically and globally. If…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-10-30"
+  },
+  {
+   "id": "Rippling|Channel Sales Development Representative, Outbound|Dublin, Ireland",
+   "azienda": "Rippling",
+   "titolo": "Channel Sales Development Representative, Outbound",
+   "luogo": "Dublin, Ireland",
+   "url": "https://ats.rippling.com/rippling/jobs/b8ee9815-10e5-40af-bb5a-758ec13ba604",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-10-30"
   },
   {
    "id": "HubSpot|Senior Account Executive - Central & East Europe|Remote - Ireland",
@@ -1403,7 +1461,7 @@
    "azienda": "Salesforce",
    "titolo": "Cloud Account Executive",
    "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive_JR360770-1",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive_JR354385",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
@@ -1525,21 +1583,6 @@
    "luogo": "Dublin",
    "url": "https://stripe.com/jobs/search?gh_jid=8241294",
    "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nThe Startup SaaS Platform team works with European startups in one of Stripe’s must-win segments. At Stripe, SaaS platforms are companies that use Stripe to embed payments and make financial services a core part of their product. Their partnership with Stripe is vital to their business success. Examples include Shopify, Mindbody, and Lightspeed.\nSaaS platforms…",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Stripe|Account Executive, SMB - Existing Business|Dublin",
-   "azienda": "Stripe",
-   "titolo": "Account Executive, SMB - Existing Business",
-   "luogo": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8286655",
-   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nThe SMB Commercial team is a highly consultative sales team responsible for growing Stripe’s relationships with high-profile, high-growth SMB customers and businesses across the broader Commercial segment. We work with ambitious and fast-growing companies, helping them use Stripe’s payments and financial infrastructure to unlock new revenue streams, scale their…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
