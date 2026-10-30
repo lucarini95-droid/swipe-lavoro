@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29T20:01+00:00",
+ "aggiornato": "2026-10-30T11:58+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -683,6 +683,12 @@
    "url": "https://careers.docusign.com/jobs/30301"
   },
   {
+   "azienda": "Abnormal Security",
+   "titolo": "Sales Development Representative, German Speaking",
+   "motivo": "Tedesco",
+   "url": "https://abnormal.ai/careers/jobs/7999013003?gh_jid=7999013003"
+  },
+  {
    "azienda": "Datadog",
    "titolo": "Commercial Account Executive (DACH)",
    "motivo": "Tedesco",
@@ -693,6 +699,12 @@
    "titolo": "Mid-Market Account Executive (DACH)",
    "motivo": "Tedesco",
    "url": "https://careers.datadoghq.com/detail/7476847/?gh_jid=7476847"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "Market Development Representative (German Speaker)",
+   "motivo": "Tedesco",
+   "url": "https://careers.docusign.com/jobs/30450"
   },
   {
    "azienda": "DocuSign",
@@ -813,12 +825,6 @@
    "titolo": "SMB Account Executive - Core Platform - Central Market (German speaking)",
    "motivo": "Tedesco",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB--German-Speaking-_JR343418"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - DACH Market",
-   "motivo": "Tedesco",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR358319-1"
   },
   {
    "azienda": "ServiceNow",
@@ -942,6 +948,12 @@
   },
   {
    "azienda": "Salesforce",
+   "titolo": "Business Development Representative UKI Market (English Speaking)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-UKI-Market--English-Speaking-_JR366439"
+  },
+  {
+   "azienda": "Salesforce",
    "titolo": "Digital SMB UKI Account Executive",
    "motivo": "mercato UK/Irlanda",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Digital-SMB-UKI-Account-Executive_JR352173"
@@ -1053,22 +1065,6 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": "2026-10-29"
-  },
-  {
-   "id": "Salesforce|Account Executive - SMB Italy (Italian Speaking)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Italy (Italian Speaking)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Italy--Italian-Speaking-_JR342882",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
   },
   {
    "id": "Stripe|Account Executive, Velocity Scaled Grower (Italian or Spanish fluency)|Dublin",
@@ -1328,6 +1324,21 @@
    "prima_vista": "2026-10-29"
   },
   {
+   "id": "Salesforce|Mid Market Account Executive|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Mid Market Account Executive",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Commercial-Account-Executive_JR355551",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-10-28"
+  },
+  {
    "id": "Salesforce|GB Named Account Executive|Ireland - Dublin",
    "azienda": "Salesforce",
    "titolo": "GB Named Account Executive",
@@ -1348,21 +1359,6 @@
    "titolo": "Cloud Account Executive – Revenue Cloud",
    "luogo": "Ireland - Dublin",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive---Revenue-Cloud_JR361740",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Mid Market Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Mid Market Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Commercial-Account-Executive_JR355551",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
