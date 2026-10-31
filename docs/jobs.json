@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T19:49+00:00",
+ "aggiornato": "2026-10-31T11:31+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -219,12 +219,6 @@
    "titolo": "Tableau Account Executive - SMB - Russian Market (Russian Speaker)",
    "motivo": "CEE/Est",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Tableau-Account-Executive---SMB---Russian-Market--Russian-Speaker-_JR362547"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Territory Account Executive - Lithuanian speaker",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Territory-Account-Executive---Lithuanian-speaker_JR363938"
   },
   {
    "azienda": "Stripe",
@@ -839,6 +833,12 @@
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB--German-Speaking-_JR343418"
   },
   {
+   "azienda": "Salesforce",
+   "titolo": "Sales Development Representative - DACH Market",
+   "motivo": "Tedesco",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR358319-1"
+  },
+  {
    "azienda": "ServiceNow",
    "titolo": "Intern – Business Development Representative (German, Dutch, Arabic OR Nordic Languages)",
    "motivo": "Tedesco",
@@ -1256,11 +1256,11 @@
    "prima_vista": ""
   },
   {
-   "id": "Salesforce|Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market|Dublin + altre sedi (8 Locations)",
+   "id": "Salesforce|Agentforce Account Executive (covering EMEA growth markets)|Ireland - Dublin",
    "azienda": "Salesforce",
-   "titolo": "Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market",
-   "luogo": "Dublin + altre sedi (8 Locations)",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Germany---Munich/Move-to-our-European-HQ-in-Dublin---Account-Executive---SMB--German-Speaking-_JR362249",
+   "titolo": "Agentforce Account Executive (covering EMEA growth markets)",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive--covering-Poland--EMEA-growth-markets-_JR357145",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
@@ -1269,14 +1269,14 @@
     "Account Executive (+1)",
     "mercato europeo/internazionale (+1)"
    ],
-   "prima_vista": "2026-10-28"
+   "prima_vista": "2026-10-31"
   },
   {
-   "id": "Salesforce|Cloud Account Executive (covering EMEA growth markets)|Ireland - Dublin",
+   "id": "Salesforce|Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market|Dublin + altre sedi (8 Locations)",
    "azienda": "Salesforce",
-   "titolo": "Cloud Account Executive (covering EMEA growth markets)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive--covering-Poland--EMEA-growth-markets-_JR357145",
+   "titolo": "Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market",
+   "luogo": "Dublin + altre sedi (8 Locations)",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Germany---Munich/Move-to-our-European-HQ-in-Dublin---Account-Executive---SMB--German-Speaking-_JR362249",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
