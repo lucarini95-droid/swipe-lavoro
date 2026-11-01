@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T18:59+00:00",
+ "aggiornato": "2026-11-01T12:30+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -1318,6 +1318,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
+   "azienda": "Cisco",
+   "titolo": "Portfolio Account Executive - Ireland",
+   "luogo": "Dublin + altre sedi (3 Locations)",
+   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-01"
   },
   {
    "id": "Stripe|Account Executive, SMB Commercial - Existing Business|Dublin",
