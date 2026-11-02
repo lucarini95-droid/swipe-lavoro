@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T19:19+00:00",
+ "aggiornato": "2026-11-02T14:30+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -158,7 +158,7 @@
    "azienda": "Google",
    "titolo": "Senior Account Executive, Mid-Market Sales, Google Customer Solutions, Poland (English, Polish)",
    "motivo": "CEE/Est",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/142822990847845062"
+   "url": "https://www.google.com/about/careers/applications/jobs/results/102351480463205062"
   },
   {
    "azienda": "Notion",
@@ -216,7 +216,7 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Tableau Account Executive - SMB - Russian Market (Russian Speaker)",
+   "titolo": "Tableau Account Executive - SMB - CEE/Baltics Market (Estonian or Latvian or Lithuanian Speaking)",
    "motivo": "CEE/Est",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Tableau-Account-Executive---SMB---Russian-Market--Russian-Speaker-_JR362547"
   },
@@ -291,6 +291,12 @@
    "titolo": "Account Executive, Mid-Market Sales, Google Customer Solutions, Belgian Market (English, Dutch/French)",
    "motivo": "Francese",
    "url": "https://www.google.com/about/careers/applications/jobs/results/127502138128376518"
+  },
+  {
+   "azienda": "Google",
+   "titolo": "Account Executive, New Business Sales (English, French)",
+   "motivo": "Francese",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/72543170478383814"
   },
   {
    "azienda": "Intercom",
@@ -369,6 +375,12 @@
    "titolo": "Senior Commercial Growth AE French & Arabic",
    "motivo": "Francese",
    "url": "https://jobs.smartrecruiters.com/servicenow/744000155439049"
+  },
+  {
+   "azienda": "ServiceNow",
+   "titolo": "Senior Commercial Growth AE French Speaking",
+   "motivo": "Francese",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000159123339"
   },
   {
    "azienda": "Stripe",
@@ -477,6 +489,12 @@
    "titolo": "SMB Account Executive - Core Platform - Finland Market (Finnish Fluent)",
    "motivo": "Nordiche",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Finland-Market--Finnish-Fluent-_JR366295"
+  },
+  {
+   "azienda": "Salesforce",
+   "titolo": "Territory Account Executive - Finland",
+   "motivo": "Nordiche",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Territory-Account-Executive---Finland_JR366724-1"
   },
   {
    "azienda": "Salesforce",
@@ -672,6 +690,12 @@
   },
   {
    "azienda": "Stripe",
+   "titolo": "Account Executive, Platforms Hunter (Spanish fluency)",
+   "motivo": "Spagnolo",
+   "url": "https://stripe.com/jobs/search?gh_jid=8319459"
+  },
+  {
+   "azienda": "Stripe",
    "titolo": "Account Executive, SMB, Velocity Hunter, Spanish speaking",
    "motivo": "Spagnolo",
    "url": "https://stripe.com/jobs/search?gh_jid=8318707"
@@ -764,13 +788,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -939,12 +963,6 @@
    "titolo": "Account Executive - Small Business - Ireland OR UK Based (Office, Flex or Remote)",
    "motivo": "mercato UK/Irlanda",
    "url": "https://www.hubspot.com/careers/jobs/5986251?gh_jid=5986251"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Senior Account Executive , Expansion -  UKI - (Ireland Based)",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/8030171?gh_jid=8030171"
   },
   {
    "azienda": "HubSpot",
@@ -1318,6 +1336,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Datadog|Mid-Market Account Executive|Dublin, Ireland",
+   "azienda": "Datadog",
+   "titolo": "Mid-Market Account Executive",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.datadoghq.com/detail/8334273/?gh_jid=8334273",
+   "descrizione": "Mid-Market Account Executive\nAs an Account Executive on our Mid-Market Sales team, you will assist in Datadog’s overall business growth by strategically engaging and closing net-new customers across mid-to-large size organizations. Sellers follow a well-defined methodology, collaborate with internal stakeholders, identify the customer's unique needs, and clearly convey the value of the Datadog product. Mid-Market reps have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Focus entirely on net-new logo acquisition\n• Convert inbound leads to closed opportunities \n• Leverage tools…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-02"
   },
   {
    "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
