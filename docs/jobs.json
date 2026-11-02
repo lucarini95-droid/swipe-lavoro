@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-02T14:30+00:00",
+ "aggiornato": "2026-11-02T22:58+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -132,12 +132,6 @@
   },
   {
    "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Arabic Speakers",
-   "motivo": "Arabo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Arabic-Speakers_JR331114"
-  },
-  {
-   "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Arabic Market",
    "motivo": "Arabo",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Arabic-Market_JR363368-1"
@@ -231,12 +225,6 @@
    "titolo": "Sales Development Representative (Polish Fluency)",
    "motivo": "CEE/Est",
    "url": "https://stripe.com/jobs/search?gh_jid=8265128"
-  },
-  {
-   "azienda": "TikTok",
-   "titolo": "SMB Strategic New Business Executive - Poland",
-   "motivo": "CEE/Est",
-   "url": "https://lifeattiktok.com/search/7660166164910196997"
   },
   {
    "azienda": "Rippling",
@@ -576,6 +564,12 @@
   },
   {
    "azienda": "Okta",
+   "titolo": "Business Development Representative - Dutch",
+   "motivo": "Olandese",
+   "url": "https://www.okta.com/company/careers/opportunity/8336713?gh_jid=8336713"
+  },
+  {
+   "azienda": "Okta",
    "titolo": "Sales Development Representative - Dutch",
    "motivo": "Olandese",
    "url": "https://www.okta.com/company/careers/opportunity/6629089?gh_jid=6629089"
@@ -633,6 +627,12 @@
    "titolo": "Commercial Growth AE - Dutch Speaking",
    "motivo": "Olandese",
    "url": "https://jobs.smartrecruiters.com/servicenow/744000157066256"
+  },
+  {
+   "azienda": "Stripe",
+   "titolo": "Account Executive, Benelux",
+   "motivo": "Olandese",
+   "url": "https://stripe.com/jobs/search?gh_jid=8322584"
   },
   {
    "azienda": "Workday",
@@ -788,13 +788,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -977,6 +977,12 @@
    "url": "https://jobs.ashbyhq.com/notion/f14ce537-e859-4f1d-bcd5-d12cdfe9c05d"
   },
   {
+   "azienda": "Okta",
+   "titolo": "Business Development Representative - UK&I",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://www.okta.com/company/careers/opportunity/8336707?gh_jid=8336707"
+  },
+  {
    "azienda": "Salesforce",
    "titolo": "Account Executive - SMB UKI - Financial Services",
    "motivo": "mercato UK/Irlanda",
@@ -1080,6 +1086,22 @@
   }
  ],
  "offerte": [
+  {
+   "id": "Stripe|Account Executive, Startups - Grower (Italian Fluency)|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Account Executive, Startups - Grower (Italian Fluency)",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8319823",
+   "descrizione": "Who we are \nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.\nAbout the team\nThe Startups, Grower team is a consultative sales team that is responsible for the growth and retention of the largest and fastest-growing Startup customers at Stripe. As an Account Executive, you'll identify new opportunities for our clients to get the most out of Stripe by understanding our clients' needs, execute scaled sales strategies to close upsells…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-02"
+  },
   {
    "id": "Salesforce|Account Executive - SMB Italy (Italian Speaking)|Ireland - Dublin",
    "azienda": "Salesforce",
@@ -1241,23 +1263,6 @@
    "prima_vista": "2026-10-30"
   },
   {
-   "id": "Google|Senior Account Executive, New Business Sales, GCS (Italian, English)|Dublin, Ireland",
-   "azienda": "Google",
-   "titolo": "Senior Account Executive, New Business Sales, GCS (Italian, English)",
-   "luogo": "Dublin, Ireland",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/138078265314026182",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 4,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": ""
-  },
-  {
    "id": "New Relic|Business Development Representative|Dublin, Ireland",
    "azienda": "New Relic",
    "titolo": "Business Development Representative",
@@ -1349,6 +1354,21 @@
    "stelle": 2,
    "motivi": [
     "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-02"
+  },
+  {
+   "id": "Huntress|Sales Development Representative - Service Provider - Ireland|Remote Ireland",
+   "azienda": "Huntress",
+   "titolo": "Sales Development Representative - Service Provider - Ireland",
+   "luogo": "Remote Ireland",
+   "url": "https://job-boards.greenhouse.io/huntress/jobs/6485868003",
+   "descrizione": "What We Do:\nCybercrime is growing, and more businesses are getting hit by threats that used to target only the biggest organizations. That pushes defenders like us to operate at the highest level, and it deepens our need for good people who want to make a meaningful impact.\nFounded in 2015 by former NSA cyber operators, Huntress is a remote-first team working to make enterprise-grade cybersecurity accessible to businesses of all sizes. We work closely with security teams and service providers protecting complex environments, often without the time or headcount to handle it all. That’s why we build our technology in-house and back it with a 24/7 human-led Security Operations Center (SOC). As a result, our platform is never disconnected from the experts who manage it, ensuring our customers' protection.\nHuntress now secures more than 6M endpoints and 16M identities worldwide. Those…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": "2026-11-02"
   },
@@ -1796,21 +1816,6 @@
    "luogo": "Dublin, IE",
    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5440799008",
    "descrizione": "About Anthropic\nAnthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.\nAbout the role\nAnthropic's EMEA Startups team works with the companies building AI-native products on Claude, from Seed through Series B and beyond. The Growth Account Executive owns a portfolio of startups that are already building on Claude and is responsible for growing that relationship: deepening Claude's role in the customer's product, structuring the commercial agreements that support their scale, and defending the account as the competitive landscape shifts.\nThis is a consultative role. Native AI companies move fast, change direction often, and…",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "SurveyMonkey|New Business Account Executive|Dublin",
-   "azienda": "SurveyMonkey",
-   "titolo": "New Business Account Executive",
-   "luogo": "Dublin",
-   "url": "https://jobs.ashbyhq.com/surveymonkey/bd77d9af-a22f-4007-be92-2dd89058c296",
-   "descrizione": "SurveyMonkey is the world’s most popular platform for surveys and forms, built for business—loved by users. We combine powerful capabilities with intuitive design, effectively serving every use case, from customer experience to employee engagement, market research to payment and registration forms. With built-in research expertise and AI-powered technology, it’s like having a team of expert researchers at your fingertips.\nTrusted by millions—from startups to Fortune 500 companies—SurveyMonkey helps teams gather insights and information that inspire better decisions, create experiences people love, and drive business growth. Discover how at surveymonkey.com http://surveymonkey.com.\nWHAT WE’RE LOOKING FOR\nThere is a unique thrill in hunting for new business when you are backed by a globally recognized, beloved brand like SurveyMonkey. Our products are already trusted by leaders across…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
