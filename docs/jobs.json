@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-03T13:26+00:00",
+ "aggiornato": "2026-11-03T20:44+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -161,6 +161,12 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/102351480463205062"
   },
   {
+   "azienda": "Klaviyo",
+   "titolo": "Account Executive, SMB - Eastern Europe (Polish)",
+   "motivo": "CEE/Est",
+   "url": "https://www.klaviyo.com/careers/jobs/8177509003?gh_jid=8177509003"
+  },
+  {
    "azienda": "Notion",
    "titolo": "Business Development Representative, CEE",
    "motivo": "CEE/Est",
@@ -225,6 +231,12 @@
    "titolo": "Tableau Account Executive - SMB - CEE/Baltics Market (Estonian or Latvian or Lithuanian Speaking)",
    "motivo": "CEE/Est",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Tableau-Account-Executive---SMB---Russian-Market--Russian-Speaker-_JR362547"
+  },
+  {
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SMB Grower (CEE)",
+   "motivo": "CEE/Est",
+   "url": "https://stripe.com/jobs/search?gh_jid=8322582"
   },
   {
    "azienda": "Stripe",
@@ -455,12 +467,6 @@
    "url": "https://www.hubspot.com/careers/jobs/5986345?gh_jid=5986345"
   },
   {
-   "azienda": "Notion",
-   "titolo": "Business Development Representative, Nordics",
-   "motivo": "Nordiche",
-   "url": "https://jobs.ashbyhq.com/notion/bf2e9a54-4f46-423f-ad08-5317c1d1c9b4"
-  },
-  {
    "azienda": "Rippling",
    "titolo": "Sales Development Representative, Outbound - Nordic",
    "motivo": "Nordiche",
@@ -572,13 +578,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
+   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
+   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
   },
   {
    "azienda": "HubSpot",
@@ -959,6 +965,12 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8213057"
   },
   {
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (German fluency)",
+   "motivo": "Tedesco",
+   "url": "https://stripe.com/jobs/search?gh_jid=6570259"
+  },
+  {
    "azienda": "TikTok",
    "titolo": "SMB Strategic New Business Executive - DACH",
    "motivo": "Tedesco",
@@ -1046,13 +1058,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -1157,6 +1169,12 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/134705713917108934"
   },
   {
+   "azienda": "HubSpot",
+   "titolo": "Business Development Representative - English Speaking",
+   "motivo": "mercato solo inglese",
+   "url": "https://www.hubspot.com/careers/jobs/8038109?gh_jid=8038109"
+  },
+  {
    "azienda": "MongoDB",
    "titolo": "Account Development Representative - English Speaking (SDR/BDR)",
    "motivo": "mercato solo inglese",
@@ -1176,6 +1194,38 @@
   }
  ],
  "offerte": [
+  {
+   "id": "HubSpot|Account Executive, Mid Market - Italy|Flex - Dublin, Ireland",
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Mid Market - Italy",
+   "luogo": "Flex - Dublin, Ireland",
+   "url": "https://www.hubspot.com/careers/jobs/5986409?gh_jid=5986409",
+   "descrizione": "As a Mid-Market Account Executive at HubSpot you will be engaging directly with small to medium sized businesses, helping them to grow. You will use proactive inbound and outbound selling strategies to find and close new business, and increase the customer's usage of the HubSpot platform over time. You will use your knowledge of digital transformation and change management to act as a trusted advisor and business consultant to the customer, running the sales process end to end with them.\nWe are looking for the successful candidate to join us in our Ireland Office on a flex basis, but we’re equally happy for you to join our team as a remote employee in Ireland. \nPlease check out this article for more context: The Future of Work at HubSpot: How We're Building a Hybrid Company.\nWhat are the responsibilities of an Account Executive?\n• Develop and be responsible for your own annual,…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-03"
+  },
+  {
+   "id": "HubSpot|Account Executive, Mid Market - Italy|Remote - Ireland",
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Mid Market - Italy",
+   "luogo": "Remote - Ireland",
+   "url": "https://www.hubspot.com/careers/jobs/5986408?gh_jid=5986408",
+   "descrizione": "As a Mid-Market Account Executive at HubSpot you will be engaging directly with small to medium sized businesses, helping them to grow. You will use proactive inbound and outbound selling strategies to find and close new business, and increase the customer's usage of the HubSpot platform over time. You will use your knowledge of digital transformation and change management to act as a trusted advisor and business consultant to the customer, running the sales process end to end with them.\nWe are looking for the successful candidate to join us as a Remote employee in Ireland. \nPlease check out this article for more context: The Future of Work at HubSpot: How We're Building a Hybrid Company.\nWhat are the responsibilities of an Account Executive?\n• Develop and be responsible for your own annual, quarterly and monthly territory business plan\n• Find new prospects from both inbound and…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-03"
+  },
   {
    "id": "Stripe|Account Executive, Startups - Grower (Italian Fluency)|Dublin",
    "azienda": "Stripe",
@@ -1468,7 +1518,7 @@
    "titolo": "Sales Development Representative - Service Provider - Ireland",
    "luogo": "Remote Ireland",
    "url": "https://job-boards.greenhouse.io/huntress/jobs/6485868003",
-   "descrizione": "What We Do:\nCybercrime is growing, and more businesses are getting hit by threats that used to target only the biggest organizations. That pushes defenders like us to operate at the highest level, and it deepens our need for good people who want to make a meaningful impact.\nFounded in 2015 by former NSA cyber operators, Huntress is a remote-first team working to make enterprise-grade cybersecurity accessible to businesses of all sizes. We work closely with security teams and service providers protecting complex environments, often without the time or headcount to handle it all. That’s why we build our technology in-house and back it with a 24/7 human-led Security Operations Center (SOC). As a result, our platform is never disconnected from the experts who manage it, ensuring our customers' protection.\nHuntress now secures more than 6M endpoints and 16M identities worldwide. Those…",
+   "descrizione": "What We Do:\nCybercrime is growing, and more businesses are getting hit by threats that used to target only the biggest organizations. That pushes defenders like us to operate at the highest level, and it deepens our need for good people who want to make a meaningful impact.\nFounded in 2015 by former NSA cyber operators, Huntress is a remote-first team working to make enterprise-grade cybersecurity accessible to businesses of all sizes. We work closely with security teams and service providers protecting complex environments, often without the time or headcount to handle it all. That’s why we build our technology in-house and back it with a 24/7 human-led Security Operations Center (SOC). As a result, our platform is never disconnected from the experts who manage it, ensuring our customers' protection.\nHuntress now secures more than 6M endpoints and 17M identities worldwide. Those…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
