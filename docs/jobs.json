@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-06T13:36+00:00",
+ "aggiornato": "2026-11-06T20:40+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -311,12 +311,6 @@
    "url": "https://careers.docusign.com/jobs/30531"
   },
   {
-   "azienda": "Google",
-   "titolo": "Account Executive, Mid-Market Sales, Google Customer Solutions, Belgian Market (English, Dutch/French)",
-   "motivo": "Francese",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/127502138128376518"
-  },
-  {
    "azienda": "Intercom",
    "titolo": "Account Executive, MidMarket - French Speaking",
    "motivo": "Francese",
@@ -446,7 +440,7 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
+   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
    "azienda": "HubSpot",
@@ -458,7 +452,7 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -471,6 +465,12 @@
    "titolo": "Senior Account Executive, Mid Market - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/5986345?gh_jid=5986345"
+  },
+  {
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, Nordics",
+   "motivo": "Nordiche",
+   "url": "https://jobs.ashbyhq.com/notion/a13fa271-f819-4421-b5fa-a9777672758e"
   },
   {
    "azienda": "Qualtrics",
@@ -866,13 +866,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -897,6 +897,12 @@
    "titolo": "Account Development Representative, German Speaking",
    "motivo": "Tedesco",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=7337287"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Executive (German Speaker)",
+   "motivo": "Tedesco",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8359541"
   },
   {
    "azienda": "Notion",
@@ -1019,12 +1025,6 @@
    "url": "https://careers.datadoghq.com/detail/8334273/?gh_jid=8334273"
   },
   {
-   "azienda": "Datadog",
-   "titolo": "Senior Commercial Account Executive (UKI)",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://careers.datadoghq.com/detail/8336757/?gh_jid=8336757"
-  },
-  {
    "azienda": "DocuSign",
    "titolo": "Market Development Representative (UK/IE Markets)",
    "motivo": "mercato UK/Irlanda",
@@ -1077,6 +1077,12 @@
    "titolo": "Senior Account Executive - Mid Market, UK/I Market (Ireland Based: Office, Flex or Remote)",
    "motivo": "mercato UK/Irlanda",
    "url": "https://www.hubspot.com/careers/jobs/6879961?gh_jid=6879961"
+  },
+  {
+   "azienda": "MongoDB",
+   "titolo": "Account Executive - Mid Market (UKI)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=6826191"
   },
   {
    "azienda": "Notion",
@@ -1345,22 +1351,6 @@
    "prima_vista": "2026-10-28"
   },
   {
-   "id": "Datadog|Mid Market Account Executive (Italy)|Amsterdam, The Netherlands; Dublin, Ireland",
-   "azienda": "Datadog",
-   "titolo": "Mid Market Account Executive (Italy)",
-   "luogo": "Amsterdam, The Netherlands; Dublin, Ireland",
-   "url": "https://careers.datadoghq.com/detail/8220277/?gh_jid=8220277",
-   "descrizione": "Mid-Market Account Executive\nAs an Account Executive on our Mid-Market Sales team, you will assist in Datadog’s overall business growth by strategically engaging and closing net-new customers across mid-to-large size organizations. Sellers follow a well-defined methodology, collaborate with internal stakeholders, identify the customer's unique needs, and clearly convey the value of the Datadog product. Mid-Market reps have the opportunity to grow their careers in Sales and continue contributing to Datadog team success.\nAt Datadog, we place value in our office culture - the relationships and collaboration it builds and the creativity it brings to the table. We operate as a hybrid workplace to ensure our Datadogs can create a work-life harmony that best fits them.\nWhat You’ll Do:\n• Focus entirely on net-new logo acquisition\n• Convert inbound leads to closed opportunities \n• Leverage tools…",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
    "id": "Salesforce|Sales Development Representative - Italian Market|Ireland - Dublin",
    "azienda": "Salesforce",
    "titolo": "Sales Development Representative - Italian Market",
@@ -1407,6 +1397,22 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Notion|Business Development Representative, MEDIT|Dublin, Ireland",
+   "azienda": "Notion",
+   "titolo": "Business Development Representative, MEDIT",
+   "luogo": "Dublin, Ireland",
+   "url": "https://jobs.ashbyhq.com/notion/11ea8ad6-b380-4041-a4cc-40eeccddffef",
+   "descrizione": "WHO WE ARE\nNotion is the collaborative AI workspace where teams and agents think together https://www.youtube.com/watch?v=vkpYpWfEK5s. We're building one place where your knowledge, projects, meetings, and AI tools live side by side, so work is faster, clearer, and less fragmented. Millions of individuals, small teams, and large companies run their work on Notion.\nNotinos (our employees) are customer zero in bringing this future of work to life. We care about craft, building things that last, and the belief that great work is still fundamentally human. Our goal isn’t to ship the next feature. Each and every team of Notinos is working to set the standard for how humans work together in the AI era. From building a business’s system of record to making and managing AI agents to automating away the busy work, we care deeply about giving our customers more time for their life’s work.\nABOUT…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 4,
+   "motivi": [
+    "italiano nel testo (+2)",
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-06"
   },
   {
    "id": "New Relic|Associate Sales Development Representative|Dublin, Ireland",
