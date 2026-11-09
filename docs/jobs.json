@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-09T14:54+00:00",
+ "aggiornato": "2026-11-09T23:40+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -312,7 +312,13 @@
   },
   {
    "azienda": "Intercom",
-   "titolo": "Account Executive, Senior MidMarket (French)",
+   "titolo": "Account Executive, Commercial (French)",
+   "motivo": "Francese",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8213502"
+  },
+  {
+   "azienda": "Intercom",
+   "titolo": "Account Executive, MidMarket (French)",
    "motivo": "Francese",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8213547"
   },
@@ -434,13 +440,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
+   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
    "azienda": "HubSpot",
@@ -689,6 +695,12 @@
    "url": "https://jobs.smartrecruiters.com/servicenow/744000157066256"
   },
   {
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SMB, Benelux (English speaking)",
+   "motivo": "Olandese",
+   "url": "https://stripe.com/jobs/search?gh_jid=8322584"
+  },
+  {
    "azienda": "Workday",
    "titolo": "Business Development Representative (Dutch Speaker)",
    "motivo": "Olandese",
@@ -711,6 +723,18 @@
    "titolo": "Sales Development Representative - Portuguese Market",
    "motivo": "Portoghese",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Portuguese-Market_JR364206-1"
+  },
+  {
+   "azienda": "Google",
+   "titolo": "Account Executive, Affiliates and Publishers, New Business Sales, Spain (English, Spanish)",
+   "motivo": "Spagnolo",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/77856592631866054"
+  },
+  {
+   "azienda": "Google",
+   "titolo": "Senior Account Executive, New Business Sales, Spain (English, Spanish)",
+   "motivo": "Spagnolo",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/82384381515047622"
   },
   {
    "azienda": "HubSpot",
@@ -860,13 +884,19 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+  },
+  {
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Commercial (German)",
+   "motivo": "Tedesco",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8366639"
   },
   {
    "azienda": "Intercom",
@@ -876,7 +906,7 @@
   },
   {
    "azienda": "Intercom",
-   "titolo": "Account Executive, Senior Small Business (German)",
+   "titolo": "Account Executive, MidMarket (German)",
    "motivo": "Tedesco",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8213532"
   },
@@ -1020,12 +1050,6 @@
   },
   {
    "azienda": "Google",
-   "titolo": "Account Executive, Mid-Market Sales, Google Customer Solutions, Market: UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/75987150134223558"
-  },
-  {
-   "azienda": "Google",
    "titolo": "Account Executive, New Business Sales, UKI (English)",
    "motivo": "mercato UK/Irlanda",
    "url": "https://www.google.com/about/careers/applications/jobs/results/97200350091453126"
@@ -1052,13 +1076,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
@@ -1499,9 +1523,24 @@
    "prima_vista": ""
   },
   {
-   "id": "Intercom|Account Executive, Small Business|Dublin, Ireland",
+   "id": "Stripe|Sales Development Representative|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nAs a Sales Development Representative (SDR) at Stripe, you will drive Stripe’s future growth engine by working with Demand Gen and the Account Executive team to qualify leads and collaboratively build Stripe’s sales pipeline. You get excited about engaging with prospects to better qualify needs. You are adept at identifying high value opportunities and capable…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-09"
+  },
+  {
+   "id": "Intercom|Account Executive, Commercial|Dublin, Ireland",
    "azienda": "Intercom",
-   "titolo": "Account Executive, Small Business",
+   "titolo": "Account Executive, Commercial",
    "luogo": "Dublin, Ireland",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8213488",
    "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
@@ -1514,19 +1553,19 @@
    "prima_vista": "2026-11-09"
   },
   {
-   "id": "Stripe|Account Executive, SMB|Dublin",
-   "azienda": "Stripe",
-   "titolo": "Account Executive, SMB",
-   "luogo": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8322584",
-   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world's largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.\nAbout the team\nThe French SMB Hunter team is responsible for winning net-new business across the SMB segment for the Benelux region. We focus on bringing Stripe products to high-potential businesses that are not yet Stripe customers. We move with urgency, operate with focus, and pride ourselves on delivering strong commercial results through disciplined outbound execution and…",
+   "id": "Flipdish|Field SDR|Ireland - Dublin (Remote)",
+   "azienda": "Flipdish",
+   "titolo": "Field SDR",
+   "luogo": "Ireland - Dublin (Remote)",
+   "url": "https://job-boards.eu.greenhouse.io/flipdish/jobs/5029657101",
+   "descrizione": "At Flipdish, we’re turning the tables in favour of independent restaurant and takeaway owners by offering them powerful, simple-to-use tech solutions backed by real human support. Everything we do is designed to make running a restaurant satisfyingly simple in a world that’s anything but.\nAbout the role\nYou’ll join the Field Sales team working across the assigned Ireland territory, supporting Flipdish’s mission to make running a restaurant satisfyingly simple. You’ll partner closely with Field Sales Account Executives, Sales Leadership, and Marketing to generate qualified opportunities, build pipeline, and create strong handoffs that support long-term customer growth.\nSuccess in this role looks like building a healthy pipeline of qualified meetings, consistently converting outreach into booked opportunities, and being a trusted first point of contact for prospective customers in your…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
    "motivi": [
-    "Account Executive (+1)"
+    "ruolo SDR/BDR (+1)"
    ],
-   "prima_vista": "2026-11-08"
+   "prima_vista": "2026-11-09"
   },
   {
    "id": "HubSpot|Senior Account Executive - Central & East Europe|Remote - Ireland",
