@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T19:16+00:00",
+ "aggiornato": "2026-11-09T14:54+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -309,12 +309,6 @@
    "titolo": "Account Executive, Small to Medium Business - French Market",
    "motivo": "Francese",
    "url": "https://careers.docusign.com/jobs/30531"
-  },
-  {
-   "azienda": "Intercom",
-   "titolo": "Account Executive, MidMarket - French Speaking",
-   "motivo": "Francese",
-   "url": "https://job-boards.greenhouse.io/intercom/jobs/7591247"
   },
   {
    "azienda": "Intercom",
@@ -731,6 +725,12 @@
    "url": "https://www.mongodb.com/careers/job/?gh_jid=7335205"
   },
   {
+   "azienda": "Qualtrics",
+   "titolo": "Account Executive - Spain",
+   "motivo": "Spagnolo",
+   "url": "https://www.qualtrics.com/careers/us/en/job/8364906?gh_jid=8364906"
+  },
+  {
    "azienda": "Rippling",
    "titolo": "Sales Development Representative, Outbound (Spanish)",
    "motivo": "Spagnolo",
@@ -860,25 +860,19 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
    "titolo": "Account Executive, Enterprise (German)",
    "motivo": "Tedesco",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8211426"
-  },
-  {
-   "azienda": "Intercom",
-   "titolo": "Account Executive, MidMarket - German Speaking",
-   "motivo": "Tedesco",
-   "url": "https://job-boards.greenhouse.io/intercom/jobs/7386163"
   },
   {
    "azienda": "Intercom",
@@ -1058,13 +1052,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -1503,6 +1497,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Intercom|Account Executive, Small Business|Dublin, Ireland",
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Small Business",
+   "luogo": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8213488",
+   "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-09"
   },
   {
    "id": "Stripe|Account Executive, SMB|Dublin",
@@ -2084,22 +2093,6 @@
    "luogo": "Dublin, County Dublin, Ireland",
    "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
    "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Intercom|Account Executive, Senior Small Business|Dublin, Ireland",
-   "azienda": "Intercom",
-   "titolo": "Account Executive, Senior Small Business",
-   "luogo": "Dublin, Ireland",
-   "url": "https://job-boards.greenhouse.io/intercom/jobs/8213488",
-   "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 1,
