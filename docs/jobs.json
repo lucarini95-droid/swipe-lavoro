@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-11T13:23+00:00",
+ "aggiornato": "2026-11-11T21:41+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -293,6 +293,12 @@
    "url": "https://abnormal.ai/careers/jobs/7999020003?gh_jid=7999020003"
   },
   {
+   "azienda": "Abnormal Security",
+   "titolo": "Sales Development Representative, French Speaking",
+   "motivo": "Francese",
+   "url": "https://abnormal.ai/careers/jobs/7998348003?gh_jid=7998348003"
+  },
+  {
    "azienda": "Datadog",
    "titolo": "Mid-Market Account Executive (France)",
    "motivo": "Francese",
@@ -440,6 +446,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
@@ -447,12 +459,6 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -884,13 +890,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -1064,13 +1070,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -1206,6 +1212,22 @@
   }
  ],
  "offerte": [
+  {
+   "id": "ServiceNow|Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Italian, Swedish, Arabic OR French Speaking)|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Italian, Swedish, Arabic OR French Speaking)",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000161135399",
+   "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-11"
+  },
   {
    "id": "Salesforce|Account Executive - Marketing Cloud - Italian Market|Ireland - Dublin",
    "azienda": "Salesforce",
@@ -1673,21 +1695,6 @@
    "prima_vista": "2026-10-29"
   },
   {
-   "id": "Salesforce|Cloud Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Cloud Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive_JR366555",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
    "id": "Salesforce|Mid Market Account Executive|Ireland - Dublin",
    "azienda": "Salesforce",
    "titolo": "Mid Market Account Executive",
@@ -1738,6 +1745,21 @@
    "titolo": "Marketing Cloud -Commercial Account Executive",
    "luogo": "Ireland - Dublin",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Prime-Named-Account-Executive_JR364084",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-10-28"
+  },
+  {
+   "id": "Salesforce|Cloud Account Executive|Ireland - Dublin",
+   "azienda": "Salesforce",
+   "titolo": "Cloud Account Executive",
+   "luogo": "Ireland - Dublin",
+   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive_JR354385",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
@@ -1889,21 +1911,6 @@
    "luogo": "Dublin, Ireland",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/6922266",
    "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Rippling|Account Executive, Global Payroll|Dublin, Ireland",
-   "azienda": "Rippling",
-   "titolo": "Account Executive, Global Payroll",
-   "luogo": "Dublin, Ireland",
-   "url": "https://ats.rippling.com/rippling/jobs/70657987-b405-4f86-9a55-276c524d461d",
-   "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
