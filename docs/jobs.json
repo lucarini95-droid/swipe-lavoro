@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-10T21:09+00:00",
+ "aggiornato": "2026-11-11T13:23+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -281,6 +281,12 @@
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Hebrew-speaker_JR366873-1"
   },
   {
+   "azienda": "HubSpot",
+   "titolo": "Senior Account Executive, Mid Market - Israeli Market",
+   "motivo": "Ebraico (nel testo)",
+   "url": "https://www.hubspot.com/careers/jobs/5986360?gh_jid=5986360"
+  },
+  {
    "azienda": "Abnormal Security",
    "titolo": "Sales Development Representative, French Speaking",
    "motivo": "Francese",
@@ -434,6 +440,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
@@ -441,18 +453,6 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Lead Account Executive, Corporate - Nordics",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5985684?gh_jid=5985684"
   },
   {
    "azienda": "HubSpot",
@@ -578,13 +578,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
+   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
+   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
   },
   {
    "azienda": "HubSpot",
@@ -1019,12 +1019,6 @@
    "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
   },
   {
-   "azienda": "Zendesk",
-   "titolo": "Senior SMB Account Executive - DACH",
-   "motivo": "Tedesco",
-   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Remote-Germany/Senior-SMB-Account-Executive_R35201"
-  },
-  {
    "azienda": "Salesforce",
    "titolo": "Business Development Representative - South African Market",
    "motivo": "mercato Africa",
@@ -1095,12 +1089,6 @@
    "titolo": "Business Development Representative, UKI",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/notion/f14ce537-e859-4f1d-bcd5-d12cdfe9c05d"
-  },
-  {
-   "azienda": "Okta",
-   "titolo": "Business Development Representative - UK&I",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://www.okta.com/company/careers/opportunity/8336707?gh_jid=8336707"
   },
   {
    "azienda": "Rippling",
@@ -1475,6 +1463,36 @@
    "prima_vista": ""
   },
   {
+   "id": "ServiceNow|CRM Account Executive|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "CRM Account Executive",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000161043850",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-11"
+  },
+  {
+   "id": "DocuSign|Market Development Representative|Dublin, Ireland",
+   "azienda": "DocuSign",
+   "titolo": "Market Development Representative",
+   "luogo": "Dublin, Ireland",
+   "url": "https://careers.docusign.com/jobs/30825",
+   "descrizione": "Company Overview Docusign brings agreements to life. More than 1.8 million customers and more than a billion people in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify people’s lives. With intelligent agreement management, Docusign unleashes business-critical data that is trapped inside of documents. Until now, these were disconnected from business systems of record, costing businesses time, money, and opportunity. Using the Docusign AI-native IAM platform, companies can create, commit, and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle management (CLM). What you'll do The Market Development Representative (MDR) will generate new business through outbound calls and targeted emails to potential clients. The MDR qualifies prospective customers through targeted questions about their business…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-11"
+  },
+  {
    "id": "Stripe|Account Executive, Scaled Hunter – Startup SaaS Platforms (ROE)|Dublin",
    "azienda": "Stripe",
    "titolo": "Account Executive, Scaled Hunter – Startup SaaS Platforms (ROE)",
@@ -1705,21 +1723,6 @@
    "titolo": "Cloud Account Executive – Revenue Cloud",
    "luogo": "Ireland - Dublin",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive---Revenue-Cloud_JR361740",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Cloud Account Executive Tableau|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Cloud Account Executive Tableau",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive-Tableau_JR363874-1",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
