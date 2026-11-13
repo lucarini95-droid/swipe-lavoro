@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-13T13:46+00:00",
+ "aggiornato": "2026-11-13T21:08+00:00",
  "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
@@ -372,6 +372,12 @@
   },
   {
    "azienda": "ServiceNow",
+   "titolo": "Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Swedish, Arabic OR French Speaking)",
+   "motivo": "Francese",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000161524209"
+  },
+  {
+   "azienda": "ServiceNow",
    "titolo": "Senior Commercial Growth AE French & Arabic",
    "motivo": "Francese",
    "url": "https://jobs.smartrecruiters.com/servicenow/744000155439049"
@@ -428,6 +434,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
@@ -435,12 +447,6 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -1064,13 +1070,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -1249,22 +1255,6 @@
     "Account Executive (+1)"
    ],
    "prima_vista": "2026-11-12"
-  },
-  {
-   "id": "ServiceNow|Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Italian, Swedish, Arabic OR French Speaking)|Dublin ie",
-   "azienda": "ServiceNow",
-   "titolo": "Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Italian, Swedish, Arabic OR French Speaking)",
-   "luogo": "Dublin ie",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000161260120",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": "2026-11-11"
   },
   {
    "id": "Salesforce|Account Executive - Marketing Cloud - Italian Market|Ireland - Dublin",
