@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-14T12:50+00:00",
- "fonti_lette": 67,
+ "aggiornato": "2026-11-14T19:39+00:00",
+ "fonti_lette": 83,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,7 +11,10 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
+  "Circle",
+  "Cisco",
   "Coinbase",
+  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -19,6 +22,8 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "Etsy",
+  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -26,13 +31,17 @@
   "GitLab",
   "Gong",
   "Google",
+  "Guidewire Software",
+  "Hewlett Packard Enterprise",
   "HubSpot",
   "Huntress",
   "IBM",
   "Intercom",
   "Klaviyo",
   "LearnUpon",
+  "LetsGetChecked",
   "Lightspeed",
+  "Mastercard Tech Hub",
   "Mews",
   "Microsoft",
   "MongoDB",
@@ -41,15 +50,19 @@
   "Okta",
   "OpenAI",
   "Oracle",
+  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
+  "Proofpoint",
   "Qualtrics",
+  "Red Hat",
   "Rippling",
   "Salesforce",
   "ServiceNow",
   "Sitecore",
   "Snowflake",
+  "Sprinklr",
   "Squarespace",
   "Stripe",
   "SumUp",
@@ -67,28 +80,14 @@
   "Wayflyer",
   "Wix",
   "Wiz",
+  "Workday",
   "Workhuman",
+  "Workvivo / Zoom",
   "X (ex Twitter)",
+  "Zendesk",
   "ZoomInfo"
  ],
- "problemi": [
-  "Circle: errore lettura (JSONDecodeError)",
-  "Cisco: errore lettura (JSONDecodeError)",
-  "CrowdStrike: errore lettura (JSONDecodeError)",
-  "Etsy: errore lettura (JSONDecodeError)",
-  "FIS: errore lettura (JSONDecodeError)",
-  "Guidewire Software: errore lettura (JSONDecodeError)",
-  "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
-  "LetsGetChecked: errore lettura (JSONDecodeError)",
-  "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
-  "PayPal: errore lettura (JSONDecodeError)",
-  "Proofpoint: errore lettura (JSONDecodeError)",
-  "Red Hat: errore lettura (JSONDecodeError)",
-  "Sprinklr: errore lettura (JSONDecodeError)",
-  "Workday: errore lettura (JSONDecodeError)",
-  "Workvivo / Zoom: errore lettura (JSONDecodeError)",
-  "Zendesk: errore lettura (JSONDecodeError)"
- ],
+ "problemi": [],
  "pesi": {
   "base": 1,
   "italiano_titolo": 3,
@@ -441,13 +440,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
+   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
    "azienda": "HubSpot",
@@ -544,6 +543,18 @@
    "titolo": "Account Executive, Platforms (Nordic Region)",
    "motivo": "Nordiche",
    "url": "https://stripe.com/jobs/search?gh_jid=8241304"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Swedish)",
+   "motivo": "Nordiche",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
+   "motivo": "Nordiche",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
   },
   {
    "azienda": "Abnormal Security",
@@ -700,6 +711,12 @@
    "titolo": "Account Executive, SMB, Benelux (English speaking)",
    "motivo": "Olandese",
    "url": "https://stripe.com/jobs/search?gh_jid=8322584"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative (Dutch Speaker)",
+   "motivo": "Olandese",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Dutch-Speaking-_JR-0098604"
   },
   {
    "azienda": "Okta",
@@ -873,13 +890,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -994,6 +1011,12 @@
    "titolo": "Business Development Representative [German Fluency]",
    "motivo": "Tedesco",
    "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative | German | Dublin based",
+   "motivo": "Tedesco",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
   },
   {
    "azienda": "Intercom",
@@ -1168,6 +1191,18 @@
    "titolo": "Account Executive, Early Stage - UK&I",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
+  },
+  {
+   "azienda": "Workday",
+   "titolo": "Business Development Representative UKI",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
+  },
+  {
+   "azienda": "Zendesk",
+   "titolo": "Senior Commercial Account Executive, UKI - New Business",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Dublin-Ireland/Senior-Commercial-Account-Executive--UKI---New-Business_R35408"
   },
   {
    "azienda": "HubSpot",
@@ -2058,6 +2093,21 @@
    "prima_vista": ""
   },
   {
+   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
+   "azienda": "Cisco",
+   "titolo": "Portfolio Account Executive - Ireland",
+   "luogo": "Dublin + altre sedi (3 Locations)",
+   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": ""
+  },
+  {
    "id": "Salesforce|Senior SMB Account Executive - Core Platform - Central Market|Ireland - Dublin",
    "azienda": "Salesforce",
    "titolo": "Senior SMB Account Executive - Core Platform - Central Market",
@@ -2104,6 +2154,38 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
+  },
+  {
+   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
+   "azienda": "PayPal",
+   "titolo": "Senior Account Executive - SMB Outbound",
+   "luogo": "Dublin, County Dublin, Ireland",
+   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Zendesk|Senior Commercial Account Executive|Dublin + altre sedi (2 Locations)",
+   "azienda": "Zendesk",
+   "titolo": "Senior Commercial Account Executive",
+   "luogo": "Dublin + altre sedi (2 Locations)",
+   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/London-United-Kingdom/Senior-Commercial-Account-Executive_R35644",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": ""
   }
  ]
 }
