@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-15T20:05+00:00",
- "fonti_lette": 83,
+ "aggiornato": "2026-11-16T14:30+00:00",
+ "fonti_lette": 66,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,10 +11,7 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
-  "Circle",
-  "Cisco",
   "Coinbase",
-  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -22,8 +19,6 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
-  "Etsy",
-  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -31,17 +26,13 @@
   "GitLab",
   "Gong",
   "Google",
-  "Guidewire Software",
-  "Hewlett Packard Enterprise",
   "HubSpot",
   "Huntress",
   "IBM",
   "Intercom",
   "Klaviyo",
   "LearnUpon",
-  "LetsGetChecked",
   "Lightspeed",
-  "Mastercard Tech Hub",
   "Mews",
   "Microsoft",
   "MongoDB",
@@ -50,19 +41,14 @@
   "Okta",
   "OpenAI",
   "Oracle",
-  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
-  "Proofpoint",
   "Qualtrics",
-  "Red Hat",
   "Rippling",
-  "Salesforce",
   "ServiceNow",
   "Sitecore",
   "Snowflake",
-  "Sprinklr",
   "Squarespace",
   "Stripe",
   "SumUp",
@@ -80,14 +66,29 @@
   "Wayflyer",
   "Wix",
   "Wiz",
-  "Workday",
   "Workhuman",
-  "Workvivo / Zoom",
   "X (ex Twitter)",
-  "Zendesk",
   "ZoomInfo"
  ],
- "problemi": [],
+ "problemi": [
+  "Circle: errore lettura (JSONDecodeError)",
+  "Cisco: errore lettura (JSONDecodeError)",
+  "CrowdStrike: errore lettura (JSONDecodeError)",
+  "Etsy: errore lettura (JSONDecodeError)",
+  "FIS: errore lettura (JSONDecodeError)",
+  "Guidewire Software: errore lettura (JSONDecodeError)",
+  "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
+  "LetsGetChecked: errore lettura (JSONDecodeError)",
+  "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
+  "PayPal: errore lettura (JSONDecodeError)",
+  "Proofpoint: errore lettura (JSONDecodeError)",
+  "Red Hat: errore lettura (JSONDecodeError)",
+  "Salesforce: errore lettura (JSONDecodeError)",
+  "Sprinklr: errore lettura (JSONDecodeError)",
+  "Workday: errore lettura (JSONDecodeError)",
+  "Workvivo / Zoom: errore lettura (JSONDecodeError)",
+  "Zendesk: errore lettura (JSONDecodeError)"
+ ],
  "pesi": {
   "base": 1,
   "italiano_titolo": 3,
@@ -131,30 +132,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/76ddc3a2-7af4-4b44-beeb-27c8df0945c2"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Emerging Markets (Arabic Speaking)",
-   "motivo": "Arabo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Emerging-Markets--Arabic-Speaking-_JR342838"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Arabic Speakers",
-   "motivo": "Arabo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Arabic-Speakers_JR366864-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Arabic Market",
-   "motivo": "Arabo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Arabic-Market_JR363368-1"
-  },
-  {
-   "azienda": "Google",
-   "titolo": "Account Executive, Mid-Market Sales, Google Customer Solutions (Polish, English)",
-   "motivo": "CEE/Est",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/83357966043882182"
-  },
-  {
    "azienda": "Google",
    "titolo": "Senior Account Executive, Mid-Market Sales, Google Customer Solutions, Poland (English, Polish)",
    "motivo": "CEE/Est",
@@ -177,60 +154,6 @@
    "titolo": "Business Development Representative, Polish (CEE)",
    "motivo": "CEE/Est",
    "url": "https://ats.rippling.com/rippling/jobs/00be08c2-dc4a-4054-8d40-8aea2b24465e"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB - Hungarian Market",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Eastern-Europe---Hungarian-speaker_JR360478"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB - Polish Market",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB---Polish-Market_JR365584"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Eastern Europe - Lithuanian, Latvian or Estonian speaker",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Eastern-Europe---Russian--Lithuanian--Latvian-or-Estonian-speaker_JR342888"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Czech Market (Czech or Slovak Speakers)",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Czech-Market--Czech-or-Slovak-Speakers-_JR345316"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Polish Speaker",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Polish-Speaker_JR366882-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Lithuanian, Hungarian, Czech or Slovak speaking Market",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Lithuanian--Hungarian--Czech-or-Slovak-speaking-Market_JR364044-2"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Polish Market",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Polish-Market_JR364051-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Ukrainian or Russian Market",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Ukrainian-or-Russian-Market_JR364043-2"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Tableau Account Executive - SMB - CEE/Baltics Market (Estonian or Latvian or Lithuanian Speaking)",
-   "motivo": "CEE/Est",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Tableau-Account-Executive---SMB---Russian-Market--Russian-Speaker-_JR362547"
   },
   {
    "azienda": "Stripe",
@@ -257,24 +180,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/15f46354-8c45-49f6-9bfe-0de78691b426"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive Israel ESB Market - Hebrew Speaker",
-   "motivo": "Ebraico",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive-Israel-ESB-Market---Hebrew-Speaker_JR342810"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive Israel ESMB Market - Hebrew Speaker",
-   "motivo": "Ebraico",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive-Israel-ESMB-Market---Hebrew-Speaker_JR342790"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Hebrew speaker",
-   "motivo": "Ebraico",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Hebrew-speaker_JR366873-1"
-  },
-  {
    "azienda": "HubSpot",
    "titolo": "Senior Account Executive, Mid Market - Israeli Market",
    "motivo": "Ebraico (nel testo)",
@@ -285,12 +190,6 @@
    "titolo": "Mid-Market Account Executive (France)",
    "motivo": "Francese",
    "url": "https://careers.datadoghq.com/detail/8334294/?gh_jid=8334294"
-  },
-  {
-   "azienda": "DocuSign",
-   "titolo": "Account Executive, SMB - French Market",
-   "motivo": "Francese",
-   "url": "https://careers.docusign.com/jobs/30435"
   },
   {
    "azienda": "DocuSign",
@@ -341,36 +240,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/5722f5b2-f3af-4b1a-8de9-59e40c105467"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Belgium - French Speaking",
-   "motivo": "Francese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Belgium---French-Speaking_JR350101-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative French Market - French Speaker",
-   "motivo": "Francese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Rep---French-Market_JR335962"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - French Speaker",
-   "motivo": "Francese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---French-Speaker_JR343761-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - South African Market (English or French)",
-   "motivo": "Francese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive----SMB-Africa--English-Speaking-_JR342800"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Slack Cloud Account Executive - French speaking",
-   "motivo": "Francese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Slack-Cloud-Account-Executive---French-speaking_JR360772-1"
-  },
-  {
    "azienda": "ServiceNow",
    "titolo": "Business Development Representative (Native/Fluent Dutch, Finnish, Spanish, Swedish, Arabic OR French Speaking)",
    "motivo": "Francese",
@@ -413,12 +282,6 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8196254"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB - Greek speaking market",
-   "motivo": "Greco",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB---Greek-speaking-market_JR366116"
-  },
-  {
    "azienda": "Datadog",
    "titolo": "Commercial Account Executive UKI/Nordics",
    "motivo": "Nordiche",
@@ -434,12 +297,6 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
@@ -447,6 +304,12 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -479,60 +342,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/7531be73-bcb3-42b8-bcf7-28364718da07"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Denmark (Danish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Denmark--Danish-Speaking-_JR364637"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Norway (Norwegian Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Norway--Norwegian-Speaking-_JR364585"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Sweden (Swedish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Sweden--Swedish-Speaking-_JR365010"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Denmark Market (Danish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Denmark-Market--Danish-Speaking-_JR366556"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Finland Market (Finnish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Finland-Market--Finnish-Speaking-_JR366619"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Norway Market (Norwegian Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Norway-Market--Norwegian-Speaking-_JR366616-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Sweden Market (Swedish Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Sweden-Market--Swedish-Speaking-_JR366625"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - Core Platform - Finland Market (Finnish Fluent)",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Finland-Market--Finnish-Fluent-_JR366295"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Territory Account Executive - Sweden",
-   "motivo": "Nordiche",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Territory-Account-Executive---Sweden_JR360787"
-  },
-  {
    "azienda": "ServiceNow",
    "titolo": "Senior Commercial Growth AE Nordic Speaking",
    "motivo": "Nordiche",
@@ -543,18 +352,6 @@
    "titolo": "Account Executive, Platforms (Nordic Region)",
    "motivo": "Nordiche",
    "url": "https://stripe.com/jobs/search?gh_jid=8241304"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Swedish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
   },
   {
    "azienda": "Abnormal Security",
@@ -647,60 +444,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/91392952-b7df-4157-96e9-89ad82874a8a"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Belgium (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Belgium--Dutch-Speaking-_JR364420-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Benelux Market (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Benelux-Market--Dutch-Speaking-_JR357964"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Belgium-Market--Dutch-Speaking-_JR368200"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Belgium-Market--Dutch-Speaking-_JR368199"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Belgium Market (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Belgium-Market--Dutch-Speaking-_JR366510"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Netherlands Market (Dutch Speaking)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Netherlands-Market--Dutch-Speaking-_JR366482"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - Core Platform - Netherlands Market (Dutch Fluent)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Netherlands-Market--Dutch-Fluent-_JR366293-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Dutch Speaking",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---BNL-Market_JR367859"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Small Business Account Executive - Core Platform - Netherlands Market (Dutch Fluent)",
-   "motivo": "Olandese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Small-Business-Account-Executive---Core-Platform---Netherlands-Market--Dutch-Fluent-_JR366291"
-  },
-  {
    "azienda": "ServiceNow",
    "titolo": "Commercial Growth AE - Dutch Speaking",
    "motivo": "Olandese",
@@ -713,28 +456,10 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8322584"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Dutch Speaker)",
-   "motivo": "Olandese",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Dutch-Speaking-_JR-0098604"
-  },
-  {
    "azienda": "Okta",
    "titolo": "Business Development Representative",
    "motivo": "Olandese (nel testo)",
    "url": "https://www.okta.com/company/careers/opportunity/8336713?gh_jid=8336713"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative Portuguese Market - Portuguese Speaker",
-   "motivo": "Portoghese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-Portuguese-Market---Portuguese-Speaker_JR366331-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Portuguese Market",
-   "motivo": "Portoghese",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Portuguese-Market_JR364206-1"
   },
   {
    "azienda": "Google",
@@ -765,24 +490,6 @@
    "titolo": "Sales Development Representative, Outbound (Spanish)",
    "motivo": "Spagnolo",
    "url": "https://ats.rippling.com/rippling/jobs/a39ca92f-a909-4868-9d13-1524d6c8b626"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Iberia (Portuguese, Spanish or Catalan Speaking)",
-   "motivo": "Spagnolo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Iberia--Portuguese--Spanish-or-Catalan-Speaking-_JR342807"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Spanish or or Catalán speakers",
-   "motivo": "Spagnolo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Spanish-or-or-Cataln-speakers_JR366868-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Spanish Market",
-   "motivo": "Spagnolo",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Spanish-Market_JR364207-1"
   },
   {
    "azienda": "Stripe",
@@ -858,18 +565,6 @@
   },
   {
    "azienda": "HubSpot",
-   "titolo": "Corporate Account Executive - DACH (German Speaker - Remote, Ireland Based)",
-   "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986464?gh_jid=5986464"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Corporate Account Executive - DACH (German Speaker)",
-   "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986463?gh_jid=5986463"
-  },
-  {
-   "azienda": "HubSpot",
    "titolo": "Mid-Market Account Executive, DACH (German Speaker - Ireland Based)",
    "motivo": "Tedesco",
    "url": "https://www.hubspot.com/careers/jobs/5986430?gh_jid=5986430"
@@ -890,13 +585,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -953,24 +648,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/a60c5e96-8c69-4bf9-b909-aeb8cec98cb7"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative German Market (German Speaking)",
-   "motivo": "Tedesco",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-German-Market--German-Speaking-_JR366875-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - Core Platform - Central Market (German speaking)",
-   "motivo": "Tedesco",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Core-Platform---Central-Market--German-speaking-_JR367224"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - DACH Market",
-   "motivo": "Tedesco",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative_JR358319-1"
-  },
-  {
    "azienda": "Stripe",
    "titolo": "Account Executive, DACH, Commercial (Existing Business)",
    "motivo": "Tedesco",
@@ -995,6 +672,12 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8213057"
   },
   {
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (German fluency)",
+   "motivo": "Tedesco",
+   "url": "https://stripe.com/jobs/search?gh_jid=6570259"
+  },
+  {
    "azienda": "TikTok",
    "titolo": "SMB Strategic New Business Executive - DACH",
    "motivo": "Tedesco",
@@ -1013,22 +696,10 @@
    "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative | German | Dublin based",
-   "motivo": "Tedesco",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
-  },
-  {
    "azienda": "Intercom",
    "titolo": "Sales Development Representative",
    "motivo": "Tedesco (nel testo)",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8383344"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - South African Market",
-   "motivo": "mercato Africa",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---African-Market--Any-African-language-Speakers-_JR345317"
   },
   {
    "azienda": "Datadog",
@@ -1076,13 +747,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
@@ -1115,66 +786,6 @@
    "url": "https://ats.rippling.com/rippling/jobs/1d8aeb2f-05ff-47c5-b82a-6556f08f727a"
   },
   {
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB UKI - Financial Services",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-UKI---Financial-Services_JR365723"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative UKI Market (English Speaking)",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-UKI-Market--English-Speaking-_JR367864"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative UKI Market (English Speaking)",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative-UKI-Market--English-Speaking-_JR366439"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Digital SMB UKI Account Executive",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Digital-SMB-UKI-Account-Executive_JR352173"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - Tableau - UKI Market",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Tableau---UKI-Market_JR360368"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB UKI Account Executive - English Speaker",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-UKI-Account-Executive---English-Speaker_JR356685"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "SMB UKI Account Executive - English Speaker",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-UKI-Account-Executive---English-Speaker_JR367242-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative UK & Ireland Market",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative-UK---Ireland-Market_JR347552-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Small Business UKI Account Executive - English Speaker",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Small-Business-UKI-Account-Executive---English-Speaker_JR357909-1"
-  },
-  {
-   "azienda": "Salesforce",
-   "titolo": "Strategic SMB Account Executive - UKI Market",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Strategic-SMB-Account-Executive---UKI-Market_JR360062"
-  },
-  {
    "azienda": "Stripe",
    "titolo": "Account Executive - Startup SaaS Platforms, Scaled UK Hunter",
    "motivo": "mercato UK/Irlanda",
@@ -1191,18 +802,6 @@
    "titolo": "Account Executive, Early Stage - UK&I",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
-  },
-  {
-   "azienda": "Zendesk",
-   "titolo": "Senior Commercial Account Executive, UKI - New Business",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Dublin-Ireland/Senior-Commercial-Account-Executive--UKI---New-Business_R35408"
   },
   {
    "azienda": "HubSpot",
@@ -1230,6 +829,22 @@
   }
  ],
  "offerte": [
+  {
+   "id": "ServiceNow|CRM Account Executive (Commercial) - Italian speaking|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "CRM Account Executive (Commercial) - Italian speaking",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000161688659",
+   "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-16"
+  },
   {
    "id": "Qualtrics|Sales Development Representative - French, German, Dutch, Spanish or Italian|Dublin, Ireland",
    "azienda": "Qualtrics",
@@ -1263,22 +878,6 @@
    "prima_vista": "2026-11-12"
   },
   {
-   "id": "Salesforce|Account Executive - Marketing Cloud - Italian Market|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - Marketing Cloud - Italian Market",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---Marketing-Cloud---Italian-Market_JR354937-1",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-11-05"
-  },
-  {
    "id": "Stripe|Account Executive, Startups - Grower (Italian Fluency)|Dublin",
    "azienda": "Stripe",
    "titolo": "Account Executive, Startups - Grower (Italian Fluency)",
@@ -1293,22 +892,6 @@
     "Account Executive (+1)"
    ],
    "prima_vista": "2026-11-02"
-  },
-  {
-   "id": "Salesforce|Account Executive - SMB Italy (Italian Speaking)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Account Executive - SMB Italy (Italian Speaking)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Account-Executive---SMB-Italy--Italian-Speaking-_JR342882",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-30"
   },
   {
    "id": "Stripe|Account Executive, Velocity Scaled Grower (Italian or Spanish fluency)|Dublin",
@@ -1359,38 +942,6 @@
    "prima_vista": "2026-10-28"
   },
   {
-   "id": "Salesforce|Sales Development Representative - Italian Market|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Sales Development Representative - Italian Market",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Sales-Development-Representative---Italian-Market_JR364205-1",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": "2026-10-21"
-  },
-  {
-   "id": "Salesforce|Business Development Representative - Italy|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representative - Italy",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representative---Italy_JR366870-1",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": ""
-  },
-  {
    "id": "MongoDB|Account Development Representative, Italian Speaking|Dublin",
    "azienda": "MongoDB",
    "titolo": "Account Development Representative, Italian Speaking",
@@ -1421,22 +972,6 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": "2026-11-06"
-  },
-  {
-   "id": "New Relic|Associate Sales Development Representative|Dublin, Ireland",
-   "azienda": "New Relic",
-   "titolo": "Associate Sales Development Representative",
-   "luogo": "Dublin, Ireland",
-   "url": "https://job-boards.greenhouse.io/newrelic/jobs/5467122008",
-   "descrizione": "We are a global team of innovators and pioneers dedicated to shaping the future of observability. At New Relic, we build an intelligent platform that empowers companies to thrive in an AI-first world by giving them unparalleled insight into their complex systems. As we continue to expand our global footprint, we're looking for passionate people to join our mission. If you're ready to help the world's best companies optimize their digital applications, we invite you to explore a career with us!\nYour opportunity\nAre you a recent graduate with a passion for sales and technology, eager to kickstart your career in a dynamic SaaS environment? At New Relic, we're seeking an Associate Sales Development Representative to join our team and be at the forefront of our go-to-market strategy. This role is perfect for ambitious individuals looking to develop their sales skills while working in an…",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 4,
-   "motivi": [
-    "italiano nel testo (+2)",
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": "2026-10-30"
   },
   {
    "id": "ServiceNow|Intern – Business Development Representative (Native/Fluent Dutch, Finnish, Danish, Norwegian, Swedish, Spanish, Italian, Swedish, Arabic OR French Speaking)|Dublin ie",
@@ -1472,38 +1007,6 @@
    "prima_vista": "2026-11-13"
   },
   {
-   "id": "Salesforce|Agentforce Account Executive (covering EMEA growth markets)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Agentforce Account Executive (covering EMEA growth markets)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive--covering-Poland--EMEA-growth-markets-_JR357145",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 3,
-   "motivi": [
-    "Account Executive (+1)",
-    "mercato europeo/internazionale (+1)"
-   ],
-   "prima_vista": "2026-10-31"
-  },
-  {
-   "id": "Salesforce|Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market|Dublin + altre sedi (8 Locations)",
-   "azienda": "Salesforce",
-   "titolo": "Move to our European HQ in Dublin : SMB Account Executive - Core Platform - Central Market",
-   "luogo": "Dublin + altre sedi (8 Locations)",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Germany---Munich/Move-to-our-European-HQ-in-Dublin---Account-Executive---SMB--German-Speaking-_JR362249",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 3,
-   "motivi": [
-    "Account Executive (+1)",
-    "mercato europeo/internazionale (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
    "id": "Gong|Commercial Account Executive, EMEA|Dublin",
    "azienda": "Gong",
    "titolo": "Commercial Account Executive, EMEA",
@@ -1534,21 +1037,6 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
-  },
-  {
-   "id": "ServiceNow|CRM Account Executive (Commercial)|Dublin ie",
-   "azienda": "ServiceNow",
-   "titolo": "CRM Account Executive (Commercial)",
-   "luogo": "Dublin ie",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000161469289",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-11-13"
   },
   {
    "id": "HubSpot|Senior Account Executive - Central & East Europe|Remote - Ireland",
@@ -1626,21 +1114,6 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": "2026-11-09"
-  },
-  {
-   "id": "Salesforce|SMB Account Executive - Specialist (Evergreen) - Central Market|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "SMB Account Executive - Specialist (Evergreen) - Central Market",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/SMB-Account-Executive---Specialist--Evergreen----Central-Market_JR367164",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-11-04"
   },
   {
    "id": "MongoDB|Mid Market Account Development Representative|Dublin, Ireland",
@@ -1731,96 +1204,6 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": "2026-10-29"
-  },
-  {
-   "id": "Salesforce|Mid Market Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Mid Market Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Commercial-Account-Executive_JR355551",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|GB Named Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "GB Named Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/GB-Named-Account-Executive_JR365568",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Cloud Account Executive – Revenue Cloud|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Cloud Account Executive – Revenue Cloud",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive---Revenue-Cloud_JR361740",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Marketing Cloud -Commercial Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Marketing Cloud -Commercial Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Prime-Named-Account-Executive_JR364084",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Cloud Account Executive|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Cloud Account Executive",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Cloud-Account-Executive_JR354385",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "Salesforce|Qualified SMB Account Executive (Martech)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Qualified SMB Account Executive (Martech)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Qualified-SMB-Account-Executive_JR358921",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
   },
   {
    "id": "Stripe|Account Executive Product - Fraud & Risk|London OR Dublin",
@@ -2033,36 +1416,6 @@
    "prima_vista": "2026-10-28"
   },
   {
-   "id": "Twilio|Sales Development Representative|Remote - Ireland",
-   "azienda": "Twilio",
-   "titolo": "Sales Development Representative",
-   "luogo": "Remote - Ireland",
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8261528",
-   "descrizione": "Who we are \nAt Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.\nOur dedication to remote-first work, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.\n.\nHiring and how we work\nWe use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! \nAlso, while we are a remote-first company, you may be asked to report in person…",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": "2026-10-09"
-  },
-  {
-   "id": "Salesforce|Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Business Development Representatives for Public Sector or .ORG (Non-Profit & Education)",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Business-Development-Representatives-for-Public-Sector-or-ORG--Non-Profit---Education-_JR366866-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": ""
-  },
-  {
    "id": "Intercom|Business Development Representative|Dublin, Ireland",
    "azienda": "Intercom",
    "titolo": "Business Development Representative",
@@ -2091,37 +1444,6 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": ""
-  },
-  {
-   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
-   "azienda": "Cisco",
-   "titolo": "Portfolio Account Executive - Ireland",
-   "luogo": "Dublin + altre sedi (3 Locations)",
-   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": ""
-  },
-  {
-   "id": "Salesforce|Senior SMB Account Executive - Core Platform - Central Market|Ireland - Dublin",
-   "azienda": "Salesforce",
-   "titolo": "Senior SMB Account Executive - Core Platform - Central Market",
-   "luogo": "Ireland - Dublin",
-   "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Ireland---Dublin/Senior-Account-Executive---SMB--German-Speaking-_JR349588",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": "2026-10-28"
   },
   {
    "id": "Gong|Enterprise Account Executive|Dublin",
@@ -2154,38 +1476,6 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
-   "azienda": "PayPal",
-   "titolo": "Senior Account Executive - SMB Outbound",
-   "luogo": "Dublin, County Dublin, Ireland",
-   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": ""
-  },
-  {
-   "id": "Zendesk|Senior Commercial Account Executive|Dublin + altre sedi (2 Locations)",
-   "azienda": "Zendesk",
-   "titolo": "Senior Commercial Account Executive",
-   "luogo": "Dublin + altre sedi (2 Locations)",
-   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/London-United-Kingdom/Senior-Commercial-Account-Executive_R35644",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": ""
   }
  ]
 }
