@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-16T14:30+00:00",
- "fonti_lette": 66,
+ "aggiornato": "2026-11-16T23:37+00:00",
+ "fonti_lette": 75,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,6 +11,7 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
+  "Circle",
   "Coinbase",
   "Databricks",
   "Datadog",
@@ -19,6 +20,7 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "Etsy",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -26,6 +28,7 @@
   "GitLab",
   "Gong",
   "Google",
+  "Hewlett Packard Enterprise",
   "HubSpot",
   "Huntress",
   "IBM",
@@ -33,6 +36,7 @@
   "Klaviyo",
   "LearnUpon",
   "Lightspeed",
+  "Mastercard Tech Hub",
   "Mews",
   "Microsoft",
   "MongoDB",
@@ -41,14 +45,18 @@
   "Okta",
   "OpenAI",
   "Oracle",
+  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
+  "Proofpoint",
   "Qualtrics",
+  "Red Hat",
   "Rippling",
   "ServiceNow",
   "Sitecore",
   "Snowflake",
+  "Sprinklr",
   "Squarespace",
   "Stripe",
   "SumUp",
@@ -68,26 +76,18 @@
   "Wiz",
   "Workhuman",
   "X (ex Twitter)",
+  "Zendesk",
   "ZoomInfo"
  ],
  "problemi": [
-  "Circle: errore lettura (JSONDecodeError)",
   "Cisco: errore lettura (JSONDecodeError)",
   "CrowdStrike: errore lettura (JSONDecodeError)",
-  "Etsy: errore lettura (JSONDecodeError)",
   "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
-  "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
-  "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
-  "PayPal: errore lettura (JSONDecodeError)",
-  "Proofpoint: errore lettura (JSONDecodeError)",
-  "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
-  "Sprinklr: errore lettura (JSONDecodeError)",
   "Workday: errore lettura (JSONDecodeError)",
-  "Workvivo / Zoom: errore lettura (JSONDecodeError)",
-  "Zendesk: errore lettura (JSONDecodeError)"
+  "Workvivo / Zoom: errore lettura (JSONDecodeError)"
  ],
  "pesi": {
   "base": 1,
@@ -297,6 +297,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
@@ -304,12 +310,6 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -720,6 +720,12 @@
    "url": "https://careers.docusign.com/jobs/30595"
   },
   {
+   "azienda": "GitLab",
+   "titolo": "Business Development Representative, Financial Services - UKI",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8939857002"
+  },
+  {
    "azienda": "Google",
    "titolo": "Account Executive, New Business Sales, UKI (English)",
    "motivo": "mercato UK/Irlanda",
@@ -804,6 +810,12 @@
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
   },
   {
+   "azienda": "Zendesk",
+   "titolo": "Senior Commercial Account Executive, UKI - New Business",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Dublin-Ireland/Senior-Commercial-Account-Executive--UKI---New-Business_R35408"
+  },
+  {
    "azienda": "HubSpot",
    "titolo": "Business Development Representative - English Speaking",
    "motivo": "mercato solo inglese",
@@ -836,6 +848,22 @@
    "luogo": "Dublin ie",
    "url": "https://jobs.smartrecruiters.com/servicenow/744000161688659",
    "descrizione": "",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-16"
+  },
+  {
+   "id": "Stripe|Account Executive, SMB, Italian speaking|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SMB, Italian speaking",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8322588",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world's largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.\nAbout the team\nThe French SMB Hunter team is responsible for winning net-new business across the SMB segment for the Italian market. We focus on bringing Stripe products to high-potential businesses that are not yet Stripe customers. We move with urgency, operate with focus, and pride ourselves on delivering strong commercial results through disciplined outbound execution and…",
    "italiano": true,
    "altre_lingue": [],
    "stelle": 5,
@@ -1037,6 +1065,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "HubSpot|Business Development Representative - Growth regions|Dublin, Ireland",
+   "azienda": "HubSpot",
+   "titolo": "Business Development Representative - Growth regions",
+   "luogo": "Dublin, Ireland",
+   "url": "https://www.hubspot.com/careers/jobs/8043166?gh_jid=8043166",
+   "descrizione": "Remote from Ireland or hybrid in our Dublin office\nAs a Business Development Representative, you seek out and engage “good fit” companies through strategic prospecting. To do this, you will generate new interest through calls, emails, and social media messaging.\nWhen connecting with a prospect, you will learn about their business challenges to determine whether HubSpot will serve as a solution. When you have identified a qualified prospect, your goal is to concisely communicate the value of HubSpot and gain interest in a deeper conversation with an Account Executive.\nYou will have a working relationship with 2-3 Account Executives. Each day, you will collaborate with the Account Executives you support and your fellow BDRs to develop innovative strategies for uncovering new opportunities.\nWhat are the responsibilities of a Business Development Representative?\nIn this full-time role, you…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-16"
   },
   {
    "id": "HubSpot|Senior Account Executive - Central & East Europe|Remote - Ireland",
@@ -1476,6 +1519,38 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
+  },
+  {
+   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
+   "azienda": "PayPal",
+   "titolo": "Senior Account Executive - SMB Outbound",
+   "luogo": "Dublin, County Dublin, Ireland",
+   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Zendesk|Senior Commercial Account Executive|Dublin + altre sedi (2 Locations)",
+   "azienda": "Zendesk",
+   "titolo": "Senior Commercial Account Executive",
+   "luogo": "Dublin + altre sedi (2 Locations)",
+   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/London-United-Kingdom/Senior-Commercial-Account-Executive_R35644",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": ""
   }
  ]
 }
