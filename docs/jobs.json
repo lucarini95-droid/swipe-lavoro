@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-18T22:28+00:00",
- "fonti_lette": 71,
+ "aggiornato": "2026-11-19T15:02+00:00",
+ "fonti_lette": 68,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -12,7 +12,6 @@
   "Asana",
   "CarTrawler",
   "Coinbase",
-  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -20,6 +19,7 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -42,11 +42,11 @@
   "Okta",
   "OpenAI",
   "Oracle",
+  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
   "Qualtrics",
-  "Red Hat",
   "Rippling",
   "ServiceNow",
   "Sitecore",
@@ -68,26 +68,26 @@
   "Wayflyer",
   "Wix",
   "Wiz",
-  "Workday",
   "Workhuman",
-  "Workvivo / Zoom",
   "X (ex Twitter)",
-  "Zendesk",
   "ZoomInfo"
  ],
  "problemi": [
   "Circle: errore lettura (JSONDecodeError)",
   "Cisco: errore lettura (JSONDecodeError)",
+  "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
-  "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
-  "PayPal: errore lettura (JSONDecodeError)",
   "Proofpoint: errore lettura (JSONDecodeError)",
+  "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
-  "Sprinklr: errore lettura (JSONDecodeError)"
+  "Sprinklr: errore lettura (JSONDecodeError)",
+  "Workday: errore lettura (JSONDecodeError)",
+  "Workvivo / Zoom: errore lettura (JSONDecodeError)",
+  "Zendesk: errore lettura (JSONDecodeError)"
  ],
  "pesi": {
   "base": 1,
@@ -202,6 +202,12 @@
    "titolo": "Mid-Market Account Executive (France)",
    "motivo": "Francese",
    "url": "https://careers.datadoghq.com/detail/8334294/?gh_jid=8334294"
+  },
+  {
+   "azienda": "DocuSign",
+   "titolo": "Account Executive, Small to Medium Business - French Market",
+   "motivo": "Francese",
+   "url": "https://careers.docusign.com/jobs/31026"
   },
   {
    "azienda": "DocuSign",
@@ -369,25 +375,13 @@
    "azienda": "ServiceNow",
    "titolo": "Senior Commercial Growth AE Nordic Speaking",
    "motivo": "Nordiche",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000157066344"
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162455659"
   },
   {
    "azienda": "Stripe",
    "titolo": "Account Executive, Platforms (Nordic Region)",
    "motivo": "Nordiche",
    "url": "https://stripe.com/jobs/search?gh_jid=8241304"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Swedish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
   },
   {
    "azienda": "Abnormal Security",
@@ -495,7 +489,7 @@
    "azienda": "ServiceNow",
    "titolo": "Commercial Growth AE - Dutch Speaking",
    "motivo": "Olandese",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000157066256"
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162455619"
   },
   {
    "azienda": "Stripe",
@@ -508,12 +502,6 @@
    "titolo": "Account Executive, Startups (Grower - Benelux)",
    "motivo": "Olandese",
    "url": "https://stripe.com/jobs/search?gh_jid=8319491"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Dutch Speaker)",
-   "motivo": "Olandese",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Dutch-Speaking-_JR-0098604"
   },
   {
    "azienda": "Okta",
@@ -594,6 +582,12 @@
    "url": "https://careers.datadoghq.com/detail/7476847/?gh_jid=7476847"
   },
   {
+   "azienda": "Datadog",
+   "titolo": "Senior Commercial Account Executive (DACH)",
+   "motivo": "Tedesco",
+   "url": "https://careers.datadoghq.com/detail/8378413/?gh_jid=8378413"
+  },
+  {
    "azienda": "DocuSign",
    "titolo": "Account Executive, SMB - DACH Market (German Speaking)",
    "motivo": "Tedesco",
@@ -645,13 +639,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -750,12 +744,6 @@
    "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative | German | Dublin based",
-   "motivo": "Tedesco",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
-  },
-  {
    "azienda": "Intercom",
    "titolo": "Sales Development Representative",
    "motivo": "Tedesco (nel testo)",
@@ -784,6 +772,12 @@
    "titolo": "Business Development Representative, Financial Services - UKI",
    "motivo": "mercato UK/Irlanda",
    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8939857002"
+  },
+  {
+   "azienda": "Gong",
+   "titolo": "Sales Development Representative, UKI (Outbound)",
+   "motivo": "mercato UK/Irlanda",
+   "url": "https://job-boards.greenhouse.io/gongio/jobs/4409262006"
   },
   {
    "azienda": "Google",
@@ -880,18 +874,6 @@
    "titolo": "Account Executive, Early Stage - UK&I",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
-  },
-  {
-   "azienda": "Zendesk",
-   "titolo": "Senior Commercial Account Executive, UKI - New Business",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Dublin-Ireland/Senior-Commercial-Account-Executive--UKI---New-Business_R35408"
   },
   {
    "azienda": "MongoDB",
@@ -1137,6 +1119,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Stripe|Account Executive, SaaS Platforms Grower|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Account Executive, SaaS Platforms Grower",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8241294",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nThe Startup SaaS Platform team works with European startups in one of Stripe’s must-win segments. At Stripe, SaaS platforms are companies that use Stripe to embed payments and make financial services a core part of their product. Their partnership with Stripe is vital to their business success. Examples include Shopify, Mindbody, and Lightspeed.\nSaaS platforms…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-19"
   },
   {
    "id": "SurveyMonkey|Account Executive|Dublin",
@@ -1533,11 +1530,11 @@
    "prima_vista": "2026-10-28"
   },
   {
-   "id": "Zendesk|Senior Commercial Account Executive|Dublin + altre sedi (2 Locations)",
-   "azienda": "Zendesk",
-   "titolo": "Senior Commercial Account Executive",
-   "luogo": "Dublin + altre sedi (2 Locations)",
-   "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/London-United-Kingdom/Senior-Commercial-Account-Executive_R35644",
+   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
+   "azienda": "PayPal",
+   "titolo": "Senior Account Executive - SMB Outbound",
+   "luogo": "Dublin, County Dublin, Ireland",
+   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
    "descrizione": "",
    "italiano": false,
    "altre_lingue": [],
