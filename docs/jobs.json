@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-19T15:02+00:00",
- "fonti_lette": 68,
+ "aggiornato": "2026-11-20T14:44+00:00",
+ "fonti_lette": 66,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -19,7 +19,6 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
-  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -42,7 +41,6 @@
   "Okta",
   "OpenAI",
   "Oracle",
-  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
@@ -77,10 +75,12 @@
   "Cisco: errore lettura (JSONDecodeError)",
   "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
+  "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
+  "PayPal: errore lettura (JSONDecodeError)",
   "Proofpoint: errore lettura (JSONDecodeError)",
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
@@ -487,6 +487,12 @@
   },
   {
    "azienda": "ServiceNow",
+   "titolo": "Business Development Representative (Native/Fluent Dutch, Finnish, Swedish OR Norwegian Speaking)",
+   "motivo": "Olandese",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162602380"
+  },
+  {
+   "azienda": "ServiceNow",
    "titolo": "Commercial Growth AE - Dutch Speaking",
    "motivo": "Olandese",
    "url": "https://jobs.smartrecruiters.com/servicenow/744000162455619"
@@ -639,13 +645,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -807,13 +813,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -895,6 +901,22 @@
   }
  ],
  "offerte": [
+  {
+   "id": "HubSpot|Account Executive, Mid Market - Italy|Remote - Ireland",
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Mid Market - Italy",
+   "luogo": "Remote - Ireland",
+   "url": "https://www.hubspot.com/careers/jobs/5986408?gh_jid=5986408",
+   "descrizione": "As a Mid-Market Account Executive at HubSpot you will be engaging directly with small to medium sized businesses, helping them to grow. You will use proactive inbound and outbound selling strategies to find and close new business, and increase the customer's usage of the HubSpot platform over time. You will use your knowledge of digital transformation and change management to act as a trusted advisor and business consultant to the customer, running the sales process end to end with them.\nWe are looking for the successful candidate to join us as a Remote employee in Ireland. \nPlease check out this article for more context: The Future of Work at HubSpot: How We're Building a Hybrid Company.\nWhat are the responsibilities of an Account Executive?\n• Develop and be responsible for your own annual, quarterly and monthly territory business plan\n• Find new prospects from both inbound and…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-20"
+  },
   {
    "id": "ServiceNow|CRM Account Executive (Commercial) - Italian speaking|Dublin ie",
    "azienda": "ServiceNow",
@@ -1119,6 +1141,36 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "ServiceNow|Business Development Representative|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "Business Development Representative",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162740361",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-20"
+  },
+  {
+   "id": "ServiceNow|CRM Account Executive, Commercial|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "CRM Account Executive, Commercial",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162694469",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-20"
   },
   {
    "id": "Stripe|Account Executive, SaaS Platforms Grower|Dublin",
@@ -1528,22 +1580,6 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
-   "azienda": "PayPal",
-   "titolo": "Senior Account Executive - SMB Outbound",
-   "luogo": "Dublin, County Dublin, Ireland",
-   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": ""
   }
  ]
 }
