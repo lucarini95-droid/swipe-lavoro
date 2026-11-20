@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-20T14:44+00:00",
- "fonti_lette": 66,
+ "aggiornato": "2026-11-20T22:04+00:00",
+ "fonti_lette": 68,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,6 +11,7 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
+  "Cisco",
   "Coinbase",
   "Databricks",
   "Datadog",
@@ -19,6 +20,7 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -72,10 +74,8 @@
  ],
  "problemi": [
   "Circle: errore lettura (JSONDecodeError)",
-  "Cisco: errore lettura (JSONDecodeError)",
   "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
-  "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
@@ -327,12 +327,6 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
@@ -340,6 +334,12 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -645,13 +645,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -1143,6 +1143,21 @@
    "prima_vista": ""
   },
   {
+   "id": "ServiceNow|Commercial Solution Sales Executive, Employee Experience|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "Commercial Solution Sales Executive, Employee Experience",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162791593",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-20"
+  },
+  {
    "id": "ServiceNow|Business Development Representative|Dublin ie",
    "azienda": "ServiceNow",
    "titolo": "Business Development Representative",
@@ -1548,6 +1563,37 @@
     "ruolo SDR/BDR (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
+   "azienda": "Cisco",
+   "titolo": "Portfolio Account Executive - Ireland",
+   "luogo": "Dublin + altre sedi (3 Locations)",
+   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "ServiceNow|Sr Commercial Solution Sales Executive, Employee Experience|Dublin ie",
+   "azienda": "ServiceNow",
+   "titolo": "Sr Commercial Solution Sales Executive, Employee Experience",
+   "luogo": "Dublin ie",
+   "url": "https://jobs.smartrecruiters.com/servicenow/744000162792449",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": "2026-11-20"
   },
   {
    "id": "Gong|Enterprise Account Executive|Dublin",
