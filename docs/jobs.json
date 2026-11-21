@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-20T22:04+00:00",
- "fonti_lette": 68,
+ "aggiornato": "2026-11-21T14:00+00:00",
+ "fonti_lette": 67,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,7 +11,6 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
-  "Cisco",
   "Coinbase",
   "Databricks",
   "Datadog",
@@ -20,7 +19,6 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
-  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -69,13 +67,16 @@
   "Wix",
   "Wiz",
   "Workhuman",
+  "Workvivo / Zoom",
   "X (ex Twitter)",
   "ZoomInfo"
  ],
  "problemi": [
   "Circle: errore lettura (JSONDecodeError)",
+  "Cisco: errore lettura (JSONDecodeError)",
   "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
+  "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
@@ -86,7 +87,6 @@
   "Salesforce: errore lettura (JSONDecodeError)",
   "Sprinklr: errore lettura (JSONDecodeError)",
   "Workday: errore lettura (JSONDecodeError)",
-  "Workvivo / Zoom: errore lettura (JSONDecodeError)",
   "Zendesk: errore lettura (JSONDecodeError)"
  ],
  "pesi": {
@@ -1561,21 +1561,6 @@
    "stelle": 2,
    "motivi": [
     "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": ""
-  },
-  {
-   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
-   "azienda": "Cisco",
-   "titolo": "Portfolio Account Executive - Ireland",
-   "luogo": "Dublin + altre sedi (3 Locations)",
-   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
    ],
    "prima_vista": ""
   },
