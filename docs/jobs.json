@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-22T13:54+00:00",
- "fonti_lette": 66,
+ "aggiornato": "2026-11-22T20:54+00:00",
+ "fonti_lette": 71,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,7 +11,10 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
+  "Circle",
+  "Cisco",
   "Coinbase",
+  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -26,6 +29,7 @@
   "GitLab",
   "Gong",
   "Google",
+  "Guidewire Software",
   "HubSpot",
   "Huntress",
   "IBM",
@@ -49,6 +53,7 @@
   "ServiceNow",
   "Sitecore",
   "Snowflake",
+  "Sprinklr",
   "Squarespace",
   "Stripe",
   "SumUp",
@@ -71,12 +76,8 @@
   "ZoomInfo"
  ],
  "problemi": [
-  "Circle: errore lettura (JSONDecodeError)",
-  "Cisco: errore lettura (JSONDecodeError)",
-  "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
   "FIS: errore lettura (JSONDecodeError)",
-  "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
@@ -84,7 +85,6 @@
   "Proofpoint: errore lettura (JSONDecodeError)",
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
-  "Sprinklr: errore lettura (JSONDecodeError)",
   "Workday: errore lettura (JSONDecodeError)",
   "Workvivo / Zoom: errore lettura (JSONDecodeError)",
   "Zendesk: errore lettura (JSONDecodeError)"
@@ -327,6 +327,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
@@ -334,12 +340,6 @@
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
-  },
-  {
-   "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
    "azienda": "HubSpot",
@@ -645,13 +645,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -1143,6 +1143,21 @@
    "prima_vista": ""
   },
   {
+   "id": "Amazon / AWS|Sr. Life Sciences Business Development Lead, AAIS HCLS GTM|Dublin, IRL",
+   "azienda": "Amazon / AWS",
+   "titolo": "Sr. Life Sciences Business Development Lead, AAIS HCLS GTM",
+   "luogo": "Dublin, IRL",
+   "url": "https://www.amazon.jobs/en/jobs/10610859/sr-life-sciences-business-development-lead-aais-hcls-gtm",
+   "descrizione": "At Amazon Web Services (AWS), we are seeking a Life Sciences Business Development professional to join our Healthcare and Life Sciences Applied AI Solutions (AAIS) Go to Market (GTM) organization. In this",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": "2026-11-22"
+  },
+  {
    "id": "ServiceNow|Commercial Solution Sales Executive, Employee Experience|Dublin ie",
    "azienda": "ServiceNow",
    "titolo": "Commercial Solution Sales Executive, Employee Experience",
@@ -1561,6 +1576,21 @@
    "stelle": 2,
    "motivi": [
     "ruolo SDR/BDR (+1)"
+   ],
+   "prima_vista": ""
+  },
+  {
+   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
+   "azienda": "Cisco",
+   "titolo": "Portfolio Account Executive - Ireland",
+   "luogo": "Dublin + altre sedi (3 Locations)",
+   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
    ],
    "prima_vista": ""
   },
