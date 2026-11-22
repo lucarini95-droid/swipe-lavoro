@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-21T20:44+00:00",
- "fonti_lette": 69,
+ "aggiornato": "2026-11-22T13:54+00:00",
+ "fonti_lette": 66,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -12,7 +12,6 @@
   "Asana",
   "CarTrawler",
   "Coinbase",
-  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -20,7 +19,6 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
-  "Etsy",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -68,7 +66,6 @@
   "Wayflyer",
   "Wix",
   "Wiz",
-  "Workday",
   "Workhuman",
   "X (ex Twitter)",
   "ZoomInfo"
@@ -76,6 +73,8 @@
  "problemi": [
   "Circle: errore lettura (JSONDecodeError)",
   "Cisco: errore lettura (JSONDecodeError)",
+  "CrowdStrike: errore lettura (JSONDecodeError)",
+  "Etsy: errore lettura (JSONDecodeError)",
   "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
@@ -86,6 +85,7 @@
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
   "Sprinklr: errore lettura (JSONDecodeError)",
+  "Workday: errore lettura (JSONDecodeError)",
   "Workvivo / Zoom: errore lettura (JSONDecodeError)",
   "Zendesk: errore lettura (JSONDecodeError)"
  ],
@@ -384,18 +384,6 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8241304"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Swedish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
-  },
-  {
    "azienda": "Abnormal Security",
    "titolo": "Sales Development Representative, Dutch Speaking",
    "motivo": "Olandese",
@@ -520,12 +508,6 @@
    "titolo": "Account Executive, Startups (Grower - Benelux)",
    "motivo": "Olandese",
    "url": "https://stripe.com/jobs/search?gh_jid=8319491"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Dutch Speaker)",
-   "motivo": "Olandese",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Dutch-Speaking-_JR-0098604"
   },
   {
    "azienda": "Okta",
@@ -768,12 +750,6 @@
    "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative | German | Dublin based",
-   "motivo": "Tedesco",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
-  },
-  {
    "azienda": "Intercom",
    "titolo": "Sales Development Representative",
    "motivo": "Tedesco (nel testo)",
@@ -904,12 +880,6 @@
    "titolo": "Account Executive, Early Stage - UK&I",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
   },
   {
    "azienda": "MongoDB",
