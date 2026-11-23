@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-22T20:54+00:00",
- "fonti_lette": 71,
+ "aggiornato": "2026-11-23T17:04+00:00",
+ "fonti_lette": 66,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -11,10 +11,7 @@
   "Anthropic",
   "Asana",
   "CarTrawler",
-  "Circle",
-  "Cisco",
   "Coinbase",
-  "CrowdStrike",
   "Databricks",
   "Datadog",
   "DocuSign",
@@ -29,7 +26,6 @@
   "GitLab",
   "Gong",
   "Google",
-  "Guidewire Software",
   "HubSpot",
   "Huntress",
   "IBM",
@@ -53,7 +49,6 @@
   "ServiceNow",
   "Sitecore",
   "Snowflake",
-  "Sprinklr",
   "Squarespace",
   "Stripe",
   "SumUp",
@@ -76,8 +71,12 @@
   "ZoomInfo"
  ],
  "problemi": [
+  "Circle: errore lettura (JSONDecodeError)",
+  "Cisco: errore lettura (JSONDecodeError)",
+  "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
   "FIS: errore lettura (JSONDecodeError)",
+  "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
@@ -85,6 +84,7 @@
   "Proofpoint: errore lettura (JSONDecodeError)",
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
+  "Sprinklr: errore lettura (JSONDecodeError)",
   "Workday: errore lettura (JSONDecodeError)",
   "Workvivo / Zoom: errore lettura (JSONDecodeError)",
   "Zendesk: errore lettura (JSONDecodeError)"
@@ -154,12 +154,6 @@
    "titolo": "Business Development Representative, CEE",
    "motivo": "CEE/Est",
    "url": "https://jobs.ashbyhq.com/notion/8d2532a9-a1a8-48ec-8de3-b3646bd70423"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Business Development Representative, Polish (CEE)",
-   "motivo": "CEE/Est",
-   "url": "https://ats.rippling.com/rippling/jobs/00be08c2-dc4a-4054-8d40-8aea2b24465e"
   },
   {
    "azienda": "Stripe",
@@ -289,6 +283,12 @@
   },
   {
    "azienda": "Stripe",
+   "titolo": "Account Executive, New Business - SMB - French",
+   "motivo": "Francese",
+   "url": "https://stripe.com/jobs/search?gh_jid=8328106"
+  },
+  {
+   "azienda": "Stripe",
    "titolo": "Account Executive, Product Sales (Billing) - French speaking",
    "motivo": "Francese",
    "url": "https://stripe.com/jobs/search?gh_jid=8196254"
@@ -405,13 +405,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
+   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
+   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
   },
   {
    "azienda": "HubSpot",
@@ -570,6 +570,12 @@
    "url": "https://careers.docusign.com/jobs/30301"
   },
   {
+   "azienda": "Twilio",
+   "titolo": "Sales Development Representative 2",
+   "motivo": "Spagnolo (nel testo)",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8112239"
+  },
+  {
    "azienda": "Abnormal Security",
    "titolo": "Sales Development Representative, German Speaking",
    "motivo": "Tedesco",
@@ -645,13 +651,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "Intercom",
@@ -700,12 +706,6 @@
    "titolo": "Business Development Representative, Switzerland & Austria (CHAT)",
    "motivo": "Tedesco",
    "url": "https://ats.rippling.com/rippling/jobs/a60c5e96-8c69-4bf9-b909-aeb8cec98cb7"
-  },
-  {
-   "azienda": "Stripe",
-   "titolo": "Account Executive, DACH, Commercial (Existing Business)",
-   "motivo": "Tedesco",
-   "url": "https://stripe.com/jobs/search?gh_jid=8201690"
   },
   {
    "azienda": "Stripe",
@@ -813,13 +813,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
@@ -838,12 +838,6 @@
    "titolo": "Business Development Representative, UKI",
    "motivo": "mercato UK/Irlanda",
    "url": "https://jobs.ashbyhq.com/notion/f14ce537-e859-4f1d-bcd5-d12cdfe9c05d"
-  },
-  {
-   "azienda": "Okta",
-   "titolo": "Sales Development Representative - UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://www.okta.com/company/careers/opportunity/8385349?gh_jid=8385349"
   },
   {
    "azienda": "Rippling",
@@ -1143,19 +1137,34 @@
    "prima_vista": ""
   },
   {
-   "id": "Amazon / AWS|Sr. Life Sciences Business Development Lead, AAIS HCLS GTM|Dublin, IRL",
-   "azienda": "Amazon / AWS",
-   "titolo": "Sr. Life Sciences Business Development Lead, AAIS HCLS GTM",
-   "luogo": "Dublin, IRL",
-   "url": "https://www.amazon.jobs/en/jobs/10610859/sr-life-sciences-business-development-lead-aais-hcls-gtm",
-   "descrizione": "At Amazon Web Services (AWS), we are seeking a Life Sciences Business Development professional to join our Healthcare and Life Sciences Applied AI Solutions (AAIS) Go to Market (GTM) organization. In this",
+   "id": "Stripe|Account Executive, Commercial Scaled Grower|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Account Executive, Commercial Scaled Grower",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8411021",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nThe Velocity team is a highly consultative sales team that is responsible for the growth of Stripe’s SMB customers within the region. We work with the most ambitious and fastest growing companies - Stripe’s payments and financial infrastructure unlocks new revenue streams and growth opportunities for their businesses.\nWhat you’ll do\nAs an Account Executive,…",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-23"
+  },
+  {
+   "id": "Stripe|Sales Development Representative|Dublin",
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative",
+   "luogo": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8048266",
+   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.\nAbout the team\nAs a Sales Development Representative (SDR) at Stripe, you will drive Stripe’s future growth engine by working with Demand Gen and the Account Executive team to qualify leads and collaboratively build Stripe’s sales pipeline. You get excited about engaging with prospects to better qualify needs. You are adept at identifying high value opportunities and capable…",
    "italiano": false,
    "altre_lingue": [],
    "stelle": 2,
    "motivi": [
     "ruolo SDR/BDR (+1)"
    ],
-   "prima_vista": "2026-11-22"
+   "prima_vista": "2026-11-23"
   },
   {
    "id": "ServiceNow|Commercial Solution Sales Executive, Employee Experience|Dublin ie",
@@ -1520,21 +1529,6 @@
    "prima_vista": "2026-10-28"
   },
   {
-   "id": "Gong|Mid-Market Account Executive - New Logos|Dublin",
-   "azienda": "Gong",
-   "titolo": "Mid-Market Account Executive - New Logos",
-   "luogo": "Dublin",
-   "url": "https://job-boards.greenhouse.io/gongio/jobs/4712915006",
-   "descrizione": "Gong harnesses the power of AI to transform how revenue teams win. The Gong Revenue AI Operating System unifies data, insights, and workflows into a single, trusted system that observes, guides, and acts alongside the world’s most successful revenue teams. Powered by the Gong Revenue Graph, AI-powered intelligence, specialized agents, and trusted applications, Gong helps more than 5,000 companies around the world deeply understand their teams and customers, automate critical sales workflows, and close more deals with less effort. For more information, visit www.gong.io.\nAt Gong, you will join a company built on innovative products, ambitious goals, and passionate people. We are shaping the future of revenue intelligence and we want people who are excited to build what comes next. You will work with a team that dreams big, moves fast, and cares deeply about the craft and about each…",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-10-28"
-  },
-  {
    "id": "Anthropic|Account Executive, Startups|Dublin, IE",
    "azienda": "Anthropic",
    "titolo": "Account Executive, Startups",
@@ -1576,21 +1570,6 @@
    "stelle": 2,
    "motivi": [
     "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": ""
-  },
-  {
-   "id": "Cisco|Portfolio Account Executive - Ireland|Dublin + altre sedi (3 Locations)",
-   "azienda": "Cisco",
-   "titolo": "Portfolio Account Executive - Ireland",
-   "luogo": "Dublin + altre sedi (3 Locations)",
-   "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/Dublin-Ireland/Portfolio-Account-Executive---Ireland_2028264-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
    ],
    "prima_vista": ""
   },
