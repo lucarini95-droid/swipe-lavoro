@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-23T17:04+00:00",
- "fonti_lette": 66,
+ "aggiornato": "2026-11-24T16:51+00:00",
+ "fonti_lette": 67,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -19,6 +19,7 @@
   "Dun & Bradstreet",
   "Elastic",
   "Ericsson",
+  "FIS",
   "Fenergo",
   "Fiserv",
   "Flipdish",
@@ -75,7 +76,6 @@
   "Cisco: errore lettura (JSONDecodeError)",
   "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
-  "FIS: errore lettura (JSONDecodeError)",
   "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
@@ -108,6 +108,12 @@
    "url": "https://www.hubspot.com/careers/jobs/5986399?gh_jid=5986399"
   },
   {
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Commercial (Arabic)",
+   "motivo": "Arabo",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8412081"
+  },
+  {
    "azienda": "MongoDB",
    "titolo": "Account Development Representative - Arabic Speaking",
    "motivo": "Arabo",
@@ -124,12 +130,6 @@
    "titolo": "Account Executive, Global - MENA",
    "motivo": "Arabo",
    "url": "https://ats.rippling.com/rippling/jobs/ca31b1fb-4c3a-4b06-ac01-3cc320dc456f"
-  },
-  {
-   "azienda": "Rippling",
-   "titolo": "Business Development Representative, Outbound (Arabic speaking)",
-   "motivo": "Arabo",
-   "url": "https://ats.rippling.com/rippling/jobs/76ddc3a2-7af4-4b44-beeb-27c8df0945c2"
   },
   {
    "azienda": "Google",
@@ -252,6 +252,12 @@
    "url": "https://ats.rippling.com/rippling/jobs/5722f5b2-f3af-4b1a-8de9-59e40c105467"
   },
   {
+   "azienda": "Rippling",
+   "titolo": "Account Executive -  Global - France",
+   "motivo": "Francese",
+   "url": "https://ats.rippling.com/rippling/jobs/92e808aa-2f85-4729-b5d7-0a4552f43eb8"
+  },
+  {
    "azienda": "ServiceNow",
    "titolo": "Senior Commercial Growth AE French & Arabic",
    "motivo": "Francese",
@@ -327,6 +333,12 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
+   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+  },
+  {
+   "azienda": "HubSpot",
+   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
+   "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/5986374?gh_jid=5986374"
   },
   {
@@ -337,15 +349,15 @@
   },
   {
    "azienda": "HubSpot",
-   "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
-   "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
-  },
-  {
-   "azienda": "HubSpot",
    "titolo": "Senior Account Executive, Mid Market - Nordics (English Speaking)",
    "motivo": "Nordiche",
    "url": "https://www.hubspot.com/careers/jobs/5986345?gh_jid=5986345"
+  },
+  {
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Commercial (Swedish)",
+   "motivo": "Nordiche",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8412055"
   },
   {
    "azienda": "Notion",
@@ -405,13 +417,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
+   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics & Benelux (English Speaking)",
    "motivo": "Olandese",
-   "url": "https://www.hubspot.com/careers/jobs/5986964?gh_jid=5986964"
+   "url": "https://www.hubspot.com/careers/jobs/5986965?gh_jid=5986965"
   },
   {
    "azienda": "HubSpot",
@@ -436,6 +448,12 @@
    "titolo": "Senior Account Executive,  Mid Market  - Benelux (English Speaking)",
    "motivo": "Olandese",
    "url": "https://www.hubspot.com/careers/jobs/5983376?gh_jid=5983376"
+  },
+  {
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Commercial (Dutch)",
+   "motivo": "Olandese",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8412082"
   },
   {
    "azienda": "Microsoft",
@@ -813,13 +831,13 @@
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
+   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Lead Account Executive, Corporate - UKI",
    "motivo": "mercato UK/Irlanda",
-   "url": "https://www.hubspot.com/careers/jobs/5986932?gh_jid=5986932"
+   "url": "https://www.hubspot.com/careers/jobs/5986931?gh_jid=5986931"
   },
   {
    "azienda": "HubSpot",
@@ -895,6 +913,22 @@
   }
  ],
  "offerte": [
+  {
+   "id": "Intercom|Account Executive, Commercial (Italian)|Dublin, Ireland",
+   "azienda": "Intercom",
+   "titolo": "Account Executive, Commercial (Italian)",
+   "luogo": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8412083",
+   "descrizione": "Fin, now part of Salesforce, is on a mission to help businesses provide perfect customer experiences.\nOur AI Agent Fin is the highest-performing AI Customer Agent on the market today, enabling businesses to deliver impeccable, always-on customer support across the customer journey, from service, to sales, to ecommerce. Powered by our own AI models, Fin resolves complex customer issues end-to-end across every channel, with minimal set-up and integration. Fin can also be combined with our natively integrated Intercom help desk, giving modern support teams one single system.\nTogether with Salesforce, the #1 AI CRM, where humans with agents drive customer success, we're building the future of customer experience. Here, ambition meets action. Tech meets trust. And innovation isn't a buzzword, it's a way of life. The world of work as we know it is changing, and we're looking for Trailblazers…",
+   "italiano": true,
+   "altre_lingue": [],
+   "stelle": 5,
+   "motivi": [
+    "italiano nel titolo (+3)",
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-24"
+  },
   {
    "id": "HubSpot|Account Executive, Mid Market - Italy|Remote - Ireland",
    "azienda": "HubSpot",
@@ -1135,6 +1169,21 @@
     "mercato europeo/internazionale (+1)"
    ],
    "prima_vista": ""
+  },
+  {
+   "id": "Fiserv|Inside Sales Executive|Dublin",
+   "azienda": "Fiserv",
+   "titolo": "Inside Sales Executive",
+   "luogo": "Dublin",
+   "url": "https://careers.fiserv.com/us/en/job/R-10407270",
+   "descrizione": "Take on the role of Inside Sales Executive and help drive new sales opportunities by building trusted client relationships and guiding businesses through modern payments solutions. Manage the sales process from outreach to deal closure, requiring strong consultative skills and a proactive approach. Ideal for candidates with experience in sales or client-facing roles.",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 2,
+   "motivi": [
+    "Account Executive (+1)"
+   ],
+   "prima_vista": "2026-11-24"
   },
   {
    "id": "Stripe|Account Executive, Commercial Scaled Grower|Dublin",
