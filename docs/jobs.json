@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-26T16:11+00:00",
- "fonti_lette": 68,
+ "aggiornato": "2026-11-27T15:57+00:00",
+ "fonti_lette": 67,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -26,7 +26,6 @@
   "GitLab",
   "Gong",
   "Google",
-  "Guidewire Software",
   "HubSpot",
   "Huntress",
   "IBM",
@@ -42,6 +41,7 @@
   "Okta",
   "OpenAI",
   "Oracle",
+  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
@@ -67,7 +67,6 @@
   "Wayflyer",
   "Wix",
   "Wiz",
-  "Workday",
   "Workhuman",
   "X (ex Twitter)",
   "ZoomInfo"
@@ -78,14 +77,15 @@
   "CrowdStrike: errore lettura (JSONDecodeError)",
   "Etsy: errore lettura (JSONDecodeError)",
   "FIS: errore lettura (JSONDecodeError)",
+  "Guidewire Software: errore lettura (JSONDecodeError)",
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
-  "PayPal: errore lettura (JSONDecodeError)",
   "Proofpoint: errore lettura (JSONDecodeError)",
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
   "Sprinklr: errore lettura (JSONDecodeError)",
+  "Workday: errore lettura (JSONDecodeError)",
   "Workvivo / Zoom: errore lettura (JSONDecodeError)",
   "Zendesk: errore lettura (JSONDecodeError)"
  ],
@@ -136,12 +136,6 @@
    "titolo": "Account Executive, EMEA Apps, New Business (Russian, English)",
    "motivo": "CEE/Est",
    "url": "https://www.google.com/about/careers/applications/jobs/results/101890478001005254"
-  },
-  {
-   "azienda": "Google",
-   "titolo": "Senior Account Executive, Mid-Market Sales, Google Customer Solutions, Poland (English, Polish)",
-   "motivo": "CEE/Est",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/102351480463205062"
   },
   {
    "azienda": "Klaviyo",
@@ -318,6 +312,12 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8119498"
   },
   {
+   "azienda": "Tines",
+   "titolo": "Account Executive - French Speaking",
+   "motivo": "Francese",
+   "url": "https://job-boards.greenhouse.io/tines/jobs/6272374004"
+  },
+  {
    "azienda": "Vanta",
    "titolo": "Business Development Representative [French Fluency]",
    "motivo": "Francese",
@@ -351,13 +351,13 @@
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
+   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Account Executive, Small Business - Nordics (English Speaking)",
    "motivo": "Nordiche",
-   "url": "https://www.hubspot.com/careers/jobs/7292159?gh_jid=7292159"
+   "url": "https://www.hubspot.com/careers/jobs/7292163?gh_jid=7292163"
   },
   {
    "azienda": "HubSpot",
@@ -408,16 +408,10 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8241304"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative (Swedish)",
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (Swedish Fluency)",
    "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Business-Development-Representative--Swedish-_JR-0110193-1"
-  },
-  {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative Nordics (Norwegian, Swedish or Danish)",
-   "motivo": "Nordiche",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-Nordics--Norwegian--Swedish---Dutch-_JR-0095228"
+   "url": "https://stripe.com/jobs/search?gh_jid=8419418"
   },
   {
    "azienda": "Abnormal Security",
@@ -511,6 +505,12 @@
   },
   {
    "azienda": "Okta",
+   "titolo": "Business Development Representative - Dutch",
+   "motivo": "Olandese",
+   "url": "https://www.okta.com/company/careers/opportunity/8336713?gh_jid=8336713"
+  },
+  {
+   "azienda": "Okta",
    "titolo": "Sales Development Representative - Benelux",
    "motivo": "Olandese",
    "url": "https://www.okta.com/company/careers/opportunity/6629089?gh_jid=6629089"
@@ -558,10 +558,10 @@
    "url": "https://stripe.com/jobs/search?gh_jid=8319491"
   },
   {
-   "azienda": "Okta",
-   "titolo": "Business Development Representative",
-   "motivo": "Olandese (nel testo)",
-   "url": "https://www.okta.com/company/careers/opportunity/8336713?gh_jid=8336713"
+   "azienda": "Stripe",
+   "titolo": "Sales Development Representative (Dutch Fluency)",
+   "motivo": "Olandese",
+   "url": "https://stripe.com/jobs/search?gh_jid=8414067"
   },
   {
    "azienda": "Klaviyo",
@@ -661,12 +661,6 @@
   },
   {
    "azienda": "DocuSign",
-   "titolo": "Account Executive, SMB - DACH Market (German Speaking)",
-   "motivo": "Tedesco",
-   "url": "https://careers.docusign.com/jobs/28679"
-  },
-  {
-   "azienda": "DocuSign",
    "titolo": "Market Development Representative (German Speaker)",
    "motivo": "Tedesco",
    "url": "https://careers.docusign.com/jobs/32310"
@@ -711,13 +705,13 @@
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
+   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
   },
   {
    "azienda": "HubSpot",
    "titolo": "Small Business Account Executive DACH (German speaker)",
    "motivo": "Tedesco",
-   "url": "https://www.hubspot.com/careers/jobs/5986990?gh_jid=5986990"
+   "url": "https://www.hubspot.com/careers/jobs/5986989?gh_jid=5986989"
   },
   {
    "azienda": "Intercom",
@@ -810,12 +804,6 @@
    "url": "https://jobs.ashbyhq.com/vanta/cb338edc-a332-4f01-ab3f-b3e45ade44ba"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative | German | Dublin based",
-   "motivo": "Tedesco",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-Development-DACH--Outbound-_JR-0095231"
-  },
-  {
    "azienda": "Intercom",
    "titolo": "Sales Development Representative",
    "motivo": "Tedesco (nel testo)",
@@ -826,6 +814,12 @@
    "titolo": "Senior Strategic Account Executive (Central EMEA)",
    "motivo": "Tedesco (nel testo)",
    "url": "https://job-boards.greenhouse.io/twilio/jobs/8405811"
+  },
+  {
+   "azienda": "Twilio",
+   "titolo": "Strategic Account Executive 3 (Central EMEA)",
+   "motivo": "Tedesco (nel testo)",
+   "url": "https://job-boards.greenhouse.io/twilio/jobs/8405815"
   },
   {
    "azienda": "Datadog",
@@ -930,12 +924,6 @@
    "url": "https://jobs.ashbyhq.com/vanta/7e8b02ec-cf23-41de-87c7-3910459f34a2"
   },
   {
-   "azienda": "Workday",
-   "titolo": "Business Development Representative UKI",
-   "motivo": "mercato UK/Irlanda",
-   "url": "https://workday.wd5.myworkdayjobs.com/Workday/job/Ireland-Dublin/Corporate-Sales-development-UKI--Outbound-_JR-0094228"
-  },
-  {
    "azienda": "HubSpot",
    "titolo": "Business Development Representative - Growth regions (English speaker)",
    "motivo": "mercato solo inglese",
@@ -1008,22 +996,6 @@
     "Account Executive (+1)"
    ],
    "prima_vista": "2026-11-20"
-  },
-  {
-   "id": "ServiceNow|CRM Account Executive (Commercial) - Italian speaking|Dublin ie",
-   "azienda": "ServiceNow",
-   "titolo": "CRM Account Executive (Commercial) - Italian speaking",
-   "luogo": "Dublin ie",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000161688659",
-   "descrizione": "",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-11-16"
   },
   {
    "id": "Stripe|Account Executive, SMB, Italian speaking|Dublin",
@@ -1718,6 +1690,22 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
+  },
+  {
+   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
+   "azienda": "PayPal",
+   "titolo": "Senior Account Executive - SMB Outbound",
+   "luogo": "Dublin, County Dublin, Ireland",
+   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
+   "descrizione": "",
+   "italiano": false,
+   "altre_lingue": [],
+   "stelle": 1,
+   "motivi": [
+    "Account Executive (+1)",
+    "AE senior/enterprise (-1)"
+   ],
+   "prima_vista": ""
   }
  ]
 }
