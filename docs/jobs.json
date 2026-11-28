@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-27T15:57+00:00",
- "fonti_lette": 67,
+ "aggiornato": "2026-11-28T14:54+00:00",
+ "fonti_lette": 66,
  "fonti_totali": 83,
  "aziende_lette": [
   "Abnormal Security",
@@ -41,7 +41,6 @@
   "Okta",
   "OpenAI",
   "Oracle",
-  "PayPal",
   "Payoneer",
   "Pinterest",
   "Pipedrive",
@@ -81,6 +80,7 @@
   "Hewlett Packard Enterprise: errore lettura (JSONDecodeError)",
   "LetsGetChecked: errore lettura (JSONDecodeError)",
   "Mastercard Tech Hub: errore lettura (JSONDecodeError)",
+  "PayPal: errore lettura (JSONDecodeError)",
   "Proofpoint: errore lettura (JSONDecodeError)",
   "Red Hat: errore lettura (JSONDecodeError)",
   "Salesforce: errore lettura (JSONDecodeError)",
@@ -998,22 +998,6 @@
    "prima_vista": "2026-11-20"
   },
   {
-   "id": "Stripe|Account Executive, SMB, Italian speaking|Dublin",
-   "azienda": "Stripe",
-   "titolo": "Account Executive, SMB, Italian speaking",
-   "luogo": "Dublin",
-   "url": "https://stripe.com/jobs/search?gh_jid=8322588",
-   "descrizione": "Who we are\nAbout Stripe\nStripe is a financial infrastructure platform for businesses. Millions of companies—from the world's largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career.\nAbout the team\nThe French SMB Hunter team is responsible for winning net-new business across the SMB segment for the Italian market. We focus on bringing Stripe products to high-potential businesses that are not yet Stripe customers. We move with urgency, operate with focus, and pride ourselves on delivering strong commercial results through disciplined outbound execution and…",
-   "italiano": true,
-   "altre_lingue": [],
-   "stelle": 5,
-   "motivi": [
-    "italiano nel titolo (+3)",
-    "Account Executive (+1)"
-   ],
-   "prima_vista": "2026-11-16"
-  },
-  {
    "id": "Qualtrics|Sales Development Representative - French, German, Dutch, Spanish or Italian|Dublin, Ireland",
    "azienda": "Qualtrics",
    "titolo": "Sales Development Representative - French, German, Dutch, Spanish or Italian",
@@ -1293,21 +1277,6 @@
    "stelle": 2,
    "motivi": [
     "ruolo SDR/BDR (+1)"
-   ],
-   "prima_vista": "2026-11-20"
-  },
-  {
-   "id": "ServiceNow|CRM Account Executive, Commercial|Dublin ie",
-   "azienda": "ServiceNow",
-   "titolo": "CRM Account Executive, Commercial",
-   "luogo": "Dublin ie",
-   "url": "https://jobs.smartrecruiters.com/servicenow/744000162694469",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 2,
-   "motivi": [
-    "Account Executive (+1)"
    ],
    "prima_vista": "2026-11-20"
   },
@@ -1690,22 +1659,6 @@
     "AE senior/enterprise (-1)"
    ],
    "prima_vista": "2026-10-28"
-  },
-  {
-   "id": "PayPal|Senior Account Executive - SMB Outbound|Dublin, County Dublin, Ireland",
-   "azienda": "PayPal",
-   "titolo": "Senior Account Executive - SMB Outbound",
-   "luogo": "Dublin, County Dublin, Ireland",
-   "url": "https://paypal.wd1.myworkdayjobs.com/jobs/job/Dublin-County-Dublin-Ireland/Senior-Account-Executive---SMB-Outbound_R0137533-1",
-   "descrizione": "",
-   "italiano": false,
-   "altre_lingue": [],
-   "stelle": 1,
-   "motivi": [
-    "Account Executive (+1)",
-    "AE senior/enterprise (-1)"
-   ],
-   "prima_vista": ""
   }
  ]
 }
